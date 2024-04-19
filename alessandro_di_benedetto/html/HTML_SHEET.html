@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Configurazioni di base di HTML</h2>
+    <p>Definisce il tipo di documento come HTML5.</p>
+    <code>&lt;!DOCTYPE html&gt;</code>
+
+    <p>Elemento radice che contiene tutto il documento HTML.</p>
+    <code>&lt;html&gt;&lt;/html&gt;</code>
+
+    <p>Contiene metadati e informazioni di configurazione della pagina.</p>
+    <code>&lt;head&gt;&lt;/head&gt;</code>
+
+    <p>
+      Definisce il titolo della pagina visualizzato nella barra del browser.
+    </p>
+    <code>&lt;title&gt;&lt;/title&gt;</code>
+
+    <p>Contiene il contenuto visibile della pagina.</p>
+    <code>&lt;body&gt;&lt;/body&gt;</code>
+
+    <h2>scheletro della pagina</h2>
+    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Titolo X&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    .....
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+    <h2>tag generali</h2>
+    <p>
+      - <code>&lt;h1&gt;</code>-<code>&lt;h6&gt;</code>: Titoli di varie
+      dimensioni.
+    </p>
+    <p>- <code>&lt;p&gt;</code>: Paragrafi di testo.</p>
+    <p>
+      - <code>&lt;a href="url"&gt;Testo del Link&lt;/a&gt;</code>: Link
+      ipertestuali.
+    </p>
+    <p>
+      - <code>&lt;img src="url" alt="Testo Alternativo"&gt;</code>: Inserimento
+      di immagini.
+    </p>
+    <p>- <code>&lt;ul&gt;</code>: Lista non ordinata.</p>
+    <p>- <code>&lt;ol&gt;</code>: Lista ordinata.</p>
+    <p>- <code>&lt;li&gt;</code>: Elemento di una lista.</p>
+    <p>
+      - <code>&lt;div&gt;</code>: Blocco di divisione per raggruppare contenuti.
+    </p>
+    <p>
+      - <code>&lt;span&gt;</code>: Elemento inline per formattare porzioni di
+      testo.
+    </p>
+    <p>- <code>&lt;table&gt;</code>: Tabella per visualizzare dati tabulari.</p>
+    <p>
+      - <code>&lt;th&gt;</code>-<code>&lt;/td&gt;</code>: Ogni cella della
+      tabella
+    </p>
+    <p>- <code>&lt;form&gt;</code>: Form per raccogliere dati dagli utenti.</p>
+    <p>
+      - <code>&lt;pre&gt;</code>: Il pre elemento rappresenta un blocco di testo
+      preformattato, in cui la struttura è rappresentata dalle convenzioni
+      tipografiche piuttosto che dagli elementi.
+    </p>
+    <p>
+      - <code>&lt;code&gt;</code>: Il code elemento rappresenta un frammento di
+      codice informatico. Questo potrebbe essere un nome di elemento XML, un
+      nome di file, un programma informatico o qualsiasi altra stringa che un
+      computer riconoscerebbe.
+    </p>
+
+    <h2>Attributi</h2>
+    <p>- <code>id</code>: Identifica un elemento HTML.</p>
+    <p>- <code>class</code>: Specifica una o più classi CSS per un elemento.</p>
+    <p>
+      - <code>href</code>: Specifica l'URL di destinazione per i link
+      ipertestuali.
+    </p>
+    <p>
+      - <code>src</code>: Specifica l'URL di origine per le immagini e altri
+      elementi multimediali.
+    </p>
+    <p>
+      - <code>alt</code>: Fornisce un testo alternativo per le immagini nel caso
+      in cui non possano essere visualizzate.
+    </p>
+    <p>
+      - <code>title</code>: Fornisce un titolo per un elemento, che può essere
+      visualizzato come tooltip quando l'utente passa il mouse sopra l'elemento.
+    </p>
+    <p>- <code>style</code>: Specifica gli stili CSS inline per un elemento.</p>
+    <p>
+      - <code>target</code>: Specifica il comportamento del collegamento
+      ipertestuale quando viene cliccato (ad esempio, <code>_blank</code> per
+      aprire il link in una nuova finestra).
+    </p>
+    <p>
+      - <code>rel</code>: Specifica la relazione tra il documento corrente e il
+      documento collegato (ad esempio, <code>stylesheet</code> per collegamenti
+      a fogli di stile CSS esterni).
+    </p>
+    <p>
+      - <code>type</code>: Specifica il tipo di un input nel caso di elementi
+      <code>&lt;input&gt;</code>.
+    </p>
+    <p>
+      - <code>name</code>: Specifica il nome di un elemento, utile per i form.
+    </p>
+    <p>
+      - <code>value</code>: Specifica il valore di un input, utile per i form.
+    </p>
+    <p>
+      - <code>placeholder</code>: Fornisce un suggerimento di testo per un
+      input.
+    </p>
+    <p>- <code>disabled</code>: Disabilita un elemento.</p>
+    <p>- <code>readonly</code>: Specifica che un input è di sola lettura.</p>
+    <p>
+      - <code>required</code>: Specifica che un input è obbligatorio in un form.
+    </p>
+    <p>
+      - <code>checked</code>: Specifica che una casella di controllo o un
+      pulsante radio è selezionato.
+    </p>
+    <p>
+      - <code>maxlength</code>: Specifica il numero massimo di caratteri
+      consentiti per un input.
+    </p>
+    <p>
+      - <code>min</code> e <code>max</code>: Specifica il valore minimo e
+      massimo per un input di tipo numerico.
+    </p>
+    <p>
+      - <code>step</code>: Specifica l'incremento o il decremento del valore per
+      un input di tipo numerico.
+    </p>
+    <p>
+      - <code>rows</code> e <code>cols</code>: Specifica il numero di righe e
+      colonne per un elemento <code>&lt;textarea&gt;</code>.
+    </p>
+    <p>
+      - <code>aria-*</code>: Gli attributi ARIA (Accessible Rich Internet
+      Applications) forniscono informazioni aggiuntive sull'accessibilità per
+      gli elementi HTML.
+    </p>
+    <p>
+      - <code>placeholder</code>: Fornisce un suggerimento di testo per un campo
+      di input.
+    </p>
+    <p>
+      - <code>size</code>: Specifica la dimensione visibile di un campo di input
+      (ad esempio, per <code>&lt;input type="text"&gt;</code>).
+    </p>
+  </body>
+</html>
