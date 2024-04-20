@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Teoria su HTML</title>
+  </head>
+  <body>
+    <h2>Menù navigazione</h2>
+    <p><b>Indice</b></p>
+    <ul>
+      <li><a href="./Index.html">Indice</a></li>
+    </ul>
+
+    <p><b>Lezioni teoriche</b></p>
+    <ul>
+      <li><a href="./CSS.html">Teoria CSS </a></li>
+
+      <li><a href="./GIT.html">Teoria GIT</a></li>
+      <li><a href="./MARKDOWN.html">Teoria Markdown</a></li>
+    </ul>
+    <p><b>Helpers</b></p>
+    <ul>
+      <li>
+        <a href="./CSS_SHEET.html">Comandi CSS </a>
+      </li>
+      <li><a href="./HTML_SHEET.html">Comandi HTML</a></li>
+      <li><a href="./GIT_SHEET.html">Comandi GIT</a></li>
+      <li><a href="./MARKDOWN_SHEET.html">Comandi Markdown</a></li>
+    </ul>
+    <h2>Cosa è l'HTML</h2>
+    <p>
+      HTML è l'acronimo di HyperText Markup Language ("Linguaggio di
+      contrassegno per gli Ipertesti") e non è un linguaggio di programmazione.
+      Si tratta invece di un linguaggio di markup (di 'contrassegno' o 'di
+      marcatura'), che permette di indicare come disporre gli elementi
+      all'interno di una pagina. Queste indicazioni vengono date attraverso
+      degli appositi marcatori, detti tag ('etichette'), che hanno la
+      caratteristica di essere inclusi tra parentesi angolari (ad es,
+      &lt;img&gt; è il segnaposto di un'immagine).
+    </p>
+
+    <h2>Pagina HTML</h2>
+    <p>
+      Con HTML quindi indichiamo, attraverso i tag, quali elementi dovranno
+      apparire su uno schermo e come essi debbano essere disposti. Tutte queste
+      indicazioni sono contenute in un documento HTML, spesso detto `Pagina
+      HTML`. Una pagina HTML è rappresentata da un file di testo, ovvero un file
+      che possiamo modificare con programmi come notepad e in genere hanno un
+      nome che finisce con l'estensione .html.
+    </p>
+
+    <h2>Linguaggio Dichiarativo</h2>
+    <p>
+      HTML non possiede i costrutti propri della programmazione, come i
+      meccanismi "condizionali", che consentono di reagire in modo diverso a
+      seconda del verificarsi di una condizione ("in questa situazione fai
+      questo, in quest'altra fai quest'altro"), o i costrutti iterativi ("ripeti
+      questa azione, finché non succede questo"). Si parla in questo caso di
+      `linguaggio dichiarativo`, che serve appunto ad indicare cosa deve
+      apparire sullo schermo (testi, immagini, suoni, etc.), dove e in che
+      sequenza. Nel caso di linguaggi in cui specifichiamo algoritmi precisi con
+      "strutture di controllo", come C, C++, Java, o anche PHP e JavaScript,
+      parliamo di "linguaggi imperativi".
+    </p>
+
+    <h2>HTML5, Web e mobile</h2>
+    <p>
+      La versione di HTML che esamineremo è quella più attuale: HTML 5, che è
+      anche la versione che nasce appositamente per uscire dal solo ambito Web e
+      diventare piattaforma per la creazione di applicazioni, anche desktop e
+      mobile.
+    </p>
+
+    <h2>La specifica HTML5 infatti si compone della definizione di:</h2>
+
+    <ul>
+      <li>
+        una sintassi per il markup più efficace e adatta alle esigenze più
+        moderne, con l'introduzione di specifici controlli per i form o degli
+        attributi "data-" da arricchire i tag di informazioni specifiche;
+      </li>
+    </ul>
+
+    <ul>
+      <li>
+        una serie di API che consentono di gestire, a livello approfondito
+        aspetti come network, multimedia, e hardware dei dispositivi. In altre
+        parole dalla gestione del video e dell'audio al monitoraggio delle
+        batterie di un device.
+      </li>
+    </ul>
+    <p>
+      Questo sviluppo dello standard ha dato il via alla generazione delle
+      cosiddette App mobile ibride, che sfruttano sia HTML5, per creare app che
+      si possono distribuire, come quelle native, sui marketplace dei
+      dispositivi più comuni (come Google Play per Android ad esempio).
+    </p>
+
+    <h2>Link e ipertesti</h2>
+    <p>
+      La potenza di Internet consiste nell'essere un insieme esteso di contenuti
+      connessi tra loro. Il linguaggio HTML e i link sono alla base di questo
+      meccanismo che consente di muoversi rapidamente tra testi, immagini,
+      video, applicazioni e quant'altro creando percorsi i propri percorsi di
+      navigazione in totale autonomia.
+    </p>
+
+    <h2>Elementi e tag in HTML</h2>
+
+    <p>
+      In una pagina HTML tutti gli elementi sono connotati da tag (letteralmente
+      "etichette"). Si tratta di marcatori che evidenziano non tanto l'aspetto,
+      quanto il senso, il ruolo, o l'organizzazione che vogliamo assegnare ai
+      contenuti. Ad esempio se indichiamo un titolo con <`h1> per noi le parole
+      in quel titolo rappresentano il tema principale della pagina, al di là del
+      modo in cui saranno visualizzate.
+    </p>
+
+    <ul>
+      <li>
+        Questa visione "semantica" degli elementi è fondamentale, ci aiuta a non
+        perdere di vista il fatto che una pagina deve essere un luogo ordinato
+        di informazioni, soprattutto sul Web. Se pensiamo ad esempio al classico
+        contesto delle ricerche online, risulta naturale comprendere che tanto
+        più una pagina sarà associabile a una keyword o a un tema, tanto più
+        facile sarà trovarla. Per questo sarà importante curare cose come
+        l'organizzazione del testo, la definizione dei titoli, dei link dei
+        grassetti.
+      </li>
+    </ul>
+
+    <ul>
+      <li>
+        Tuttavia in HTML possiamo anche definire lo scheletro dell'interfaccia
+        utente di una app, e in questo frangente i tag diventano utili come
+        supporto all'organizzazione del layout o alla definizione di aree
+        specifiche per l'esperienza utente.
+      </li>
+    </ul>
+    <p>
+      In tutti e due i casi continuiamo a non parlare di <b>"grafica"</b>, ma di
+      struttura
+    </p>
+
+    <h2>Come è fatto un tag</h2>
+    <p>
+      Un tag è una keyword del linguaggio racchiusa tra parentesi angolari (<>).
+      Esempi di tag sono
+      <b>
+        <pre>&lt;html&gt;, &lt;body&gt; e &lt;h1&gt;</pre>
+      </b>
+      I tag HTML non sono "case sensitive" ciò significa che scrivere
+      <b>
+        <pre>&lt;head&gt; o &lt;HEAD&gt;</pre>
+      </b>
+      è esattamente la stessa cosa. In ogni caso la consuetudine è quella di
+      scrivere i tag in minuscolo (era una raccomandazione in HTML4 e una
+      richiesta in XHTML).
+    </p>
+
+    <h2>Elementi contenitori e autonomi, il DOM</h2>
+    <p>
+      Molti elementi in HTML servono per descrivere porzioni di pagina, aree, o
+      contenuti. Ad esempio
+    </p>
+    <pre>
+                <b>&lt;body&gt;</b> descrive il contenuto di tutta la pagina,
+                <b>&lt;h1&gt;</b> racchiude un titolo e
+                <b>&lt;p&gt; </b> denota un paragrafo nel testo.
+            </pre>
+    <p>
+      Pertanto un elemento HTML è quasi sempre un contenitore e il suo contenuto
+      è delimitato da:
+    </p>
+
+    <ul>
+      <li>tag di apertura (es.<b>&lt;p&gt;</b>;</li>
+    </ul>
+    <ul>
+      <li>tag di chiusura (es. <b>&lt;/p&gt;</b>).</li>
+    </ul>
+
+    &lt;p&gt; Lorem ipsum, quia dolor sit, amet, consectetur, adipisci velit,
+    sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam
+    aliquam quaerat voluptatem. &lt;/p&gt;
+
+    <p>
+      Le pagine HTML sono quindi formate per composizione di contenitori
+      (annidati) l'uno dentro l'altro. Per capire meglio riprendiamo il nostro
+      semplice esempio:
+    </p>
+
+    <pre>
+                &lt;!doctype html&gt;
+                &lt;html lang="it"&gt;
+                &lt;head&gt;
+                &lt;title&gt;Ciao Mondo!&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                &lt;h1&gt;Ciao Mondo!&lt;/h1&gt;
+                &lt;p&gt;Questa è la nostra prima pagina HTML!&lt;/p&gt;
+                &lt;img src="immagine.jpg"&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+            </pre
+    >
+
+    <p>
+      La struttura che emerge è quella di un albero, in cui i rami sono tutti
+      tag contenitori e le estremità sono composte da testi, immagini o altri
+      elementi come le caselle di input. Tutti questi elementi finali non sono
+      contenitori e non necessitano di un tag di chiusura.
+    </p>
+
+    <pre>
+                html
+                |
+                +---head
+                | |
+                | +---title
+                | |
+                | +---"Ciao Mondo!"
+                |
+                +---body
+                |
+                +---h1
+                |
+                +---"Ciao Mondo!"
+                |
+                p
+                |
+                +---"Questa è la nostra prima pagina HTML!"
+                |
+                img
+            </pre
+    >
+    <p>
+      L'albero che abbiamo tracciato ricorda il modo in cui viene rappresentato
+      il documento nella memoria del browser, ovvero il DOM (Document Object
+      Model), il modello del documento HTML di cui l'elemento &lt;html&gt; è il
+      nodo radice.
+    </p>
+
+    <h2>Indentare il codice</h2>
+    <p>
+      Spesso per sottolineare l'annidamento di un elemento in un altro si usa
+      "indentare il codice", ovvero discostare il contenuto dall'inizio della
+      riga lasciando spazi (o tab). In pratica apertura e chiusura del tag si
+      trovano allo stesso livello, mentre il contenuto viene spostato verso
+      destra di un tab.
+    </p>
+  </body>
+</html>
