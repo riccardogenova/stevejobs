@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Git</title>
+</head>
+
+<body>
+    <p>
+        `git --version` (controlla la versione di git) <br> <br>
+
+        `git config --global user.name "name"` (modifica il tuo nome globale (come appari nei progetti)) <br>
+        `git config --global user.email "email"` (modifica l'email che usi) <br>
+
+        { <br>
+        `mkdir "myproject"` (crea la directory) <br>
+        `cd "myproject"` (entra nella directory) <br>
+        `ls` (mostra i file nel folder) <br>
+        } <br>
+
+        <hr> <br>
+
+        `git init` (inizializza git nella directory in cui sei entrato, creando una ==repository==) <br> <br>
+
+        `git status` (mostra lo status della cartella e della repo) <br> <br>
+
+        - Untracked files: files che sono nella directory ma non nella repo <br>
+        - Tracked files: files che sono nella repo <br> <br>
+
+        Staging environment: processo dove i file vengono messi nella repo tramite ==commit== <br> <br>
+
+        `git add "file.exe"` (aggiungi file allo staging environment) <br>
+        `git add --all` (oppure `git add -A`) (aggiungi tutti i file nella directory allo staging environment) <br> <br>
+
+        <hr> <br>
+
+        `git commit -m "Message 1: first release"` (commit: finalizza la modifica alla repo, ==-m== serve per aggiungere
+        messaggi) <br> <br>
+
+        Per skippare lo stage (in caso di piccole modifiche): <br>
+        `git commit -a -m "Updated file.exe: minor mistake in compiling` <br> <br>
+
+        `git log` (leggi tutti i commit) <br>
+
+        <hr> <br>
+
+        `git command -help` (vedi tutte le opzioni per quel comando in particolare) <br>
+        `git help --all` (vedi tutti i comandi possibili) <br> <br>
+
+        <hr> <br>
+
+        La ==branch== è una versione nuova/separata della main repository. <br> <br>
+
+        Per vedere tutte le branch esistenti: `git branch` <br> <br>
+
+        Per crearne una: <br>
+        `git branch hello-world-image` <br> <br>
+
+        Dopo aver creato la branch, per entrare in essa: <br>
+        `git checkout hello-world-image` <br>
+        `git checkout master` <br>
+
+        In caso si deve creare velocemente una branch in caso di emergenza: <br>
+        `git checkout -b emergency-fix` <br> <br>
+
+        <hr>
+
+        Per fare il ==merge== di due branches: <br>
+        `git checkout master` (ritorna alla branch principale) <br>
+        `git merge emergency-fix` (merge - fast forward, visto che emergency_fix deriva da master e master non è stata
+        modificata) <br> <br>
+
+        Per eliminare emergency_fix (ora che master ha tutte le modifiche di emergency_fix): <br>
+        `git branch -d emergency-fix`<br>
+
+        <hr> <br>
+
+        `git rm --cached &lt;nome_file&gt;` (rimuove file dallo staging) <br>
+
+        <hr> <br>
+
+        `git reset &lt;hash_del_commit&gt;` (resetta la repo alla versione del commit inserito nel comando) <br> <br>
+
+        <hr> <br>
+
+        `git remote add &lt;nome (default=origin)&gt; &lt;url&gt;` (aggiungi link tra GitHub e Git locale) <br> <br>
+
+        `git push &lt;nome_remote&gt; &lt;nome_locale&gt;` (aggiorna i GitHub commit con i commit locali) <br> <br>
+
+        `git clone &lt;link&gt;` (copia repo da remote in locale) <br> <br>
+    </p>
+</body>
+
+</html>
