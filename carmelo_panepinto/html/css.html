@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS</title>
+    <h1>CSS</h1>
+  </head>
+  <body>
+    <h2>Cos'è</h2>
+    <p>
+      <b>CSS</b>, <i>Cascading Scale Sheets</i>, è il linguaggio di
+      programmazione principale per definire l'aspetto e le formattazioni delle
+      pagine web. Spesso affiancato ad HTML, che costituisce lo "scheletro" di
+      una pagina web, Css permette di controllarne l'aspetto visivo, includendo
+      elementi come layout, colori, tipografia, dimensioni e posizioni degli
+      elementi, e molto altro ancora. È uno strumento fondamentale per la
+      progettazione web moderna, consentendo una separazione chiara tra la
+      struttura (HTML) e la presentazione (CSS) di una pagina web.
+    </p>
+    <h2>Caratteristiche</h2>
+    <p>HTML si basa su tre principali features:</p>
+    <br />
+    <ul>
+      <li>
+        <b>Separazione di contenuti</b>, , CSS permette di modificare l'aspetto
+        di un sito web senza dover alterare il codice HTML. Questo rende il
+        codice più pulito, organizzato e facile da mantenere;<br />
+      </li>
+      <li>
+        <b>Riutilizzabilità</b>, Le regole CSS possono essere applicate a più
+        elementi di una pagina o addirittura a interi siti web, garantendo
+        coerenza e risparmiando tempo;
+      </li>
+      <li>
+        <b>Esperienza utente</b>, CSS può creare un'esperienza utente più
+        piacevole e coinvolgente, aumentando la fruibilità e il tempo di
+        permanenza sul sito.
+      </li>
+    </ul>
+
+    <h2>Come funziona</h2>
+    <br />
+    <p>
+      In primo luogo,
+      <i>css agisce direttamente sul codice HTML già strutturato</i>; è quindi
+      raro che venga utilizzato da solo, piuttosto che venire applicato allo
+      scheletro HTML già esistente. Il CSS funziona attraverso un sistema di
+      <b>regole e sezioni</b>. Le regole
+      <i>definiscono le proprietà da applicare agli elementi HTML</i>, come il
+      colore di sfondo, il tipo di carattere, la dimensione del testo e la
+      posizione. Le sezioni, invece, _raggruppano le regole per organizzarle e
+      darle un senso di coerenza_. Il primo passo è incorporare il codice CSS al
+      codice HTML, che si può fare o da un file esterno, colegando in seguito il
+      file .css tramite un < link >, oppure scrivendo direttamente i comandi
+      nell'head dell'html, racchiusi tra i tag < style >. In seguito il browser
+      analizza le regole CSS e le organizza in base alla loro specificità: la
+      regola più specifica per un determinato elemento ha la precedenza. Nel
+      caso in cui si verifichino _conflitti tra regole_, questi vengono gestiti
+      usando la **cascata** (da qui il nome "Cascading Style Sheets"): essa
+      garantisce che _le regole più specifiche abbiano la precedenza su quelle
+      più generiche_. In caso di conflitti, la regola con la selezione più
+      precisa e un maggior numero di selettori vince. Le proprietà CSS definite
+      vengono infine applicate agli elementi HTML corrispondenti: Il layout di
+      pagina, i colori, i font e tutti gli aspetti visivi prendono forma.
+    </p>
+
+    <h4>Alcuni esempi di Tag<br /></h4>
+    <ul>
+      <li>
+        Tag di struttura: definiscono la gerarchia e le sezioni principali di
+        una pagina web, come < header >, < main >, < footer >, < article >, <
+        section > ecc.<br />
+      </li>
+      <li>
+        Tag di testo: formattano il testo all'interno di una pagina, ad esempio
+        < p > per i paragrafi, < h1 > per i titoli, < b > per il grassetto e < i
+        > per il corsivo.<br />
+      </li>
+      <li>
+        Tag di contenuti multimediali: inseriscono immagini, video e altri
+        contenuti multimediali all'interno della pagina, utilizzando tag come <
+        img >, < video >, < audio >..<br />
+      </li>
+      <li>
+        Tag di collegamenti: creano collegamenti ipertestuali ad altre pagine
+        web o risorse online, utilizzando il tag < a >.<br />
+      </li>
+      <li>
+        Tag di form: permettono di creare moduli per la raccolta di dati dagli
+        utenti, utilizzando tag come < form >, < input >, < select >, < textarea
+        > ecc.<br />
+      </li>
+    </ul>
+    <h2>Altri comandi utili<br /></h2>
+    <ul>
+      <li>git status: Mostra lo stato corrente del repository Git. <br /></li>
+      <li>
+        git branch: Mostra i branch attualmente presenti nel repository.<br />
+      </li>
+      <li>
+        git checkout < nome del branch >: Cambia branch nel repository. <br />
+      </li>
+      <li>
+        git merge < nome del branch >: Unisce un branch con il branch corrente.
+        <br />
+      </li>
+    </ul>
+
+    <h2>Esempio di codice html</h2>
+    <br />
+    <p>
+      Ecco un esempio di codice HTML semplice per creare un titolo e un
+      paragrafo: <br />
+
+      < html > <br />
+
+      < head > <br />
+
+      < title > Titolo della pagina < /title > <br />
+
+      < /head > <br />
+
+      < body ><br />
+
+      < h1 > Titolo principale < /h1 ><br />
+
+      < p > Questo è un paragrafo di testo. < /p ><br />
+
+      < /body ><br />
+
+      < /html ><br />
+    </p>
+  </body>
+</html>
