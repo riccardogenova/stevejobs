@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>MARKDOWN_sheet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">Homepage</a>
+        </li>
+        <li>
+          <a href="markdownsheet.html">MARKDOWN_sheet</a>
+        </li>
+        <li>
+          <a href="gitsheet.html">GIT_sheet</a>
+        </li>
+        <li>
+          <a href="htmlsheet.html">HTML_sheet</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section>
+      <h1>CSS Cheat Sheet</h1>
+
+      <h2>Selettori</h2>
+      <p>
+        I selettori CSS consentono di identificare gli elementi HTML a cui
+        applicare gli stili. Alcuni esempi comuni includono:
+      </p>
+      <ul>
+        <li>
+          <strong>Selettore di tipo</strong>: <code>p</code> per i paragrafi,
+          <code>h1</code> per i titoli di primo livello, ecc.
+        </li>
+        <li>
+          <strong>Selettore di classe</strong>: <code>.classe</code> per
+          selezionare elementi con una specifica classe.
+        </li>
+        <li>
+          <strong>Selettore di ID</strong>: <code>#id</code> per selezionare un
+          elemento con un ID specifico.
+        </li>
+        <li>
+          <strong>Selettore universale</strong>: <code>*</code> per selezionare
+          tutti gli elementi.
+        </li>
+      </ul>
+      <code>
+        p { color: blue; } <br />
+        .classe { font-size: 16px; } <br />
+        #id { background-color: #f0f0f0; }
+      </code>
+
+      <h2>Proprietà</h2>
+
+      <h3>Testo</h3>
+      <ul>
+        <li><strong>color</strong>: definisce il colore del testo.</li>
+        <li><strong>font-family</strong>: imposta il tipo di carattere.</li>
+        <li>
+          <strong>font-size</strong>: specifica la dimensione del carattere.
+        </li>
+        <li>
+          <strong>font-weight</strong>: imposta lo spessore del carattere (bold,
+          normal, etc.).
+        </li>
+        <li>
+          <strong>text-align</strong>: allinea il testo (left, right, center,
+          justify).
+        </li>
+      </ul>
+      <code>
+        p { color: blue; <br />
+        font-family: Arial, sans-serif; <br />
+        font-size: 16px; <br />
+        font-weight: bold; <br />
+        text-align: center; }
+      </code>
+
+      <h3>Box</h3>
+      <ul>
+        <li>
+          <strong>background-color</strong>: imposta il colore dello sfondo.
+        </li>
+        <li>
+          <strong>padding</strong>: definisce lo spazio interno dell'elemento.
+        </li>
+        <li>
+          <strong>margin</strong>: imposta lo spazio esterno dell'elemento.
+        </li>
+        <li>
+          <strong>border</strong>: definisce lo stile, lo spessore e il colore
+          del bordo.
+        </li>
+        <li><strong>border-radius</strong>: arrotonda gli angoli del bordo.</li>
+      </ul>
+      <code>
+        .box { background-color: #f0f0f0; <br />
+        padding: 20px; <br />
+        margin: 10px; <br />
+        border: 1px solid black; <br />
+        border-radius: 5px; }
+      </code>
+
+      <h3>Sfondo</h3>
+      <ul>
+        <li>
+          <strong>background-image</strong>: imposta un'immagine di sfondo per
+          l'elemento.
+        </li>
+        <li>
+          <strong>background-repeat</strong>: specifica se e come l'immagine di
+          sfondo deve essere ripetuta.
+        </li>
+        <li>
+          <strong>background-position</strong>: definisce la posizione iniziale
+          dell'immagine di sfondo.
+        </li>
+      </ul>
+      <code>
+        .header { background-image: url('header-background.jpg'); <br />
+        background-repeat: no-repeat; <br />
+        background-position: center; }
+      </code>
+
+      <h3>Dimensioni e Posizionamento</h3>
+      <ul>
+        <li><strong>width</strong>: imposta la larghezza dell'elemento.</li>
+        <li><strong>height</strong>: imposta l'altezza dell'elemento.</li>
+        <li>
+          <strong>max-width</strong>: specifica la larghezza massima
+          dell'elemento.
+        </li>
+        <li>
+          <strong>max-height</strong>: specifica l'altezza massima
+          dell'elemento.
+        </li>
+        <li>
+          <strong>position</strong>: imposta il metodo di posizionamento
+          dell'elemento (static, relative, absolute, fixed).
+        </li>
+        <li>
+          <strong>top, right, bottom, left</strong>: definiscono la posizione
+          dell'elemento rispetto al suo contenitore o al documento.
+        </li>
+      </ul>
+      <code>
+        .sidebar { width: 250px; <br />
+        max-width: 80%; <br />
+        position: fixed; <br />
+        top: 0; <br />
+        left: 0; }
+      </code>
+
+      <h3>Animazioni</h3>
+      <ul>
+        <li>
+          <strong>animation-name</strong>: specifica il nome dell'animazione.
+        </li>
+        <li>
+          <strong>animation-duration</strong>: definisce la durata
+          dell'animazione.
+        </li>
+        <li>
+          <strong>animation-delay</strong>: specifica un ritardo prima
+          dell'inizio dell'animazione.
+        </li>
+        <li>
+          <strong>animation-timing-function</strong>: definisce la funzione di
+          temporizzazione dell'animazione.
+        </li>
+        <li>
+          <strong>animation-iteration-count</strong>: specifica quante volte
+          l'animazione deve ripetersi.
+        </li>
+      </ul>
+      <code>
+        @keyframes slide { from { transform: translateX(-100%); } to {
+        transform: translateX(0); } } .slide-in { animation-name: slide; <br />
+        animation-duration: 1s; <br />
+        animation-timing-function: ease-in-out; <br />
+        animation-delay: 0.5s; <br />
+        animation-iteration-count: 1; }
+      </code>
+    </section>
+
+    <footer>
+      <ul>
+        <li>
+          <a href="index.html">Homepage</a>
+        </li>
+        <li>
+          <a href="markdownsheet.html">MARKDOWN_sheet</a>
+        </li>
+        <li>
+          <a href="gitsheet.html">GIT_sheet</a>
+        </li>
+        <li>
+          <a href="htmlsheet.html">HTML_sheet</a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
