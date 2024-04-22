@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GIT</title>
+  </head>
+  <body>
+    <h1>STORIA DI GIT</h1>
+    <p>
+      La storia di Git è affascinante e rappresenta un punto di svolta
+      significativo<br />
+      nella gestione del codice sorgente e nello sviluppo collaborativo del
+      software.
+    </p>
+    <h2>ANTEFATTI E CREAZIONE</h2>
+    <p>
+      Prima di Git, Linus Torvalds e il team di sviluppo del kernel Linux
+      <br />utilizzavano un sistema di controllo versione chiamato BitKeeper per
+      gestire il codice sorgente del kernel. <br />Tuttavia, nel 2005, ci furono
+      problemi di licenza tra la comunità di sviluppo del kernel Linux e la
+      società dietro BitKeeper. <br />
+      Questo portò Linus a cercare un'alternativa. Linus Torvalds, famoso per
+      aver creato il kernel Linux,<br />
+      decise di creare un nuovo sistema di controllo versione distribuito (DVCS)
+      <br />che potesse soddisfare le esigenze specifiche <br />dello sviluppo
+      del kernel Linux e della comunità open source in generale. Così, nel 2005,
+      Linus Torvalds lanciò Git,<br />
+      un sistema di controllo versione distribuito che aveva l'obiettivo di
+      essere veloce, <br />
+      flessibile e adatto a gestire progetti di grandi dimensioni in modo
+      efficiente.
+    </p>
+    <h2>CARATTERISTICHE DISTINTIVE</h2>
+    <p>
+      Una delle caratteristiche distintive di Git è la sua natura
+      distribuita,<br />
+      che consente a ogni sviluppatore di avere una copia completa del
+      repository,<br />
+      inclusi la cronologia completa dei commit e il tracciamento dei rami,<br />
+      sul proprio sistema locale. Questo permette uno sviluppo parallelo,
+      <br />senza la necessità di una connessione costante a un server centrale.
+      Git è noto per la sua velocità, <br />grazie alla sua progettazione
+      efficiente e al suo approccio all'archiviazione dei dati.<br />
+      Le operazioni come il commit, il checkout e il merge sono generalmente
+      veloci,<br />
+      anche su progetti di grandi dimensioni. La flessibilità di Git si
+      manifesta nella sua capacità di gestire in modo efficace<br />
+      sia progetti molto piccoli che progetti enormi come il kernel Linux.
+      <br />Inoltre, offre una serie di funzionalità avanzate,<br />
+      come il branching e il merging efficienti,<br />
+      che consentono uno sviluppo agile e una gestione dei rami più semplice.
+    </p>
+    <h2>Diffusione e Adozione</h2>
+    <p>
+      Git ha rapidamente guadagnato popolarità nella comunità degli
+      sviluppatori,<br />
+      sia nell'ambito dell'open source che in quello commerciale. <br />La sua
+      efficacia e la sua facilità d'uso hanno portato molte aziende e
+      <br />progetti a migrare da sistemi di controllo versione precedenti a
+      Git. Piattaforme di hosting come GitHub, GitLab e Bitbucket hanno
+      contribuito ulteriormente alla diffusione di Git,<br />
+      offrendo un'infrastruttura completa per la gestione dei repository Git,<br />
+      il tracciamento delle issue e la collaborazione tra sviluppatori.
+    </p>
+    <h2>Evoluzione Continua</h2>
+    <p>
+      Nel corso degli anni, Git ha continuato a evolversi grazie al contributo
+      di una vasta comunità di sviluppatori.<br />
+      Nuove funzionalità, miglioramenti delle prestazioni e correzioni di bug
+      <br />vengono regolarmente introdotti nelle nuove versioni di Git. Git è
+      diventato uno standard de facto nel controllo versione del software<br />
+      e viene utilizzato non solo nello sviluppo di software,<br />
+      ma anche in settori come la scienza dei dati,<br />
+      la ricerca accademica e molto altro ancora.
+    </p>
+    <h2>GIT_SHEET</h2>
+    <p>
+      Configurazione di Git<br />
+      **git config**: Imposta le opzioni di configurazione di Git come nome
+      utente ed email.<br />
+      <br />- `git config --global user.name "Tuo Nome"`<br />
+      <br />- `git config --global user.email "tua_email@example.com"`<br />
+
+      Creazione di Repository<br>
+      **git init**: Inizializza un nuovo repository Git nella directory corrente.
+      <br>- `git init`<br>
+      **git clone**: Clona un repository in una nuova directory.
+      <br>- `git clone <repository_url>`<br>
+
+        Apportare Modifiche<br>
+        - **git add**: Aggiunge i contenuti di un file all'indice (area di stage) per il prossimo commit.<br>
+          <br>- `git add <file><br>`
+        - **git commit**: Registra le modifiche nel repository.<br>
+          <br>- `git commit -m "Messaggio del commit"`<br>
+        - **git status**: Mostra lo stato dell'albero di lavoro.<br>
+          <br>- `git status`<br>
+
+          Branching<br>
+          **git branch**: Elenca, crea o elimina rami.<br>
+            <br>- `git branch`<br>
+            <br>- `git branch <nome_branch>`<br>
+            <br>- `git branch -d <nome_branch>` (elimina)<br>
+            **git checkout**: Cambia branch o ripristina i file dell'albero di lavoro.<br>
+            <br>- `git checkout <nome_branch>`<br>
+            **git merge**: Unisce due o più storie di sviluppo.<br>
+            <br>- `git merge <nome_branch>`<br>
+
+          Repository Remoti<br>
+            **git remote**: Gestisce l'insieme di repository tracciati.<br>
+            <br>- `git remote add <nome> <url>`<br>
+            <br>- `git remote -v` (visualizza)<br>
+            **git push**: Aggiorna i riferimenti remoti insieme agli oggetti associati.<br>
+            <br>- `git push <remoto> <branch>`<br>
+            **git pull**: Fetch da e integra con un altro repository o un branch locale.<br>
+            <br>- `git pull <remoto> <branch>`<br>
+            **git fetch**: Scarica oggetti e riferimenti da un altro repository.<br>
+            <br> - `git fetch <remoto>`<br>
+
+            Ispezionare
+              **git log**: Mostra i log dei commit.<br>
+               <br> - `git log`<br>
+              **git diff**: Mostra le differenze tra i commit, il commit e l'albero di lavoro, ecc.<br>
+               <br> - `git diff`<br>
+              **git show**: Mostra vari tipi di oggetti.<br>
+               <br> - `git show <hash_commit>`<br>
+               
+                Annullare Modifiche
+              **git reset**: Reimposta l'HEAD corrente allo stato specificato.<br>
+                <br>- `git reset <file>` (dismette)<br>
+                <br>- `git reset --hard <commit>` (scarta modifiche)<br>
+              **git revert**: Annulla alcuni commit esistenti.<br>
+                <br>- `git revert <commit>`<br>
+
+                  Gestione dei Tag
+              **git tag**: Crea, lista o verifica i tag annotati.<br>
+                <br>- `git tag`<br>
+                <br>- `git tag -a <nome_tag> -m "Messaggio del tag"`<br>
+              **git show-tag**: Mostra le informazioni su un tag specifico.<br>
+                <br>- `git show-tag <nome_tag>`<br>
+              **git push --tags**: Carica i tag non ancora inviati al repository remoto.<br>
+                <br>- `git push --tags`<br>
+
+                Gestione delle Confessioni
+              **git commit --amend**: Modifica l'ultimo commit con nuove modifiche o un nuovo messaggio.<br>
+                <br>- `git commit --amend`<br>
+              **git rebase**: Reapplica i commit su un'altra base di ramo.<br>
+                <br>- `git rebase <branch>`<br>
+              **git cherry-pick**: Applica i cambiamenti di un commit su un altro ramo.<br>
+                <br>- `git cherry-pick <hash_commit>`<br>
+
+                  Pulizia
+              **git clean**: Rimuove i file non tracciati dalla directory di lavoro.<br>
+                <br>- `git clean -n` (mostra cosa verrà rimosso)<br>
+                <br>- `git clean -f` (rimuove effettivamente i file)<br>
+
+                Altri Comandi Utili
+              **git stash**: Salva le modifiche locali in uno stash temporaneo.<br>
+                <br>- `git stash`<br>
+                <br>- `git stash apply` (ripristina lo stash)<br>
+              **git bisect**: Aiuta a trovare il commit che ha introdotto un bug utilizzando la ricerca binaria.<br>
+                <br>- `git bisect start`<br>
+                <br>- `git bisect bad`<br>
+                <br>- `git bisect good <commit>`<br>
+              **git grep**: Cerca attraverso i file nell'albero di lavoro i pattern specificati.<br>
+                <br>- `git grep <pattern>`<br>
+                <br>- *git remote add origin https://github.com/Angelo26480/PROGETTO_GIT.git*<br>
+
+
+    </p>
+  </body>
+</html>

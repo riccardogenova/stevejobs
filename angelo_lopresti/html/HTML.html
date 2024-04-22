@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML</title>
+  </head>
+  <body>
+    <h1>COSA è HTML</h1>
+    <p>
+      HTML, acronimo di HyperText Markup Language (Linguaggio di Markup per
+      IperTesto),<br />
+      è il linguaggio standard utilizzato per creare e strutturare pagine
+      web.<br />
+      È uno dei fondamenti del World Wide Web e consente agli sviluppatori<br />
+      di definire la struttura e il contenuto delle pagine web,<br />
+      inclusi testi, immagini, collegamenti ipertestuali e altri elementi
+      multimediali.
+    </p>
+    <h2>FUNZIONI PRINCIPALI DI HTML</h2>
+    <p>
+      **Linguaggio di Markup**: HTML è un linguaggio di markup, il che significa
+      che utilizza una serie di tag<br />
+      per definire la struttura e il significato del contenuto all'interno di
+      una pagina web.<br />
+      Ogni tag HTML è racchiuso tra parentesi angolari `< >` e fornisce
+      istruzioni<br />
+      al browser su come visualizzare il contenuto.
+    </p>
+    <p>
+      **Struttura della Pagina**: HTML definisce la struttura di base di una
+      pagina web.<br />
+      Ogni documento HTML inizia con un elemento html che contiene due sezioni
+      principali: head e body.<br />
+      La sezione head contiene informazioni di intestazione come il titolo della
+      pagina,<br />
+      i metadati e i collegamenti a fogli di stile esterni o script.<br />
+      La sezione body contiene il contenuto visibile della pagina,<br />
+      come testo, immagini, tabelle e formulari.
+    </p>
+    <p>
+      **Elementi e Tag**: Gli elementi HTML sono i mattoni di base con cui viene
+      costruita una pagina web.<br />
+      Ogni elemento è definito da un tag HTML, che specifica il tipo di elemento
+      e <br />può avere attributi che forniscono ulteriori informazioni
+      sull'elemento.<br />
+      Ad esempio, il tag p viene utilizzato per definire un paragrafo di
+      testo,<br />
+      mentre il tag img viene utilizzato per inserire un'immagine nella pagina.
+    </p>
+    <p>
+      **Struttura Gerarchica**: Gli elementi HTML sono solitamente organizzati
+      in una struttura gerarchica,<br />
+      con alcuni elementi contenuti all'interno di altri. Ad esempio, un
+      paragrafo p può essere contenuto<br />
+      all'interno del corpo body della pagina,<br />
+      mentre il corpo è contenuto all'interno dell'elemento radice html.
+    </p>
+    <p>
+      **Semantica**: HTML fornisce una serie di tag semantici che descrivono<br />
+      il significato del contenuto piuttosto che solo l'aspetto.<br />
+      Questi tag includono header, footer, nav, article, section e altri,<br />
+      che forniscono informazioni sulla struttura e il significato del
+      contenuto, <br />migliorando l'accessibilità e l'indicizzazione da parte
+      dei motori di ricerca.
+    </p>
+    <p>
+      **Compatibilità e Standardizzazione**: HTML è un linguaggio standardizzato
+      e supportato da tutti i principali browser web.<br />
+      Le specifiche e gli standard per HTML sono sviluppati e mantenuti<br />
+      dal World Wide Web Consortium (W3C),<br />
+      un'organizzazione internazionale che stabilisce le linee guida per lo
+      sviluppo del web.
+    </p>
+    <h2>HTML_SHEET</h2>
+    <p>
+      **`!DOCTYPE`**: Definisce il tipo di documento HTML.<br />
+      <br />```html<br />
+      <br />!DOCTYPE html<br />
+      <br />```<br />
+
+      **`html`**: Definisce l'inizio e la fine di un documento HTML.<br />
+      <br />```html<br />
+      <br />html<br />
+      <br />!-- Contenuto della pagina --<br />
+      <br />/html<br />
+      <br />```<br />
+
+      **`head`**: Contiene informazioni di intestazione come il titolo della
+      pagina,<br />
+      i metadati e i collegamenti a fogli di stile esterni o script.
+      <br />```html<br />
+      <br />head<br />
+      <br />title Titolo della Pagina /title<br />
+      <br />
+      meta charset="UTF-8"<br />
+      <br />
+      meta name="description" content="Descrizione della pagina"<br />
+      <br />
+      link rel="stylesheet" href="styles.css"<br />
+      <br />/head<br />
+      <br />```<br />
+
+      **`title`**: Definisce il titolo della pagina visualizzato nella barra del
+      browser.<br />
+      <br />```html<br />
+      <br />title Il mio sito web /title<br />
+      <br />```<br />
+
+      **`body`**: Contiene il contenuto visibile della pagina web.<br />
+      <br />```html<br />
+      <br />body<br />
+      <br />h1 Benvenuto! /h1<br />
+      <br />p Questo è il mio primo sito web. /p<br />
+      <br />/body <br />```<br />
+
+      **`h1`, `h2`, `h3`, ..., `h6`**: Definisce i livelli di intestazione
+      (titoli) con diversi livelli di importanza.<br />
+      <br />```html<br />
+      <br />h1 Titolo Principale /h1<br />
+      <br />h2 Titolo Secondario /h2<br />
+      <br />h3 Titolo Tersiario /h3<br />
+      <br />```<br />
+
+      **`p`**: Definisce un paragrafo di testo.<br />
+      <br />```html<br />
+      <br />p Questo è un paragrafo di testo. /p <br />
+      <br />```<br />
+
+      **`a`**: Definisce un collegamento ipertestuale (link)<br />
+      a un'altra pagina web o a un'altra sezione della stessa pagina.<br />
+      <br />```html<br />
+      <br />a href="https://www.example.com">Visita il sito web /a <br />
+      <br />```<br />
+
+      **`img`**: Inserisce un'immagine nella pagina web.<br />
+      <br />```html<br />
+      <br />
+      img src="immagine.jpg" alt="Descrizione dell'immagine" <br />
+      <br />```<br />
+
+      **`ul`**: Definisce una lista non ordinata.<br />
+      <br />```html<br />
+      <br />ul<br />
+      <br />li Elemento 1 /li <br />
+      <br />li Elemento 2 /li <br />
+      <br />li Elemento 3 /li <br />
+      <br />/ul<br />
+      <br />```<br />
+
+      **`ol`**: Definisce una lista ordinata.<br />
+      <br />```html<br />
+      <br />ol<br />
+      <br />li Primo elemento /li <br />
+      <br />li Secondo elemento /li <br />
+      <br />li Terzo elemento /li <br />
+      <br />/ol<br />
+      <br />```<br />
+
+      **`table`**: Definisce una tabella.<br />
+      <br />```html<br />
+      <br />table<br />
+      <br />tr<br />
+      <br />td Cella 1 /td <br />
+      <br />td Cella 2 /td <br />
+      <br />/tr <br />
+      <br />tr <br />
+      <br />td Cella 3 /td <br />
+      <br />td Cella 4 /td <br />
+      <br />/tr<br />
+      <br />/table <br />
+      <br />```<br />
+
+      **`form`**: Definisce un modulo per la raccolta di input utente.<br />
+      <br />```html<br />
+      <br />form action="/submit" method="post" <br />
+      <br />
+      label for="username">Nome utente: /label <br />
+      <br />
+      input type="text" id="username" name="username" <br />
+      <br />
+      input type="submit" value="Invia" <br />
+      <br />/form<br />
+      <br />```<br />
+
+      **'meta'**: Fornisce metadati sul documento HTML come il set di
+      caratteri,<br />
+      la descrizione e le parole chiave per i motori di ricerca. **form**:
+      Definisce un modulo per la raccolta di input utente.<br />
+
+      **input**: Definisce un campo di input all'interno di un modulo.<br />
+
+      **textarea**: Definisce un campo di testo multi-riga all'interno di un
+      modulo.<br />
+
+      **button**: Definisce un pulsante cliccabile.<br />
+
+      **label**: Definisce l'etichetta per un elemento di input.<br />
+
+      **select**: Definisce un menu a discesa (dropdown).<br />
+
+      **option**: Definisce una voce di menu a discesa all'interno di un
+      select.<br />
+
+      **iframe**: Inserisce una finestra di visualizzazione di un'altra pagina
+      web all'interno della pagina corrente.<br />
+
+      **script** : Definisce uno script client-side, come JavaScript.<br />
+
+      **style**: Definisce regole di stile CSS all'interno del documento
+      HTML.<br />
+
+      **audio**: Inserisce un file audio nella pagina web.<br />
+
+      **video**: Inserisce un file video nella pagina web.<br />
+
+      **div**: Definisce una divisione o una sezione generica all'interno di un
+      documento.<br />
+
+      **span**: Definisce una porzione di testo in linea o una sezione generica
+      all'interno di un documento.<br />
+
+      **article**: Definisce un articolo indipendente.<br />
+
+      **aside**: Definisce un contenuto a parte, come una barra laterale.<br />
+
+      **figure**: Definisce un contenuto multimediale con una didascalia.<br />
+
+      **figcaption**: Definisce la didascalia per un contenuto multimediale.<br />
+    </p>
+    <h3>CONSIDERAZIONI FINALI</h3>
+    <p>
+      In sintesi, HTML è fondamentale per la creazione di pagine web,<br />
+      poiché fornisce una struttura organizzata e semantica per il contenuto
+      della pagina, <br />consentendo ai browser web di interpretare e
+      visualizzare il contenuto in modo coerente per gli utenti.
+    </p>
+  </body>
+</html>
