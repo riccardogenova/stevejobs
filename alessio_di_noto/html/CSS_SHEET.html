@@ -28,104 +28,151 @@
       <li><a href="./GIT_SHEET.html">Comandi GIT</a></li>
       <li><a href="./MARKDOWN_SHEET.html">Comandi Markdown</a></li>
     </ul>
-    <h3>1. Selettori di base:</h3>
 
+    <h1>Lista dettagliata di alcuni comandi CSS e come utilizzarli</h1>
+
+    <h2>1. Selettori:</h2>
     <ul>
       <li>
-        <b>-elemento { ... }</b>: Applica le regole CSS a tutti gli elementi di
-        un certo tipo (ad esempio, p per i paragrafi).
+        <code>element</code>: Seleziona tutti gli elementi di tipo specificato.
+        Ad esempio, <code>p</code> selezionerà tutti i paragrafi.
       </li>
       <li>
-        <b>.classe { ... }</b>: Applica le regole CSS a tutti gli elementi con
-        una determinata classe.
+        <code>.classe</code>: Seleziona tutti gli elementi con la classe
+        specificata. Ad esempio, <code>.intro</code> selezionerà tutti gli
+        elementi con la classe "intro".
       </li>
       <li>
-        <b>#id { ... }</b>: Applica le regole CSS a un elemento specifico con un
-        dato ID.
-      </li>
-      <li><b>*</b> : Applica le regole CSS a tutti gli elementi</li>
-    </ul>
-
-    <h3>2. Proprietà di testo:</h3>
-
-    <ul>
-      <li><b>color</b>: Imposta il colore del testo.</li>
-      <li><b>font-size</b>: Imposta la dimensione del testo.</li>
-      <li><b>font-family</b>: Imposta il tipo di carattere.</li>
-      <li>
-        <b>font-weight</b>: Imposta lo spessore del carattere (normale,
-        grassetto, ecc.).
+        <code>#id</code>: Seleziona l'elemento con l'id specificato. Ad esempio,
+        <code>#header</code> selezionerà l'elemento con l'id "header".
       </li>
       <li>
-        <b>text-align</b>: Allinea il testo (a sinistra, a destra, al centro,
-        giustificato).
-      </li>
-    </ul>
-
-    <h3>3. Proprietà di layout:</h3>
-
-    <ul>
-      <li><b>width</b>: Imposta la larghezza dell'elemento.</li>
-      <li><b>height</b>: Imposta l'altezza dell'elemento.</li>
-      <li><b>margin</b>: Imposta lo spazio esterno attorno all'elemento.</li>
-      <li>
-        <b>padding</b>: Imposta lo spazio interno all'interno dell'lemento.
+        <code>[attributo]</code>: Seleziona gli elementi con l'attributo
+        specificato. Ad esempio, <code>[type]</code> selezionerà tutti gli
+        elementi che hanno un attributo "type".
       </li>
       <li>
-        <b>border</b>: Imposta lo stile, lo spessore e il colore del bordo.
-      </li>
-    </ul>
-
-    <h3>4. Proprietà di sfondo:</h3>
-
-    <ul>
-      <li><b>background-color</b>: Imposta il colore dello sfondo.</li>
-      <li><b>background-image</b>: Imposta un'immagine di sfondo.</li>
-      <li>
-        <b>background-repeat</b>: Imposta se e come ripetere l'immagine di
-        sfondo.
+        <code>element, element</code>: Seleziona più elementi separati da
+        virgola. Ad esempio, <code>h1, h2, h3</code> selezionerà tutti gli
+        elementi di intestazione h1, h2 e h3.
       </li>
       <li>
-        <b>background-position</b>: Imposta la posizione dell'immagine di
-        sfondo.
+        <code>element > element</code>: Seleziona un elemento figlio diretto. Ad
+        esempio, <code>div > p</code> selezionerà tutti i paragrafi che sono
+        figli diretti di un elemento div.
+      </li>
+      <li>
+        <code>element + element</code>: Seleziona un elemento fratello
+        immediatamente successivo. Ad esempio, <code>h2 + p</code> selezionerà
+        il primo paragrafo che segue immediatamente un elemento di intestazione
+        h2.
+      </li>
+      <li>
+        <code>element ~ element</code>: Seleziona tutti gli elementi fratelli
+        successivi. Ad esempio, <code>p ~ span</code> selezionerà tutti gli
+        elementi span che sono fratelli successivi di un paragrafo.
       </li>
     </ul>
 
-    <h3>5. Proprietà di posizionamento:</h3>
+    <h2>2. Proprietà di layout:</h2>
     <ul>
       <li>
-        <b> position</b>: Specifica il metodo di posizionamento dell'elemento.
+        <code>display</code>: Specifica il tipo di display per un elemento. Ad
+        esempio, <code>display: block</code> renderà un elemento come blocco.
       </li>
       <li>
-        <b>top, bottom, left, right</b>: Imposta la posizione assoluta
-        dell'elemento.
+        <code>float</code>: Posiziona un elemento a sinistra o a destra del
+        contenuto. Ad esempio, <code>float: left</code> sposterà un elemento a
+        sinistra.
       </li>
       <li>
-        <b>float</b>: Allinea l'elemento a sinistra o a destra rispetto al suo
-        contenitore.
+        <code>position</code>: Specifica il tipo di posizionamento per un
+        elemento. Ad esempio, <code>position: relative</code> posizionerà un
+        elemento in relazione alla sua posizione originale.
+      </li>
+      <li>
+        <code>top</code>, <code>right</code>, <code>bottom</code>,
+        <code>left</code>: Specifica la posizione di un elemento posizionato. Ad
+        esempio, <code>top: 50px</code> sposterà un elemento di 50 pixel
+        dall'alto.
+      </li>
+      <li>
+        <code>z-index</code>: Specifica lo stacking order degli elementi
+        posizionati. Ad esempio, <code>z-index: 1</code> metterà un elemento
+        sopra gli altri con uno z-index inferiore.
       </li>
     </ul>
 
-    <h3>6. Proprietà di visualizzazione:</h3>
-
+    <h2>3. Dimensioni e spaziatura:</h2>
     <ul>
       <li>
-        <b> display</b>: Specifica il tipo di visualizzazione dell'elemento
-        (block, inline, inline-block, none, ecc.).
+        <code>width</code>, <code>min-width</code>, <code>max-width</code>:
+        Specifica la larghezza di un elemento.
       </li>
-      <li><b>visibility</b>: Imposta se un elemento è visibile o nascosto.</li>
+      <li>
+        <code>height</code>, <code>min-height</code>, <code>max-height</code>:
+        Specifica l'altezza di un elemento.
+      </li>
+      <li><code>margin</code>: Specifica il margine esterno di un elemento.</li>
+      <li>
+        <code>padding</code>: Specifica il padding interno di un elemento.
+      </li>
+      <li><code>border</code>: Specifica il bordo di un elemento.</li>
     </ul>
 
-    <h3>7. Proprietà di animazione e transizione:</h3>
+    <h2>4. Colori e sfondi:</h2>
+    <ul>
+      <li><code>color</code>: Specifica il colore del testo.</li>
+      <li>
+        <code>background-color</code>: Specifica il colore di sfondo di un
+        elemento.
+      </li>
+      <li><code>opacity</code>: Specifica l'opacità di un elemento.</li>
+    </ul>
+
+    <h2>5. Testo:</h2>
     <ul>
       <li>
-        <b>transition</b>: Specifica le proprietà che devono essere animate e la
-        durata dell'animazione.
+        <code>font-family</code>: Specifica il tipo di carattere del testo.
       </li>
       <li>
-        <b>animation</b>: Definisce una sequenza di cambiamenti di stile che
-        devono essere applicati a un elemento nel tempo.
+        <code>font-size</code>: Specifica la dimensione del carattere del testo.
+      </li>
+      <li>
+        <code>font-weight</code>: Specifica lo spessore del carattere del testo.
+      </li>
+      <li><code>text-align</code>: Specifica l'allineamento del testo.</li>
+      <li>
+        <code>text-decoration</code>: Specifica la decorazione del testo
+        (sottolineato, barrato, etc.).
+      </li>
+    </ul>
+
+    <h2>6. Effetti visivi:</h2>
+    <ul>
+      <li><code>box-shadow</code>: Aggiunge un'ombra a un elemento.</li>
+      <li>
+        <code>transition</code>: Specifica una transizione per le proprietà CSS.
+      </li>
+      <li>
+        <code>transform</code>: Applica una trasformazione 2D o 3D a un
+        elemento.
+      </li>
+      <li><code>animation</code>: Specifica un'animazione per un elemento.</li>
+    </ul>
+
+    <h2>7. Pseudoclassi e pseudoelementi:</h2>
+    <ul>
+      <li>
+        <code>:hover</code>, <code>:active</code>, <code>:focus</code>:
+        Pseudoclassi per gli stati di interazione.
+      </li>
+      <li>
+        <code>::before</code>, <code>::after</code>: Pseudoelementi per
+        aggiungere contenuto prima o dopo un elemento.
       </li>
     </ul>
   </body>
 </html>
+``` Questo codice HTML rappresenta la lista dei comandi CSS fornita nel tuo
+testo, con una struttura organizzata per rendere più chiaro il contenuto.
