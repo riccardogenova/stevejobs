@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Proprietà e Selettori</title>
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+      }
+      th {
+        background-color: #f2f2f2;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Proprietà e Selettori</h1>
+
+    <h2>Selettori</h2>
+    <table>
+      <tr>
+        <th>Comando</th>
+        <th>Descrizione</th>
+      </tr>
+      <tr>
+        <td><code>selector</code></td>
+        <td>
+          Seleziona gli elementi HTML a cui applicare gli stili. Le proprietà e
+          i valori definiscono lo stile degli elementi selezionati.
+        </td>
+      </tr>
+      <tr>
+        <td><code>@media (query)</code></td>
+        <td>
+          Definisce stili da applicare solo in base a determinate condizioni,
+          come la dimensione dello schermo del dispositivo o l'orientamento.
+        </td>
+      </tr>
+      <tr>
+        <td><code>#id</code></td>
+        <td>Seleziona l'elemento HTML con l'ID specificato.</td>
+      </tr>
+      <tr>
+        <td><code>.class</code></td>
+        <td>Seleziona tutti gli elementi HTML con la classe specificata.</td>
+      </tr>
+      <tr>
+        <td><code>element:hover</code></td>
+        <td>Seleziona un elemento HTML quando il mouse è sopra di esso.</td>
+      </tr>
+      <tr>
+        <td><code>element:focus</code></td>
+        <td>Seleziona un elemento HTML quando ha lo focus.</td>
+      </tr>
+      <tr>
+        <td><code>element:active</code></td>
+        <td>
+          Seleziona un elemento HTML quando è attivo (ad esempio, quando viene
+          cliccato).
+        </td>
+      </tr>
+      <tr>
+        <td><code>*</code></td>
+        <td>Seleziona tutti gli elementi HTML nella pagina.</td>
+      </tr>
+    </table>
+
+    <h2>Proprietà di Testo</h2>
+    <ul>
+      <li><code>color</code>: Imposta il colore del testo di un elemento.</li>
+      <li>
+        <code>font-family</code>: Imposta il tipo di carattere del testo di un
+        elemento.
+      </li>
+      <li>
+        <code>font-size</code>: Imposta la dimensione del carattere del testo di
+        un elemento.
+      </li>
+      <li>
+        <code>font-weight</code>: Imposta il grassetto o la normalità del testo
+        di un elemento.
+      </li>
+    </ul>
+
+    <h2>Proprietà di Sfondo</h2>
+    <ul>
+      <li>
+        <code>background-color</code>: Imposta il colore di sfondo di un
+        elemento.
+      </li>
+      <li>
+        <code>background-image</code>: Imposta un'immagine di sfondo per un
+        elemento.
+      </li>
+    </ul>
+
+    <h2>Proprietà di Bordo e Spaziatura</h2>
+    <ul>
+      <li><code>border</code>: Imposta un bordo intorno a un elemento.</li>
+      <li>
+        <code>padding</code>: Aggiunge spazio vuoto tra il bordo e il contenuto
+        di un elemento.
+      </li>
+      <li><code>margin</code>: Aggiunge spazio vuoto intorno a un elemento.</li>
+    </ul>
+
+    <h2>Proprietà di Dimensioni e Posizionamento</h2>
+    <ul>
+      <li><code>width</code>: Imposta la larghezza di un elemento.</li>
+      <li><code>height</code>: Imposta l'altezza di un elemento.</li>
+      <li>
+        <code>display</code>: Imposta come viene visualizzato un elemento (ad
+        esempio, come blocco o in linea).
+      </li>
+      <li>
+        <code>position</code>: Imposta la posizione di un elemento (ad esempio,
+        statico, relativo o assoluto).
+      </li>
+      <li>
+        <code>top</code>: Imposta la posizione superiore di un elemento
+        posizionato.
+      </li>
+      <li>
+        <code>left</code>: Imposta la posizione sinistra di un elemento
+        posizionato.
+      </li>
+      <li>
+        <code>right</code>: Imposta la posizione destra di un elemento
+        posizionato.
+      </li>
+      <li>
+        <code>bottom</code>: Imposta la posizione inferiore di un elemento
+        posizionato.
+      </li>
+      <li>
+        <code>z-index</code>: Imposta l'ordine di sovrapposizione degli
+        elementi.
+      </li>
+    </ul>
+
+    <h2>Layout</h2>
+    <ul>
+      <li>
+        <code>flex</code>: Definisce le proprietà di layout Flexbox per un
+        elemento.
+      </li>
+      <li>
+        <code>grid</code>: Definisce le proprietà di layout Grid per un
+        elemento.
+      </li>
+    </ul>
+
+    <h2>Animazione e Transizioni</h2>
+    <ul>
+      <li><code>animation</code>: Definisce un'animazione per un elemento.</li>
+      <li>
+        <code>transition</code>: Definisce una transizione per un elemento.
+      </li>
+    </ul>
+
+    <h2>Trasformazioni</h2>
+    <ul>
+      <li>
+        <code>transform</code>: Trasforma un elemento (ad esempio, ruotandolo,
+        ridimensionandolo o distorcendolo).
+      </li>
+    </ul>
+
+    <h2>Gradienti e Ombre</h2>
+    <ul>
+      <li>
+        <code>gradient</code>: Crea un gradiente di colore per uno sfondo o un
+        bordo.
+      </li>
+      <li><code>box-shadow</code>: Crea un'ombra per un elemento.</li>
+    </ul>
+
+    <h2>Altri Comandi</h2>
+    <ul>
+      <li>
+        <code>list-style</code>: Formatta gli elementi di una lista HTML
+        (marker, posizione, stile testo).
+      </li>
+      <li>
+        <code>visibility</code>: Controlla la visibilità di un elemento
+        (visibile, nascosto, collassato).
+      </li>
+      <li>
+        <code>opacity</code>: Imposta la trasparenza di un elemento (da 0
+        completamente trasparente a 1 completamente opaco).
+      </li>
+      <li>
+        <code>text-decoration</code>: Aggiunge decorazioni di testo
+        (sottolineatura, sovralineatura, line-through).
+      </li>
+      <li>
+        <code>overflow</code>: Specifica come gestire il contenuto che supera le
+        dimensioni dell'elemento (visibile, nascosto, scroll, automatico).
+      </li>
+      <li>
+        <code>cursor</code>: Cambia l'aspetto del cursore del mouse su un
+        elemento (default, cursore a freccia, testo, attesa, spostamento, aiuto,
+        mirino, ...).
+      </li>
+      <li>
+        <code>counter-increment</code>: Incrementa un contatore associato a un
+        elemento (specificando nome e valore opzionale).
+      </li>
+      <li>
+        <code>counter-reset</code>: Imposta il valore iniziale di un contatore
+        associato a un elemento (specificando nome e valore iniziale).
+      </li>
+    </ul>
+  </body>
+</html>
