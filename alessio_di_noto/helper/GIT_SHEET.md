@@ -53,37 +53,6 @@
 
     - **_Creare nuovi branch_**: Puoi anche creare un nuovo ramo e spostarti su di esso contemporaneamente utilizzando `git checkout -b nuovo-ramo`. Questo comando crea un nuovo ramo e commuta su di esso in una sola operazione.
 
-    - **_Cancellare un branch_**: Per eliminare un branch su Git usando il comando `checkout`, puoi seguire questa procedura:
-
-      1. Assicurati di essere nel branch giusto. Se stai cercando di eliminare un branch, è meglio essere in un altro branch per evitare conflitti.
-
-         - git checkout altro-branch
-
-      2. Una volta che sei nel branch giusto, puoi eliminare il branch desiderato utilizzando `-d` o `-D` con il comando `checkout`. La differenza tra i due è che `-d` elimina solo i branch che sono stati completamente uniti nel branch attuale, mentre `-D` elimina il branch indipendentemente dal suo stato.
-
-         - Utilizzando `-d`:
-
-           git checkout -d nome-branch
-
-         - Utilizzando `-D`:
-
-           git checkout -D nome-branch
-
-      Assicurati di sostituire `nome-branch` con il nome effettivo del branch che desideri eliminare.
-      Ad esempio, se vuoi eliminare un branch chiamato "feature-xyz", puoi eseguire:
-
-      - git checkout master
-
-      **Assicurati di essere in un altro branch prima di eliminare "feature-xyz"**
-
-      - git checkout -d feature-xyz
-
-      oppure
-
-      - git checkout -D feature-xyz
-
-      Tieni presente che eliminare un branch è una modifica permanente, quindi assicurati di essere sicuro prima di eseguire questo comando.
-
 - mv: Sposta o rinomina un file, una directory o un symlink.
   Esempio: `git mv vecchio_nome nuovo_nome`
 
