@@ -75,4 +75,11 @@ Per eliminare emergency_fix (ora che master ha tutte le modifiche di emergency_f
 `git remote add <nome (default = origin)> <url>` (aggiungi link tra GitHub e Git locale)
 `git push <nome_remote> <nome_locale>` (aggiorna i GitHub commit con i commit locali)
 
+`git pull <--opzioni> <repository>` (aggiorna i commit remoti (github) con i commit in locale (git))
+
 `git clone <link>` (copia repo da remote in locale)
+
+---
+
+`git reset .` (annulla lo staging delle modifiche)
+`git stash` (mette da parte le modifiche non messe in stage - NON ACCETTA FILE NUOVI, SOLO MODIFICATI)
