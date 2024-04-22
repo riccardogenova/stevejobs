@@ -1,11 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>MARKDOWN LEANGUAGE</title>
-    <h1>MARKDOWN LEANGUAGE</h1>
+    <title>Web Front end: MARKDOWN LEANGUAGE</title>
   </head>
   <body>
-    <h2>Cos'è</h2>
+    <header>
+      <h1>MARKDOWN</h1>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Indice Principale</a></li>
+          <li><a href="./markdown_sheet.html">Markdown comandi</a></li>
+          <li><a href="#sezione1">Cos'è</a></li>
+          <li><a href="#sezione2">Sintassi</a></li>
+          <li><a href="#sezione3">Esempio di Testo</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h2 id="sezione1">Cos'è</h2>
     <p>
       Il linguaggio <b>Markdown</b> è un linguaggio di <i>markup</i>, ovvero che
       utilizza degli operatori, o <b>marcatori</b>, che ne deliniano la
@@ -17,31 +28,42 @@
       <b>Github</b>.
     </p>
 
-    <h2>Sintassi</h2>
-    <p>Come già detto, Markdown utilizza dei marcatori per formattare il testo. Per ogni tipo formattazione, esiste quindi uno specifico marcatore:<br>
-        <ul>
-            <li>INTESTAZIONE(TITOLO), "#"--> # ESEMPIO #.</li> 
-            <ul><li>(Aumentando il numero di #, diminuirà la dimensione dell'intestazione)</li></ul>
-        
-            <li>GRASSETTO, "**" --> **ESEMPIO**</li>
-        
-            <li> CORSIVO, "*" --> *ESEMPIO*</li>
-        </ul>
-    </p>
-    <h2>Esempio di testo<br></h2>
+    <h2 id="sezione2">Sintassi</h2>
     <p>
-        # Titolo Principale<br>
+      Come già detto, Markdown utilizza dei marcatori per formattare il testo.
+      Per ogni tipo formattazione, esiste quindi uno specifico marcatore:
+    </p>
+    <ul>
+      <li>INTESTAZIONE(TITOLO), "#"--> # ESEMPIO #.</li>
+      <ul>
+        <li>
+          (Aumentando il numero di #, diminuirà la dimensione dell'intestazione)
+        </li>
+      </ul>
+      <br />
 
-        Questo è un paragrafo di testo normale. **Questo testo è in grassetto** e *questo è in corsivo*.<br>
-        
-        ## Sottotitolo<br>
-        
-        - Questo è un elenco puntato.<br>
-        - Secondo elemento dell'elenco.<br>
-        
-        [Questo è un link](https://www.example.com)<br>
-        
-        ![Immagine](https://www.example.com/image.jpg)<br>
+      <li>GRASSETTO, "**" --> **ESEMPIO**</li>
+      <br />
+
+      <li>CORSIVO, "*" --> *ESEMPIO*</li>
+      <br />
+    </ul>
+
+    <h2 id="sezione3">Esempio di testo<br /></h2>
+    <p>
+      # Titolo Principale<br />
+
+      Questo è un paragrafo di testo normale. **Questo testo è in grassetto** e
+      *questo è in corsivo*.<br />
+
+      ## Sottotitolo<br />
+
+      - Questo è un elenco puntato.<br />
+      - Secondo elemento dell'elenco.<br />
+
+      [Questo è un link](https://www.example.com)<br />
+
+      ![Immagine](https://www.example.com/image.jpg)<br />
     </p>
   </body>
 </html>
