@@ -11,6 +11,8 @@
 
 ---
 
+## Inizializzazione repo e staging
+
 `git init` (inizializza git nella directory in cui sei entrato, creando una ==repository==)
 
 `git status` (mostra lo status della cartella e della repo)
@@ -25,6 +27,8 @@ Staging environment: processo dove i file vengono messi nella repo tramite ==com
 
 ---
 
+## Commit
+
 `git commit -m "Message 1: first release"` (commit: finalizza la modifica alla repo, ==-m== serve per aggiungere messaggi)
 
 Per skippare lo stage (in caso di piccole modifiche):
@@ -34,10 +38,14 @@ Per skippare lo stage (in caso di piccole modifiche):
 
 ---
 
+## Help
+
 `git command -help` (vedi tutte le opzioni per quel comando in particolare)
 `git help --all` (vedi tutti i comandi possibili)
 
 ---
+
+## Branch
 
 La ==branch== è una versione nuova/separata della main repository.
 
@@ -55,6 +63,8 @@ In caso si deve creare velocemente una branch in caso di emergenza:
 
 ---
 
+## Merge
+
 Per fare il ==merge== di due branches:
 `git checkout master` (ritorna alla branch principale)
 `git merge emergency-fix` (merge - fast forward, visto che emergency_fix deriva da master e master non è stata modificata)
@@ -64,13 +74,20 @@ Per eliminare emergency_fix (ora che master ha tutte le modifiche di emergency_f
 
 ---
 
+## Annullamento staging files
+
 `git rm --cached <nome_file>` (rimuove file dallo staging)
+
+`git reset .` (annulla lo staging delle modifiche)
+`git stash` (mette da parte le modifiche non messe in stage - NON ACCETTA FILE NUOVI, SOLO MODIFICATI)
 
 ---
 
 `git reset <hash_del_commit>` (resetta la repo alla versione del commit inserito nel comando)
 
 ---
+
+## Remote repos
 
 `git remote add <nome (default = origin)> <url>` (aggiungi link tra GitHub e Git locale)
 `git push <nome_remote> <nome_locale>` (aggiorna i GitHub commit con i commit locali)
@@ -80,6 +97,3 @@ Per eliminare emergency_fix (ora che master ha tutte le modifiche di emergency_f
 `git clone <link>` (copia repo da remote in locale)
 
 ---
-
-`git reset .` (annulla lo staging delle modifiche)
-`git stash` (mette da parte le modifiche non messe in stage - NON ACCETTA FILE NUOVI, SOLO MODIFICATI)
