@@ -1,4 +1,4 @@
-# Markdown Comandi
+# Markdown SHEET
 
 Comandi divisi per categoria:
 
@@ -26,17 +26,17 @@ Le **intestazioni** sono utilizzate per creare titoli o sottotitoli all'interno 
 
 ### Grassetto e Corsivo
 
-Per scrivere testo in **grassetto**, o due trattini bassi __.
+Per scrivere testo in **grassetto**, o due trattini bassi \_\_.
 
 - `**Questo è testo in grassetto**`
 
-Per scrivere testo in **corsivo**, o un singolo trattino basso _.
+Per scrivere testo in **corsivo**, o un singolo trattino basso \_.
 
 - `*Questo è testo in corsivo*`
 
 ### Elenco puntato
 
-Per creare un **elenco puntato** puoi utilizzare uno degli asterischi *, dei trattini -, o dei segni più +, seguito da uno spazio e il testo dell'elemento dell'elenco.
+Per creare un **elenco puntato** puoi utilizzare uno degli asterischi \*, dei trattini -, o dei segni più +, seguito da uno spazio e il testo dell'elemento dell'elenco.
 
 - `* Elemento 1`
 - `* Elemento 2`
@@ -72,19 +72,19 @@ Puoi creare citazioni utilizzando il simbolo `>` seguito dal testo della citazio
 
 Per creare una tabella, utilizza la seguente sintassi:
 
->| Header 1 | Header 2 | Header 3 | \
-|----------|----------|----------| \
-| Riga 1   | Dato A   | Dato X   | \
-| Riga 2   | Dato B   | Dato Y   | \
-| Riga 3   | Dato C   | Dato Z   |
+> | Header 1 | Header 2 | Header 3 | \
+> |----------|----------|----------| \
+> | Riga 1 | Dato A | Dato X | \
+> | Riga 2 | Dato B | Dato Y | \
+> | Riga 3 | Dato C | Dato Z |
 
 Per specificare l'allineamento delle colonne aggiungendo dei due punti `:` nella riga di formato.
 
-> | Nome    | Cognome | Età | \
-|:--------|:-------:|----:| \
-| Marco   | Rossi   | 25  | \
-| Laura   | Bianchi | 30  | \
-| Giovanni| Verdi   | 40  |
+> | Nome | Cognome | Età | \
+> |:--------|:-------:|----:| \
+> | Marco | Rossi | 25 | \
+> | Laura | Bianchi | 30 | \
+> | Giovanni| Verdi | 40 |
 
 ## Tabulazione
 
@@ -92,13 +92,13 @@ Per specificare l'allineamento delle colonne aggiungendo dei due punti `:` nella
 
 Per creare un elenco annidato, basta indentare gli elementi dell'elenco interni rispetto a quelli esterni utilizzando spazi.
 
->- Elemento principale
+> - Elemento principale
 >   - Sotto elemento 1
 >   - Sotto elemento 2
 >     - Sotto-sotto elemento A
 >     - Sotto-sotto elemento B
 >   - Sotto elemento 3
->- Altro elemento principale
+> - Altro elemento principale
 
 ### Linea separatrice
 
@@ -112,12 +112,12 @@ Per creare una linea separatrice, puoi utilizzare tre o più dei seguenti caratt
 
 Per creare un blocco di citazione con indentazione:
 
->`> ```css`\
-`> p {`\
-`>    color: blue;`\
-`>    font-size: 14px;`\
-`> }`\
-`> ``` `
+> ` > ```css `\
+> `> p {`\
+> `>    color: blue;`\
+> `>    font-size: 14px;`\
+> `> }`\
+> ` > ```  `
 
 ### Escape citazione
 

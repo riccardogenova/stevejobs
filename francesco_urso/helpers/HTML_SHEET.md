@@ -1,4 +1,4 @@
-# HTML Comandi
+# HTML SHEET
 
 Comandi divisi per tipologia:
 
@@ -39,6 +39,7 @@ Comandi divisi per tipologia:
 - `<sub>`: Definisce il testo come esponente, posizionandolo leggermente più in basso della linea di base. Spesso utilizzato per indicare pedici.
 - `<sup>`: Definisce il testo come apice, posizionandolo leggermente più in alto della linea di base. Spesso utilizzato per indicare numeri ordinali o esponenti.
 - Il testo è racchiuso all'interno di un paragrafo `<p>`. I caratteri `<` e `>` all'interno del testo sono sostituiti con `&lt;` e `&gt;` rispettivamente per evitare che vengano interpretati come tag HTML.
+- `&amp;amp;` in HTML puoi utilizzare la sequenza di escape `&amp;amp;`. In questo modo, il browser interpreterà `&amp;amp;` come `&amp;` e non come un'entità HTML.
 
 ## Liste
 
