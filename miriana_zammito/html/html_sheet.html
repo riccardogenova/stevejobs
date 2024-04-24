@@ -1,75 +1,141 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>html_sheet</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
-</head>
-<body>
-<h1>COMANDI HTML</h1> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <a href="./../index.html">
+          <h3>
+            <li>Index</li>
+          </h3>
+        </a>
+        <a href="./git.html">
+          <h3>
+            <li>GIT</li>
+          </h3>
+        </a>
+        <a href="./markdown.html">
+          <h3>
+            <li>Markdown</li>
+          </h3>
+        </a>
+        <a href="./html.html">
+          <h3>
+            <li>HTML</li>
+          </h3>
+        </a>
 
-<h2>TITOLI</h2> 
+        <a href="./git_sheet.html">
+          <h3>
+            <li>GIT_Sheet</li>
+          </h3>
+        </a>
+        <a href="./markdown_sheet.html">
+          <h3>
+            <li>Markdown Sheet</li>
+          </h3>
+        </a>
+        <a href="./html_sheet.html">
+          <h3>
+            <li>HTML_Sheet</li>
+          </h3>
+        </a>
+      </ul>
+    </nav>
+    <h1>COMANDI HTML</h1>
 
-<h1>Titolo di livello 1</h1>
-<h2>Titolo di livello 2</h2>
-<h3>Titolo di livello 3</h3>
-<h4>Titolo di livello 4</h4>
-<h5>Titolo di livello 5</h5>
-<h6>Titolo di livello 6</h6>
+    <h2>TITOLI</h2>
 
-<!-- **************************************************** -->
+    <h1>Titolo di livello 1</h1>
+    <h2>Titolo di livello 2</h2>
+    <h3>Titolo di livello 3</h3>
+    <h4>Titolo di livello 4</h4>
+    <h5>Titolo di livello 5</h5>
+    <h6>Titolo di livello 6</h6>
 
-<h2>PARAGRAFO</h2> 
+    <!-- **************************************************** -->
 
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-Velit dolores commodi ipsa sunt. Veniam molestias eius exercitationem
-iste deleniti illo rerum minima qui excepturi saepe delectus quod, 
-olore nisi quae.</p>
+    <h2>PARAGRAFO</h2>
 
-<!-- **************************************************** -->
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit <br />
+      commodi ipsa sunt. Veniam molestias eius exercitationem iste deleniti illo
+      <br />
+      rerum minima qui excepturi saepe delectus quod, olore nisi quae. <br />
+    </p>
 
-<h2>FORMATTAZIONE DEL TESTO</h2> 
+    <!-- **************************************************** -->
 
-<span>
-<ul>
-<li><b>Grassetto</b></li></br>
-<li><em>Corsivo</em></li></br>
-</ul>
-</span>
+    <h2>FORMATTAZIONE DEL TESTO</h2>
 
-<!-- **************************************************** -->
+    <span>
+      <ul>
+        <li>
+          <b>Grassetto</b>: <code>&lt;b&gt;</code> testo
+          <code>&lt;/b&gt;</code> oppure <code>&lt;strong&gt;</code> testo
+          <code>&lt;/strong&gt;</code>
+        </li>
+        <li>
+          <em>Corsivo</em>: <code>&lt;i&gt;</code> testo
+          <code>&lt;/i&gt;</code> oppure <code>&lt;em&gt;</code> testo
+          <code>&lt;/em&gt;</code>
+        </li>
+        <li>
+          <u>Testo sottolineato</u>: <code>&lt;u&gt;</code> testo
+          <code>&lt;/u&gt;</code>
+        </li>
+        <li>
+          <del>Testo barrato</del>: <code>&lt;del&gt;</code> testo
+          <code>&lt;/del&gt;</code>
+        </li>
+      </ul>
+    </span>
 
-<h2>LINK ED IMMAGINI</h2> 
+    <!-- **************************************************** -->
 
-<h3>Link ipertestuali: `<a href = URL> nome del link </a>`</h3>
-<h3>Immagini: </h3></body></br> 
-<img src="URL_dell_immagine" alt="Testo alternativo"></h3>
-  
-<!-- **************************************************** -->
+    <h2>LINK ED IMMAGINI</h2>
 
-<h2>TABELLE</h2> 
+    <h3>Link ipertestuali: `<a href="URL"> nome del link </a>`</h3>
+    <h3>Immagini:</h3>
+    <img src="URL_dell_immagine" alt="Testo alternativo" />
 
- <table border = "1"> <!-- il border aggiunge bordino alla tabella -->
-  <tr> <!-- inizio della prima riga -->
-  <th> CELLA 1 </th> <!-- aggiunge intestazione della tabella -->
-  <th> CELLA 2 </th>
-  <th> CELLA 3 </th>
-  </tr> <!-- fine della prima riga -->
+    <!-- **************************************************** -->
 
-  <tr> <!-- inizio seconda riga -->
-  <td> CELLA 4  </td> <!-- creazione cella dati -->
-  <td> CELLA 5 </td>
-  <td> CELLA 6 </td>
-  
-  </tr> <!-- fine seconda riga -->
-</table>
+    <h2>TABELLE</h2>
 
-<!--Usa rowspan e colspan per raggruppare o espandere celle.-->
+    <table border="1">
+      <!-- il border aggiunge bordino alla tabella -->
+      <tr>
+        <!-- inizio della prima riga -->
+        <th>CELLA 1</th>
+        <!-- aggiunge intestazione della tabella -->
+        <th>CELLA 2</th>
+        <th>CELLA 3</th>
+      </tr>
+      <!-- fine della prima riga -->
 
-<!-- **************************************************** -->
+      <tr>
+        <!-- inizio seconda riga -->
+        <td>CELLA 4</td>
+        <!-- creazione cella dati -->
+        <td>CELLA 5</td>
+        <td>CELLA 6</td>
+      </tr>
+      <!-- fine seconda riga -->
+    </table>
 
-</body>
+    <!--Usa rowspan e colspan per raggruppare o espandere celle.-->
+
+    <!-- **************************************************** -->
+
+    <footer>
+      <!-- Il footer della pagina va qui -->
+      <p>© 2024 Miriana Zammito</p>
+    </footer>
+  </body>
 </html>
