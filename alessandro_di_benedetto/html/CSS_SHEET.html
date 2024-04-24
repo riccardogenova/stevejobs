@@ -117,5 +117,98 @@
     <code> grid-row: 2 / span 3;<br /> </code>
     <strong>Grid Gap</strong><br />
     <code> grid-gap: 10px;<br /> </code>
+
+    <h1>SELETTORI</h1>
+    <strong>SELETTORE BASE</strong>
+    <p>
+      I selettori indicano a quali elementi in una pagina html la regola verrà
+      applicata, le proprietà e i relativi valori si curano della presentazione
+      di tali elementi.
+    </p>
+    <code
+      ><br />selettore<br />
+      {<br />
+      proprietà:valore;<br />
+      proprietà: valore;<br />
+      proprietà: valore;<br />
+      }</code
+    ><br />
+    <strong>SELETTORE DI RAGGRIUPPAMENTO</strong><br />
+    <p>
+      È molto utile e di uso comune assegnare una regola a più selettori senza
+      dover replicare il codice css che la riguarda. Basta riportare, prima
+      della graffa aperta, tutti i selettori coinvolti separati da una virgola.
+      Esempio:
+    </p>
+    <code
+      >selettore1, selettore2, selettore3 {<br />
+      proprietà: valore;<br />
+      proprietà: valore;<br />
+      proprietà: valore;<br />
+      }</code
+    ><br />
+    <strong>SELETTORE UNIVERSALE</strong>
+    <p>
+      Le regole specificate attraverso il selettore universale verranno
+      applicate a tutti gli elementi, o ad una sottocategoria specifica ottenuta
+      combinando altri selettori.
+    </p>
+    <code
+      >* {<br />
+      color: green;<br />
+      }<br />
+    </code>
+    <strong>CLASS SELECTOR</strong>
+    <p>
+      E' possibile assegnare mediante html e in particolare tramite l' attributo
+      class una o più classi ad un dato elemento. Vediamo come:
+    </p>
+    <code
+      >.warning{<br />
+      color: red<br />
+      }<br
+    /></code>
+    <strong>ID SELECTOR</strong>
+    <p>
+      I selettori di ID permettono di assegnare una regola css ad un unico
+      elemento nella pagina html che è specificato attraverso l' attributo id.
+    </p>
+    <code
+      >#menu{<br />
+      /*proprietà e valori*/<br />
+      }<br
+    /></code>
+    <strong>CHILD SELECTOR</strong>
+    <p>
+      Il selettore dei figli serve per selezionare gli elementi figli diretti di
+      un genitore.
+    </p>
+    <code
+      >p > span {<br />
+      color: red;<br />
+      }<br
+    /></code>
+    <strong>ADJACENT SIBLING SELECTOR</strong>
+    <p>
+      Il selettore fratelli permette di selezionare un elemento (a destra del
+      simbolo +) posto immediatamente dopo un altro (a sinistra del simbolo +).
+    </p>
+    <code
+      >p + p { <br />
+      font-weight: bold; <br />
+      }<br
+    /></code>
+    <strong>GENEREAL SIBLING SELECTOR</strong>
+    <p>
+      Il selettore generale dei fratelli è molto simile al selettore dei
+      fratelli che abbiamo appena visto. La differenza è che l’elemento
+      selezionato non deve necessariamente essere immediatamente successivo al
+      primo elemento, ma può apparire ovunque dopo di esso.
+    </p>
+    <code
+      >p ~ p { <br />
+      font-weight: bold; <br />
+      }<br
+    /></code>
   </body>
 </html>
