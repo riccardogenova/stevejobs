@@ -1,4 +1,4 @@
-# CSS
+# CSS SHEET
 
 ## Selettori CSS
 
@@ -8,25 +8,25 @@
 
 **Elemento**: Seleziona tutti gli elementi di un determinato tipo.
 
->p { color: blue; }
+> p { color: blue; }
 
 ### Selettori di Classe
 
 **.classe**: Seleziona tutti gli elementi che hanno un certo valore di classe.
 
->.test { font-size: 16px; }
+> .test { font-size: 16px; }
 
 ### Selettori di ID
 
 **#id**: Seleziona un elemento con un determinato ID.
 
->#header { background-color: #333; }
+> #header { background-color: #333; }
 
 ### Selettori di Figlio
 
 **elemento figlio**: Seleziona tutti gli elementi figlio di un determinato elemento.
 
->ul li { list-style-type: square; }
+> ul li { list-style-type: square; }
 
 ## Proprietà CSS
 
