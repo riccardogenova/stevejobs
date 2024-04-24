@@ -1,0 +1,23 @@
+body {
+  text-align: center;
+  justify-content: center;
+  font-family: monospace;
+}
+
+nav {
+  display: flex;
+}
+
+nav ul {
+  display: flex; /* Applica flex al <ul> */
+  flex: 1;
+  justify-content: space-between;
+  list-style: none; /* Rimuovi i punti elenco predefiniti */
+  padding: 20px; /* Rimuovi il padding predefinito */
+}
+
+nav ul li {
+  margin-right: 20px; /* Aggiungi spazio tra gli elementi del menu */
+  padding: 20; /* Rimuovi il padding predefinito */
+  justify-content: space-between;
+}
