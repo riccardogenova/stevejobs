@@ -49,3 +49,25 @@ Selettore universale (sceglie tutti gli elementi nell'HTML)
 `* {...}`
 
 ---
+
+## UNITA DI MISURA
+
+px = pixel
+vh = viewport helper (100% viewport (finestra))
+
+---
+
+## Testo:
+
+text_align: center/left/right/etc.
+font_size: 10px
+font_style: nome_font
+
+---
+
+## Margini/padding/posizionamento DIV
+
+display: flex;
+
+padding:
+margin:
