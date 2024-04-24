@@ -95,3 +95,5 @@
 ^ Lista con descrizioni
 
 ---
+
+`<section> </section>` - Sezione documento
