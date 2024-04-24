@@ -1,0 +1,51 @@
+h1 {
+  text-align: center;
+  padding: 50px;
+  font-size: 50px;
+  color: aliceblue;
+  font-family: fantasy;
+  font-family: fantasy;
+}
+.index {
+  display: flex;
+}
+.menudestra {
+  display: flex;
+  flex-direction: column;
+  padding-right: 100px;
+}
+.menusinistra {
+  display: flex;
+  flex-direction: column;
+  padding-left: 850px;
+}
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+}
+body {
+  height: 100vh;
+  background-color: darkblue;
+}
+a {
+  text-decoration: none;
+  font-family: fantasy;
+}
+p {
+  font-size: 18px;
+  background-color: #ff6666;
+  color: #3333cc;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #ff3333;
+  border-radius: 5px;
+  font-family: fantasy;
+  text-align: center;
+}
