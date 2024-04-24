@@ -1,0 +1,36 @@
+h1 {
+  color: red;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.column {
+  list-style: none;
+  text-align: center;
+}
+
+h3 {
+  display: flex;
+  justify-content: space-evenly;
+  text-decoration: none;
+  list-style: none;
+}
+
+#link_github {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+li {
+  list-style: none;
+}
