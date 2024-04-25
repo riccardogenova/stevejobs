@@ -128,7 +128,35 @@
           <li>
             <code>display</code>: Specifica il tipo di display per un elemento.
             Ad esempio, <code>display: block</code> renderà un elemento come
-            blocco.
+            blocco. Oppure il comando <code>display: flex</code> crea un Flex
+            Container l'elemento a cui viene applicata la regola display: flex;
+            diventa un "flex container". Questo significa che gli elementi
+            figlio diretti di questo elemento verranno trattati come "flex
+            items".
+
+            <ul>
+              <li>
+                Imposta la Direzione Predefinita: Per impostazione predefinita,
+                un flex container organizza i suoi flex items in una riga (da
+                sinistra a destra) se l'attributo flex-direction non viene
+                specificato. Puoi modificare la direzione del layout impostando
+                la proprietà <b>flex-direction</b> sul flex container.
+              </li>
+              <li>
+                Imposta la Dimensione dei Flex Items: Gli elementi figlio
+                diretti dell'elemento con display: flex; vengono considerati
+                "flex items" e verranno posizionati all'interno del flex
+                container. La dimensione dei flex items può essere controllata
+                utilizzando le proprietà CSS come <b>flex-grow</b>,
+                <b>flex-shrink</b> e <b>flex-basis</b>.
+              </li>
+              <li>
+                Allinea i <b>Flex Items</b>: Puoi controllare l'allineamento
+                degli elementi figlio diretti del flex container utilizzando le
+                proprietà CSS come <b>justify-content</b> per l'asse principale
+                e <b>align-items</b> per l'asse trasversale.
+              </li>
+            </ul>
           </li>
           <li>
             <code>float</code>: Posiziona un elemento a sinistra o a destra del
@@ -168,6 +196,7 @@
           </li>
           <li>
             <code>padding</code>: Specifica il padding interno di un elemento.
+            Ovvero quanto distante dal bordo interno un elemento deve trovarsi
           </li>
           <li><code>border</code>: Specifica il bordo di un elemento.</li>
         </ul>
@@ -229,6 +258,88 @@
             aggiungere contenuto prima o dopo un elemento.
           </li>
         </ul>
+        <div>
+          <h1>Breve guida su come implementare una formattazione CSS</h1>
+          <p>
+            Per creare una pagina CSS esistono vari metodi, un modo "semplice"
+            è, per esempio, quello di creare innanzitutto la pagina HTML,
+            definendo quindi i vari tag ai testi e utilizzare poi il tag
+            <b>&lt;div &gt;</b> alle varie sezioni interessate.
+          </p>
+          <p>
+            Il tag <b>&lt;div &gt;</b>viene utilizzato principalmente per
+            raggruppare e stilizzare altri elementi HTML fornendo una struttura
+            e una formattazione alla pagina (in poche parole raggrupperà i vari
+            elementi della pagina in "blocchi"). All'interno del tag div è poi
+            possibile specificare anche un <b>id</b> o una <b>classe</b>, che
+            renderà più semplice l'applicazione degli elementi css alla pagina
+            richiamando il nome dell'id o della classe.
+          </p>
+          <p>
+            Per fare un esempio, se si ha un testo con menù e si vuole
+            posizionare il menù a sinistra e il testo a destra, si deve
+            innanzitutto racchiudere l'intero body del testo html in un unico
+            blocco usando il tag <b>&lt;div&gt;</b> ,in modo da creare una base
+            per l'applicazione degli stili CSS.
+          </p>
+          <p>
+            Dopo di ciò si racchiudono, con due tag <b>&lt;div &gt;</b> separati
+            tra loro, sia il menù che il testo in modo da avere il menù e il
+            testo in due blocchi separati. Ai tre div creati verranno quindi
+            implementati delle classi/id come ad esempio <i>"documento"</i>,
+            <i>menù</i> e <i>testo</i> :
+          </p>
+
+          <ul>
+            <b>&lt;div class = "documento"&gt;</b>
+          </ul>
+          <p>
+            questo servirà ,come detto sopra, a identificar meglio ad
+            identificare meglio i blocchi per la formattazione css.
+          </p>
+          <p>
+            Fatto ciò verrà aperta la pagina html, appena creata, sul browser
+            cliccando sul file o aprendolo direttamente da visual studio.
+          </p>
+          <p>
+            La pagina non mostrerà nulla di particolare, questo perchè il tag
+            <b>&lt;div &gt;</b> non applica cambiamenti visibili. Per poter
+            modificare e abbellire la pagina usando il CSS, bisogna cliccare col
+            tasto destro sulla pagina e poi su analizza (oppure F12), questo
+            aprirà una finestra per poter agire direttamente sulla pagina html.
+            Andare infine sulla finestra {}Editor Stili (se si è su firefox).
+          </p>
+          <p>
+            In questa sezione sarà possibile implementare a piacimento i vari
+            comandi CSS vedendo direttamente la modifiche alla pagina, per
+            richiamare quindi i vari blocchi da modificare si utilizzeranno gli
+            id o le classi dei vari <b>&lt;div &gt;</b>(per gli ID si utilizzerà
+            il <b>#</b> per le classi il <b>.</b>)
+          </p>
+          <p>
+            Tornando quindi all'esempio di sopra, del menù a sinistra, è utile
+            utilizzare il comando "display : flex" in modo da "trasformare" il
+            blocco div in blocco flex (rendendoli quindi più "flessibili"
+            all'interno della pagina). Ad esempio :
+          </p>
+          <pre>
+            .documento {
+              display: flex;
+            }
+            .navigazione {
+              display: flex;
+              flex-direction: column;
+            }
+          </pre>
+          <p>
+            con il comando <b>flex-direction: column;</b> il menù verrà
+            posizionato a sinistra
+          </p>
+          <p>
+            Sarà poi possibile introdurre altri comandi per aggiundere altri
+            stili/abbellimenti
+          </p>
+        </div>
       </div>
     </div>
   </body>
