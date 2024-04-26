@@ -1,129 +1,130 @@
 <!DOCTYPE html>
 <html lang="it">
   <head>
+    <meta charset="utf-8" />
     <title>Teoria su GIT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h2>Menù navigazione</h2>
-    <p><b>Indice</b></p>
-    <ul>
-      <li><a href="./Index.html">Indice</a></li>
-    </ul>
-
-    <p><b>Lezioni teoriche</b></p>
-    <ul>
-      <li><a href="./CSS.html">Teoria CSS </a></li>
-      <li><a href="./HTML.html">Teoria HTML</a></li>
-      <li><a href="./MARKDOWN.html">Teoria Markdown</a></li>
-    </ul>
-    <p><b>Helpers</b></p>
-    <ul>
-      <li>
-        <a href="./CSS_SHEET.html">Comandi CSS </a>
-      </li>
-      <li><a href="./HTML_SHEET.html">Comandi HTML</a></li>
-      <li><a href="./GIT_SHEET.html">Comandi GIT</a></li>
-      <li><a href="./MARKDOWN_SHEET.html">Comandi Markdown</a></li>
-    </ul>
-    <h1>Cos'è GIT?</h1>
-
-    <p>
-      Git è un progetto open source sviluppato nel 2005 da Linus Torvalds, il
-      famoso creatore del sistema operativo Linux. Git è un esempio di DVCS,
-      <i>Distributed Version Control</i> system, cioè un sistema che permette di
-      controllare attivamente le versioni di sviluppo di un software, rendendoli
-      accessibili e modificabili ai sviluppatori. Nasce inizialmente per
-      facilitare lo sviluppo di Linux per ai giorni d'oggi divenire uno degli
-      strumenti di controllo versioni più diffuso.
-    </p>
-
-    <h2>Versioning</h2>
-
-    <p>
-      Il controllo di versione (versioning) è sostanzialmente un meccanismo
-      attraverso il quale tenere traccia con il passare del tempo delle
-      modifiche apportate ad un progetto; quest'ultimo può essere costituito da
-      un singolo file o da un insieme di file le cui diverse versioni vengono
-      registrate e possono essere richiamate in un momento successivo, anche a
-      grande distanza di tempo, ogni volta che se ne presenti la necessità.
-    </p>
-
-    <h2>Snapshots</h2>
-
-    <p>
-      Nel caso di Git, i dati vengono rappresentati come delle istantanee, o
-      snapshots, quando si memorizza lo stato di un progetto il sistema crea
-      un'immagine di tutti i file al momento corrente; in sostanza Git non fa
-      riferimento alle differenze tra le varie versioni, ma ne "fotografa" gli
-      stati di avanzamento. Il vantaggio a livello di efficienza risulta
-      evidente, questo perché nel caso in cui un file non dovesse subire delle
-      modifiche, il DVCS non provvederà a salvarlo nuovamente ma si limiterà a
-      definire un collegamento con il salvataggio già effettuato.
-    </p>
-
-    <h2>Lavorare Offline</h2>
-
-    <p>
-      Con GIT quasi tutte le operazioni per la memorizzazione si svolgono in
-      locale e a carico di risorse disponibili localmente. La possibilità di
-      lavorare localmente, e quindi offline, rappresenta un vantaggio non
-      indifferente, in mancanza di una connessione si potrà operare su un
-      progetto affrontando tutte le fasi del versioning fatta eccezione di
-      quella dell'upload, che potrà essere completata non appena stabilito un
-      nuovo collegamento.
-    </p>
-
-    <h2>Gestione del flusso di lavoro in Git</h2>
-    <p>
-      Sostanzialmente i file di un progetto in Git possono assumere tra stati
-      differenti:
-    </p>
-
-    <table>
-      <tr>
-        <td><b>Stato</b></td>
-        <td><b>Descrizione</b></td>
-      </tr>
-      <tr>
-        <td>Committati</td>
-        <td>I file sono stati memorizzati localmente nel database.</td>
-      </tr>
-      <tr>
-        <td>Modificati</td>
-        <td>
-          I file hanno subito dei cambiamenti ma non sono stati ancora
-          committati.
-        </td>
-      </tr>
-      <tr>
-        <td>In stage</td>
-        <td>
-          I file sono stati coinvolti da modifiche e verranno inclusi in
-          un'istantanea con la prossima commit.
-        </td>
-      </tr>
-    </table>
-
-    <p>
-      Agli stati elencati corrispondono altrettante sezioni di un progetto
-      gestito tramite Git:
-    </p>
-
-    <ul>
-      <b>Directory di Git</b>
-      : L'area per il salvataggio del database e dei metadati di un progetto,
-      cioè le informazioni copiate in fase di clonazione di un repository.
-    </ul>
-    <ul>
-      <b>Directory di lavoro</b
-      >: La copia di backup (checkout) di una determinata versione di un
-      progetto, per ottenerla si estraggono i file dall'archivio della directory
-      di Git in modo da poterli manipolare dal proprio disco.
-    </ul>
-    <ul>
-      <b>Area di stage</b>
-      Definita anche come "Indice", è un'area rappresentata da un file
-      contenente le informazioni relative alla commit successiva.
-    </ul>
+    <div class="documento">
+      <div class="navigazione">
+        <h2>Menù navigazione</h2>
+        <p><b>Indice</b></p>
+        <ul>
+          <li><a href="../Index.html">Indice</a></li>
+        </ul>
+        <p><b>Lezioni teoriche</b></p>
+        <ul>
+          <li><a href="./CSS.html">Teoria CSS </a></li>
+          <li><a href="./HTML.html">Teoria HTML</a></li>
+          <li><a href="./MARKDOWN.html">Teoria Markdown</a></li>
+        </ul>
+        <p><b>Helpers</b></p>
+        <ul>
+          <li>
+            <a href="./CSS_SHEET.html">Comandi CSS </a>
+          </li>
+          <li><a href="./HTML_SHEET.html">Comandi HTML</a></li>
+          <li><a href="./GIT_SHEET.html">Comandi GIT</a></li>
+          <li><a href="./MARKDOWN_SHEET.html">Comandi Markdown</a></li>
+        </ul>
+      </div>
+      <div class="testo">
+        <h1>Cos'è GIT?</h1>
+        <p>
+          Git è un progetto open source sviluppato nel 2005 da Linus Torvalds,
+          il famoso creatore del sistema operativo Linux. Git è un esempio di
+          DVCS,
+          <i>Distributed Version Control</i> system, cioè un sistema che
+          permette di controllare attivamente le versioni di sviluppo di un
+          software, rendendoli accessibili e modificabili ai sviluppatori. Nasce
+          inizialmente per facilitare lo sviluppo di Linux per ai giorni d'oggi
+          divenire uno degli strumenti di controllo versioni più diffuso.
+        </p>
+        <h2>Versioning</h2>
+        <p>
+          Il controllo di versione (versioning) è sostanzialmente un meccanismo
+          attraverso il quale tenere traccia con il passare del tempo delle
+          modifiche apportate ad un progetto; quest'ultimo può essere costituito
+          da un singolo file o da un insieme di file le cui diverse versioni
+          vengono registrate e possono essere richiamate in un momento
+          successivo, anche a grande distanza di tempo, ogni volta che se ne
+          presenti la necessità.
+        </p>
+        <h2>Snapshots</h2>
+        <p>
+          Nel caso di Git, i dati vengono rappresentati come delle istantanee, o
+          snapshots, quando si memorizza lo stato di un progetto il sistema crea
+          un'immagine di tutti i file al momento corrente; in sostanza Git non
+          fa riferimento alle differenze tra le varie versioni, ma ne
+          "fotografa" gli stati di avanzamento. Il vantaggio a livello di
+          efficienza risulta evidente, questo perché nel caso in cui un file non
+          dovesse subire delle modifiche, il DVCS non provvederà a salvarlo
+          nuovamente ma si limiterà a definire un collegamento con il
+          salvataggio già effettuato.
+        </p>
+        <h2>Lavorare Offline</h2>
+        <p>
+          Con GIT quasi tutte le operazioni per la memorizzazione si svolgono in
+          locale e a carico di risorse disponibili localmente. La possibilità di
+          lavorare localmente, e quindi offline, rappresenta un vantaggio non
+          indifferente, in mancanza di una connessione si potrà operare su un
+          progetto affrontando tutte le fasi del versioning fatta eccezione di
+          quella dell'upload, che potrà essere completata non appena stabilito
+          un nuovo collegamento.
+        </p>
+        <h2>Gestione del flusso di lavoro in Git</h2>
+        <p>
+          Sostanzialmente i file di un progetto in Git possono assumere tra
+          stati differenti:
+        </p>
+        <table>
+          <tr>
+            <td><b>Stato</b></td>
+            <td><b>Descrizione</b></td>
+          </tr>
+          <tr>
+            <td>Committati</td>
+            <td>I file sono stati memorizzati localmente nel database.</td>
+          </tr>
+          <tr>
+            <td>Modificati</td>
+            <td>
+              I file hanno subito dei cambiamenti ma non sono stati ancora
+              committati.
+            </td>
+          </tr>
+          <tr>
+            <td>In stage</td>
+            <td>
+              I file sono stati coinvolti da modifiche e verranno inclusi in
+              un'istantanea con la prossima commit.
+            </td>
+          </tr>
+        </table>
+        <p>
+          Agli stati elencati corrispondono altrettante sezioni di un progetto
+          gestito tramite Git:
+        </p>
+        <ul>
+          <b>Directory di Git</b>
+          : L'area per il salvataggio del database e dei metadati di un
+          progetto, cioè le informazioni copiate in fase di clonazione di un
+          repository.
+        </ul>
+        <ul>
+          <b>Directory di lavoro</b
+          >: La copia di backup (checkout) di una determinata versione di un
+          progetto, per ottenerla si estraggono i file dall'archivio della
+          directory di Git in modo da poterli manipolare dal proprio disco.
+        </ul>
+        <ul>
+          <b>Area di stage</b>
+          Definita anche come "Indice", è un'area rappresentata da un file
+          contenente le informazioni relative alla commit successiva.
+        </ul>
+      </div>
+    </div>
   </body>
 </html>
