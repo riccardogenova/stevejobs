@@ -7,7 +7,7 @@
 }
 
 .navigazione {
-  width: 250px;
+  width: 400px;
   /*height: 530px;*/
   background-color: #0e99dd;
   color: #fff;
@@ -32,4 +32,5 @@
 
 .testo {
   padding-left: 20px;
+  height: 100vh;
 }
