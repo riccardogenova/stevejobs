@@ -1,0 +1,50 @@
+* {
+  font-family: "Segoe UI";
+  box-sizing: border-box;
+}
+
+.banner {
+  display: block;
+
+  background-image: url(https://wallpapercave.com/wp/wp9841298.jpg);
+  background-position: 50% 35%;
+  background-size: cover;
+
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  * {
+    text-align: center;
+  }
+
+  h1,
+  h2 {
+    font-weight: bold;
+    background: linear-gradient(30deg, orange, red);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+}
+
+#statement_of_faith {
+  text-align: center;
+  font-size: 20px;
+}
+
+.text_wrapper {
+  font-size: 12px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+.text_snippet {
+  width: 200px;
+  height: 100px;
+  padding: 3%;
+}

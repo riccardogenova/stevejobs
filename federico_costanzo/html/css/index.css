@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: white;
+}
+
+#paragraph {
+  font-size: 18px;
+  color: brown;
+}
+
+#links {
+  text-align: left;
+  font-size: 14px;
+  a {
+    color: blue;
+  }
+}
