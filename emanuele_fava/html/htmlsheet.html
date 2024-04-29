@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>MARKDOWN_sheet</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../main.css" />
     <script src="main.js"></script>
   </head>
   <body>
-    <nav>
+    <nav class="navbar">
       <ul>
         <li>
           <a href="../index.html">Homepage</a>
@@ -23,10 +23,11 @@
         <li><a href="cssheet.html">CSS_SHEET</a></li>
       </ul>
     </nav>
-    <h1>HTML_SHEET</h1>
-
-    <section>
+    <div class="page_container">
+      <h1>HTML_SHEET</h1>
+      <hr />
       <h2>Formattazione del testo</h2>
+      <hr />
       <ul>
         <li>
           <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>,
@@ -34,7 +35,9 @@
           <code>&lt;h5&gt;</code>, <code>&lt;h6&gt;</code>: Intestazioni di
           diversi livelli.
           <h1>Titolo Principale</h1>
+          <hr />
           <h2>Sotto titolo</h2>
+          <hr />
           <code>&lt;h1&gt;Titolo Principale&lt;/h1&gt</code><br />
           <code>&lt;h2&gt;Sotto titolo&lt;/h2&gt</code>
         </li>
@@ -49,17 +52,20 @@
           <code>&lt;strong&gt;</code>: Testo in grassetto. <br />
           <br />
           <strong>Testo in grassetto</strong>
+          <hr />
           <pre><code>&lt;strong&gt;Testo in grassetto&lt;/strong&gt;</code></pre>
         </li>
         <li>
           <code>&lt;em&gt;</code>: Testo in corsivo. <br />
           <br />
           <em>Testo in corsivo</em>
+          <hr />
           <pre><code>&lt;em&gt;Testo in corsivo&lt;/em&gt;</code></pre>
         </li>
         <li>
           <code>&lt;u&gt;</code>: Testo sottolineato. <br /><br />
           <u>Testo sottolineato</u>
+          <hr />
           <pre><code>&lt;u&gt;Testo sottolineato&lt;/u&gt;</code></pre>
         </li>
         <li>
@@ -77,6 +83,7 @@
       </ul>
 
       <h2>Link e navigazione</h2>
+      <hr />
       <ul>
         <li>
           <code>&lt;a&gt;</code>: Definizione di un link ipertestuale. <br />
@@ -122,6 +129,7 @@
       </ol>
 
       <h2>Multimedia</h2>
+      <hr />
       <ul>
         <li>
           <code>&lt;img&gt;</code>: Inserimento di immagini. <br />
@@ -151,6 +159,7 @@
       </ul>
 
       <h2>Tabelle</h2>
+      <hr />
       <ul>
         <li>
           <code>&lt;table&gt;</code>: Creazione di una tabella. <br />
@@ -187,6 +196,7 @@
       </ul>
 
       <h2>Formulari</h2>
+      <hr />
       <ul>
         <li>
           <code>&lt;form&gt;</code>: Definizione di un modulo. <br />
@@ -227,6 +237,7 @@
       </ul>
 
       <h2>Struttura della pagina</h2>
+      <hr />
       <ul>
         <li>
           <code>&lt;html&gt;</code>: Elemento radice di un documento HTML.
@@ -242,6 +253,7 @@
       </ul>
 
       <h2>Semantica</h2>
+      <hr />
       <ul>
         <li><code>&lt;header&gt;</code>: Intestazione di una sezione.</li>
         <li><code>&lt;footer&gt;</code>: Piè di pagina di una sezione.</li>
@@ -255,9 +267,9 @@
           principale ma che può essere considerato separato da esso.
         </li>
       </ul>
-    </section>
+    </div>
 
-    <footer>
+    <footer class="insidefooter">
       <ul>
         <li>
           <a href="../index.html">Homepage</a>

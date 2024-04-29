@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>MARKDOWN_sheet</title>
+    <title>GIT_sheet</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../main.css" />
     <script src="main.js"></script>
   </head>
   <body>
-    <nav>
+    <nav class="navbar">
       <ul>
         <li>
           <a href="../index.html">Homepage</a>
@@ -24,10 +24,12 @@
       </ul>
     </nav>
 
-    <section>
+    <div class="page_container">
       <h1>GIT_SHEET</h1>
+      <hr />
       <ul>
         <h2>Inizializzazione e Clonazione del Repository</h2>
+        <hr />
         <li>
           <pre>git init</pre>
           Inizializza un nuovo repository Git nella directory corrente.
@@ -40,6 +42,7 @@
 
       <ul>
         <h2>Gestione dei Cambiamenti</h2>
+        <hr />
         <li>
           <pre>git add 'file'</pre>
           Aggiunge un file al "staging area" per il commit.
@@ -52,6 +55,7 @@
 
       <ul>
         <h2>Sincronizzazione con il Repository Remoto</h2>
+        <hr />
         <li>
           <pre>git push</pre>
           Carica i commit locali sul repository remoto.
@@ -65,6 +69,7 @@
 
       <ul>
         <h2>Gestione dei Rami</h2>
+        <hr />
         <li>
           <pre>git branch</pre>
           Visualizza i rami locali.
@@ -85,6 +90,7 @@
 
       <ul>
         <h2>Visualizzazione dello Stato e Cronologia</h2>
+        <hr />
         <li>
           <pre>git status</pre>
           Mostra lo stato dei file nel repository.
@@ -102,6 +108,7 @@
 
       <ul>
         <h2>Ripristino e Annullamento delle Modifiche</h2>
+        <hr />
         <li>
           <pre>git reset</pre>
           Annulla le modifiche ai file o ripristina il repository a uno stato
@@ -111,6 +118,7 @@
 
       <ul>
         <h2>Gestione dei Repository Remoti</h2>
+        <hr />
         <li>
           <pre>git remote</pre>
           Visualizza o gestisce i repository remoti.
@@ -124,6 +132,7 @@
 
       <ul>
         <h2>Gestione dei Tag</h2>
+        <hr />
         <li>
           <pre>git tag</pre>
           Gestisce i tag annotati o leggeri per segnare commit specifici.
@@ -132,6 +141,7 @@
 
       <ul>
         <h2>Comandi Aggiuntivi</h2>
+        <hr />
         <li>
           <pre>git checkout -b <'branch'></pre>
           Crea un nuovo ramo e passa ad esso.
@@ -195,9 +205,9 @@
           Imposta l'email globale per i commit.
         </li>
       </ul>
-    </section>
+    </div>
 
-    <footer>
+    <footer class="insidefooter">
       <ul>
         <li>
           <a href="../index.html">Homepage</a>
