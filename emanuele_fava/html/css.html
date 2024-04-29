@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>HTML_theory</title>
+    <title>CSS_theory</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../main.css" />
     <script src="main.js"></script>
   </head>
   <body>
-    <nav>
+    <nav class="navbar">
       <ul>
         <li>
           <a href="../index.html">Homepage</a>
@@ -25,8 +25,9 @@
         </li>
       </ul>
     </nav>
-    <section>
+    <div class="page_container">
       <h1>CSS: Breve Introduzione</h1>
+      <hr />
 
       <p>
         Le Cascading Style Sheets (CSS) sono un linguaggio di stile utilizzato
@@ -37,6 +38,7 @@
       </p>
 
       <h2>Origini</h2>
+      <hr />
 
       <p>
         CSS è stato proposto per la prima volta da Håkon Wium Lie e Bert Bos nel
@@ -46,6 +48,7 @@
       </p>
 
       <h2>Caratteristiche Principali</h2>
+      <hr />
 
       <p>Le principali caratteristiche di CSS includono:</p>
 
@@ -77,6 +80,7 @@
       </ul>
 
       <h2>Diffusione e Popolarità</h2>
+      <hr />
 
       <p>
         CSS è diventato uno standard de facto per la formattazione e lo stile
@@ -85,8 +89,70 @@
         degli anni, grazie alla sua flessibilità e potenza nel gestire l'aspetto
         delle pagine web.
       </p>
+      <h2>Cos'è il DOM?</h2>
+      <hr />
+      <p>
+        Il Document Object Model (DOM) è una rappresentazione gerarchica di un
+        documento HTML o XML. Esso consente agli sviluppatori di interagire con
+        la struttura del documento in modo programmatico. Il DOM è composto da
+        nodi che rappresentano elementi, testo, attributi e altro ancora.
+      </p>
+      <p>
+        La radice del DOM è il nodo `document`, da cui derivano tutti gli altri
+        nodi. Attraverso il DOM, è possibile selezionare elementi specifici,
+        modificarne il contenuto e gli attributi, e creare nuovi nodi per
+        estendere la struttura del documento.
+      </p>
+      <p>
+        Alcuni esempi di interazione con il DOM includono la selezione di
+        elementi specifici utilizzando JavaScript, l'aggiunta di gestori di
+        eventi e la manipolazione di proprietà CSS per creare effetti visivi
+        dinamici.
+      </p>
+
+      <h2>Interazione tra CSS e DOM</h2>
+      <hr />
+      <p>
+        Il CSS utilizza il DOM per applicare stili agli elementi di una pagina
+        web. I selettori CSS permettono di individuare specifici elementi nel
+        DOM basandosi su:
+      </p>
+      <ul>
+        <li>
+          <strong>Tag</strong>: per esempio, `h1` seleziona gli elementi di
+          intestazione di primo livello.
+        </li>
+        <li>
+          <strong>Classi</strong>: utilizzando il punto (`.`), come `.navbar`,
+          per selezionare gli elementi con una determinata classe.
+        </li>
+        <li>
+          <strong>ID</strong>: utilizzando il simbolo del cancelletto (`#`),
+          come `#homepage`, per selezionare un elemento con un ID specifico.
+        </li>
+      </ul>
+      <p>
+        Inoltre, il CSS consente di definire il layout e il posizionamento degli
+        elementi nel DOM. Moduli avanzati come Flexbox e CSS Grid permettono di
+        creare layout flessibili e adattabili a diverse dimensioni e
+        dispositivi.
+      </p>
+      <p>
+        Le pseudo-classi e gli pseudo-elementi del CSS rafforzano ulteriormente
+        l'interazione tra CSS e DOM. Le pseudo-classi, come `:hover`, consentono
+        di applicare stili basati su condizioni specifiche, mentre gli
+        pseudo-elementi, come `::before` e `::after`, permettono di aggiungere
+        contenuti virtuali prima o dopo un elemento.
+      </p>
+      <p>
+        Infine, il CSS può essere modificato dinamicamente tramite JavaScript,
+        consentendo una maggiore interazione con il DOM e la creazione di
+        effetti animati, transizioni e comportamenti interattivi sulla base di
+        eventi o azioni dell'utente.
+      </p>
 
       <h2>Conclusioni</h2>
+      <hr />
 
       <p>
         CSS rappresenta uno strumento fondamentale per i progettisti web,
@@ -94,9 +160,9 @@
         Grazie alla sua ampia adozione e alla continua evoluzione, rimane una
         parte essenziale dello sviluppo web moderno.
       </p>
-    </section>
+    </div>
 
-    <footer>
+    <footer class="insidefooter">
       <ul>
         <li>
           <a href="../index.html">Homepage</a>

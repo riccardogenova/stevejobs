@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>MARKDOWN_sheet</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../main.css" />
     <script src="main.js"></script>
   </head>
   <body>
-    <nav>
+    <nav class="navbar">
       <ul>
         <li>
           <a href="../index.html">Homepage</a>
@@ -26,10 +26,11 @@
       </ul>
     </nav>
 
-    <section>
+    <div class="page_container">
       <h1>CSS Cheat Sheet</h1>
 
       <h2>Selettori</h2>
+      <hr />
       <p>
         I selettori CSS consentono di identificare gli elementi HTML a cui
         applicare gli stili. Alcuni esempi comuni includono:
@@ -51,40 +52,42 @@
           <strong>Selettore universale</strong>: <code>*</code> per selezionare
           tutti gli elementi.
         </li>
+        <li>
+          <strong>Selettore di discendente</strong>: <code>div p</code> per
+          selezionare tutti i paragrafi all'interno di un div.
+        </li>
+        <li>
+          <strong>Selettore figlio diretto</strong>: <code>ul > li</code> per
+          selezionare solo i li che sono figli diretti di ul.
+        </li>
+        <li>
+          <strong>Selettore di attributo</strong>: <code>a[href]</code> per
+          selezionare tutti gli anchor che hanno un attributo href.
+        </li>
+        <li>
+          <strong>Selettore di attributo con valore specifico</strong>:
+          <code>input[type="text"]</code> per selezionare tutti gli input di
+          tipo text.
+        </li>
+        <li>
+          <strong>Selettore di pseudo-classe</strong>: <code>a:hover</code> per
+          selezionare gli anchor quando vengono "hoverati" (passaggio del mouse
+          sopra).
+        </li>
       </ul>
       <code>
         p { color: blue; } <br />
         .classe { font-size: 16px; } <br />
-        #id { background-color: #f0f0f0; }
-      </code>
-
-      <h2>Proprietà</h2>
-
-      <h3>Testo</h3>
-      <ul>
-        <li><strong>color</strong>: definisce il colore del testo.</li>
-        <li><strong>font-family</strong>: imposta il tipo di carattere.</li>
-        <li>
-          <strong>font-size</strong>: specifica la dimensione del carattere.
-        </li>
-        <li>
-          <strong>font-weight</strong>: imposta lo spessore del carattere (bold,
-          normal, etc.).
-        </li>
-        <li>
-          <strong>text-align</strong>: allinea il testo (left, right, center,
-          justify).
-        </li>
-      </ul>
-      <code>
-        p { color: blue; <br />
-        font-family: Arial, sans-serif; <br />
-        font-size: 16px; <br />
-        font-weight: bold; <br />
-        text-align: center; }
+        #id { background-color: #f0f0f0; } <br />
+        div p { font-style: italic; } <br />
+        ul > li { list-style-type: square; } <br />
+        a[href] { text-decoration: underline; } <br />
+        input[type="text"] { border: 1px solid #ccc; } <br />
+        a:hover { color: red; }
       </code>
 
       <h3>Box</h3>
+      <hr />
       <ul>
         <li>
           <strong>background-color</strong>: imposta il colore dello sfondo.
@@ -110,6 +113,7 @@
       </code>
 
       <h3>Sfondo</h3>
+      <hr />
       <ul>
         <li>
           <strong>background-image</strong>: imposta un'immagine di sfondo per
@@ -131,6 +135,7 @@
       </code>
 
       <h3>Dimensioni e Posizionamento</h3>
+      <hr />
       <ul>
         <li><strong>width</strong>: imposta la larghezza dell'elemento.</li>
         <li><strong>height</strong>: imposta l'altezza dell'elemento.</li>
@@ -160,6 +165,7 @@
       </code>
 
       <h3>Animazioni</h3>
+      <hr />
       <ul>
         <li>
           <strong>animation-name</strong>: specifica il nome dell'animazione.
@@ -189,9 +195,9 @@
         animation-delay: 0.5s; <br />
         animation-iteration-count: 1; }
       </code>
-    </section>
+    </div>
 
-    <footer>
+    <footer class="insidefooter">
       <ul>
         <li>
           <a href="../index.html">Homepage</a>
