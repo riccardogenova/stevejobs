@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  transition: all 1s;
+}
+
+body {
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  color: #65b7ae;
+}
+
+h2 {
+  color: rgb(255, 166, 158);
+  font-size: 4vh;
+}
+
+h3 {
+  font-size: 3.5vh;
+}
+
+h4 {
+  font-size: 3vh;
+}
+
+h3,
+h4 {
+  color: #6d6f78;
+}
+
+p {
+  color: #797c82;
+  font-size: 3vh;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/*===SFONDO=========================================================*/
+
+.sfondo {
+  background-image: url(sfondo.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+}
+
+.interno {
+  /* position: relative; /*se ci son 2 div e voglio spostare secondo div interno in base al primo*/
+  background-color: white;
+  text-align: center;
+  width: 52%;
+  height: 100vh;
+  margin: auto;
+}
+.interno-2 {
+  /* position: absolute; /*se ci son 2 div e voglio spostare secondo div interno in base al primo*/
+  background-color: #fbd35e;
+  opacity: 0.3;
+  text-align: center;
+  width: 67%;
+  height: 44vh;
+
+  transform: translate(25%, 25%);
+}
+
+/*
+.interno-3 {
+  background-color: #fbd35e;
+  text-align: center;
+  width: 67%;
+  height: 30vh;
+  transform: translate(25%, 58%);
+}*/
+
+.immagine {
+  height: 28vh;
+  transform: translate(2%, 65%);
+}
+
+/*===CONTAINER=========================================================*/
+
+.container {
+  width: 100%; /*il contenitore si estende per tutta la larghezza disponibile*/
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  background-color: #65b7ae;
+  padding: 25px 15px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  transform: translate(0%, 50%);
+  /* Altri stili per il form */
+}
+
+input[type="search"] {
+  width: 250px;
+  padding: 5px;
+  margin-right: 5px;
+  border-radius: 20px;
+  border-color: #8f9198;
+
+  /* Altri stili per la barra di ricerca */
+}
+
+/*BOTTONI--------------------------------------------------------------------------------------------------*/
+button {
+  position: relative;
+  padding: 15px 32px;
+  border: 2px solid #fbd35e;
+  font-weight: bold;
+  background: transparent;
+  color: #666666;
+  border-radius: 20px;
+  display: inline-block;
+  cursor: pointer;
+  width: 100px;
+  overflow: hidden;
+  /* Altri stili per il pulsante */
+}
+
+/* Effetto hover per il pulsante */
+/*button:hover {
+  background-color: #fbd35e; /* Cambia colore di sfondo al passaggio del mouse 
+}*/
+
+/* Stile per un pulsante disabilitato */
+button:disabled {
+  background-color: #cccccc; /* Colore di sfondo grigio */
+  color: #666666; /* Testo grigio */
+  cursor: not-allowed; /* Cursor a forma di divieto */
+}
+
+/*===NAVBAR===============================================================*/
+.logo {
+  margin-right: 57vh;
+}
+
+.navbar {
+  overflow: hidden;
+  width: 100%;
+  /* display: flex;*/
+  /*align-items: center;*/
+  /* justify-content: space-between;*/
+  list-style: none;
+  /*position: fixed;*/
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-decoration: center;
+  padding: 14px 15px;
+  text-decoration: none;
+  font-size: 3vh;
+}
+
+.navbar a:hover {
+  background-color: white;
+  color: #f5675b;
+  border-radius: 25px;
+}
+
+/*
+.navbar ul li a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #e56b6f;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.navbar ul li a:hover::after {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.navbar ul li a:hover {
+  font-weight: 800;
+  font-size: 25px;
+}
+*/
+
+/*====================================================================*/
+/*
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: white;
+}*/
+
+/*=========================================================================*/
+
+.hero-testo {
+  position: absolute;
+  text-align: center;
+  font-size: 9vh;
+  top: 60%;
+  left: 50%;
+  /* Usa 'transform' per centrare esattamente il testo nel div */
+  transform: translate(-50%, -50%);
+}
+
+.hero-testo p {
+  font-size: 5vh;
+  text-align: center;
+}
+
+/*======================================================================*/
+
+.contenuti {
+  padding: 10vh;
+}
+
+.contenuti h1 {
+  color: #f5675b;
+}
+
+.contenuti ul li {
+  color: #797c82;
+}
+
+/*===FOOTER=========================================================*/
+
+footer {
+  background-color: hsla(280, 7%, 91%, 0.5); /* Colore di sfondo del footer */
+  color: white; /* Colore del testo nel footer */
+  width: 100%; /* Larghezza completa */
+  height: 100px; /* Altezza del footer */
+  text-align: center; /* Allinea il testo al centro */
+  line-height: 100px; /* Centra verticalmente il testo nel footer */
+}
+
+footer p {
+  color: #8f9198;
+  font-size: 2.5vh;
+  text-align: center;
+}
+
+span {
+  position: absolute;
+  background: #fbd35e;
+  height: 100%;
+  width: 0%;
+  z-index: -1;
+  left: 0;
+  bottom: 0;
+  border-radius: 18px;
+}
+button:hover span {
+  width: 100%;
+}
+
+button:hover {
+  color: white;
+}
+
+pre {
+  border: 2px dotted #65b7ae;
+  margin: 50px 0;
+  padding: 30px;
+  font-size: 16px;
+  color: #35655f;
+}
+
+.titoli {
+  color: #f5675b;
+}

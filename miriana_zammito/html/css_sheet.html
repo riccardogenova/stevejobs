@@ -3,277 +3,269 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>css_sheet</title>
   </head>
 
   <body>
-    <nav>
-      <ul>
-        <a href="./../index.html">
-          <h3>
-            <li>Index</li>
-          </h3>
-        </a>
-        <a href="./git.html">
-          <h3>
-            <li>GIT</li>
-          </h3>
-        </a>
-        <a href="./markdown.html">
-          <h3>
-            <li>Markdown</li>
-          </h3>
-        </a>
-        <a href="./html.html">
-          <h3>
-            <li>HTML</li>
-          </h3>
-        </a>
+    <header>
+      <div class="container">
+        <ul class="navbar">
+          <li><a href="./../index.html" class="logo">Home</a></li>
+          <li><a href="git.html"> GIT </a></li>
+          <li><a href="markdown.html"> Markdown </a></li>
+          <li><a href="html.html"> HTML </a></li>
+          <li><a href="css.html">CSS</a></li>
+          <li><a href="git_sheet.html"> GIT Sheet </a></li>
+          <li><a href="markdown_sheet.html"> Markdown Sheet </a></li>
+          <li><a href="html_sheet.html"> HTML Sheet </a></li>
+          <li><a href="css_sheet.html">CSS Sheet</a></li>
+        </ul>
+      </div>
+    </header>
 
-        <a href="./git_sheet.html">
-          <h3>
-            <li>GIT_Sheet</li>
-          </h3>
-        </a>
-        <a href="./markdown_sheet.html">
-          <h3>
-            <li>Markdown Sheet</li>
-          </h3>
-        </a>
-        <a href="./html_sheet.html">
-          <h3>
-            <li>HTML_Sheet</li>
-          </h3>
-        </a>
-      </ul>
-    </nav>
+    <main>
+      <div class="contenuti">
+        <h1>COMANDI CSS</h1>
+        <br />
 
-    <h1>COMANDI CSS</h1>
+        <h2>SELETTORI</h2>
 
-    <h3>SELETTORI</h3>
+        <h4>Settori di tipo:</h4>
+        <p>si riferiscono a tutti gli elementi di un tipo specifico</p>
 
-    <h4>Settori di tipo:</h4>
-    <p>si riferiscono a tutti gli elementi di un tipo specifico</p>
-
-    <pre>
+        <pre>
       p {
           /* Stili per tutti gli elementi <code>&lt;p&gt;</code> */
       }
-    </pre>
+    </pre
+        >
 
-    <h4>Selettori di classe:</h4>
-    <p>
-      Si riferiscono agli elementi che hanno specificate una o più classi. Si
-      utilizzano il punto "." seguito dal nome della classe.
-    </p>
+        <h4>Selettori di classe:</h4>
+        <p>
+          Si riferiscono agli elementi che hanno specificate una o più classi.
+          Si utilizzano il punto "." seguito dal nome della classe.
+        </p>
 
-    <pre>
+        <pre>
       .classe {
           /* Stili per gli elementi con la classe "classe" */
       }
-    </pre>
+    </pre
+        >
 
-    <h4>Selettori di ID:</h4>
-    <p>
-      Si riferiscono a un elemento specifico con un ID univoco. Si utilizza il
-      carattere "#" seguito dal nome dell'ID.
-    </p>
+        <h4>Selettori di ID:</h4>
+        <p>
+          Si riferiscono a un elemento specifico con un ID univoco. Si utilizza
+          il carattere "#" seguito dal nome dell'ID.
+        </p>
 
-    <pre>
+        <pre>
       #id {
           /* Stili per l'elemento con l'ID "id" */
       }
-    </pre>
+    </pre
+        >
 
-    <h4>Selettori discendenti:</h4>
-    Selezionano elementi che sono discendenti diretti di un altro elemento. Si
-    usano gli spazi per separare gli elementi.
+        <h4>Selettori discendenti:</h4>
+        <p>
+          Selezionano elementi che sono discendenti diretti di un altro
+          elemento. Si usano gli spazi per separare gli elementi.
+        </p>
 
-    <pre>
+        <pre>
       <code>&lt;div&gt;</code> p {
       /* Stili per tutti gli elementi <code>&lt;p&gt;</code> che sono discendenti diretti di un elemento<code>&lt;div&gt;</code>  */
       }
-    </pre>
+    </pre
+        >
 
-    <h4>Selettori figlio:</h4>
-    Selezionano gli elementi che sono figli diretti di un altro elemento. Si usa
-    il simbolo "&gt;" per separare il genitore dal figlio.
+        <h4>Selettori figlio:</h4>
+        <p>
+          Selezionano gli elementi che sono figli diretti di un altro elemento.
+          Si usa il simbolo "&gt;" per separare il genitore dal figlio.
+        </p>
 
-    <pre>
+        <pre>
       <code>&lt;div&gt;</code> p {
       /* Stili per tutti gli elementi <code>&lt;p&gt;</code> che sono figli diretti di un elemento <code>&lt;div&gt;</code>  */
       }
-    </pre>
+    </pre
+        >
 
-    <h4>Selettori attributo:</h4>
-    Selezionano gli elementi che hanno un determinato attributo specificato. Si
-    utilizzano le parentesi quadre e l'operatore "=". Ad esempio, [type="text"]
-    selezionerà tutti gli elementi con l'attributo type uguale a "text".
+        <h4>Selettori attributo:</h4>
+        <p>
+          Selezionano gli elementi che hanno un determinato attributo
+          specificato. Si utilizzano le parentesi quadre e l'operatore "=". Ad
+          esempio, [type="text"] selezionerà tutti gli elementi con l'attributo
+          type uguale a "text".
+        </p>
 
-    <pre>
+        <pre>
       [type="text"] {
           /* Stili per gli elementi con l'attributo type="text" */
       }
   </pre
-    >
+        >
 
-    <h4>Selettori universali:</h4>
-    Selezionano tutti gli elementi sul documento. Si usa il carattere "\*".
+        <h4>Selettori universali:</h4>
+        <p>
+          Selezionano tutti gli elementi sul documento. Si usa il carattere
+          "\*".
+        </p>
 
-    <pre>
+        <pre>
       * {
           /* Stili per tutti gli elementi */
       }
-    </pre>
+    </pre
+        >
 
-    <h3>ALLINEAMENTO DEL TESTO</h3>
+        <h2>ALLINEAMENTO DEL TESTO</h2>
 
-    <h3>text-align</h3>
+        <h3>text-align</h3>
 
-    <h4>allineamento orizzontale</h4>
+        <h4>allineamento orizzontale</h4>
+        <p>
+          🔹left <br />
+          🔹right <br />
+          🔹center <br />
+          🔹justify <br />
+        </p>
+        <br />
 
-    <ul>
-      <li>left</li>
-      <li>right</li>
-      <li>center</li>
-      <li>justify</li>
-    </ul>
+        <h3>Vertical-align</h3>
+        <h4>Allinemanto verticale</h4>
+        <p>
+          🔹top <br />
+          🔹middle<br />
+          🔹bottom<br />
+        </p>
+        <br />
 
-    <h3>Vertical-align</h3>
-    <h4>Allinemanto verticale</h4>
-    <ul>
-      <li>top</li>
-      <li>middle</li>
-      <li>bottom</li>
-    </ul>
+        <h2>FORMATTAZIONE DEL TESTO</h2>
+        <h4>Text-decoration</h4>
+        <p>
+          Per sottolineare il testo: <br />
+          🔹 none <br />
+          🔹 underline <br />
+          🔹 overline <br />
+          🔹line-through <br />
+        </p>
+        <br />
 
-    <h3>Formattazione del Testo</h3>
-    <h4>Text-decoration</h4>
-    <p>Per sottolineare il testo:</p>
-    <ul>
-      <li>none</li>
-      <li>underline</li>
-      <li>overline</li>
-      <li>line-through</li>
-    </ul>
+        <h4>Text-transform</h4>
+        <p>
+          Imposta il testo in maiuscolo o in minuscolo: <br />
+          🔹uppercase <br />
+          🔹lowercase <br />
+          🔹capitalize <br />
+        </p>
+        <br />
 
-    <h4>Text-transform</h4>
-    <p>Imposta il testo in maiuscolo o in minuscolo:</p>
-    <ul>
-      <li>uppercase</li>
-      <li>lowercase</li>
-      <li>capitalize</li>
-    </ul>
+        <h4>Text-indent</h4>
+        <p>
+          Imposta il rientro del testo espresso in: <br />
+          🔹pixel <br />
+          🔹punti <br />
+          🔹percentuale <br />
+          🔹em o es (ad esempio: 12px) <br />
+        </p>
+        <br />
 
-    <h4>Text-indent</h4>
-    <p>Imposta il rientro del testo espresso in:</p>
-    <ul>
-      <li>pixel</li>
-      <li>punti</li>
-      <li>percentuale</li>
-      <li>em o es (ad esempio: 12px)</li>
-    </ul>
+        <h4>Letter-spacing</h4>
+        <p>🔹Spazio tra una lettera e l’altra</p>
+        <br />
 
-    <h4>Letter-spacing</h4>
-    <ul>
-      <li>Spazio tra una lettera e l’altra</li>
-    </ul>
+        <h4>Line-height</h4>
+        <p>🔹Spazio tra una riga e l’altra</p>
+        <br />
 
-    <h4>Line-height</h4>
-    <ul>
-      <li>Spazio tra una riga e l’altra</li>
-    </ul>
+        <h2>FORMATTAZIONE DEL CARATTERE</h2>
+        <h4>Font-family</h4>
 
-    <h3>Formattazione del Carattere</h3>
-    <h4>Font-family</h4>
-    <ul>
-      <li>Carattere da utilizzare</li>
-    </ul>
+        🔹Carattere da utilizzare <br />
 
-    <h4>Font-size</h4>
-    <p>Grandezza del testo espresso in:</p>
-    <ul>
-      <li>pixel</li>
-      <li>punti</li>
-      <li>percentuale</li>
-      <li>em o es (ad esempio: 12px)</li>
-    </ul>
+        <h4>Font-size</h4>
+        <p>
+          Grandezza del testo espresso in: <br />🔹pixel <br />
+          🔹punti <br />
+          🔹percentuale <br />
+          🔹em o es (ad esempio: 12px) <br />
+        </p>
+        <br />
 
-    <h4>Font-weight</h4>
-    <p>Imposta il carattere in vari spessori di grassetto:</p>
-    <ul>
-      <li>normal</li>
-      <li>bold</li>
-    </ul>
+        <h4>Font-weight</h4>
+        <p>
+          Imposta il carattere in vari spessori di grassetto: <br />
+          🔹normal <br />
+          🔹bold <br />
+        </p>
+        <br />
 
-    <h4>Font-style</h4>
-    <p>Imposta il carattere in corsivo:</p>
-    <ul>
-      <li>normal</li>
-      <li>italic</li>
-      <li>oblique</li>
-    </ul>
+        <h4>Font-style</h4>
+        <p>
+          Imposta il carattere in corsivo: <br />
+          🔹 normal <br />
+          🔹 italic<br />
+          🔹 oblique<br />
+        </p>
+        <br />
 
-    <h4>Font-variant</h4>
-    <ul>
-      <li>Imposta maiuscole e minuscole alla stessa grandezza</li>
-    </ul>
+        <h4>Font-variant</h4>
+        <p>🔹Imposta maiuscole e minuscole alla stessa grandezza</p>
+        <br />
 
-    <h4>First-letter</h4>
-    <ul>
-      <li>Proprietà della prima lettera di una riga</li>
-    </ul>
+        <h4>First-letter</h4>
+        <p>🔹Proprietà della prima lettera di una riga</p>
+        <br />
 
-    <h4>First-line</h4>
-    <ul>
-      <li>Proprietà della prima riga di un paragrafo</li>
-    </ul>
+        <h4>First-line</h4>
+        <p>🔹Proprietà della prima riga di un paragrafo</p>
+        <br />
 
-    <h3>Colori e Sfondi</h3>
-    <ul>
-      <li>
-        Color: Imposta il colore degli elementi selezionati (testo, bordi, ecc.)
-      </li>
-      <li>
-        Background-color: Imposta il colore dello sfondo di una pagina o di una
-        tabella
-      </li>
-      <li>
-        Background-image: Seleziona un’immagine di sfondo per una pagina o una
-        tabella
-      </li>
-      <li>
-        Background-repeat: Imposta la ripetizione dell’immagine di sfondo:
-        (valori possibili: repeat, repeat-x, repeat-y, no-repeat)
-      </li>
-      <li>Background-attachment: Proprietà di scrolling dello sfondo</li>
-      <li>
-        Background-position: Posizionamento dinamico dell’immagine di sfondo
-      </li>
-    </ul>
+        <h2>COLORI E SFONDI</h2>
 
-    <h3>Margini</h3>
-    <ul>
-      <li>
-        Margin: Effetto rientrato espresso in pixel, punti, percentuale, em o es
-        (tutti i lati)
-      </li>
-      <li>
-        Margin-top: Effetto rientrato espresso in pixel, punti, percentuale, em
-        o es (superiore)
-      </li>
-      <li>
-        Margin-left: Effetto rientrato espresso in pixel, punti, percentuale, em
-        o es (sinistro)
-      </li>
-      <li>
-        Margin-right: Effetto rientrato espresso in pixel, punti, percentuale,
-        em o es (destro)
-      </li>
-      <li>
-        Margin-bottom: Effetto rientrato espresso in pixel, punti, percentuale,
-        em o es (inferiore)
-      </li>
-    </ul>
+        <p>
+          🔹<b>Color:</b> Imposta il colore degli elementi selezionati (testo,
+          bordi, ecc.) <br />
+          🔹<b>Background-color:</b> Imposta il colore dello sfondo di una
+          pagina o di una tabella <br />
+          🔹<b>Background-image:</b> Seleziona un’immagine di sfondo per una
+          pagina o una tabella <br />
+          🔹 <b>Background-repeat:</b> Imposta la ripetizione dell’immagine di
+          sfondo: (valori possibili: repeat, repeat-x, repeat-y, no-repeat)
+          <br />
+          🔹<b>Background-attachment:</b> Proprietà di scrolling dello sfondo
+          <br />
+          🔹<b>Background-position:</b> Posizionamento dinamico dell’immagine di
+          sfondo<br />
+        </p>
+        <br />
+
+        <h2>MARGINI</h2>
+        <p>
+          🔹 <b>Margin:</b> Effetto rientrato espresso in pixel, punti,
+          percentuale, em o es (tutti i lati) <br />
+
+          🔹 <b>Margin-top:</b> Effetto rientrato espresso in pixel, punti,
+          percentuale, em o es (superiore)<br />
+
+          🔹 <b>Margin-left:</b> Effetto rientrato espresso in pixel, punti,
+          percentuale, em o es (sinistro)<br />
+
+          🔹<b>Margin-right:</b> Effetto rientrato espresso in pixel, punti,
+          percentuale, em o es (destro)<br />
+
+          🔹 <b>Margin-bottom:</b> Effetto rientrato espresso in pixel, punti,
+          percentuale, em o es (inferiore)<br />
+        </p>
+      </div>
+    </main>
+    <footer>
+      <div>
+        <p>© 2024 Front End - Miriana Zammito</p>
+      </div>
+    </footer>
   </body>
 </html>
