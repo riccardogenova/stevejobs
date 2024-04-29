@@ -3,127 +3,125 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>markdown_sheet</title>
   </head>
   <body>
-    <nav>
-      <ul>
-        <a href="./../index.html">
-          <h3>
-            <li>Index</li>
-          </h3>
-        </a>
-        <a href="./git.html">
-          <h3>
-            <li>GIT</li>
-          </h3>
-        </a>
-        <a href="./markdown.html">
-          <h3>
-            <li>Markdown</li>
-          </h3>
-        </a>
-        <a href="./html.html">
-          <h3>
-            <li>HTML</li>
-          </h3>
-        </a>
+    <header>
+      <!-- HEADER-------------------------------------------------------------------------------- -->
 
-        <a href="./git_sheet.html">
-          <h3>
-            <li>GIT_Sheet</li>
-          </h3>
-        </a>
-        <a href="./markdown_sheet.html">
-          <h3>
-            <li>Markdown Sheet</li>
-          </h3>
-        </a>
-        <a href="./html_sheet.html">
-          <h3>
-            <li>HTML_Sheet</li>
-          </h3>
-        </a>
-      </ul>
-    </nav>
+      <div class="container">
+        <ul class="navbar">
+          <li><a href="./../index.html" class="logo">Home</a></li>
+          <li><a href="git.html"> GIT </a></li>
+          <li><a href="markdown.html"> Markdown </a></li>
+          <li><a href="html.html"> HTML </a></li>
+          <li><a href="css.html">CSS</a></li>
+          <li><a href="git_sheet.html"> GIT Sheet </a></li>
+          <li><a href="markdown_sheet.html"> Markdown Sheet </a></li>
+          <li><a href="html_sheet.html"> HTML Sheet </a></li>
+          <li><a href="css_sheet.html">CSS Sheet</a></li>
+        </ul>
+      </div>
+    </header>
 
-    <h1>COMANDI MARKDOWN</h1>
+    <div class="contenuti">
+      <h1>Comandi Markdown</h1>
+      <br />
 
-    <h2>TITOLI</h2>
+      <h2>Titoli</h2>
+      <p>
+        # Titolo di livello 1 <br />
+        ## Titolo di livello 2 <br />
+        ### Titolo di livello 3 <br />
+        #### Titolo di livello 4 <br />
+        ##### Titolo di livello 5 <br />
+        ###### Titolo di livello 6 <br />
+      </p>
+      <br />
 
-    # Titolo di livello 1 <br />
-    ## Titolo di livello 2 <br />
-    ### Titolo di livello 3 <br />
-    #### Titolo di livello 4 <br />
-    ##### Titolo di livello 5 <br />
-    ###### Titolo di livello 6 <br />
+      <!-- **************************************************** -->
 
-    <!-- **************************************************** -->
+      <h2>Formattazione Del Testo</h2>
+      <p>
+        🔹<b> Grassetto: </b> ** testo **, __ testo __<br />
+        🔹<i> Corsivo: </i> * testo *, _ testo _<br />
+        🔹<b><i> Grassetto e corsivo: </i></b> *** testo ***<br />
+        🔹<del> Barrato: </del> ~~ testo ~~<br />
+        🔹<mark> Evidenziato: </mark> `testo`<br />
+      </p>
+      <br />
+      <!-- **************************************************** -->
 
-    <h2>FORMATTAZIONE DEL TESTO</h2>
+      <h2>Liste</h2>
 
-    <li><b> Grassetto: </b> ** testo **, __ testo __</li>
-    <li><i> Corsivo: </i> * testo *, _ testo _</li>
-    <li>
-      <b><i> Grassetto e corsivo: </i></b> *** testo ***
-    </li>
-    <li><del> Barrato: </del> ~~ testo ~~</li>
-    <li><mark> Evidenziato: </mark> `testo`</li>
+      <h3>Elenco puntato:</h3>
+      <p>
+        🔹* Elemento 1<br />
+        🔹- Elemento 2<br />
+        🔹+ Elemento 3<br />
+      </p>
 
-    <!-- **************************************************** -->
+      <h3>Elenco numerato:</h3>
+      <p>
+        🔹 1. Elemento A <br />
+        🔹 2. Elemento B <br />
+      </p>
 
-    <h2>LISTE</h2>
+      <h3>Liste di controllo</h3>
+      <p>
+        🔹 [x] Elemento completato <br />
+        🔹 [ ] Elemento da fare<br />
+      </p>
+      <br />
 
-    <h3>Elenco puntato:</h3>
-    <li>* Elemento 1</li>
-    <li>- Elemento 2</li>
-    <li>+ Elemento 3</li>
+      <!-- **************************************************** -->
 
-    <h3>Elenco numerato:</h3>
-    <li>1. Elemento A</li>
-    <li>2. Elemento B</li>
+      <h2>Link Ed Immagini</h2>
+      <p>
+        <b>Link:</b> [nome link](URL) <br />
+        <b>Immagine:</b> ![nome immagine](URL immagine) <br />
+      </p>
+      <br />
 
-    <h3>Liste di controllo</h3>
-    <li>[x] Elemento completato</li>
-    <li>[ ] Elemento da fare</li>
+      <!-- **************************************************** -->
 
-    <!-- **************************************************** -->
+      <h2>CITAZIONI E CODICI</h2>
+      <p>
+        🔹
+        <b> citazione: </b>testo<br />
+        🔹
+        <b> blocco di codice/codice: </b>```
+      </p>
+      <br />
 
-    <h2>LINK ED IMMAGINI</h2>
+      <!-- **************************************************** -->
 
-    <li><b>Link:</b> [nome link](URL)</li>
-    <li><b>Immagine:</b> ![nome immagine](URL immagine)</li>
-
-    <!-- **************************************************** -->
-
-    <h2>CITAZIONI E CODICI</h2>
-
-    <li><b> citazione: </b>testo</li>
-    <li><b> blocco di codice/codice: </b>```</li>
-
-    <!-- **************************************************** -->
-
-    <h2>TABELLE</h2>
-    <pre>
+      <h2>TABELLE</h2>
+      <pre>
 | intestazione   | intestazione | <br/>
 |     ------     |   -------    | <br/>
 |    elemento    |   elemento   | <br/> </pre>
+      <br />
 
-    <!-- **************************************************** -->
+      <!-- **************************************************** -->
 
-    <h2>LINEE ORIZZONTALI</h2>
+      <h2>LINEE ORIZZONTALI</h2>
+      <p>
+        🔹 `***` <br />
 
-    `***` <br />
-
-    `___` <br />
-
-    `---` <br />
+        🔹 `___` <br />
+        🔹 `---` <br />
+      </p>
+      <br />
+    </div>
 
     <!-- **************************************************** -->
 
     <footer>
-      <!-- Il footer della pagina va qui -->
-      <p>© 2024 Miriana Zammito</p>
+      <div>
+        <p>© 2024 Front End - Miriana Zammito</p>
+      </div>
     </footer>
   </body>
 </html>

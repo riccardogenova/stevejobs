@@ -3,57 +3,64 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>front_end</title>
+    <title>Front End</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./html/style.css" />
   </head>
 
   <body>
-    <h1><b>Index</b></h1>
+    <!-- HEADER-------------------------------------------------------------------------------- -->
 
-    <nav>
-      <ul>
-        <a href="./index.html">
-          <h3>
-            <li>Index</li>
-          </h3>
-        </a>
-        <a href="./html/git.html">
-          <h3>
-            <li>GIT</li>
-          </h3>
-        </a>
-        <a href="./html/markdown.html">
-          <h3>
-            <li>Markdown</li>
-          </h3>
-        </a>
-        <a href="./html/html.html">
-          <h3>
-            <li>HTML</li>
-          </h3>
-        </a>
+    <header>
+      <div class="container">
+        <ul class="navbar">
+          <li><a href="./index.html" class="logo">Home</a></li>
+          <li><a href="./html/git.html"> GIT </a></li>
+          <li><a href="./html/markdown.html"> Markdown </a></li>
+          <li><a href="./html/html.html"> HTML </a></li>
+          <li><a href="./html/css.html"> CSS </a></li>
+          <li><a href="./html/git_sheet.html"> GIT Sheet </a></li>
+          <li><a href="./html/markdown_sheet.html"> Markdown Sheet </a></li>
+          <li><a href="./html/html_sheet.html"> HTML Sheet </a></li>
+          <li><a href="./html/css_sheet.html"> CSS Sheet </a></li>
+          <li></li>
+        </ul>
+      </div>
+    </header>
 
-        <a href="./html/git_sheet.html">
-          <h3>
-            <li>GIT_Sheet</li>
-          </h3>
-        </a>
-        <a href="./html/markdown_sheet.html">
-          <h3>
-            <li>Markdown Sheet</li>
-          </h3>
-        </a>
-        <a href="./html/html_sheet.html">
-          <h3>
-            <li>HTML_Sheet</li>
-          </h3>
-        </a>
-      </ul>
-    </nav>
+    <main>
+      <div class="sfondo">
+        <div class="interno">
+          <!-- BOTTONE CERCA------------------------------------------------------------------------------------- -->
+          <form action="/cerca" method="get">
+            <input type="search" name="q" placeholder="Cerca..." />
+            <button type="submit"><span></span>Cerca</button>
+          </form>
+          <!-- -------------------------------------------------------------------------------------- -->
+          <div class="interno-2"></div>
+          <div class="interno-3">
+            <img src="./html/computer.jpg" class="immagine" alt="computer" />
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-testo">
+        <h1>Front End</h1>
+        <p>
+          Benvenuto nella mia pagina web!<br />
+          ​
+        </p>
+      </div>
+    </main>
+
+    <!-- FOOTER-------------------------------------------------------------------------------- -->
 
     <footer>
-      <!-- Il footer della pagina va qui -->
-      <p>© 2024 Miriana Zammito</p>
+      <div>
+        <p>© 2024 Front End - Miriana Zammito</p>
+      </div>
     </footer>
+
+    <!-- -------------------------------------------------------------------------------------- -->
   </body>
 </html>
