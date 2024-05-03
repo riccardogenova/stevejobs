@@ -36,17 +36,17 @@ Se la variabile è una stringa:
 ---
 
 `const nodeTitle = document.querySelector(query)` - Aggiunge nodo cercato a costante
-`nodeTitle.addEventListener("nomeEvento", onClick)` - Aggiunge listener dell'evento onClick, cioè quando l'utente clicca sull'elemento scelto
+`nodeTitle.addEventListener("nomeEvento", nomeFunzione)` - Aggiunge listener dell'evento onClick, cioè quando l'utente clicca sull'elemento scelto
 
 ```
-function onClick(){
+function nomeFunzione(){
     <codice>
 }
 ```
 
-- crea funzione (quando avviene l'evento onClick, esegui la funzione)
+- Crea funzione (quando avviene l'evento nomeEvento, esegui la funzione nomeFunzione)
 
-`nodeTitle.removeEventListener("nomeEvento", onClick)` - Elimina listener evento
+`nodeTitle.removeEventListener("nomeEvento", nomeFunzione)` - Elimina listener evento
 
 ---
 
