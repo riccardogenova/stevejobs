@@ -1,118 +1,198 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../main.css" />
     <title>GIT</title>
   </head>
   <body>
-    <h2><a href="../INDEX.html">Menù</a></h2>
+    <section id="menù">
+      <h2><a href="../INDEX.html">Menù</a></h2>
+    </section>
     <nav>
-      <ul>
-        <h2>Helpers</h2>
-        <li>
-          <a href="../html/MARKDOWN_SHEET.html">Markdown Sheet </a>
-        </li>
-        <li><a href="../html/GIT_SHEET.html">Git Sheet</a></li>
-        <li><a href="../html/HTML_SHEET.html">HTML Sheet</a></li>
-        <li><a href="../html/CSS_SHEET.html">CSS Sheet</a></li>
-        <h2>Lessons</h2>
-        <li><a href="../html/MARKDOWN.html">Markdown</a></li>
-        <li>
-          <a href="../html/GIT.html"><b>>Git</b></a>
-        </li>
-        <li><a href="../html/HTML.html">HTML</a></li>
-        <li><a href="../html/CSS.html">CSS</a></li>
-      </ul>
+      <section class="container">
+        <div class="column">
+          <h2>Lessons</h2>
+          <ul>
+            <li><a href="../html/MARKDOWN.html">Markdown</a></li>
+            <li><a href="../html/GIT.html">Git</a></li>
+            <li><a href="../html/HTML.html">HTML</a></li>
+            <li><a href="../html/CSS.html">CSS</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h2>Helpers</h2>
+          <ul>
+            <li>
+              <a href="../html/MARKDOWN_SHEET.html">Markdown Sheet</a>
+            </li>
+            <li>
+              <a href="../html/GIT_SHEET.html">Git Sheet</a>
+            </li>
+            <li>
+              <a href="../html/HTML_SHEET.html">HTML Sheet</a>
+            </li>
+            <li>
+              <a href="../html/CSS_SHEET.html">CSS Sheet</a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </nav>
-    <h1>GIT</h1>
-    <h2>Cos'è GIT</h2>
-    <p>
-      <b>Git</b> è un sistema di controllo delle versioni distribuito ampiamente
-      utilizzato per gestire il codice sorgente e la collaborazione nello
-      sviluppo del software. Creato da <strong>Linus Torvalds</strong> nel 2005
-      per agevolare lo sviluppo del kernel Linux, si è rapidamente diffuso
-      diventando uno degli strumenti più popolari per il controllo delle
-      versioni. Git è un progetto open source nato per soddisfare le esigenze di
-      gestione delle versioni del kernel Linux, ma il suo utilizzo si è esteso a
-      una vasta gamma di applicazioni, dalla scrittura di documenti alla
-      gestione di progetti software di ogni dimensione.<br />
-      Essenzialmente, consente ai team di sviluppo di tenere traccia delle
-      modifiche apportate ai file nel tempo, consentendo una gestione
-      <strong>efficiente</strong> del flusso di lavoro e facilitando la
-      collaborazione tra i membri del team. Con la sua architettura distribuita,
-      Git consente ai singoli sviluppatori di lavorare in modo indipendente e di
-      sincronizzare le proprie modifiche con il repository centrale.<br />
-      Questo approccio decentralizzato rende Git <strong>flessibile</strong> e
-      <strong>robusto</strong>, adatto a progetti di qualsiasi dimensione e
-      complessità. Inoltre, la sua velocità e le potenti funzionalità di
-      branching e merging lo rendono uno strumento indispensabile per qualsiasi
-      sviluppatore moderno.
-    </p>
-    <h2>Breve storia di Git</h2>
-    <p>
-      Prima di Git, lo sviluppo del kernel Linux si affidava principalmente a un
-      sistema di controllo delle versioni chiamato <strong>BitKeeper</strong>.
-      Tuttavia, nel 2005, ci fu un conflitto tra la comunità di sviluppo del
-      kernel Linux e l'azienda che sviluppava BitKeeper. Di conseguenza, Linus
-      Torvalds decise di creare un nuovo sistema di controllo delle versioni che
-      potesse soddisfare le esigenze del progetto Linux. Così nacque Git, un
-      sistema di controllo delle versioni distribuito che si basa su concetti di
-      velocità, design semplice e supporto per lo sviluppo distribuito e non
-      lineare.
-    </p>
-    <h2>Utilizzi di Git e cosa fa</h2>
-    <p>
-      Git è uno strumento estremamente versatile utilizzato principalmente per
-      tracciare le modifiche apportate al codice sorgente durante lo sviluppo
-      del software. Consente agli sviluppatori di collaborare efficacemente,
-      gestire versioni multiple di un progetto e tenere traccia delle modifiche
-      nel tempo.<br />
-      Oltre al suo ruolo principale nello sviluppo del software, Git ha trovato
-      applicazioni in una vasta gamma di contesti, tra cui la scrittura di
-      documenti, la gestione di configurazioni, la creazione di siti web e molto
-      altro ancora.<br />
-      Git funziona tenendo traccia delle modifiche apportate ai file all'interno
-      di un repository, consentendo agli sviluppatori di lavorare su diverse
-      funzionalità in parallelo senza rischi di interferenze. Offre una serie di
-      strumenti per gestire il flusso di lavoro dello sviluppo, inclusi il
-      <strong>commit</strong>, il <strong>merge</strong> e il revert delle
-      <strong>modifiche</strong>. Inoltre, facilita la collaborazione tra team
-      di sviluppatori, consentendo loro di condividere facilmente il proprio
-      lavoro attraverso repository remoti.
-    </p>
-    <h2>Comandi di base di Git</h2>
-    <ul>
-      <li><code>git init</code>: Inizializza un nuovo repository Git.</li>
-      <li>
-        <code>git clone</code>: Clona un repository esistente da un URL remoto.
-      </li>
-      <li>
-        <code>git add</code>: Aggiunge file modificati o nuovi al repository.
-      </li>
-      <li><code>git commit</code>: Registra le modifiche nel repository.</li>
-      <li>
-        <code>git push</code>: Carica i commit locali su un repository remoto.
-      </li>
-      <li>
-        <code>git pull</code>: Scarica le modifiche da un repository remoto e le
-        integra nel repository locale.
-      </li>
-      <li><code>git branch</code>: Visualizza, crea o elimina branch.</li>
-      <li>
-        <code>git merge</code>: Unisce le modifiche da un branch all'altro.
-      </li>
-      <li>
-        <code>git checkout</code>: Cambia branch o ripristina lo stato del
-        repository.
-      </li>
-      <li>
-        <code>git status</code>: Visualizza lo stato dei file nel repository.
-      </li>
-      <li><code>git log</code>: Visualizza la cronologia dei commit.</li>
-    </ul>
-    <p>
-      Questi sono solo alcuni dei comandi di base di Git. Ce ne sono molti altri
-      che consentono di gestire in modo efficace il flusso di lavoro dello
-      sviluppo e le modifiche al codice sorgente.
-    </p>
+    <div class="corpoTesto">
+      <section class="title">
+        <h1>GIT</h1>
+      </section>
+      <section class="subtitle">
+        <h2>Cos'è GIT</h2>
+      </section>
+      <section class="texbody">
+        <p>
+          <b>Git</b> è un sistema di controllo delle versioni distribuito
+          ampiamente utilizzato per gestire il codice sorgente e la
+          collaborazione nello sviluppo del software. Creato da
+          <strong>Linus Torvalds</strong> nel 2005 per agevolare lo sviluppo del
+          kernel Linux, si è rapidamente diffuso diventando uno degli strumenti
+          più popolari per il controllo delle versioni. Git è un progetto open
+          source nato per soddisfare le esigenze di gestione delle versioni del
+          kernel Linux, ma il suo utilizzo si è esteso a una vasta gamma di
+          applicazioni, dalla scrittura di documenti alla gestione di progetti
+          software di ogni dimensione.<br />
+          Essenzialmente, consente ai team di sviluppo di tenere traccia delle
+          modifiche apportate ai file nel tempo, consentendo una gestione
+          <strong>efficiente</strong> del flusso di lavoro e facilitando la
+          collaborazione tra i membri del team. Con la sua architettura
+          distribuita, Git consente ai singoli sviluppatori di lavorare in modo
+          indipendente e di sincronizzare le proprie modifiche con il repository
+          centrale.<br />
+          Questo approccio decentralizzato rende Git
+          <strong>flessibile</strong> e <strong>robusto</strong>, adatto a
+          progetti di qualsiasi dimensione e complessità. Inoltre, la sua
+          velocità e le potenti funzionalità di branching e merging lo rendono
+          uno strumento indispensabile per qualsiasi sviluppatore moderno.
+        </p>
+      </section>
+      <section class="subtitle">
+        <h2>Breve storia di Git</h2>
+      </section>
+      <section class="texbody">
+        <p>
+          Prima di Git, lo sviluppo del kernel Linux si affidava principalmente
+          a un sistema di controllo delle versioni chiamato
+          <strong>BitKeeper</strong>. Tuttavia, nel 2005, ci fu un conflitto tra
+          la comunità di sviluppo del kernel Linux e l'azienda che sviluppava
+          BitKeeper. Di conseguenza, Linus Torvalds decise di creare un nuovo
+          sistema di controllo delle versioni che potesse soddisfare le esigenze
+          del progetto Linux. Così nacque Git, un sistema di controllo delle
+          versioni distribuito che si basa su concetti di velocità, design
+          semplice e supporto per lo sviluppo distribuito e non lineare.
+        </p>
+      </section>
+      <section class="subtitle">
+        <h2>Utilizzi di Git e cosa fa</h2>
+      </section>
+      <section class="texbody">
+        <p>
+          Git è uno strumento estremamente versatile utilizzato principalmente
+          per tracciare le modifiche apportate al codice sorgente durante lo
+          sviluppo del software. Consente agli sviluppatori di collaborare
+          efficacemente, gestire versioni multiple di un progetto e tenere
+          traccia delle modifiche nel tempo.<br />
+          Oltre al suo ruolo principale nello sviluppo del software, Git ha
+          trovato applicazioni in una vasta gamma di contesti, tra cui la
+          scrittura di documenti, la gestione di configurazioni, la creazione di
+          siti web e molto altro ancora.<br />
+          Git funziona tenendo traccia delle modifiche apportate ai file
+          all'interno di un repository, consentendo agli sviluppatori di
+          lavorare su diverse funzionalità in parallelo senza rischi di
+          interferenze. Offre una serie di strumenti per gestire il flusso di
+          lavoro dello sviluppo, inclusi il
+          <strong>commit</strong>, il <strong>merge</strong> e il revert delle
+          <strong>modifiche</strong>. Inoltre, facilita la collaborazione tra
+          team di sviluppatori, consentendo loro di condividere facilmente il
+          proprio lavoro attraverso repository remoti.
+        </p>
+      </section>
+      <section class="subtitle">
+        <h2>Comandi di base di Git</h2>
+      </section>
+      <section class="pointer">
+        <ul>
+          <li>
+            <code><span class="evidenziato">git init</span></code
+            >: Inizializza un nuovo repository Git.
+          </li>
+          <li>
+            <code><span class="evidenziato">git clone</span></code
+            >: Clona un repository esistente da un URL remoto.
+          </li>
+          <li>
+            <code><span class="evidenziato">git add</span></code
+            >: Aggiunge file modificati o nuovi al repository.
+          </li>
+          <li>
+            <code><span class="evidenziato">git commit</span></code
+            >: Registra le modifiche nel repository.
+          </li>
+          <li>
+            <code><span class="evidenziato">git push</span></code
+            >: Carica i commit locali su un repository remoto.
+          </li>
+          <li>
+            <code><span class="evidenziato">git pull</span></code
+            >: Scarica le modifiche da un repository remoto e le integra nel
+            repository locale.
+          </li>
+          <li>
+            <code><span class="evidenziato">git branch</span></code
+            >: Visualizza, crea o elimina branch.
+          </li>
+          <li>
+            <code><span class="evidenziato">git merge</span></code
+            >: Unisce le modifiche da un branch all'altro.
+          </li>
+          <li>
+            <code><span class="evidenziato">git checkout</span></code
+            >: Cambia branch o ripristina lo stato del repository.
+          </li>
+          <li>
+            <code><span class="evidenziato">git status</span></code
+            >: Visualizza lo stato dei file nel repository.
+          </li>
+          <li>
+            <code><span class="evidenziato">git log</span></code
+            >: Visualizza la cronologia dei commit.
+          </li>
+        </ul>
+      </section>
+      <section class="texbody">
+        <p>
+          Questi sono solo alcuni dei comandi di base di Git. Ce ne sono molti
+          altri che consentono di gestire in modo efficace il flusso di lavoro
+          dello sviluppo e le modifiche al codice sorgente.
+        </p>
+      </section>
+    </div>
+    <footer>
+      <section class="left">
+        <img
+          id="logo"
+          src="../img/logo-sja-150x38.png"
+          alt="Steve Jobs Academy"
+        />
+      </section>
+      <section class="center">
+        <p>Francesco Urso</p>
+      </section>
+      <section class="right">
+        <a href="https://github.com/francesco-urso" alt="francesco-urso">
+          <img
+            id="github"
+            src="../img/kisspng-github-computer-icons-github-logo-5b459a3d4de4a5.6554725315312881253191.png"
+            alt="GitHub"
+        /></a>
+      </section>
+    </footer>
   </body>
 </html>
