@@ -1,0 +1,44 @@
+body {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex; /* Applica flex al <ul> */
+  flex: 1;
+  justify-content: space-between;
+  padding: 200px;
+}
+
+button {
+  width: 100px; /* Imposta la larghezza del pulsante */
+  height: 100px; /* Imposta l'altezza del pulsante */
+  font-size: 5em;
+  margin: 15px;
+}
+
+#bottone_1 {
+  position: fixed;
+  top: 50%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+}
+
+#contatore {
+  font-family: monospace;
+}
+
+#bottone_2 {
+  position: fixed;
+  top: 50%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+}
+
+p {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4.5em;
+  margin: 10px;
+}
