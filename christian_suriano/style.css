@@ -1,7 +1,7 @@
 a {
   color: #1e1e1e; /* Cambia il colore base dei link */
   text-decoration: none; /* togliere la sottolineatura  */
-  transition: width 0.6s, height 0.6s; /*comando per la transizione, il box si ingrandisce al passaggio del mouse, l'ho messo fuori dal box per fare la transizione sia in che out*/
+  transition: 0.5s; /*comando per la transizione, il box si ingrandisce al passaggio del mouse, l'ho messo fuori dal box per fare la transizione sia in che out*/
 }
 
 /* Cambia il colore dei link quando vengono visitati */
@@ -14,6 +14,7 @@ a:hover {
   color: #1e1e1e;
   width: 207px; /* Ingrandisci la larghezza al passaggio del mouse */
   height: 147px; /* Ingrandisci l'altezza al passaggio del mouse */
+  box-shadow: 0px 0px 30px #1e1e1e57;
 }
 
 /* Cambia il colore dei link quando vengono selezionati */
@@ -24,9 +25,8 @@ a {
   padding-left: 10mm;
   padding-right: 5mm;
   padding-top: 25mm; /*il padding agisce sui bordi interni del box, fra la scritta e il box*/
-  margin: 15px;
-  margin-top: -10px; /* il margin agisce esternamente, spaziatura fra le scritte o i box*/
-  margin-bottom: -10px;
+  margin: 5px; /* il margin agisce esternamente, spaziatura fra le scritte o i box*/
+
   height: 140px;
   width: 200px;
   background-color: white;
@@ -35,7 +35,7 @@ a {
 
   display: flex;
   flex-wrap: wrap; /* Per consentire il wrapping degli elementi figlio */
-  gap: 20px;
+  gap: 10%;
 }
 
 .corpo {
@@ -64,8 +64,8 @@ a {
   color: #707070;
   text-align: left;
   margin-right: 4vh;
-  grid-row: 2;
-  margin-top: -360px;
+  position: absolute; /* Posizionamento assoluto */
+  top: 39%;
 }
 .scritte {
   font-weight: bold;
@@ -77,25 +77,53 @@ a {
       3,
     1fr
   ); /* Creare due colonne con larghezza uguale */
-  grid-gap: 10px; /*gap orizzontale tra elementi del grid*/
+  grid-gap: 5px; /*gap orizzontale tra elementi del grid*/
 }
 
 .gitl {
-  color: rgb(255, 136, 0);
-  margin-top: -17mm; /*con questo comando aggiusto la spaziatura che si viene a creare a causa dello span*/
+  color: #ff8800;
+  position: absolute;
+  margin-top: 38px;
 }
 .mdl {
-  color: rgb(40, 140, 255);
-  margin-top: -17mm;
+  color: #288cff;
+  position: absolute;
+  margin-top: 38px;
 }
 
 .cssl {
-  color: rgb(161, 30, 255);
-  margin-top: -17mm;
+  color: #a11eff;
+  position: absolute;
+  margin-top: 38px;
 }
 
 .box_neri {
   background-color: #1e1e1e;
+}
+#cssN {
+  background-image: url("C:/Users/Utente/Desktop/Senza titolo-4.jpg");
+  background-size: cover;
+}
+#cssN:hover {
+  background-image: url("C:/Users/Utente/Desktop/Senza titolo-1.jpg");
+  background-size: cover;
+}
+
+#mdN {
+  background-image: url("C:/Users/Utente/Desktop/Senza titolo-5.jpg");
+  background-size: cover;
+}
+#mdN:hover {
+  background-image: url("C:/Users/Utente/Desktop/Senza titolo-2.jpg");
+  background-size: cover;
+}
+#gitN {
+  background-image: url("C:/Users/Utente/Desktop/Senza titolo-6.jpg");
+  background-size: cover;
+}
+#gitN:hover {
+  background-image: url("C:/Users/Utente/Desktop/Senza titolo-3.jpg");
+  background-size: cover;
 }
 #git_c {
   color: #f4f4f4;
