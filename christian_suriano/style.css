@@ -101,28 +101,28 @@ a {
   background-color: #1e1e1e;
 }
 #cssN {
-  background-image: url("C:/Users/Utente/Desktop/Senza titolo-4.jpg");
+  background-image: url();
   background-size: cover;
 }
 #cssN:hover {
-  background-image: url("C:/Users/Utente/Desktop/Senza titolo-1.jpg");
+  background-image: url();
   background-size: cover;
 }
 
 #mdN {
-  background-image: url("C:/Users/Utente/Desktop/Senza titolo-5.jpg");
+  background-image: url();
   background-size: cover;
 }
 #mdN:hover {
-  background-image: url("C:/Users/Utente/Desktop/Senza titolo-2.jpg");
+  background-image: url();
   background-size: cover;
 }
 #gitN {
-  background-image: url("C:/Users/Utente/Desktop/Senza titolo-6.jpg");
+  background-image: url();
   background-size: cover;
 }
 #gitN:hover {
-  background-image: url("C:/Users/Utente/Desktop/Senza titolo-3.jpg");
+  background-image: url();
   background-size: cover;
 }
 #git_c {

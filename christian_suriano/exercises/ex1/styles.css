@@ -1,0 +1,12 @@
+.bottone {
+  margin-top: 50vh;
+  text-align: center;
+
+  width: 200px;
+  margin-left: 80vh;
+  background-color: rgb(238, 238, 238);
+  padding: 10px;
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: black;
+}
