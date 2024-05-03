@@ -1,0 +1,144 @@
+body {
+  font-family: "Gill Sans";
+  margin: 0;
+  padding: 0;
+  background-color: rgb(212, 235, 249);
+}
+
+.corpoTesto {
+  margin-bottom: 100px; /* Aggiunge 100 pixel di spazio inferiore al contenuto */
+}
+
+/* Da qui parte per il menu */
+#menù {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  text-decoration: none;
+}
+/* per dividere le due sezioni menù */
+.container {
+  display: flex;
+}
+
+.column {
+  flex: 1; /* Rende le colonne flessibili per occupare lo stesso spazio */
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+/* Menu pagine */
+#menù a {
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+nav ul li:hover ul {
+  display: block;
+}
+
+nav ul li a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #a4bbd0;
+}
+
+/* Stili per i link nel menu */
+nav a {
+  display: inline-block; /* Rendi i link blocchi inline */
+  text-decoration: none; /* Rimuovi la sottolineatura dai link */
+  color: #333; /* Colore del testo */
+  margin-bottom: 10px;
+}
+
+/* Stili base per il menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Da qui parte per il footer */
+footer {
+  display: flex;
+  justify-content: space-between; /* Distribuisci i blocchi uniformemente lungo l'asse principale */
+  align-items: center; /* Allinea i blocchi verticalmente al centro */
+  padding: 20px;
+  /* Colore scuro e con trasparenza */
+  background-color: rgba(182, 198, 206, 0.8);
+  position: fixed;
+  bottom: 0; /* Sposta il footer 20 pixel sopra il bordo inferiore */
+  width: 100%;
+}
+
+.left,
+.center,
+.right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  width: 100%; /* Larghezza automatica per adattarsi al contenuto */
+}
+
+#logo {
+  max-width: 100%;
+}
+
+#github {
+  max-width: 30px;
+}
+/* Corpo */
+.title {
+  font-size: x-large;
+  padding-left: 20px;
+}
+
+h2 {
+  padding-left: 30px;
+}
+
+h3 {
+  padding-left: 40px;
+}
+
+p {
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: justify;
+}
+
+.pointer {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+code {
+  background-color: #a4bbd0;
+}
+
+.evidenziato {
+  background-color: #a4bbd0;
+}
+
+.evidenziato code {
+  background-color: #a4bbd0;
+}
+
+.bloccoEvidenziato {
+  display: inline-block;
+  background-color: #a4bbd0; /* Colore di sfondo */
+  padding: 5px 10px; /* Spazio intorno al testo */
+  border-radius: 5px; /* Bordi arrotondati */
+}
+
+/* Per il button e collegamento */
+.pointer a {
+  text-decoration: none;
+  border-radius: 5px; /* Bordo arrotondato di 5px */
+}

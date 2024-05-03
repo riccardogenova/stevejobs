@@ -1,27 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Index</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
   </head>
   <body>
-    <h1>Menù</h1>
+    <section id="menù">
+      <h1>Menù</h1>
+    </section>
     <nav>
-      <ul>
-        <h2>Helpers</h2>
-        <li>
-          <a href="../francesco_urso/html/MARKDOWN_SHEET.html"
-            >Markdown Sheet
-          </a>
-        </li>
-        <li><a href="../francesco_urso/html/GIT_SHEET.html">Git Sheet</a></li>
-        <li><a href="../francesco_urso/html/HTML_SHEET.html">HTML Sheet</a></li>
-        <li><a href="../francesco_urso/html/CSS_SHEET.html">CSS Sheet</a></li>
-        <h2>Lessons</h2>
-        <li><a href="../francesco_urso/html/MARKDOWN.html">Markdown</a></li>
-        <li><a href="../francesco_urso/html/GIT.html">Git</a></li>
-        <li><a href="../francesco_urso/html/HTML.html">HTML</a></li>
-        <li><a href="../francesco_urso/html/CSS.html">CSS</a></li>
-      </ul>
+      <section class="container">
+        <div class="column">
+          <h2>Lessons</h2>
+          <ul>
+            <li>
+              <a href="../francesco_urso/html/MARKDOWN.html">Markdown</a>
+            </li>
+            <li><a href="../francesco_urso/html/GIT.html">Git</a></li>
+            <li><a href="../francesco_urso/html/HTML.html">HTML</a></li>
+            <li><a href="../francesco_urso/html/CSS.html">CSS</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h2>Helpers</h2>
+          <ul>
+            <li>
+              <a href="../francesco_urso/html/MARKDOWN_SHEET.html"
+                >Markdown Sheet</a
+              >
+            </li>
+            <li>
+              <a href="../francesco_urso/html/GIT_SHEET.html">Git Sheet</a>
+            </li>
+            <li>
+              <a href="../francesco_urso/html/HTML_SHEET.html">HTML Sheet</a>
+            </li>
+            <li>
+              <a href="../francesco_urso/html/CSS_SHEET.html">CSS Sheet</a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </nav>
+    <footer>
+      <section class="left">
+        <img
+          id="logo"
+          src="../francesco_urso/img/logo-sja-150x38.png"
+          alt="Steve Jobs Academy"
+        />
+      </section>
+      <section class="center">
+        <p>Francesco Urso</p>
+      </section>
+      <section class="right">
+        <a href="https://github.com/francesco-urso" alt="francesco-urso">
+          <img
+            id="github"
+            src="../francesco_urso/img/kisspng-github-computer-icons-github-logo-5b459a3d4de4a5.6554725315312881253191.png"
+            alt="GitHub"
+        /></a>
+      </section>
+    </footer>
   </body>
 </html>

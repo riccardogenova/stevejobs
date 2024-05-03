@@ -1,157 +1,206 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../main.css" />
     <title>HTML</title>
   </head>
   <body>
-    <h2><a href="../INDEX.html">Menù</a></h2>
+    <section id="menù">
+      <h2><a href="../INDEX.html">Menù</a></h2>
+    </section>
     <nav>
-      <ul>
-        <h2>Helpers</h2>
-        <li>
-          <a href="../html/MARKDOWN_SHEET.html">Markdown Sheet </a>
-        </li>
-        <li><a href="../html/GIT_SHEET.html">Git Sheet</a></li>
-        <li><a href="../html/HTML_SHEET.html">HTML Sheet</a></li>
-        <li><a href="../html/CSS_SHEET.html">CSS Sheet</a></li>
-        <h2>Lessons</h2>
-        <li><a href="../html/MARKDOWN.html">Markdown</a></li>
-        <li><a href="../html/GIT.html">Git</a></li>
-        <li>
-          <a href="../html/HTML.html"><b>>HTML</b></a>
-        </li>
-        <li><a href="../html/CSS.html">CSS</a></li>
-      </ul>
+      <section class="container">
+        <div class="column">
+          <h2>Lessons</h2>
+          <ul>
+            <li><a href="../html/MARKDOWN.html">Markdown</a></li>
+            <li><a href="../html/GIT.html">Git</a></li>
+            <li><a href="../html/HTML.html">HTML</a></li>
+            <li><a href="../html/CSS.html">CSS</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h2>Helpers</h2>
+          <ul>
+            <li>
+              <a href="../html/MARKDOWN_SHEET.html">Markdown Sheet</a>
+            </li>
+            <li>
+              <a href="../html/GIT_SHEET.html">Git Sheet</a>
+            </li>
+            <li>
+              <a href="../html/HTML_SHEET.html">HTML Sheet</a>
+            </li>
+            <li>
+              <a href="../html/CSS_SHEET.html">CSS Sheet</a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </nav>
-    <h1>HTML</h1>
-    <h2>Cos'è HTML</h2>
-    <p>
-      HTML, acronimo di <em>HyperText Markup Language</em>, è il linguaggio di
-      markup standard utilizzato per creare e strutturare contenuti web. È uno
-      dei pilastri fondamentali del World Wide Web insieme a CSS (Cascading
-      Style Sheets) e JavaScript. HTML è un <b>linguaggio di markup</b> che
-      utilizza una sintassi composta da tag per descrivere la struttura e il
-      contenuto di una pagina web. I tag sono elementi che indicano al browser
-      come visualizzare e interpretare il contenuto della pagina. Ogni tag ha un
-      significato specifico e può contenere testo, immagini, collegamenti
-      ipertestuali e altri elementi multimediali.
-    </p>
-    <h2>Breve storia su HTML</h2>
-    <p>
-      La storia di HTML è stata caratterizzata da continui sviluppi e
-      miglioramenti per soddisfare le esigenze crescenti del web moderno,
-      rendendo Internet un ambiente sempre più ricco e interattivo. HTML inizia
-      con l'avvento del World Wide Web negli anni '90. Ecco una panoramica
-      sintetica della sua evoluzione:
-    </p>
-    <ul>
-      <li>
-        1989-1991: HTML (HyperText Markup Language) è stato inventato da Tim
-        Berners-Lee, un ricercatore al CERN (Organizzazione europea per la
-        ricerca nucleare), come parte del progetto per creare una rete di
-        informazioni collegata tra scienziati.
-      </li>
-      <li>
-        1991: Viene rilasciata la prima versione di HTML, denominata HTML 1.0.
-        Era molto semplice e includeva solo una manciata di tag per formattare
-        il testo e creare link ipertestuali.
-      </li>
-      <li>
-        1993-1995: Con la crescente popolarità del Web, viene rilasciata HTML
-        2.0, aggiungendo nuovi tag e attributi per migliorare la formattazione e
-        la struttura delle pagine web.
-      </li>
-      <li>
-        1996-1997: HTML 3.2 introduce ulteriori miglioramenti e supporta nuove
-        funzionalità come le tabelle e i frame.
-      </li>
-      <li>
-        1999: HTML 4.01 è pubblicato con una serie di regole più rigorose per la
-        scrittura del codice HTML e nuovi elementi e attributi per migliorare la
-        struttura delle pagine web.
-      </li>
-      <li>
-        2000: XHTML (eXtensible Hypertext Markup Language) viene introdotto come
-        una riformulazione di HTML 4 in XML (eXtensible Markup Language),
-        fornendo una sintassi più rigorosa e compatibile con XML.
-      </li>
-      <li>
-        2014: HTML5 viene ufficialmente pubblicato con numerose innovazioni,
-        come nuovi elementi semantici, supporto per l'audio e il video nativi,
-        canvas per grafica 2D e 3D, e molto altro.
-      </li>
-      <li>
-        Oggi: HTML5 è la versione più recente e ampiamente utilizzata di HTML. È
-        supportato da tutti i principali browser e continua a evolversi con il
-        progresso della tecnologia web e le esigenze degli sviluppatori e degli
-        utenti finali.
-      </li>
-    </ul>
-    <h2>A cosa serve HTML?</h2>
-    <p>
-      HTML è essenziale per la creazione di pagine web. Attraverso l'uso di tag
-      HTML, è possibile definire la struttura di una pagina, inclusi elementi
-      come intestazioni, paragrafi, elenchi, tabelle, form, immagini e altro
-      ancora. Questo consente agli sviluppatori web di creare pagine web
-      interattive e ben strutturate che possono essere visualizzate dai browser
-      web su diversi dispositivi e piattaforme. Ecco un approfondimento su cosa
-      serve HTML e perché è fondamentale per la creazione di pagine web:
-    </p>
-    <ol>
-      <li>
-        <b>Struttura del Contenuto</b>: HTML definisce la struttura base di una
-        pagina web, indicando al browser come organizzare e visualizzare il
-        contenuto. Utilizzando tag come <code>&lt;header&gt;</code>,
-        <code>&lt;footer&gt;</code>
-        <code>&lt;footer&gt;</code>, <code>&lt;nav&gt;</code>,
-        <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, e altri, è
-        possibile suddividere il contenuto in parti significative e facilitare
-        la comprensione della sua struttura.
-      </li>
-      <li>
-        <b>Testo e Immagini</b>: HTML permette di inserire testo e immagini
-        all'interno di una pagina web utilizzando tag appropriati. Ad esempio,
-        il tag <code>&lt;p&gt;</code> è utilizzato per creare paragrafi di
-        testo, mentre il tag <code>&lt;img&gt;</code> è utilizzato per inserire
-        immagini.
-      </li>
-      <li>
-        <b>Link Ipertestuali</b>: HTML consente di creare collegamenti
-        ipertestuali tra le pagine web utilizzando il tag
-        <code>&lt;a&gt;</code>. Questo permette agli utenti di navigare
-        facilmente da una pagina all'altra, creando una rete di informazioni
-        interconnesse.
-      </li>
-      <li>
-        <b>Formulare e Input</b>: HTML fornisce tag specifici per la creazione
-        di formulari e la raccolta di dati dagli utenti. Utilizzando tag come
-        <code>&lt;form&gt;</code>, <code>&lt;input&gt;</code>,
-        <code>&lt;textarea&gt;</code>, <code>&lt;select&gt;</code>, e altri, è
-        possibile creare moduli interattivi per la registrazione, la ricerca, la
-        compilazione di sondaggi e altro ancora.
-      </li>
-      <li>
-        <b>Struttura Semantica</b>: HTML5 ha introdotto nuovi elementi semantici
-        che forniscono una migliore descrizione semantica del contenuto,
-        migliorando l'accessibilità e l'indicizzazione dei motori di ricerca. Ad
-        esempio, <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>,
-        <code>&lt;nav&gt;</code>, <code>&lt;section&gt;</code>,
-        <code>&lt;article&gt;</code>, <code>&lt;aside&gt;</code>, e altri
-        forniscono informazioni aggiuntive sulla struttura e il significato del
-        contenuto.
-      </li>
-      <li>
-        <b>Compatibilità e Portabilità</b>: HTML è un linguaggio standard
-        supportato da tutti i principali browser web e piattaforme, rendendo il
-        contenuto HTML facilmente accessibile e visualizzabile su diversi
-        dispositivi e sistemi operativi. Ciò garantisce una maggiore portabilità
-        e compatibilità del contenuto web.
-      </li>
-    </ol>
-    <p>
-      In sintesi, HTML è fondamentale per la creazione di pagine web, fornendo
-      la struttura, il contenuto e l'interattività necessari per creare
-      esperienze web coinvolgenti e accessibili.
-    </p>
+    <div class="corpoTesto">
+      <section class="title">
+        <h1>HTML</h1>
+      </section>
+      <h2>Cos'è HTML</h2>
+      <p>
+        HTML, acronimo di <em>HyperText Markup Language</em>, è il linguaggio di
+        markup standard utilizzato per creare e strutturare contenuti web. È uno
+        dei pilastri fondamentali del World Wide Web insieme a CSS (Cascading
+        Style Sheets) e JavaScript. HTML è un <b>linguaggio di markup</b> che
+        utilizza una sintassi composta da tag per descrivere la struttura e il
+        contenuto di una pagina web. I tag sono elementi che indicano al browser
+        come visualizzare e interpretare il contenuto della pagina. Ogni tag ha
+        un significato specifico e può contenere testo, immagini, collegamenti
+        ipertestuali e altri elementi multimediali.
+      </p>
+      <h2>Breve storia su HTML</h2>
+      <p>
+        La storia di HTML è stata caratterizzata da continui sviluppi e
+        miglioramenti per soddisfare le esigenze crescenti del web moderno,
+        rendendo Internet un ambiente sempre più ricco e interattivo. HTML
+        inizia con l'avvento del World Wide Web negli anni '90. Ecco una
+        panoramica sintetica della sua evoluzione:
+      </p>
+      <section class="pointer">
+        <ul>
+          <li>
+            1989-1991: HTML (HyperText Markup Language) è stato inventato da Tim
+            Berners-Lee, un ricercatore al CERN (Organizzazione europea per la
+            ricerca nucleare), come parte del progetto per creare una rete di
+            informazioni collegata tra scienziati.
+          </li>
+          <li>
+            1991: Viene rilasciata la prima versione di HTML, denominata HTML
+            1.0. Era molto semplice e includeva solo una manciata di tag per
+            formattare il testo e creare link ipertestuali.
+          </li>
+          <li>
+            1993-1995: Con la crescente popolarità del Web, viene rilasciata
+            HTML 2.0, aggiungendo nuovi tag e attributi per migliorare la
+            formattazione e la struttura delle pagine web.
+          </li>
+          <li>
+            1996-1997: HTML 3.2 introduce ulteriori miglioramenti e supporta
+            nuove funzionalità come le tabelle e i frame.
+          </li>
+          <li>
+            1999: HTML 4.01 è pubblicato con una serie di regole più rigorose
+            per la scrittura del codice HTML e nuovi elementi e attributi per
+            migliorare la struttura delle pagine web.
+          </li>
+          <li>
+            2000: XHTML (eXtensible Hypertext Markup Language) viene introdotto
+            come una riformulazione di HTML 4 in XML (eXtensible Markup
+            Language), fornendo una sintassi più rigorosa e compatibile con XML.
+          </li>
+          <li>
+            2014: HTML5 viene ufficialmente pubblicato con numerose innovazioni,
+            come nuovi elementi semantici, supporto per l'audio e il video
+            nativi, canvas per grafica 2D e 3D, e molto altro.
+          </li>
+          <li>
+            Oggi: HTML5 è la versione più recente e ampiamente utilizzata di
+            HTML. È supportato da tutti i principali browser e continua a
+            evolversi con il progresso della tecnologia web e le esigenze degli
+            sviluppatori e degli utenti finali.
+          </li>
+        </ul>
+      </section>
+      <h2>A cosa serve HTML?</h2>
+      <p>
+        HTML è essenziale per la creazione di pagine web. Attraverso l'uso di
+        tag HTML, è possibile definire la struttura di una pagina, inclusi
+        elementi come intestazioni, paragrafi, elenchi, tabelle, form, immagini
+        e altro ancora. Questo consente agli sviluppatori web di creare pagine
+        web interattive e ben strutturate che possono essere visualizzate dai
+        browser web su diversi dispositivi e piattaforme. Ecco un
+        approfondimento su cosa serve HTML e perché è fondamentale per la
+        creazione di pagine web:
+      </p>
+      <section class="pointer">
+        <ol>
+          <li>
+            <b>Struttura del Contenuto</b>: HTML definisce la struttura base di
+            una pagina web, indicando al browser come organizzare e visualizzare
+            il contenuto. Utilizzando tag come
+            <code> <span class="evidenziato">&lt;header&gt;</span></code
+            >,
+            <code>&lt;footer&gt;</code>
+            <code>&lt;footer&gt;</code>, <code>&lt;nav&gt;</code>,
+            <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, e altri,
+            è possibile suddividere il contenuto in parti significative e
+            facilitare la comprensione della sua struttura.
+          </li>
+          <li>
+            <b>Testo e Immagini</b>: HTML permette di inserire testo e immagini
+            all'interno di una pagina web utilizzando tag appropriati. Ad
+            esempio, il tag <code>&lt;p&gt;</code> è utilizzato per creare
+            paragrafi di testo, mentre il tag <code>&lt;img&gt;</code> è
+            utilizzato per inserire immagini.
+          </li>
+          <li>
+            <b>Link Ipertestuali</b>: HTML consente di creare collegamenti
+            ipertestuali tra le pagine web utilizzando il tag
+            <code>&lt;a&gt;</code>. Questo permette agli utenti di navigare
+            facilmente da una pagina all'altra, creando una rete di informazioni
+            interconnesse.
+          </li>
+          <li>
+            <b>Formulare e Input</b>: HTML fornisce tag specifici per la
+            creazione di formulari e la raccolta di dati dagli utenti.
+            Utilizzando tag come <code>&lt;form&gt;</code>,
+            <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>,
+            <code>&lt;select&gt;</code>, e altri, è possibile creare moduli
+            interattivi per la registrazione, la ricerca, la compilazione di
+            sondaggi e altro ancora.
+          </li>
+          <li>
+            <b>Struttura Semantica</b>: HTML5 ha introdotto nuovi elementi
+            semantici che forniscono una migliore descrizione semantica del
+            contenuto, migliorando l'accessibilità e l'indicizzazione dei motori
+            di ricerca. Ad esempio, <code>&lt;header&gt;</code>,
+            <code>&lt;footer&gt;</code>, <code>&lt;nav&gt;</code>,
+            <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>,
+            <code>&lt;aside&gt;</code>, e altri forniscono informazioni
+            aggiuntive sulla struttura e il significato del contenuto.
+          </li>
+          <li>
+            <b>Compatibilità e Portabilità</b>: HTML è un linguaggio standard
+            supportato da tutti i principali browser web e piattaforme, rendendo
+            il contenuto HTML facilmente accessibile e visualizzabile su diversi
+            dispositivi e sistemi operativi. Ciò garantisce una maggiore
+            portabilità e compatibilità del contenuto web.
+          </li>
+        </ol>
+      </section>
+      <p>
+        In sintesi, HTML è fondamentale per la creazione di pagine web, fornendo
+        la struttura, il contenuto e l'interattività necessari per creare
+        esperienze web coinvolgenti e accessibili.
+      </p>
+    </div>
+    <footer>
+      <section class="left">
+        <img
+          id="logo"
+          src="../img/logo-sja-150x38.png"
+          alt="Steve Jobs Academy"
+        />
+      </section>
+      <section class="center">
+        <p>Francesco Urso</p>
+      </section>
+      <section class="right">
+        <a href="https://github.com/francesco-urso" alt="francesco-urso">
+          <img
+            id="github"
+            src="../img/kisspng-github-computer-icons-github-logo-5b459a3d4de4a5.6554725315312881253191.png"
+            alt="GitHub"
+        /></a>
+      </section>
+    </footer>
   </body>
 </html>

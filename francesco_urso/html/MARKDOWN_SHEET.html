@@ -1,184 +1,264 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../main.css" />
     <title>Markdown Sheet</title>
   </head>
   <body>
-    <h2><a href="../INDEX.html">Menù</a></h2>
+    <section id="menù">
+      <h2><a href="../INDEX.html">Menù</a></h2>
+    </section>
     <nav>
-      <ul>
-        <h2>Helpers</h2>
-        <li>
-          <a href="../francesco_urso/html/MARKDOWN_SHEET.html"
-            ><b>>Markdown Sheet</b>
-          </a>
-        </li>
-        <li><a href="../html/GIT_SHEET.html">Git Sheet</a></li>
-        <li><a href="../html/HTML_SHEET.html">HTML Sheet</a></li>
-        <li><a href="../html/CSS_SHEET.html">CSS Sheet</a></li>
-        <h2>Lessons</h2>
-        <li>
-          <a href="../html/MARKDOWN.html">Markdown</a>
-        </li>
-        <li><a href="../html/GIT.html">Git</a></li>
-        <li><a href="../html/HTML.html">HTML</a></li>
-        <li><a href="../html/CSS.html">CSS</a></li>
-      </ul>
+      <section class="container">
+        <div class="column">
+          <h2>Lessons</h2>
+          <ul>
+            <li><a href="../html/MARKDOWN.html">Markdown</a></li>
+            <li><a href="../html/GIT.html">Git</a></li>
+            <li><a href="../html/HTML.html">HTML</a></li>
+            <li><a href="../html/CSS.html">CSS</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h2>Helpers</h2>
+          <ul>
+            <li>
+              <a href="../html/MARKDOWN_SHEET.html">Markdown Sheet</a>
+            </li>
+            <li>
+              <a href="../html/GIT_SHEET.html">Git Sheet</a>
+            </li>
+            <li>
+              <a href="../html/HTML_SHEET.html">HTML Sheet</a>
+            </li>
+            <li>
+              <a href="../html/CSS_SHEET.html">CSS Sheet</a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </nav>
-    <h1>Markdown SHEET</h1>
-    <p>Comandi divisi per categoria:</p>
-    <ul>
-      <li>Commenti</li>
-      <li>Sintesi di base</li>
-      <li>Tabelle</li>
-      <li>Testo</li>
-      <li>Tabulazione</li>
-    </ul>
-    <h2>Commenti</h2>
-    <p>
-      Per inserire un commento che verrà ignorato durante la visualizzazione:
-    </p>
-    <pre><code>&lt;!-- Inserire qui un commento --&gt;</code></pre>
-    <h2>Sintassi di base</h2>
-    <h3>Intestazione</h3>
-    <p>
-      Le <b>intestazioni</b> sono utilizzate per creare titoli o sottotitoli
-      all'interno di un documento. Puoi creare intestazioni utilizzando il
-      carattere #, seguito da uno spazio e il testo dell'intestazione. Più # si
-      aggiungono, più grande sarà l'intestazione.
-    </p>
-    <code>
-      # Titolo principale (H1)<br />
-      ## Sottotitolo (H2)<br />
-      #### Sottotitolo più piccolo (H3)
-    </code>
-    <h3>Grassetto e Corsivo</h3>
-    <p>Per scrivere testo in <b>grassetto</b>, o due trattini bassi __.</p>
-    <pre><code>**Questo è testo in grassetto**</code></pre>
-    <p>
-      Per scrivere testo in <em>corsivo</em>, o un singolo trattino basso _.
-    </p>
-    <pre><code>*Questo è testo in corsivo*</code></pre>
-    <h3>Elenco puntato</h3>
-    <p>
-      Per creare un <b>elenco puntato</b> puoi utilizzare uno degli asterischi
-      *, dei trattini -, o dei segni più +, seguito da uno spazio e il testo
-      dell'elemento dell'elenco.
-    </p>
-    <code>
-      * Elemento 1<br />
-      * Elemento 2<br />
-      * Elemento 3
-    </code>
-    <h3>Elenco numerato</h3>
-    <p>
-      Per creare un <b>elenco numerato</b> puoi utilizzare semplicemente un
-      numero seguito da un punto e uno spazio, seguito dal testo dell'elemento
-      dell'elenco.
-    </p>
-    <code>
-      1. Elemento<br />
-      2. Elemento<br />
-      3. Elemento
-    </code>
-    <h3>Link</h3>
-    <p>
-      Puoi creare <b>link ipertestuali</b> utilizzando la sintassi
-      <code>[testo del link](URL)</code>. Questo consente di rendere cliccabile
-      un certo testo, collegandolo a una specifica pagina web.
-    </p>
-    <code>[Visita il mio sito](https://www.ilmiowebsite.com)</code>
-    <h3>Immagini</h3>
-    <p>
-      Puoi inserire immagini nei tuoi documenti utilizzando la sintassi
-      <code>![testo alternativo](URL dell'immagine)</code>.
-    </p>
-    <code
-      >![Logo della mia azienda](https://www.example.com/images/logo.png)</code
-    >
-    <h3>Citazioni</h3>
-    <p>
-      Puoi creare citazioni utilizzando il simbolo &gt; seguito dal testo della
-      citazione.
-    </p>
-    <pre><code>&gt; Questo è un esempio di citazione.</code></pre>
-    <h2>Tabelle</h2>
-    <p>Per creare una tabella, utilizza la seguente sintassi:</p>
-    <p>
-      | Header 1 | Header 2 | Header 3 |<br />
-      |----------|----------|----------|<br />
-      | Riga 1 | Dato A | Dato X |<br />
-      | Riga 2 | Dato B | Dato Y |<br />
-      | Riga 3 | Dato C | Dato Z |
-    </p>
-    <p>
-      Per specificare l'allineamento delle colonne aggiungendo dei due punti
-      <code>:</code> nella riga di formato.
-    </p>
-    <p>
-      | Nome | Cognome | Età |<br />
-      |:--------|:-------:|----:|<br />
-      | Marco | Rossi | 25 |<br />
-      | Laura | Bianchi | 30 |<br />
-      | Giovanni| Verdi | 40 |
-    </p>
-    <h2>Tabulazione</h2>
-    <h3>Elenchi annidati</h3>
-    <p>
-      Per creare un elenco annidato, basta indentare gli elementi dell'elenco
-      interni rispetto a quelli esterni utilizzando spazi.
-    </p>
-
-    <ul>
-      <li>Elemento principale</li>
-      <li>
+    <div class="corpoTesto">
+      <section class="title">
+        <h1>Markdown SHEET</h1>
+      </section>
+      <p>Comandi divisi per categoria:</p>
+      <section class="pointer">
         <ul>
-          <li>Sotto elemento 1</li>
-          <li>Sotto elemento 2</li>
+          <li>
+            <button>
+              <a href="#commenti">Commenti</a>
+            </button>
+          </li>
+          <li>
+            <button>
+              <a href="#sintesi"> Sintesi di base </a>
+            </button>
+          </li>
+          <li>
+            <button><a href="#tabelle"> Tabelle </a></button>
+          </li>
+          <li>
+            <button>
+              <a href="#tabulazione"> Tabulazione </a>
+            </button>
+          </li>
+        </ul>
+      </section>
+      <h2 id="commenti">Commenti</h2>
+      <section class="texbody">
+        <p>
+          Per inserire un commento che verrà ignorato durante la
+          visualizzazione:
+          <code>
+            <span class="evidenziato"
+              >&lt;!-- Inserire qui un commento --&gt;</span
+            >
+          </code>
+        </p>
+      </section>
+      <h2 id="sintesi">Sintassi di base</h2>
+      <h3>Intestazione</h3>
+      <p>
+        Le <b>intestazioni</b> sono utilizzate per creare titoli o sottotitoli
+        all'interno di un documento. Puoi creare intestazioni utilizzando il
+        carattere #, seguito da uno spazio e il testo dell'intestazione. Più #
+        si aggiungono, più grande sarà l'intestazione. <br />
+        <code>
+          # Titolo principale (H1)<br />
+          ## Sottotitolo (H2)<br />
+          #### Sottotitolo più piccolo (H3)
+        </code>
+      </p>
+      <h3>Grassetto e Corsivo</h3>
+      <p>
+        Per scrivere testo in <b>grassetto</b> utilizza **, o due trattini bassi
+        __. <br />
+        <code> **Questo è testo in grassetto** </code>
+      </p>
+      <p>
+        Per scrivere testo in <em>corsivo</em> utilizza *, o un singolo trattino
+        basso _. <br />
+        <code> *Questo è testo in corsivo* </code>
+      </p>
+      <h3>Elenco puntato</h3>
+      <p>
+        Per creare un <b>elenco puntato</b> puoi utilizzare uno degli asterischi
+        *, dei trattini -, o dei segni più +, seguito da uno spazio e il testo
+        dell'elemento dell'elenco. <br />
+        <code>
+          * Elemento<br />
+          * Elemento 1<br />
+          * Elemento 2<br />
+          * Elemento 3
+        </code>
+      </p>
+      <h3>Elenco numerato</h3>
+      <p>
+        Per creare un <b>elenco numerato</b> puoi utilizzare semplicemente un
+        numero seguito da un punto e uno spazio, seguito dal testo dell'elemento
+        dell'elenco. <br />
+        <code>
+          1. Elemento<br />
+          2. Elemento<br />
+          3. Elemento
+        </code>
+      </p>
+      <h3>Link</h3>
+      <p>
+        Puoi creare <b>link ipertestuali</b> utilizzando la sintassi
+        <code>[testo del link](URL)</code>. Questo consente di rendere
+        cliccabile un certo testo, collegandolo a una specifica pagina web.
+        <br />
+        <code> [Visita il mio sito](https://www.ilmiowebsite.com) </code>
+      </p>
+      <h3>Immagini</h3>
+      <p>
+        Puoi inserire immagini nei tuoi documenti utilizzando la sintassi
+        <code>![testo alternativo](URL dell'immagine)</code>. <br />
+        <code>
+          ![Logo della mia azienda](https://www.example.com/images/logo.png)
+        </code>
+      </p>
+      <h3>Citazioni</h3>
+      <p>
+        Puoi creare citazioni utilizzando il simbolo &gt; seguito dal testo
+        della citazione. <br />
+        <code> &gt; Questo è un esempio di citazione. </code>
+      </p>
+      <h2 id="tabelle">Tabelle</h2>
+      <p>
+        Per creare una tabella, utilizza la seguente sintassi: <br />
+        <span class="bloccoEvidenziato">
+          | Header 1 | Header 2 | Header 3 |<br />
+          |----------|----------|----------|<br />
+          | Riga 1 | Dato A | Dato X |<br />
+          | Riga 2 | Dato B | Dato Y |<br />
+          | Riga 3 | Dato C | Dato Z |
+        </span>
+      </p>
+      <p>
+        Per specificare l'allineamento delle colonne aggiungendo dei due punti
+        <b>:</b> nella riga di formato. <br />
+        <span class="bloccoEvidenziato">
+          | Nome | Cognome | Età |<br />
+          |:--------|:-------:|----:|<br />
+          | Marco | Rossi | 25 |<br />
+          | Laura | Bianchi | 30 |<br />
+          | Giovanni| Verdi | 40 |
+        </span>
+      </p>
+      <h2 id="tabulazione">Tabulazione</h2>
+      <h3>Elenchi annidati</h3>
+      <p>
+        Per creare un elenco annidato, basta indentare gli elementi dell'elenco
+        interni rispetto a quelli esterni utilizzando spazi. Ricordati di
+        utilizzare i simboli come: **, __, o ___ per creare un elenco annidato.
+      </p>
+      <section class="pointer">
+        <ul>
+          <li>Elemento principale</li>
           <li>
             <ul>
-              <li>Sotto-sotto elemento A</li>
-              <li>Sotto-sotto elemento B</li>
+              <li>Sotto elemento 1</li>
+              <li>Sotto elemento 2</li>
+              <li>
+                <ul>
+                  <li>Sotto-sotto elemento A</li>
+                  <li>Sotto-sotto elemento B</li>
+                </ul>
+              </li>
+              <li>Sotto elemento 3</li>
             </ul>
           </li>
-          <li>Sotto elemento 3</li>
+          <li>Altro elemento principale</li>
         </ul>
-      </li>
-      <li>Altro elemento principale</li>
-    </ul>
-
-    <h3>Linea separatrice</h3>
-    <p>
-      Per creare una linea separatrice, puoi utilizzare tre o più dei seguenti
-      caratteri consecutivi.
-    </p>
-    <code>
-      ***<br />
-      ---<br />
-      ___
-    </code>
-    <h3>Citazione con indentazione</h3>
-    <p>Per creare un blocco di citazione con indentazione:</p>
-    <code>
-      &gt; ```css<br />
-      &gt; p {<br />
-      &gt; color: blue;<br />
-      &gt; font-size: 14px;<br />
-      &gt; }<br />
-      &gt; ```
-    </code>
-    <h3>Escape citazione</h3>
-    <p>Nelle citazioni, il carattere \ può essere utilizzato per "escape".</p>
-    <code>
-      &gt; Questo è un esempio di citazione con un carattere speciale: \<br />
-      Questo è un esempio di citazione con un carattere speciale
-    </code>
-    <h3>Evidenziare</h3>
-    <p>
-      Il testo racchiuso tra due accenti grave (\`), i backtick, è utile quando
-      si vuole evidenziare brevi frammenti di codice o comandi all'interno del
-      testo del documento.
-    </p>
-    <code>`Testo Evidenziato`</code>
+      </section>
+      <h3>Linea separatrice</h3>
+      <p>
+        Per creare una linea separatrice, puoi utilizzare tre o più dei seguenti
+        caratteri consecutivi. <br />
+        <code>
+          ***<br />
+          ---<br />
+          ___
+        </code>
+      </p>
+      <h3>Citazione con indentazione</h3>
+      <p>
+        Per creare un blocco di citazione con indentazione: <br />
+        <code>
+          <span class="bloccoEvidenziato">
+            &gt; ```css<br />
+            &gt; p {<br />
+            &gt; color: blue;<br />
+            &gt; font-size: 14px;<br />
+            &gt; }<br />
+            &gt; ```
+          </span>
+        </code>
+      </p>
+      <h3>Escape citazione</h3>
+      <p>
+        Nelle citazioni, il carattere \ può essere utilizzato per "escape".
+        <br />
+        <code>
+          <span class="bloccoEvidenziato">
+            &gt; Questo è un esempio di citazione con un carattere speciale:
+            \<br />
+            Questo è un esempio di citazione con un carattere speciale
+          </span>
+        </code>
+      </p>
+      <h3>Evidenziare</h3>
+      <p>
+        Il testo racchiuso tra due accenti grave <b>``</b>, i backtick, è utile
+        quando si vuole evidenziare brevi frammenti di codice o comandi
+        all'interno del testo del documento. <br />
+        <code>`Testo Evidenziato`</code>
+      </p>
+    </div>
+    <footer>
+      <section class="left">
+        <img
+          id="logo"
+          src="../img/logo-sja-150x38.png"
+          alt="Steve Jobs Academy"
+        />
+      </section>
+      <section class="center">
+        <p>Francesco Urso</p>
+      </section>
+      <section class="right">
+        <a href="https://github.com/francesco-urso" alt="francesco-urso">
+          <img
+            id="github"
+            src="../img/kisspng-github-computer-icons-github-logo-5b459a3d4de4a5.6554725315312881253191.png"
+            alt="GitHub"
+        /></a>
+      </section>
+    </footer>
   </body>
 </html>
