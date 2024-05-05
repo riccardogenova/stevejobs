@@ -4,9 +4,18 @@
 
 .bottone {
   text-align: center;
-  margin-top: 100px;
+  margin: 15% auto; 
+  transform: scale(1.5);
 }
 
-.bottone {
-  transform: scale(1.5);
+#aumenta,
+#diminuisci {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#numero {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0px 25px;
 }
