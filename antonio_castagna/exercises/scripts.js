@@ -9,7 +9,7 @@ aumentaNumero.addEventListener("click", function () {
   aumenta();
 });
 
-function diminuisci() {
+function adiminuisci() {
   var numero = document.getElementById("numero");
   var counter = parseInt(numero.textContent);
   counter--;
