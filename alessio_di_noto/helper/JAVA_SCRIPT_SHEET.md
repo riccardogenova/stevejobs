@@ -260,6 +260,27 @@ try {
   isNaN("ciao"); // true
   ```
 
+  ## **High-order function**
+
+  Le high order function (funzioni di ordine superiore) sono funzioni che soddisfano almeno uno dei seguenti criteri:
+
+  1. Prendono una o più funzioni come argomenti.
+  2. Restituiscono una funzione come risultato.
+
+  In altre parole, le high-order function trattano le funzioni come valori, consentendo di manipolarle e utilizzarle in modi diversi all'interno di un programma.
+
+  Ad esempio, è possibile definire una funzione che accetta un'altra funzione come argomento, la modifica e la restituisce. Ecco un esempio di una high-order function in JavaScript che accetta una funzione `func` come argomento e restituisce una nuova funzione che chiama `func` due volte:
+
+  ```javascript
+  function highOrderFunction(func) {
+    return function (x) {
+      return func(func(x));
+    };
+  }
+  ```
+
+  Le high-order function possono rendere il codice più flessibile, modulare e facile da leggere e scrivere, poiché consentono di astrarre i concetti comuni in funzioni riutilizzabili.
+
 # Array
 
 - In JavaScript, un array è una struttura dati che memorizza una collezione di elementi. Gli array possono contenere elementi di qualsiasi tipo di dati, inclusi numeri, stringhe, oggetti e persino altri array. Gli array in JavaScript possono essere modificati dinamicamente.Ecco un esempio di base su come puoi creare e utilizzare gli array in JavaScript:
