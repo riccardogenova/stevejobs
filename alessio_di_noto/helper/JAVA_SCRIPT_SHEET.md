@@ -1,71 +1,3 @@
-8. **Oggetti**:
-
-   - Gli oggetti in JavaScript sono strutture dati che contengono coppie chiave-valore. Possono essere utilizzati per rappresentare entità complesse e organizzare dati correlati. Gli oggetti sono definiti utilizzando la notazione letterale di oggetto o la funzione costruttore `Object()`.
-
-     #### Creazione di Oggetti
-
-     1. **Notazione Letterale di Oggetto**:
-
-     ```javascript
-     var persona = {
-       nome: "Mario",
-       cognome: "Rossi",
-       eta: 30,
-     };
-     ```
-
-     2. **Funzione Costruttore `Object()`**:
-
-     ```javascript
-     var persona = new Object();
-     persona.nome = "Mario";
-     persona.cognome = "Rossi";
-     persona.eta = 30;
-     ```
-
-     #### Accesso alle Proprietà degli Oggetti
-
-     Le proprietà degli oggetti possono essere accedute e manipolate utilizzando la notazione a punto (`object.property`) o la notazione a parentesi (`object['property']`).
-
-     ```javascript
-     console.log(persona.nome); // Output: Mario
-     console.log(persona["cognome"]); // Output: Rossi
-     ```
-
-     #### Aggiunta/Modifica/Eliminazione di Proprietà
-
-     Le proprietà degli oggetti possono essere aggiunte, modificate o rimosse in qualsiasi momento.
-
-     ```javascript
-     // Aggiunta di una nuova proprietà
-     persona.sesso = "Maschio";
-
-     // Modifica di una proprietà esistente
-     persona.eta = 31;
-
-     // Rimozione di una proprietà
-     delete persona.eta;
-     ```
-
-9. **Eccezioni**:
-
-   - Le eccezioni in JavaScript sono errori che si verificano durante l'esecuzione del programma. JavaScript fornisce un'infrastruttura di gestione delle eccezioni con i blocchi `try`, `catch` e `finally`, che consentono di gestire e recuperare da errori imprevisti durante l'esecuzione del codice.
-
-10. **Moduli**:
-
-    - I moduli in JavaScript permettono di organizzare il codice in unità logiche e riutilizzabili. Consentono la separazione del codice in file diversi e l'importazione/esportazione di funzioni, variabili o oggetti tra di essi.
-
-11. **Eventi**:
-
-    - Gli eventi in JavaScript rappresentano le azioni degli utenti o altre attività che si verificano nell'applicazione web, come il clic su un pulsante, il caricamento della pagina, ecc. Gli eventi possono essere gestiti aggiungendo dei "listener" agli elementi del DOM tramite il metodo `addEventListener()`.
-
-12. **Promises**:
-
-    - Le Promises sono oggetti utilizzati per rappresentare il completamento (o il fallimento) di un'operazione asincrona. Consentono di gestire operazioni asincrone in modo più chiaro e conciso rispetto alle callback.
-
-13. **Async/Await**:
-    - L'Async/Await è una caratteristica introdotta in ECMAScript 2017 per semplificare la scrittura e la gestione del codice asincrono. Le funzioni `async` dichiarano che restituiranno una Promise, mentre `await` viene utilizzato all'interno di funzioni `async` per attendere il completamento di una Promise prima di procedere con l'esecuzione del codice successivo.
-
 ### Sintassi Base
 
 ```javascript
@@ -359,48 +291,175 @@ try {
   }
   ```
 
-Gli array in JavaScript hanno alcuni metodi che modificano direttamente l'array originale (mutabili) e altri che restituiscono un nuovo array senza modificare quello originale (non mutabili).
+  Gli array in JavaScript hanno alcuni metodi che modificano direttamente l'array originale (mutabili) e altri che restituiscono un nuovo array senza modificare quello originale (non mutabili).
 
-### Metodi Mutabili degli Array:
+  ### Metodi Mutabili degli Array:
 
-1. **push()**:
-   - Aggiunge uno o più elementi alla fine dell'array e restituisce la nuova lunghezza dell'array.
-2. **pop()**:
-   - Rimuove l'ultimo elemento dall'array e lo restituisce.
-3. **shift()**:
-   - Rimuove il primo elemento dall'array e lo restituisce, riducendo la lunghezza dell'array di uno.
-4. **unshift()**:
-   - Aggiunge uno o più elementi all'inizio dell'array e restituisce la nuova lunghezza dell'array.
-5. **splice()**:
-   - Aggiunge o rimuove elementi dall'array in base a determinati criteri.
-6. **sort()**:
-   - Ordina gli elementi dell'array direttamente in loco e restituisce l'array ordinato.
+  1. **push()**:
 
-### Metodi Non Mutabili degli Array:
+  - Aggiunge uno o più elementi alla fine dell'array e restituisce la nuova lunghezza dell'array.
 
-1. **concat()**:
-   - Concatena uno o più array e restituisce un nuovo array senza modificare gli array originali.
-2. **slice()**:
-   - Estrae una porzione di un array e restituisce un nuovo array senza modificare l'array originale.
-3. **filter()**:
-   - Filtra gli elementi dell'array in base a una determinata condizione e restituisce un nuovo array con gli elementi che soddisfano la condizione, senza modificare l'array originale.
-4. **map()**:
-   - Applica una funzione a ogni elemento dell'array e restituisce un nuovo array con i risultati, senza modificare l'array originale.
+  2. **pop()**:
 
-Usando i metodi non mutabili, puoi mantenere l'array originale intatto mentre ottieni un nuovo array con le modifiche desiderate. Questo è spesso preferibile quando si lavora con dati immutabili o si vuole evitare effetti collaterali indesiderati.
+  - Rimuove l'ultimo elemento dall'array e lo restituisce.
 
-```
+  3. **shift()**:
+
+  - Rimuove il primo elemento dall'array e lo restituisce, riducendo la lunghezza dell'array di uno.
+
+  4. **unshift()**:
+
+  - Aggiunge uno o più elementi all'inizio dell'array e restituisce la nuova lunghezza dell'array.
+
+  5. **splice()**:
+
+  - Aggiunge o rimuove elementi dall'array in base a determinati criteri.
+
+  6. **sort()**:
+
+  - Ordina gli elementi dell'array direttamente in loco e restituisce l'array ordinato.
+
+  ### Metodi Non Mutabili degli Array:
+
+  1. **concat()**:
+
+  - Concatena uno o più array e restituisce un nuovo array senza modificare gli array originali.
+
+  2. **slice()**:
+
+  - Estrae una porzione di un array e restituisce un nuovo array senza modificare l'array originale.
+
+  3. **filter()**:
+
+  - Filtra gli elementi dell'array in base a una determinata condizione e restituisce un nuovo array con gli elementi che soddisfano la condizione, senza modificare l'array originale.
+
+  4. **map()**:
+
+  - Applica una funzione a ogni elemento dell'array e restituisce un nuovo array con i risultati, senza modificare l'array originale.
+
+  5. **forEach()**:
+
+  - Viene utilizzato per eseguire una determinata funzione su ciascun elemento di un array. Questo metodo itera su ogni elemento dell'array e applica la funzione fornita a ciascun elemento.
+
+  Ecco un esempio di come utilizzare il metodo forEach():
+
+  ```javascript
+  const array = [1, 2, 3, 4, 5];
+
+  // Definiamo una funzione di callback che verrà eseguita su ciascun elemento dell'array
+  function stampaElemento(elemento) {
+    console.log(elemento);
+  }
+
+  // Utilizziamo il metodo forEach per iterare su ogni elemento dell'array e chiamare la funzione di callback su ciascuno di essi
+  array.forEach(stampaElemento);
+
+  // Output:
+  // 1
+  // 2
+  // 3
+  // 4
+  // 5
+  ```
+
+  In questo esempio, abbiamo definito una funzione di callback stampaElemento che semplicemente stampa ogni elemento. Poi, abbiamo utilizzato il metodo forEach() sull'array array e passato stampaElemento come argomento. La funzione stampaElemento viene eseguita su ciascun elemento dell'array, stampando ogni elemento nell'output.
+
+  È importante notare che la funzione di callback passata a forEach() accetta tre parametri: l'elemento corrente, l'indice corrente e l'array su cui forEach() è stato chiamato. Tuttavia, spesso la funzione di callback viene definita con un solo parametro (l'elemento corrente), poiché di solito è l'unico valore di interesse.
+
+  Questo metodo non è mutabile, tuttavia, la funzione di callback passata a forEach() potrebbe essere mutabile, nel senso che potrebbe modificare gli elementi dell'array o le variabili esterne all'interno della funzione. Questo può influenzare lo stato degli elementi dell'array o delle variabili esterne, ma il metodo forEach() in sé non è responsabile di queste modifiche.
+
+  Ad esempio, considera questo caso:
+
+  ```javascript
+  const array = [1, 2, 3, 4, 5];
+
+  function raddoppiaElemento(elemento, indice, array) {
+    array[indice] = elemento * 2;
+  }
+
+  array.forEach(raddoppiaElemento);
+
+  console.log(array); // Output: [2, 4, 6, 8, 10]
+  ```
 
 # Stringhe
 
 - Le stringhe rappresentano sequenze di caratteri. JavaScript fornisce numerosi metodi per manipolare le stringhe, come il calcolo della lunghezza, la concatenazione, la ricerca di sottostringhe, l'estrazione di una parte della stringa, la conversione in maiuscolo o minuscolo, ecc.
 
-### Tipizzazione in JavaScript
+# Oggetti
 
-JavaScript è un linguaggio di programmazione debolmente tipizzato, il che significa che le variabili non sono vincolate a un tipo di dati specifico. La tipizzazione in JavaScript è dinamica, il che significa che il tipo di una variabile può cambiare durante l'esecuzione del programma.
+- Gli oggetti in JavaScript sono strutture dati che contengono coppie chiave-valore. Possono essere utilizzati per rappresentare entità complesse e organizzare dati correlati. Gli oggetti sono definiti utilizzando la notazione letterale di oggetto o la funzione costruttore `Object()`.
 
-#### Null e Undefined
+  #### Creazione di Oggetti
+
+  1.  **Notazione Letterale di Oggetto**:
+
+  ```javascript
+  var persona = {
+    nome: "Mario",
+    cognome: "Rossi",
+    eta: 30,
+  };
+  ```
+
+  2.  **Funzione Costruttore `Object()`**:
+
+  ```javascript
+  var persona = new Object();
+  persona.nome = "Mario";
+  persona.cognome = "Rossi";
+  persona.eta = 30;
+  ```
+
+  #### Accesso alle Proprietà degli Oggetti
+
+  Le proprietà degli oggetti possono essere accedute e manipolate utilizzando la notazione a punto (`object.property`) o la notazione a parentesi (`object['property']`).
+
+  ```javascript
+  console.log(persona.nome); // Output: Mario
+  console.log(persona["cognome"]); // Output: Rossi
+  ```
+
+  #### Aggiunta/Modifica/Eliminazione di Proprietà
+
+  Le proprietà degli oggetti possono essere aggiunte, modificate o rimosse in qualsiasi momento.
+
+  ```javascript
+  // Aggiunta di una nuova proprietà
+  persona.sesso = "Maschio";
+
+  // Modifica di una proprietà esistente
+  persona.eta = 31;
+
+  // Rimozione di una proprietà
+  delete persona.eta;
+  ```
+
+# Eccezioni
+
+- Le eccezioni in JavaScript sono errori che si verificano durante l'esecuzione del programma. JavaScript fornisce un'infrastruttura di gestione delle eccezioni con i blocchi `try`, `catch` e `finally`, che consentono di gestire e recuperare da errori imprevisti durante l'esecuzione del codice.
+
+# Moduli
+
+- I moduli in JavaScript permettono di organizzare il codice in unità logiche e riutilizzabili. Consentono la separazione del codice in file diversi e l'importazione/esportazione di funzioni, variabili o oggetti tra di essi.
+
+# Eventi
+
+- Gli eventi in JavaScript rappresentano le azioni degli utenti o altre attività che si verificano nell'applicazione web, come il clic su un pulsante, il caricamento della pagina, ecc. Gli eventi possono essere gestiti aggiungendo dei "listener" agli elementi del DOM tramite il metodo `addEventListener()`.
+
+# Promises
+
+- Le Promises sono oggetti utilizzati per rappresentare il completamento (o il fallimento) di un'operazione asincrona. Consentono di gestire operazioni asincrone in modo più chiaro e conciso rispetto alle callback.
+
+# Async/Await
+
+- L'Async/Await è una caratteristica introdotta in ECMAScript 2017 per semplificare la scrittura e la gestione del codice asincrono. Le funzioni `async` dichiarano che restituiranno una Promise, mentre `await` viene utilizzato all'interno di funzioni `async` per attendere il completamento di una Promise prima di procedere con l'esecuzione del codice successivo.
+
+# Tipizzazione in JavaScript
+
+- JavaScript è un linguaggio di programmazione debolmente tipizzato, il che significa che le variabili non sono vincolate a un tipo di dati specifico. La tipizzazione in JavaScript è dinamica, il che significa che il tipo di una variabile può cambiare durante l'esecuzione del programma.
+
+# Null e Undefined
 
 - `null`: rappresenta un valore nullo o vuoto. Viene utilizzato per indicare l'assenza intenzionale di un valore.
 - `undefined`: rappresenta il valore non assegnato o non definito. Quando una variabile è dichiarata ma non inizializzata, il suo valore predefinito è `undefined`.
-```
