@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Comandi document</title>
+    <title>Comandi Document</title>
   </head>
   <body>
     <h1>Comandi document</h1>
@@ -40,38 +40,6 @@
         <b>document.createTextNode(text)</b>: Crea un nuovo nodo di testo con il
         testo specificato.
       </li>
-      <li>
-        <b>element.appendChild(newChild)</b>: Aggiunge un nuovo nodo come figlio
-        di un elemento specificato.
-      </li>
-      <li>
-        <b>element.innerHTML</b>: Restituisce o imposta il contenuto HTML di un
-        elemento.
-      </li>
-      <li>
-        <b>element.innerText</b>: Restituisce o imposta il testo visibile di un
-        elemento.
-      </li>
-    </ul>
-
-    <h2>Modifica degli attributi e degli stili degli elementi:</h2>
-    <ul>
-      <li>
-        <b>element.getAttribute(attribute)</b>: Restituisce il valore di un
-        attributo specificato.
-      </li>
-      <li>
-        <b>element.setAttribute(attribute, value)</b>: Imposta il valore di un
-        attributo specificato.
-      </li>
-      <li>
-        <b>element.removeAttribute(attribute)</b>: Rimuove un attributo
-        specificato da un elemento.
-      </li>
-      <li>
-        <b>element.style.property = value</b>: Imposta lo stile CSS di un
-        elemento.
-      </li>
     </ul>
 
     <h2>Gestione degli eventi:</h2>
@@ -95,14 +63,6 @@
       <li>
         <b>document.body</b>: Restituisce l'elemento &lt;body&gt; del documento.
       </li>
-      <li>
-        <b>element.parentElement</b>: Restituisce l'elemento genitore di un
-        elemento specificato.
-      </li>
-      <li>
-        <b>element.children</b>: Restituisce una collezione degli elementi
-        figlio di un elemento specificato.
-      </li>
     </ul>
 
     <h2>Altro:</h2>
@@ -115,6 +75,218 @@
         <b>document.cookie</b>: Restituisce o imposta i cookie associati al
         documento.
       </li>
+    </ul>
+
+    <h1>Oggetto Element</h1>
+
+    <p>
+      Nel DOM HTML, l'oggetto Element rappresenta un elemento HTML, come
+      <b><i>P, DIV, A, TABLE</i></b> o qualsiasi altro elemento HTML.
+    </p>
+
+    <h2>Proprietà per la Manipolazione degli Attributi:</h2>
+    <ul>
+      <li>
+        <b>elemento.accessKey()</b> - Imposta o restituisce l'attributo
+        accesskey di un elemento
+      </li>
+      <li>
+        <b>elemento.attributes</b> - Restituisce un NamedNodeMap degli attributi
+        di un elemento
+      </li>
+      <li>
+        <b>elemento.className</b> - Imposta o restituisce il valore
+        dell'attributo class di un elemento
+      </li>
+      <li>
+        <b>elemento.dir</b> - Imposta o restituisce il valore dell'attributo dir
+        di un elemento
+      </li>
+      <li>
+        <b>elemento.id</b> - Imposta o restituisce il valore dell'attributo id
+        di un elemento
+      </li>
+      <li>
+        <b>elemento.lang</b> - Imposta o restituisce il valore dell'attributo
+        lang di un elemento
+      </li>
+    </ul>
+
+    <h2>Proprietà per la Manipolazione del Contenuto:</h2>
+    <ul>
+      <li>
+        <b>elemento.appendChild(newChild)</b> - Aggiunge (appende) un nuovo nodo
+        figlio a un elemento specificato
+      </li>
+      <li>
+        <b>elemento.insertBefore()</b> - Inserisce un nuovo nodo figlio prima di
+        un nodo figlio esistente
+      </li>
+      <li>
+        <b>elemento.removeChild()</b> - Rimuove un nodo figlio da un elemento
+      </li>
+      <li>
+        <b>elemento.replaceChild()</b> - Sostituisce un nodo figlio in un
+        elemento
+      </li>
+      <li>
+        <b>elemento.innerHTML</b> - Imposta o restituisce il contenuto di un
+        elemento
+      </li>
+      <li>
+        <b>elemento.innerText</b> - Imposta o restituisce il contenuto testuale
+        di un nodo e dei suoi discendenti
+      </li>
+      <li>
+        <b>elemento.textContent</b> - Imposta o restituisce il contenuto
+        testuale di un nodo e dei suoi discendenti
+      </li>
+      <li>
+        <b>elemento.insertAdjacentElement()</b> - Inserisce un nuovo elemento
+        HTML in una posizione relativa a un elemento
+      </li>
+      <li>
+        <b>elemento.insertAdjacentHTML()</b> - Inserisce un testo formattato
+        HTML in una posizione relativa a un elemento
+      </li>
+      <li>
+        <b>elemento.insertAdjacentText()</b> - Inserisce testo in una posizione
+        relativa a un elemento
+      </li>
+      <li>
+        <b>elemento.outerHTML</b> - Imposta o restituisce il contenuto di un
+        elemento (inclusi tag di apertura e chiusura)
+      </li>
+      <li>
+        <b>elemento.outerText</b> - Imposta o restituisce il contenuto testuale
+        esterno di un nodo e dei suoi discendenti
+      </li>
+      <li><b>elemento.remove()</b> - Rimuove un elemento dal DOM</li>
+    </ul>
+
+    <h2>Proprietà per la Navigazione nell'Albero DOM:</h2>
+    <ul>
+      <li>
+        <b>elemento.firstChild</b> - Restituisce il primo nodo figlio di un
+        elemento
+      </li>
+      <li>
+        <b>elemento.firstElementChild</b> - Restituisce il primo elemento figlio
+        di un elemento
+      </li>
+      <li>
+        <b>elemento.lastChild</b> - Restituisce l'ultimo nodo figlio di un
+        elemento
+      </li>
+      <li>
+        <b>elemento.lastElementChild</b> - Restituisce l'ultimo elemento figlio
+        di un elemento
+      </li>
+      <li>
+        <b>elemento.nextSibling</b> - Restituisce il prossimo nodo nello stesso
+        livello dell'albero dei nodi
+      </li>
+      <li>
+        <b>elemento.nextElementSibling</b> - Restituisce il prossimo elemento
+        nello stesso livello dell'albero dei nodi
+      </li>
+      <li>
+        <b>elemento.parentNode</b> - Restituisce il nodo genitore di un elemento
+      </li>
+      <li>
+        <b>elemento.parentElement</b> - Restituisce l'elemento genitore di un
+        elemento
+      </li>
+      <li>
+        <b>elemento.previousSibling</b> - Restituisce il nodo precedente nello
+        stesso livello dell'albero dei nodi
+      </li>
+      <li>
+        <b>elemento.previousElementSibling</b> - Restituisce l'elemento
+        precedente nello stesso livello dell'albero dei nodi
+      </li>
+      <li>
+        <b>element.children</b>: Restituisce una collezione degli elementi
+        figlio di un elemento specificato.
+      </li>
+    </ul>
+
+    <h2>Metodi per la Manipolazione degli Elementi:</h2>
+    <ul>
+      <li>
+        <b>elemento.addEventListener()</b> - Allega un gestore di eventi a un
+        elemento
+      </li>
+      <li>
+        <b>elemento.removeEventListener()</b> - Rimuove un gestore di eventi
+        allegato con il metodo addEventListener()
+      </li>
+    </ul>
+
+    <ul>
+      <li>
+        <b>elemento.getAttribute(attribute)</b> - Restituisce il valore di un
+        attributo di un elemento specificato
+      </li>
+      <li>
+        <b>elemento.setAttribute(attribute, value)</b> - Imposta o modifica il
+        valore di un attributo specificato
+      </li>
+      <li>
+        <b>elemento.removeAttribute(attribute)</b> - Rimuove un attributo da un
+        elemento specificato
+      </li>
+      <li>
+        <b>elemento.getAttributeNode()</b> - Restituisce un nodo attributo
+      </li>
+      <li>
+        <b>elemento.setAttributeNode()</b> - Imposta o modifica un nodo
+        attributo
+      </li>
+      <li>
+        <b>elemento.removeAttributeNode()</b> - Rimuove un nodo attributo e
+        restituisce il nodo rimosso
+      </li>
+      <li>
+        <b>elemento.hasAttribute()</b> - Restituisce true se un elemento ha un
+        dato attributo
+      </li>
+      <li>
+        <b>elemento.hasAttributes()</b> - Restituisce true se un elemento ha
+        attributi
+      </li>
+    </ul>
+    <h2>Modifica degli attributi e degli stili degli elementi:</h2>
+    <ul>
+      <li>
+        <b>element.style.property = value</b>: Imposta lo stile CSS di un
+        elemento.
+      </li>
+    </ul>
+
+    <h2>Altri Metodi:</h2>
+    <ul>
+      <li>
+        <b>elemento.contains()</b> - Restituisce true se un nodo è un
+        discendente di un nodo
+      </li>
+      <li>
+        <b>elemento.isEqualNode()</b> - Controlla se due elementi sono uguali
+      </li>
+      <li>
+        <b>elemento.isSameNode()</b> - Controlla se due elementi sono lo stesso
+        nodo
+      </li>
+      <li>
+        <b>elemento.matches()</b> - Restituisce true se un elemento è
+        corrisposto da un dato selettore CSS
+      </li>
+
+      <li>
+        <b>elemento.normalize()</b> - Unisce nodi testuali adiacenti e rimuove
+        nodi testuali vuoti in un elemento
+      </li>
+      <li><b>elemento.toString()</b> - Converte un elemento in una stringa</li>
     </ul>
   </body>
 </html>
