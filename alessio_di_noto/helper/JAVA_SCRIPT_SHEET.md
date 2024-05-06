@@ -362,46 +362,46 @@ try {
 
   - Viene utilizzato per eseguire una determinata funzione su ciascun elemento di un array. Questo metodo itera su ogni elemento dell'array e applica la funzione fornita a ciascun elemento.
 
-  Ecco un esempio di come utilizzare il metodo forEach():
+    Ecco un esempio di come utilizzare il metodo forEach():
 
-  ```javascript
-  const array = [1, 2, 3, 4, 5];
+    ```javascript
+    const array = [1, 2, 3, 4, 5];
 
-  // Definiamo una funzione di callback che verrà eseguita su ciascun elemento dell'array
-  function stampaElemento(elemento) {
-    console.log(elemento);
-  }
+    // Definiamo una funzione di callback che verrà eseguita su ciascun elemento dell'array
+    function stampaElemento(elemento) {
+      console.log(elemento);
+    }
 
-  // Utilizziamo il metodo forEach per iterare su ogni elemento dell'array e chiamare la funzione di callback su ciascuno di essi
-  array.forEach(stampaElemento);
+    // Utilizziamo il metodo forEach per iterare su ogni elemento dell'array e chiamare la funzione di callback su ciascuno di essi
+    array.forEach(stampaElemento);
 
-  // Output:
-  // 1
-  // 2
-  // 3
-  // 4
-  // 5
-  ```
+    // Output:
+    // 1
+    // 2
+    // 3
+    // 4
+    // 5
+    ```
 
-  In questo esempio, abbiamo definito una funzione di callback stampaElemento che semplicemente stampa ogni elemento. Poi, abbiamo utilizzato il metodo forEach() sull'array array e passato stampaElemento come argomento. La funzione stampaElemento viene eseguita su ciascun elemento dell'array, stampando ogni elemento nell'output.
+    In questo esempio, abbiamo definito una funzione di callback stampaElemento che semplicemente stampa ogni elemento. Poi, abbiamo utilizzato il metodo forEach() sull'array array e passato stampaElemento come argomento. La funzione stampaElemento viene eseguita su ciascun elemento dell'array, stampando ogni elemento nell'output.
 
-  È importante notare che la funzione di callback passata a forEach() accetta tre parametri: l'elemento corrente, l'indice corrente e l'array su cui forEach() è stato chiamato. Tuttavia, spesso la funzione di callback viene definita con un solo parametro (l'elemento corrente), poiché di solito è l'unico valore di interesse.
+    È importante notare che la funzione di callback passata a forEach() accetta tre parametri: l'elemento corrente, l'indice corrente e l'array su cui forEach() è stato chiamato. Tuttavia, spesso la funzione di callback viene definita con un solo parametro (l'elemento corrente), poiché di solito è l'unico valore di interesse.
 
-  Questo metodo non è mutabile, tuttavia, la funzione di callback passata a forEach() potrebbe essere mutabile, nel senso che potrebbe modificare gli elementi dell'array o le variabili esterne all'interno della funzione. Questo può influenzare lo stato degli elementi dell'array o delle variabili esterne, ma il metodo forEach() in sé non è responsabile di queste modifiche.
+    Questo metodo non è mutabile, tuttavia, la funzione di callback passata a forEach() potrebbe essere mutabile, nel senso che potrebbe modificare gli elementi dell'array o le variabili esterne all'interno della funzione. Questo può influenzare lo stato degli elementi dell'array o delle variabili esterne, ma il metodo forEach() in sé non è responsabile di queste modifiche.
 
-  Ad esempio, considera questo caso:
+    Ad esempio, considera questo caso:
 
-  ```javascript
-  const array = [1, 2, 3, 4, 5];
+    ```javascript
+    const array = [1, 2, 3, 4, 5];
 
-  function raddoppiaElemento(elemento, indice, array) {
-    array[indice] = elemento * 2;
-  }
+    function raddoppiaElemento(elemento, indice, array) {
+      array[indice] = elemento * 2;
+    }
 
-  array.forEach(raddoppiaElemento);
+    array.forEach(raddoppiaElemento);
 
-  console.log(array); // Output: [2, 4, 6, 8, 10]
-  ```
+    console.log(array); // Output: [2, 4, 6, 8, 10]
+    ```
 
 # Stringhe
 
