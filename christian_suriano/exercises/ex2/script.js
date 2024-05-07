@@ -1,9 +1,8 @@
-<script>
-function messaggio(nome, anno)
-{
-document.write("Benvenuto " + nome + "<br />");
-document.write("Buon " + anno);
-}
-messaggio("Andrea",2020);
-messaggio("Luca",2021);
-</script>
+//concatenazione array
+
+const array1 = [1, 2, 3];
+const array2 = [4, 5, 6];
+
+const arrayConcatenato = [...array1, ...array2];
+
+console.log(arrayConcatenato);
