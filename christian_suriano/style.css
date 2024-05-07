@@ -96,6 +96,11 @@ a {
   position: absolute;
   margin-top: 38px;
 }
+.jsl {
+  color: #ffee00;
+  position: absolute;
+  margin-top: 38px;
+}
 
 .box_neri {
   background-color: #1e1e1e;
@@ -121,12 +126,9 @@ a {
 #gitN:hover {
   background-color: #ff8800;
 }
-#git_c {
-  color: #f4f4f4;
+#jsN:hover {
+  background-color: #ffee00;
 }
-#md_c {
-  color: #f4f4f4;
-}
-#css_c {
+.text_c {
   color: #f4f4f4;
 }
