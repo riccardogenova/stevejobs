@@ -403,6 +403,36 @@ try {
     console.log(array); // Output: [2, 4, 6, 8, 10]
     ```
 
+    ## Comandi ricerca negli array
+
+    1.  **Array.includes()** : Questo comando ci permette di controllare se yb elemento è presente o meno nell'array (Inclusi gli element NaN, unlike indexOf).
+
+    ```javascript
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+    fruits.includes("Mango"); // is true
+    ```
+
+    Sintassi
+
+                    array.includes(search-item)
+
+    2.  **Array.indexOf()** : Questo metodo ricerca un array per il valore di un elemento e ne restituisce la posizione
+
+    _Nota: Il primo elemento ha posizione 0, il secondo posizione 1 e così via._
+
+    ```javascript
+     Ricerca un elemento per la parola "Apple":
+     const frutta = ["Apple", "Orange", "Apple", "Mango"];
+     let posizione = frutta.indexOf("Apple") + 1;
+    ```
+
+    Sintassi
+
+                  array.indexOf(item, start)
+
+    con start indico da quale elemento inziare la ricerca
+
 # Stringhe
 
 - Le stringhe rappresentano sequenze di caratteri. JavaScript fornisce numerosi metodi per manipolare le stringhe, come il calcolo della lunghezza, la concatenazione, la ricerca di sottostringhe, l'estrazione di una parte della stringa, la conversione in maiuscolo o minuscolo, ecc.
