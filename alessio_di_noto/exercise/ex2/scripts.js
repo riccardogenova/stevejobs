@@ -88,3 +88,59 @@ for (let numero of array4) {
 console.log("l'array di numeri pari è :", arraypari);
 
 //---------------------------------------------------------------------------------------
+/*
+Esercizio 5
+Scrivi un programma che prenda due array e restituisca un nuovo array che contenga tutti gli elementi dei due array concatenati.
+*/
+
+const array5uno = [2, 4, "Pippo"];
+const array5due = ["Paperino", "Topolino", 3, 4, 5];
+
+const arrayconcatenato5 = array5uno.concat(array5due); //Qui indico la concatenazione
+
+console.log("L'array concatenato è:", arrayconcatenato5);
+
+//----------------------------------------------------------------------------------------
+/*
+Esercizio 6
+Scrivi un programma che prenda un array con elementi duplicati e restituisca un nuovo array con i duplicati rimossi.
+*/
+
+const array6 = [2, 4, "Pippo", 55, 67, 2, "Topolino", 55];
+const array6senzadup = [];
+
+for (let elemento of array6) {
+  if (!array6senzadup.includes(elemento)) {
+    //con il !(negazione, opposto)indico che l'elemento non è presente all'interno dell'array
+    array6senzadup.push(elemento); //inserimento del nuovo valore all'interno del vettore
+  }
+}
+
+console.log("L'array senza duplicati è :", array6senzadup);
+//-----------------------------------------------------------------------------------------
+/*
+Esercizio 7
+Scrivi un programma che prenda un array di stringhe e un elemento di ricerca e restituisca l'indice della prima occorrenza dell'elemento nell'array.
+*/
+
+const array = ["mela", "banana", "arancia", "pera"];
+const elementoDiRicerca = "banana";
+const indice = array.indexOf(elementoDiRicerca);
+
+console.log("Indice di", elementoDiRicerca, "nell'array:", indice);
+//------------------------------------------------------------------------------------------
+/*
+Esercizio 8
+Scrivi un programma che prenda un array di stringhe e calcoli la lunghezza media delle stringhe presenti.
+*/
+
+const array8 = ["ciao", "salve", "buongiorno", "arrivederci"];
+let lunghezzaTotale = 0;
+
+for (let stringa of array8) {
+  lunghezzaTotale = lunghezzaTotale + stringa.length;
+}
+
+const lunghezzaMedia = lunghezzaTotale / array8.length;
+
+console.log("Lunghezza media delle stringhe:", lunghezzaMedia);
