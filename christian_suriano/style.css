@@ -105,27 +105,19 @@ a {
 .box_neri {
   background-color: #1e1e1e;
 }
-#cssN {
-  background-image: url(https://i.pinimg.com/736x/e3/2f/de/e32fde30a70da3c12d37ef477992e7de.jpg);
-  background-size: 112%;
-}
+
 #cssN:hover {
-  background-image: url(https://i.pinimg.com/736x/99/7a/15/997a15ce81193deb05094877a5a6d059.jpg);
-  background-size: 112%;
+  background-color: #a11eff;
 }
 
-#mdN {
-  background-image: url(https://i.pinimg.com/736x/f8/e1/65/f8e165e1196980792d0798eec3219d3e.jpg);
-  background-size: cover;
-}
 #mdN:hover {
-  background-image: url(https://i.pinimg.com/736x/f2/e3/5c/f2e35c33543707406aaf83cde02db08d.jpg);
-  background-size: cover;
+  background-color: #288cff;
 }
 
 #gitN:hover {
   background-color: #ff8800;
 }
+
 #jsN:hover {
   background-color: #ffee00;
 }
