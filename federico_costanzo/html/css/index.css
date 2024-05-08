@@ -1,4 +1,7 @@
 * {
+  padding: 0;
+  padding-bottom: 5px;
+  margin: 0;
   box-sizing: border-box;
 }
 
@@ -6,15 +9,25 @@ html {
   background-color: white;
 }
 
+#title {
+  font-size: 30px;
+  text-align: center;
+
+  background-color: lightsalmon;
+}
+
 #paragraph {
-  font-size: 18px;
+  padding-top: 30px;
+  padding-left: 15px;
+  
+  font-size: 35px;
   color: brown;
 }
 
 #links {
+  padding-left: 60px;
+  
   text-align: left;
-  font-size: 14px;
-  a {
-    color: blue;
-  }
+  font-size: 20px;
+  color: blue;
 }
