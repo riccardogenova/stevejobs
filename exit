@@ -1,0 +1,32 @@
+[33mcommit 63e8fdd98d5b68f63d1ab663d1d799f2bc34351d[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mangelo[m[33m, [m[1;31morigin/angelo[m[33m)[m
+Author: Angelo Lo Presti <angelolopresti26@gmail.com>
+Date:   Mon Apr 22 10:42:03 2024 +0200
+
+    angelo_lopresti:creazione cartelle e file html
+
+[33mcommit ecc9886252e54d49715810d5be278b53afc8621e[m[33m ([m[1;32mmain[m[33m)[m
+Author: Angelo Lo Presti <angelolopresti26@gmail.com>
+Date:   Mon Apr 22 10:07:01 2024 +0200
+
+    angelo_lopresti
+
+[33mcommit eddcd117397fe89906b4805c2136fb8fc680b1aa[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: 1357ea6 1e54663
+Author: Riccardo Genova <r.genova@bitrocket.dev>
+Date:   Fri Apr 19 13:35:11 2024 +0200
+
+    Merge pull request #1 from francesco-urso/francesco-urso
+    
+    creazione del nuovo spazio
+
+[33mcommit 1e54663d2eebf82957851fedacecea745072c022[m
+Author: Francesco Urso <urso.francesco@icloud.com>
+Date:   Fri Apr 19 13:31:48 2024 +0200
+
+    creazione del nuovo spazio
+
+[33mcommit 1357ea6411a704d0ac94772b9d3752cf99af67a6[m
+Author: Riccardo Genova <r.genova@bitrocket.dev>
+Date:   Fri Apr 19 13:17:35 2024 +0200
+
+    first commit
