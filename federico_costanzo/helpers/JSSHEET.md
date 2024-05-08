@@ -55,3 +55,5 @@ function nomeFunzione(){
 ---
 
 `parseInt("stringa")` - Trasforma stringa in numero intero
+
+---
