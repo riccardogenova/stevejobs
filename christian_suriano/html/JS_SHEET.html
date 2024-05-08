@@ -1,1 +1,211 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Comandi JS</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+ </head>
+ <body>
+<div>
+    <h1>alcuni comandi JS</h1>
+    <h2>funzioni importanti</h2>
+.map()--> funzione immutabile, e' un metodo degli array che ritorna un nuovo array, un metodo puo' essere assegnato ad una nuova variabile, vuole come PARAMETRO una funzione da eseguire ad ogni ciclo:</br>
+</br>
+<ul>
+la funzione a sua volta deve avere questi tre parametri da passare alla funzione map:</br>
+
+	<li>1.  elemento </li>
+	<li>2. indice</li>
+	<li>3. array</li>
+</ul>
+il valore restituito dalla funzione .map sara' il valore che viene inserito nel nuovo array AD OGNI CICLO</br>
+</br>
+</div>
+<div>
+----------------------------
+</br>
+>  const array = [ 'a','b','c']</br>
+</br>
+>  function onMap(element,index,array){</br>
+    console.log(element,index,array);</br>
+    return 'carmelo' }</br>
+</br>
+>  const newArray = array.map(onMap)</br>
+</br>
+</br>
+VM1193:2 a 0 (3) ['a', 'b', 'c']0: "a"1: "b"2: "c"length: 3[[Prototype]]: Array(0)</br>
+VM1193:2 b 1 (3) ['a', 'b', 'c']</br>
+VM1193:2 c 2 (3) ['a', 'b', 'c']</br>
+</br>
+</br>
+>  newArray</br>
+(3) ['carmelo', 'carmelo', 'carmelo']</br>
+</br>
+</div>
+<div>
+---------------------------
+</br>
+e' importante l'ordine nella funzione onMap degli elementi messi</br>
+</br>
+se vogliamo modificare un'elemento dell'array dobbiamo sempre creare un nuovo array</br>
+--------------------------
+esempio con if </br>
+</br>
+function onMap(a,b,c){</br>
+    if(a% 2 === 0) return a/2;</br>
+     return a+10</br>
+}</br>
+const newArray =[1,2,3,4,5,6,7,8,9,10].map(onMap)</br>
+</br>
+</div>
+<div>
+------------------------
+</br>
+return in una funzione:  viene messa alla fine perché interrompe tutto cio' che viene dopo;  se noi assegnamo ad una variabile una funzione poi questa variabile richiamata ci ritornera' il valore che deve ritornare(return) la funzione stessa;</br>
+</div>
+-------------------------
+
+<div>
+.filter--> metodo immutabile che torna un array della stessa lunghezza o piu' piccolo: filtra gli elementi di un array, vuole come parametro una funzione</br>
+</br>
+onFilter--> eseguire n volte la funzione o filter su questo array, il valore di ritorno della funzione determina se aggiungere l'elemento al nuovo array o no</br>
+</br>
+</br>
+a differenza della .mapla .filter mette dentro soltanto i valori che soddisfano una funzione</br>
+
+</div>
+<div>
+-------------------------
+</br>
+es:</br>
+> const array =[1,2,3,4,5,6,7,8,9,10]</br>
+</br>
+</br>
+> function onFilter(el, index,aray){</br>
+if(el%2===0)return true;</br>
+else return false;</br>
+}</br>
+</br>
+const newArray = array.filter(onFilter)</br>
+</br>
+</br>
+> newArray</br>
+(5) [2, 4, 6, 8, 10]</br>
+
+</div>
+<div>
+-------------------------
+
+</br>
+.find-> metodo immutabile che riceve come parametro elemento, indice e array, pero' non ritorna un array ma il primo elemento che soddisfa la condizione</br>
+</br>
+.findindex ritorna l'indice del primo elemento che trova(elemento che a sua volta soddisfa una condizione)</br>
+</br>
+</div>
+<div>
+-----------------------
+
+function onFind(el, index,aray){</br>
+if(el%2===0)return true;</br>
+else return false;</br>
+}</br>
+const newArray = array.find(onFind)</br>
+</div>
+<div>
+------------------------
+
+</br>
+<ul>
+.reduce--> non ritorna un nuovo array ma ritorna un valore: permette di ridurre un array ad un valore, vuole due parametri: una funzione e un accumulatore:</br>
+
+ 	<li>l'accumulatore puo' essere un qualsiasi cosa( 0, '', [] {})</li>
+	<li>riceve gli stessi elementi di prima ma al primo posto vuole l'accumulatore( ac, el, index, array)</li> 
+</ul>
+</div>
+<div>
+-----------------------
+es:</br>
+> const array =[1,2,3,4,5,6,7,8,9,10]</br>
+</br>
+> function onReduce(acc,el,index,array){</br>
+    acc=acc+el;</br>
+    return acc;</br>
+	}</br>
+> const value = array.reduce(onReduce, 0)</br>
+</br>
+    
+</br>
+> value</br>
+	55</br>
+</div>
+<div>
+------------------------
+</br>
+il valore iniziale potrbe essere un array, usando lo spread operator quindi ritorneremo un array con il numero di volte del ciclo:</br>
+
+</br>
+> const array =[1,2,3,4,5,6,7,8,9,10]</br>
+</br>
+> function onReduce(acc,el,index,array){</br>
+    acc=[...acc,el];</br>
+    return acc;  -->ritornare l'acc permette di aggiornare il valore dell'accumulatore</br>
+
+	}
+</br>
+> const value = array.reduce(onReduce, [])</br>
+</br>
+    
+
+> value</br>
+	(10) [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]</br>
+--------------------------
+</div>
+<div>
+
+quindi possiamo decidere noi con quale valore iniziale possiamo lavorare(puo' essere una stringa,un,oggetto, un array, un numero)</br>
+</br>
+
+ultima funzione forEach che funziona esattamente come il .map, ma non ritorna niente, ma esege un'operazione su un array n-volte:</br>
+
+--------------------------
+</div></br>
+<div>
+
+> const array =[1,2,3,4,5,6,7,8,9,10]</br>
+</br>
+> function onFor(acc,el,index,array){</br>
+console.log(el);</br>
+    return el;</br>
+}</br>
+> const value = array.forEach(onFor, [])</br>
+</br>
+    
+ 0</br>
+ 1</br>
+ 2</br>
+ 3</br>
+ 4</br>
+ 5</br>
+ 6</br>
+ 7</br>
+ 8</br>
+ 9</br>
+---------------------------
+
+</div>
+
+</br>
+aggiungere un elemento -> spread operator</br>
+modificare un elemento-> .map</br>
+rimuovere un elemento-> .filter</br>
+
+    
+ </body>
+ </html>
+
+
+
 <nav><a href="../INDEX.html">--> Ritorna all'indice <--</a></nav>
