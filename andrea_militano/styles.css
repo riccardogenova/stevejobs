@@ -2,6 +2,8 @@
 
 * {
   font-family: "Noto Sans", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 table {
@@ -41,5 +43,11 @@ h3 {
 
 .container {
   width: 100%;
+  padding: 3vh 0;
   background: #eb5c20;
+}
+
+body,
+html {
+  width: 100%;
 }
