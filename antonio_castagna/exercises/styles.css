@@ -1,0 +1,21 @@
+.titolo {
+  text-align: center;
+}
+
+.bottone {
+  text-align: center;
+  margin: 15% auto; 
+  transform: scale(1.5);
+}
+
+#aumenta,
+#diminuisci {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#numero {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0px 25px;
+}

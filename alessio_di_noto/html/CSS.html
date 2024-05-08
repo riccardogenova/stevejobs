@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Teoria sul CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="documento">
+      <nav class="navigazione">
+        <h2>Menù navigazione</h2>
+        <p><b>Indice</b></p>
+        <ul>
+          <li><a href="../Index.html">Indice</a></li>
+        </ul>
+
+        <p><b>Lezioni teoriche</b></p>
+        <ul>
+          <li><a href="./HTML.html">Teoria HTML</a></li>
+          <li><a href="./GIT.html">Teoria GIT</a></li>
+          <li><a href="./MARKDOWN.html">Teoria Markdown</a></li>
+        </ul>
+
+        <p><b>Helpers</b></p>
+        <ul>
+          <li>
+            <a href="./CSS_SHEET.html">Comandi CSS </a>
+          </li>
+          <li><a href="./HTML_SHEET.html">Comandi HTML</a></li>
+          <li><a href="./GIT_SHEET.html">Comandi GIT</a></li>
+          <li><a href="./MARKDOWN_SHEET.html">Comandi Markdown</a></li>
+        </ul>
+      </nav>
+      <div class="testo">
+        <h2>Cosa è CSS</h2>
+
+        <p>
+          CSS (Cascading Style Sheets) è un linguaggio di stile utilizzato per
+          definire l'aspetto e la formattazione di documenti HTML e XML. È
+          ampiamente utilizzato nel web per controllare l'aspetto di pagine web
+          e contenuti online.
+        </p>
+
+        <h2>Selezione degli elementi:</h2>
+        <p>
+          CSS consente di selezionare gli elementi HTML che si desidera
+          stilizzare. Gli elementi possono essere selezionati in base al loro
+          tipo (ad esempio, paragrafi, intestazioni, link), alla loro classe o
+          all'ID assegnato, o anche in base alla loro posizione nel documento.
+        </p>
+
+        <h2>Proprietà e valori:</h2>
+        <p>
+          Una volta selezionati gli elementi, è possibile specificare le
+          proprietà di stile che si desidera applicare loro. Queste proprietà
+          possono includere caratteristiche come colore, dimensione del testo,
+          spaziatura, sfondo e molto altro ancora. Ogni proprietà ha un valore
+          associato che definisce l'aspetto specifico che si desidera applicare.
+        </p>
+
+        <h2>Selezione cascata:</h2>
+        <p>
+          Il termine "cascata" in CSS si riferisce alla priorità con cui vengono
+          applicati gli stili. Le regole CSS possono essere definite in diversi
+          luoghi, come all'interno del documento stesso, in fogli di stile
+          esterni o tramite stili inline direttamente sugli elementi HTML.
+          Quando più regole confliggono per lo stesso elemento, viene utilizzata
+          una serie di criteri per determinare quale stile prevarrà. L'elemento
+          che si trova più in "basso" ha priorità su quello in alto, l'ultima
+          regola ha precedenza su quella precedente
+        </p>
+
+        <h2>Specificità:</h2>
+        <p>
+          La specificità è un concetto importante in CSS che determina quale
+          regola viene applicata quando più regole si sovrappongono. Le regole
+          più specifiche hanno la precedenza su quelle meno specifiche.
+        </p>
+
+        <h2>Ereditarietà:</h2>
+        <p>
+          Molte proprietà CSS vengono ereditate dagli elementi figlio dagli
+          elementi genitore. Ciò significa che se un'immagine ha una dimensione
+          del testo di 12px e si trova all'interno di un div con una dimensione
+          del testo di 16px, l'immagine erediterà quella dimensione del testo a
+          meno che non venga specificato diversamente.
+        </p>
+
+        <h2>Media queries:</h2>
+        <p>
+          CSS permette anche di adattare lo stile di una pagina in base alle
+          caratteristiche del dispositivo o del medium di visualizzazione
+          utilizzato. Le media queries consentono di applicare determinati stili
+          solo quando sono soddisfatte determinate condizioni, come la larghezza
+          dello schermo o il tipo di dispositivo.
+        </p>
+
+        <p>
+          In breve, CSS è composto da regole che definiscono come gli elementi
+          HTML devono essere visualizzati. Queste regole comprendono selezioni
+          degli elementi, proprietà di stile e valori, e sono applicate in base
+          alla cascata, alla specificità e all'ereditarietà.
+        </p>
+
+        <p>
+          Un foglio di stile non è altro che un insieme di regole accompagnate,
+          volendo, da qualche nota di commento e da una o più @-rule. Dal
+          momento che commenti e @-rule sono elementi opzionali e facoltativi,
+          andiamo innanzitutto a spiegare cos'è e com'è fatta una regola, ovvero
+          l'elemento fondamentale di un CSS.
+        </p>
+
+        <h2>Regole</h2>
+
+        <p>
+          La struttura di una regola CSS è composta da due blocchi principali:
+        </p>
+        <ul>
+          <li>il selettore;</li>
+          <li>il blocco delle dichiarazioni.</li>
+        </ul>
+        <p>
+          Il <b>selettore</b> serve a definire la parte del documento cui verrà
+          applicata la regola. I selettori possono essere di diverso tipo e a
+          queste tipologie dedicheremo una sezione specifica della guida. Per il
+          momento sia chiara la funzione che essi svolgono.
+        </p>
+        <p>
+          Il <b>blocco delle dichiarazioni</b> è delimitato rispetto al
+          selettore e alle altre regole da due parentesi graffe, la prima di
+          apertura e la seconda di chiusura. Al suo interno possono trovare
+          posto più dichiarazioni. Una dichiarazione è composta da una coppia:
+        </p>
+        <ul>
+          <li>proprietà</li>
+          <li>valore</li>
+        </ul>
+
+        <p>
+          <b>La proprietà</b> definisce un aspetto dell'elemento/selettore da
+          modificare (margini, colore di sfondo, larghezza, etc) secondo il
+          <b>valore</b> espresso. Proprietà e valore devono essere separati dai
+          due punti. Le dichiarazioni vanno invece separate con un punto e
+          virgola. Non è obbligatorio, ma è buona norma mettere il punto e
+          virgola anche dopo l'ultima dichiarazione del blocco.
+        </p>
+        <p>
+          <b>Una limitazione</b> fondamentale da rispettare è questa: per ogni
+          dichiarazione non è possibile indicare più di una proprietà, mentre è
+          spesso possibile specificare più valori. Questa regola è pertanto
+          errata: body {color background: black;} Mentre questa è perfettamente
+          valida e plausibile: p {font: 12px Verdana, arial;} Gli spazi bianchi
+          lasciati all'interno di una regola non influiscono sul risultato. Il
+          consiglio, anzi, è di lasciare sempre uno spazio tra le varie parti
+          per una migliore leggibilità.
+        </p>
+        <h2>CSS OM</h2>
+        <p>
+          L'OM (Object Model) di CSS è un'interfaccia di programmazione che
+          permette ai linguaggi di scripting, come JavaScript, di interagire con
+          le regole di stile CSS di una pagina web. Essenzialmente, consente ai
+          programmatori di manipolare dinamicamente lo stile di un documento
+          HTML utilizzando codice JavaScript.
+        </p>
+        <p>
+          L'OM di CSS offre metodi e proprietà per selezionare gli elementi HTML
+          e applicare o modificare le regole CSS associate a essi. Questo
+          permette di creare esperienze web dinamiche e interattive, ad esempio
+          modificando lo stile di un elemento in risposta a eventi utente,
+          animazioni o altre azioni dello script.
+        </p>
+        <p>Alcuni concetti chiave dell'OM di CSS includono:</p>
+        <ul>
+          <li>
+            <i>Selezione degli elementi:</i> È possibile selezionare gli
+            elementi HTML utilizzando metodi come document.getElementById,
+            document.getElementsByClassName, document.querySelector, ecc.
+          </li>
+          <li>
+            Accesso alle regole CSS: Una volta selezionati gli elementi, è
+            possibile accedere alle regole CSS associate utilizzando la
+            proprietà style dell'elemento.
+          </li>
+          <li>
+            <i>Aggiunta, modifica e rimozione di regole CSS:</i> È possibile
+            aggiungere nuove regole CSS, modificare quelle esistenti o
+            rimuoverle completamente utilizzando le proprietà e i metodi dell'OM
+            di CSS.
+          </li>
+          <li>
+            <i>Manipolazione dinamica dello stile:</i> L'OM di CSS consente di
+            modificare lo stile degli elementi HTML in tempo reale, consentendo
+            di creare effetti visivi, animazioni e layout dinamici.
+          </li>
+        </ul>
+        <p>
+          Ecco un esempio di come potrebbe essere utilizzato l'OM di CSS in
+          JavaScript:
+        </p>
+        <ul>
+          <li>
+            // Seleziona un elemento HTML var elemento =
+            document.getElementById("mioElemento");
+          </li>
+          <li>
+            // Aggiunge una nuova regola CSS all'elemento elemento.style.color =
+            "red";
+          </li>
+          <li>
+            // Modifica una regola CSS esistente elemento.style.fontSize =
+            "20px";
+          </li>
+          <li>
+            // Rimuove una regola CSS elemento.style.removeProperty("color");
+          </li>
+        </ul>
+        <p>
+          In questo esempio, elemento.style rappresenta l'OM di CSS per
+          l'elemento selezionato, che consente di accedere e modificare le
+          regole CSS associate a quell'elemento tramite JavaScript
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

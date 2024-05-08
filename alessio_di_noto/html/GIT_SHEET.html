@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Helpers su GIT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="documento">
+      <div class="navigazione">
+        <h3>Menù navigazione</h3>
+        <p><b>Indice</b></p>
+        <ul>
+          <li><a href="../Index.html">Indice</a></li>
+        </ul>
+
+        <p><b>Lezioni teoriche</b></p>
+        <ul>
+          <li><a href="./CSS.html">Teoria CSS </a></li>
+          <li><a href="./HTML.html">Teoria HTML</a></li>
+          <li><a href="./GIT.html">Teoria GIT</a></li>
+          <li><a href="./MARKDOWN.html">Teoria Markdown</a></li>
+        </ul>
+        <p><b>Helpers</b></p>
+        <ul>
+          <li>
+            <a href="./CSS_SHEET.html">Comandi CSS </a>
+          </li>
+          <li><a href="./HTML_SHEET.html">Comandi HTML</a></li>
+          <li><a href="./MARKDOWN_SHEET.html">Comandi Markdown</a></li>
+        </ul>
+      </div>
+      <div class="testo">
+        <h1>Comandi GIT</h1>
+        <p>
+          <b>clone</b> : Clona un repository in una nuova directory. quando
+          salvo un lavoro da github di un'altro utnte posso clonare il suo
+          repository sul mio pc, in una cartella di lavoro usando questo comando
+        </p>
+        <ul>
+          - Esempio: "<i
+            ><b>git clone</b> https://github.com/utente/repository.git</i
+          >"
+        </ul>
+
+        <p>
+          <b>init</b> : Crea un repository Git vuoto o reinizializza uno
+          esistente in locale e con un nome specifico. In pratica quando creo
+          una cartella di lavoro la devo inizializzare, questo è il primo
+          comando da usare.
+        </p>
+        <ul>
+          - Esempio:
+          <b><i>git init</i></b>
+        </ul>
+
+        <p>
+          <b>status</b> : Mostra lo stato dell'albero di lavoro, ovvero elenca
+          tutti i file nuovi o modificati. Dopo aver fatto init posso
+          controllare cosa c'è dentro alla mia repository in modo da capire
+        </p>
+
+        <ul>
+          - Esempio:
+          <b><i>git status</i></b>
+        </ul>
+
+        <p>
+          add : Aggiunge i contenuti dei file all'indice. Crea uno snapshot del
+          file in preparazione al versioning. Dopo aver fatto init e status,
+          devo aggiungere i file all'interno della cartella all'indice di lavoro
+        </p>
+        <ul>
+          - Esempio: "<i><b>git add</b> nomefile.txt</i
+          >"
+        </ul>
+
+        <p>
+          <b>commit </b>: Registra le modifiche nel repository. Salva gli
+          snapshot dei file in maniera permanente nello storico. Ogni volta che
+          faccio una modifica al file su cui sto lavorando,(dopo averlo salvato
+          e aggiunto) devo registrare questa modifica usando il comando commit.
+          Con il carattere -m indico una "modifica di gruppo" che aggrega una
+          serie di commit all’interno di un branch, il messaggio va inserito tra
+          virgolette
+        </p>
+        <ul>
+          - Esempio:
+          <i><b>git commit -m</b> "Messaggio di commit"</i>
+        </ul>
+        <p>
+          <b>git log</b>: in Git viene utilizzato per visualizzare la cronologia
+          dei commit nel repository. Esso mostra una lista di commit, ordinati
+          in ordine cronologico inverso (dal più recente al più vecchio per
+          impostazione predefinita), con informazioni relative a ciascun commit
+          come autore, data, messaggio di commit e hash del commit.
+        </p>
+
+        <ul>
+          -Esempio:
+          <b><i>git log</i></b>
+        </ul>
+
+        <p>
+          Questo comando visualizzerà la cronologia dei commit nel repository
+          corrente. L'output includerà informazioni su ciascun commit, come
+          l'autore, la data, il messaggio di commit e l'hash del commit. Quando
+          compaiono i due punti nel terminale, per poter uscire dal log, basta
+          scrivere <b>q</b>
+        </p>
+
+        <p>
+          Puoi personalizzare l'output di git log utilizzando vari opzioni.
+          Alcuni esempi comuni includono:
+        </p>
+
+        <ul>
+          <li>
+            <i><b>git log --oneline</b></i
+            >: Visualizza la cronologia dei commit in un formato compatto su una
+            singola linea, mostrando solo l'hash del commit e il messaggio di
+            commit.
+          </li>
+          <li>
+            <i><b>git log --graph</b></i
+            >: Visualizza la cronologia dei commit utilizzando un grafo ASCII
+            per mostrare i rami e le fusioni.
+          </li>
+          <li>
+            <i><b>git log --author=&lt;autore&gt;</b></i
+            >: Filtra la cronologia dei commit per l'autore specificato.
+          </li>
+          <li>
+            <i><b>git log --grep=&lt;pattern&gt;</b></i
+            >: Filtra la cronologia dei commit per i messaggi di commit che
+            corrispondono al pattern specificato.
+          </li>
+          <li>
+            <i><b>git log --since=&lt;data&gt;</b></i
+            >: Mostra solo i commit successivi alla data specificata.
+          </li>
+          <li>
+            <i><b>git log &lt;file&gt;</b></i
+            >: Mostra solo i commit che hanno coinvolto il file specificato.
+          </li>
+        </ul>
+        <ul>
+          - Esempio:
+          <b><i>git log</i></b>
+        </ul>
+
+        <p>
+          <b>branch</b>: Elenca, crea o elimina branch. In questo caso elenca
+          tutti i branch nel repository corrente
+        </p>
+        <ul>
+          <li>
+            - Elenca: <i><b>git branch</b></i>
+          </li>
+          <li>
+            - Crea: <i><b>git branch </b>[branch-name]</i>
+          </li>
+          <li>
+            - Sposta: <i><b>git switch -c </b>[branch-name]</i>
+          </li>
+          <li>
+            - Rimuovi: <i><b>git branch -d </b>[branch-name]</i>
+          </li>
+          <li>
+            - Rinomina (branch locale):
+            <i><b>git branch -m</b>[Old-name][New-name]</i>
+          </li>
+        </ul>
+
+        <p><b>merge</b>: Unisce due o più storie di sviluppo.</p>
+
+        <ul>
+          - Esempio:
+          <i><b>git merge</b> [branch-name]</i>
+        </ul>
+        <p>
+          <b>fetch</b>: viene utilizzato per scaricare i riferimenti remoti
+          (branch e tag) dal repository remoto nel repository locale. Tuttavia,
+          a differenza di git pull, git fetch non integra automaticamente i
+          cambiamenti scaricati nel branch locale corrente
+        </p>
+        <ul>
+          Esempio:
+          <i><b>git fetch</b> origin</i>
+        </ul>
+
+        <p>
+          <b>push</b>: Carica tutti i cambiamenti dal branch locale su GitHub.
+          Dopo aver fatto add e committ, per aggiornare il GitHub, dopo aver
+          creato il collegamento con la repository nel web, uso questo comando
+          per aggiornare la repository online
+        </p>
+        <ul>
+          - Esempio:
+          <b>git push origin master</b>
+        </ul>
+        <p>
+          <b>pull</b>: Esegue il fetch e l'integrazione con un altro repository
+          o un branch locale. Combina due azioni in un'unica operazione:
+          <i>git fetch</i> e <i>git merge</i>. Ecco cosa fa esattamente git
+          pull:
+        </p>
+        <ul>
+          <li>
+            <i>git fetch</i>: Prima di tutto, git pull esegue un git fetch, che
+            scarica tutti i riferimenti remoti (branch e tag) dal repository
+            remoto nel repository locale. Questo aggiorna il database di oggetti
+            locale con le ultime modifiche dal repository remoto.
+          </li>
+          <li>
+            <i>Aggiornamento dei Riferimenti Remoti</i>: Durante il fetch, i
+            riferimenti remoti vengono aggiornati nel database di oggetti
+            locale, consentendo a Git di tenere traccia delle modifiche
+            effettuate nel repository remoto.
+          </li>
+          <li>
+            <i>Aggiornamento delle Branch Remote</i>: Se hai configurato il
+            tracciamento dei branch remoto, git pull aggiorna anche le tue
+            branch remote, aggiornando i puntatori locali delle branch remote
+            con le loro controparti remote.
+          </li>
+          <li>
+            <i>git merge</i> (Integrazione Automatica): Dopo il fetch, git pull
+            esegue automaticamente un git merge per integrare i cambiamenti
+            scaricati nel branch locale corrente. Questo può causare una fusione
+            (merge) automatica dei cambiamenti con il branch locale, se non ci
+            sono conflitti.
+          </li>
+        </ul>
+
+        <ul>
+          - Esempio:
+          <i><b>git pull origin master</b></i>
+        </ul>
+
+        <p>
+          <b>checkout</b> consente di spostarsi tra rami, commit e file
+          nell'albero di lavoro. La sua funzionalità principale è quella di
+          cambiare contesto nel repository Git. Ecco alcuni dei suoi usi
+          principali:
+        </p>
+
+        <ul>
+          <li>
+            <b>Spostarsi tra rami</b>: Quando si lavora con rami diversi
+            all'interno di un repository Git, git checkout consente di passare
+            da un ramo all'altro. Ad esempio,
+            <b><pre>git checkout nome-ramo</pre></b> ti sposterà sul ramo
+            specificato.
+          </li>
+          <li>
+            <b>Spostarsi tra commit</b>: Puoi utilizzare git checkout per
+            esplorare lo storico dei commit nel repository. Se conosci l'hash di
+            un commit specifico, puoi scrivere
+            <pre><b>git checkout &lt;hash-commit&gt;</b></pre>
+            per "viaggiare indietro nel tempo" e vedere lo stato del repository
+            a quel determinato commit.
+          </li>
+          <li>
+            <b>Spostarsi tra branch e commit contemporaneamente</b>: In Git,
+            puoi anche navigare tra rami e commit usando git checkout in
+            combinazione con opzioni specifiche. Ad esempio,
+            <pre><b>git checkout HEAD~2
+        </b></pre>
+            ti sposterà indietro di due commit rispetto al commit corrente,
+            mentre
+            <pre><b>git checkout master~3</b></pre>
+            ti sposterà indietro di tre commit dal ramo master.
+          </li>
+          <li>
+            <b>Ripristinare file modificati</b>: Se hai apportato delle
+            modifiche a un file e desideri scartarle e tornare allo stato del
+            file nel commit più recente, puoi utilizzare
+            <pre><b>git checkout -- nome-file</b></pre>
+          </li>
+          <li>
+            <b>Creare nuovi branch</b>: Puoi anche creare un nuovo ramo e
+            spostarti su di esso contemporaneamente utilizzando
+            <pre><b>git checkout -b nuovo-ramo</b></pre>
+            Questo comando crea un nuovo ramo e commuta su di esso in una sola
+            operazione.
+          </li>
+        </ul>
+
+        <p>
+          <b>git remote</b> in Git è utilizzato per visualizzare, aggiungere e
+          rimuovere repository remoti.
+        </p>
+
+        <ul>
+          <li>
+            <b>git remote</b>: Questo comando mostra i nomi dei repository
+            remoti attualmente configurati.
+          </li>
+
+          <li>
+            <b>git remote -v</b>: Questo comando mostra i nomi dei repository
+            remoti e le rispettive URL. È utile per ottenere una visione
+            dettagliata dei repository remoti configurati.
+          </li>
+          <li>
+            <b>git remote add &lt;nome&gt; &lt;url&gt;</b>: Questo comando viene
+            utilizzato per aggiungere un nuovo repository remoto. Si specifica
+            un nome per il repository remoto (ad esempio, origin) e l'URL del
+            repository remoto.
+          </li>
+          <li>
+            <b>git remote remove &lt;nome&gt;</b>;: Questo comando viene
+            utilizzato per rimuovere un repository remoto specificato dal
+            repository locale. Si specifica il nome del repository remoto da
+            rimuovere.
+          </li>
+          <li>
+            <b>git remote rename &lt;nome-vecchio&gt; &lt;nome-nuovo&gt;</b>:
+            Questo comando viene utilizzato per rinominare un repository remoto
+            esistente. Si specifica il nome del repository remoto esistente che
+            si desidera rinominare e il nuovo nome desiderato.
+          </li>
+          <li>
+            <b>git remote set-url</b> &lt;nome&gt; &lt;nuova-url&gt;: Questo
+            comando viene utilizzato per modificare l'URL di un repository
+            remoto esistente. Si specifica il nome del repository remoto e la
+            nuova URL.
+          </li>
+        </ul>
+        <p>
+          <b>git stash</b> in Git viene utilizzato per temporaneamente salvare
+          le modifiche non commesse nel working directory e nell'area di stage
+          in uno stack di stash. Questo è utile quando si desidera mettere da
+          parte le modifiche attuali per lavorare su un'altra attività, senza la
+          necessità di fare commit delle modifiche parziali. Ecco come funziona
+          git stash:
+        </p>
+
+        <ul>
+          <li>
+            <i>Salvataggio delle modifiche</i>: Quando esegui git stash, Git
+            salva le modifiche non commesse nel working directory e nell'area di
+            stage in uno stack di stash. Questo include tutte le modifiche non
+            commesse, inclusi i file modificati e i file aggiunti nell'area di
+            stage.
+          </li>
+          <li>
+            <i>Pulizia del working directory</i>: Dopo aver salvato le modifiche
+            nello stash, Git ripulisce il working directory, lasciandolo pulito
+            come se fosse stato appena clonato o checkout su un altro branch.
+          </li>
+          <li>
+            <i>Utilizzo dello stack di stash</i>: È possibile salvare più stash
+            nello stack di stash. È anche possibile applicare, elencare,
+            applicare parzialmente, eliminare o popolare gli stash nello stack
+            utilizzando altri comandi git stash come
+            <i><b>git stash apply</b></i
+            >, <i><b>git stash list</b></i
+            >, <i><b>git stash pop</b></i
+            >, <i><b>git stash drop</b></i
+            >, ecc.
+          </li>
+          <li>
+            <i>Ripristino delle modifiche</i>: In futuro, è possibile
+            ripristinare le modifiche salvate nello stash applicando uno stash
+            utilizzando il comando <i><b>git stash apply</b></i
+            >. Questo riapplicherà le modifiche allo stato del working directory
+            e dell'area di stage.
+          </li>
+        </ul>
+        <p>
+          <b>git cherry-pick</b>: in Git viene utilizzato per applicare i
+          cambiamenti specificati di uno o più commit ad un branch diverso da
+          quello in cui sono stati originariamente creati. Questo è utile quando
+          si desidera applicare singoli commit da una branch a un'altra, senza
+          dover unire l'intero branch. Ecco come funziona git cherry-pick:
+        </p>
+
+        <ul>
+          <li>
+            <i>Identificazione del commit</i>: Prima di eseguire git
+            cherry-pick, è necessario identificare il commit o i commit che si
+            desidera applicare al branch corrente. Puoi utilizzare git log per
+            visualizzare la cronologia dei commit e identificare gli hash dei
+            commit interessati.
+          </li>
+          <li>
+            <i>Esecuzione di git cherry-pick</i>: Una volta identificati i
+            commit interessati, puoi eseguire git cherry-pick seguito dagli hash
+            dei commit desiderati. Ad esempio:
+          </li>
+          <pre><i><b>git cherry-pick</b> &lt;hash-commit&gt;</i></pre>
+
+          <li>
+            <i>Applicazione dei cambiamenti</i>: git cherry-pick applicherà i
+            cambiamenti del commit specificato al branch corrente. Se non ci
+            sono conflitti durante l'applicazione del commit, Git applicherà i
+            cambiamenti e creerà un nuovo commit nel branch corrente con lo
+            stesso contenuto del commit originale.
+          </li>
+
+          <li>
+            <i>Risoluzione dei conflitti</i>: Se ci sono conflitti durante
+            l'applicazione del commit, Git metterà in pausa il processo di
+            cherry-pick e richiederà di risolvere manualmente i conflitti.
+            Dovrai risolvere i conflitti, aggiungere i file risolti nell'area di
+            stage e poi completare il cherry-pick utilizzando
+            <b>git cherry-pick --continue.</b>
+          </li>
+
+          <li>
+            <i>Conferma delle modifiche</i>: Una volta completato con successo
+            il cherry-pick, i cambiamenti del commit saranno applicati al branch
+            corrente e verrà creato un nuovo commit che contiene tali modifiche.
+          </li>
+        </ul>
+
+        <p><b>mv</b>: Sposta o rinomina un file, una directory o un symlink.</p>
+        <ul>
+          Esempio:
+          <i> <b> git mv </b> vecchio_nome nuovo_nome </i>
+        </ul>
+        <p><b>restore</b>: Ripristina i file nell'albero di lavoro.</p>
+        <ul>
+          Esempio:
+          <i>
+            <b>git restore</b>
+            nomefile.txt
+          </i>
+        </ul>
+        <p><b>rm</b>: Rimuove i file dall'albero di lavoro e dall'indice.</p>
+        <ul>
+          Esempio:
+          <i><b>git rm</b> file_da_rimuovere.txt</i>
+        </ul>
+        <p>
+          <b>bisect</b>: Utilizza la ricerca binaria per trovare il commit che
+          ha introdotto un bug.
+        </p>
+        <ul>
+          Esempio:
+          <b>git bisect</b>
+        </ul>
+        <p>
+          <b>start - diff</b>: Mostra le modifiche tra i commit, il commit e
+          l'albero di lavoro, ecc.
+        </p>
+        <ul>
+          Esempio:
+          <b>git diff</b>
+          HEAD~1
+        </ul>
+        <p><b>grep</b>: Stampa le righe corrispondenti a un pattern.</p>
+        <ul>
+          Esempio:
+          <i><b>git grep</b> "pattern"</i>
+        </ul>
+        <p><b>show</b>: Mostra vari tipi di oggetti.</p>
+        <ul>
+          Esempio:
+          <i><b>git show</b> HEAD</i>
+        </ul>
+        <p><b>rebase</b>: Riapplica i commit su un'altra punta base.</p>
+        <ul>
+          Esempio:
+          <b>git rebase master</b>
+        </ul>
+        <p>
+          <b>reset</b>: Resetta HEAD corrente allo stato specificato. Modifica
+          lo stato del repository Git, spostando il branch corrente e/o il
+          puntatore HEAD a un determinato commit
+        </p>
+        <ul>
+          Esempio:
+          <i><b>git reset</b> --hard HEAD~2</i>
+        </ul>
+        <p>
+          <b>tag:</b>
+          Crea, elenca, elimina o verifica un tag firmato con GPG.
+        </p>
+        <ul>
+          Esempio:
+          <i>
+            <b>git tag</b>
+            -a v1.0 -m "Versione 1.0"
+          </i>
+        </ul>
+        <p>
+          <b>git config</b> in Git viene utilizzato per leggere e modificare le
+          configurazioni di Git a livello globale, a livello di repository e a
+          livello locale (per un singolo progetto). Ecco come viene utilizzato
+          git config:
+        </p>
+
+        <ul>
+          <li>
+            <i>Lettura delle configurazioni:</i> Per leggere le configurazioni
+            attualmente impostate, puoi eseguire git config --list. Questo
+            mostrerà tutte le configurazioni Git impostate per il tuo utente, il
+            tuo repository e il progetto locale.
+          </li>
+          <li>
+            <i>Modifica delle configurazioni:</i> Per modificare le
+            configurazioni, è possibile utilizzare il comando git config seguito
+            dal nome della configurazione e dal valore desiderato. Ad esempio,
+            per impostare l'indirizzo email associato ai tuoi commit:
+
+            <ul>
+              <li>
+                <i>
+                  <pre>
+git config --global user.email "tuo-indirizzo@email.com"</pre
+                  >
+                </i>
+              </li>
+            </ul>
+
+            L'opzione --global indica che la modifica verrà apportata a livello
+            globale per l'utente corrente.
+          </li>
+          <li>
+            <i>Lettura di una configurazione specifica:</i> Se desideri leggere
+            il valore di una configurazione specifica, puoi utilizzare il
+            comando git config &lt;nome-configurazione&gt;. Ad esempio, per
+            leggere il tuo indirizzo email configurato:
+          </li>
+
+          <ul>
+            <li>
+              <pre><i>git config user.email</i></pre>
+            </li>
+          </ul>
+
+          <li>
+            <i>Rimozione di una configurazione:</i> Per rimuovere una
+            configurazione, è possibile utilizzare il comando git config --unset
+            seguito dal nome della configurazione. Ad esempio, per rimuovere
+            l'indirizzo email globale:
+          </li>
+
+          <ul>
+            <pre><i>git config --global --unset user.email</i></pre>
+          </ul>
+        </ul>
+        <p>
+          <b>git blame</b> in Git viene utilizzato per visualizzare chi ha
+          modificato le righe di un file specifico e in quale commit sono state
+          apportate tali modifiche. Questo è utile per tracciare la storia delle
+          modifiche di un file e per identificare l'origine delle modifiche in
+          un repository Git.
+        </p>
+
+        <ul>
+          -Esempio:
+          <b><i>git blame &lt;file&gt;</i></b>
+        </ul>
+
+        <p>
+          Questo comando visualizzerà il contenuto del file specificato con un
+          elenco di tutte le righe, insieme alle informazioni su chi ha
+          modificato ciascuna riga e in quale commit è stata apportata la
+          modifica. L'output includerà l'hash del commit, il nome dell'autore,
+          la data della modifica e il numero di riga.
+        </p>
+        <p>
+          Puoi anche utilizzare opzioni aggiuntive con git blame per
+          personalizzare l'output o filtrare le informazioni. Ad esempio:
+        </p>
+
+        <ul>
+          <li>
+            <b><i>git blame -L &lt;start&gt;,&lt;end&gt;</i></b
+            >: Visualizza solo le modifiche apportate alle righe tra
+            &lt;start&gt; e &lt;end&gt;.
+          </li>
+          <li>
+            <b><i>git blame -L &lt;start&gt;,+&lt;numero&gt;</i></b
+            >: Visualizza solo le modifiche apportate alle righe a partire da
+            &lt;start&gt; per il numero specificato di righe.
+          </li>
+          <li>
+            <b><i>git blame -e</i></b
+            >: Visualizza l'indirizzo email degli autori invece dei loro nomi.
+          </li>
+          <li>
+            <b><i>git blame -C</i></b
+            >: Abilita la ricerca di similitudini per individuare le righe
+            copiate o spostate all'interno del repository.
+          </li>
+        </ul>
+        <h2>Elenco opzioni vari comandi</h2>
+        <h3>git add</h3>
+        <ul>
+          <li>
+            <b>-n</b>, <b>--dry-run</b>: Visualizza le modifiche che verranno
+            aggiunte senza effettivamente eseguire l'aggiunta.
+          </li>
+          <li>
+            <b>-p</b>, <b>--patch</b>: Permette di interagire in modo
+            interattivo per aggiungere parti specifiche dei file alle staging
+            area.
+          </li>
+          <li>
+            <b>-v</b>, <b>--verbose</b>: Visualizza dettagli aggiuntivi durante
+            l'aggiunta dei file.
+          </li>
+        </ul>
+
+        <h3>git branch</h3>
+        <ul>
+          <li>
+            <b>-a</b>, <b>--all</b>: Mostra sia i rami remoti che quelli locali.
+          </li>
+          <li><b>-d</b>, <b>--delete</b>: Elimina il ramo specificato.</li>
+          <li>
+            <b>-D</b>: Forza l'eliminazione di un ramo, anche se non è
+            completamente fuso.
+          </li>
+          <li><b>-m</b>, <b>--move</b>: Rinomina il ramo specificato.</li>
+        </ul>
+
+        <h3>git checkout</h3>
+        <ul>
+          <li>
+            <b>-b &lt;branch&gt;</b>, <b>--create</b>: Crea un nuovo ramo
+            <b>&lt;branch&gt;</b> e passa a esso.
+          </li>
+          <li>
+            <b>-f</b>, <b>--force</b>: Forza lo spostamento di branch anche se
+            ci sono modifiche non salvate.
+          </li>
+          <li>
+            <b>-m</b>, <b>--merge</b>: Esegue un merge durante lo switch di
+            branch.
+          </li>
+        </ul>
+
+        <h3>git clone</h3>
+        <ul>
+          <li>
+            <b>--branch &lt;branch&gt;</b>, <b>--single-branch</b>: Clona solo
+            un singolo ramo.
+          </li>
+          <li>
+            <b>-b</b>, <b>--branch &lt;branch&gt;</b>: Clona solo il ramo
+            specificato.
+          </li>
+        </ul>
+
+        <h3>git commit</h3>
+        <ul>
+          <li>
+            <b>-a</b>, <b>--all</b>: Aggiunge automaticamente tutti i file
+            modificati all'area di staging prima di eseguire il commit.
+          </li>
+          <li>
+            <b>-m &lt;message&gt;</b>, <b>--message=&lt;message&gt;</b>:
+            Utilizza il messaggio <b>&lt;message&gt;</b> come testo del commit.
+          </li>
+          <li>
+            <b>--amend</b>: Modifica l'ultimo commit senza creare un nuovo
+            commit.
+          </li>
+        </ul>
+
+        <h3>git fetch</h3>
+        <ul>
+          <li>
+            <b>--all</b>: Recupera tutti i rami da tutti i repository remoti.
+          </li>
+          <li>
+            <b>-p</b>, <b>--prune</b>: Rimuove i riferimenti ai rami remoti che
+            non esistono più nel repository remoto.
+          </li>
+        </ul>
+
+        <h3>git merge</h3>
+        <ul>
+          <li>
+            <b>--no-ff</b>: Esegue sempre un commit di merge anche se non è
+            necessario.
+          </li>
+          <li>
+            <b>--squash</b>: Unisce i commit in un singolo commit durante il
+            merge.
+          </li>
+        </ul>
+
+        <h3>git push</h3>
+        <ul>
+          <li>
+            <b>-f</b>, <b>--force</b>: Forza il push, sovrascrivendo i
+            riferimenti remoti.
+          </li>
+          <li><b>--all</b>: Pusha tutti i rami al repository remoto.</li>
+          <li><b>--tags</b>: Pusha tutti i tag al repository remoto.</li>
+        </ul>
+
+        <h3>git pull</h3>
+        <ul>
+          <li>
+            <b>-r</b>, <b>--rebase</b>: Esegue un rebase anziché un merge
+            durante il pull.
+          </li>
+          <li>
+            <b>--tags</b>: Recupera anche i tag dal repository remoto durante il
+            pull.
+          </li>
+        </ul>
+
+        <h3>git rebase</h3>
+        <ul>
+          <li>
+            <b>-i</b>, <b>--interactive</b>: Esegue un rebase in modalità
+            interattiva.
+          </li>
+          <li><b>--onto</b>: Specifica il punto di partenza per il rebase.</li>
+        </ul>
+
+        <h3>git reset</h3>
+        <ul>
+          <li>
+            <b>--soft</b>: Riporta i file all'area di staging senza modificare
+            il working directory.
+          </li>
+          <li>
+            <b>--hard</b>: Elimina tutte le modifiche non commesse e riporta i
+            file allo stato dell'ultimo commit.
+          </li>
+        </ul>
+
+        <h3>git rm</h3>
+        <ul>
+          <li><b>-r</b>: Rimuove ricorsivamente i file e le directory.</li>
+        </ul>
+
+        <h3>git tag</h3>
+        <ul>
+          <li><b>-a</b>, <b>--annotate</b>: Crea un tag annotato.</li>
+          <li><b>-d</b>, <b>--delete</b>: Elimina il tag specificato.</li>
+        </ul>
+
+        <h3>Altre opzioni globali</h3>
+        <ul>
+          <li>
+            <b>-v</b>, <b>--version</b>: Visualizza la versione di Git
+            installata.
+          </li>
+          <li>
+            <b>-h</b>, <b>--help</b>: Mostra l'aiuto per un comando specifico di
+            Git.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

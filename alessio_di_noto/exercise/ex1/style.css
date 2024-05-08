@@ -1,0 +1,41 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Esercizio1 {
+  display: flex;
+  text-align: center;
+}
+
+#somma {
+  display: flex;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#sottrazione {
+  display: flex;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#numero {
+  font-size: 36px;
+  margin: 0 10px;
+}

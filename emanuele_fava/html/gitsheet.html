@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>GIT_sheet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../main.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li>
+          <a href="../index.html">Homepage</a>
+        </li>
+        <li>
+          <a href="markdownsheet.html">MARKDOWN_sheet</a>
+        </li>
+        <li>
+          <a href="htmlsheet.html">HTML_sheet</a>
+        </li>
+        <li><a href="cssheet.html">CSS_SHEET</a></li>
+      </ul>
+    </nav>
+
+    <div class="page_container">
+      <h1>GIT_SHEET</h1>
+      <hr />
+      <ul>
+        <h2>Inizializzazione e Clonazione del Repository</h2>
+        <hr />
+        <li>
+          <pre>git init</pre>
+          Inizializza un nuovo repository Git nella directory corrente.
+        </li>
+        <li>
+          <pre> git clone 'url'</pre>
+          Clona un repository esistente dalla URL specificata.
+        </li>
+      </ul>
+
+      <ul>
+        <h2>Gestione dei Cambiamenti</h2>
+        <hr />
+        <li>
+          <pre>git add 'file'</pre>
+          Aggiunge un file al "staging area" per il commit.
+        </li>
+        <li>
+          <pre> git commit -m "Messaggio di commit"</pre>
+          Committa le modifiche presenti nello "staging area" al repository.
+        </li>
+      </ul>
+
+      <ul>
+        <h2>Sincronizzazione con il Repository Remoto</h2>
+        <hr />
+        <li>
+          <pre>git push</pre>
+          Carica i commit locali sul repository remoto.
+        </li>
+        <li>
+          <pre>git pull</pre>
+          Scarica e unisce i cambiamenti dal repository remoto al repository
+          locale.
+        </li>
+      </ul>
+
+      <ul>
+        <h2>Gestione dei Rami</h2>
+        <hr />
+        <li>
+          <pre>git branch</pre>
+          Visualizza i rami locali.
+        </li>
+        <li>
+          <pre>git checkout</pre>
+          Cambia al ramo specificato.
+        </li>
+        <li>
+          <pre>git merge</pre>
+          Unisce il ramo specificato al ramo corrente.
+        </li>
+        <li>
+          <pre>git rebase</pre>
+          Riapplica i commit del ramo specificato sul ramo corrente.
+        </li>
+      </ul>
+
+      <ul>
+        <h2>Visualizzazione dello Stato e Cronologia</h2>
+        <hr />
+        <li>
+          <pre>git status</pre>
+          Mostra lo stato dei file nel repository.
+        </li>
+        <li>
+          <pre>git log</pre>
+          Visualizza la cronologia dei commit.
+        </li>
+        <li>
+          <pre>git diff</pre>
+          Mostra le modifiche tra i commit o tra il repository e lo "staging
+          area".
+        </li>
+      </ul>
+
+      <ul>
+        <h2>Ripristino e Annullamento delle Modifiche</h2>
+        <hr />
+        <li>
+          <pre>git reset</pre>
+          Annulla le modifiche ai file o ripristina il repository a uno stato
+          precedente.
+        </li>
+      </ul>
+
+      <ul>
+        <h2>Gestione dei Repository Remoti</h2>
+        <hr />
+        <li>
+          <pre>git remote</pre>
+          Visualizza o gestisce i repository remoti.
+        </li>
+        <li>
+          <pre> git fetch</pre>
+          Scarica i cambiamenti dal repository remoto senza unire i cambiamenti
+          al repository locale.
+        </li>
+      </ul>
+
+      <ul>
+        <h2>Gestione dei Tag</h2>
+        <hr />
+        <li>
+          <pre>git tag</pre>
+          Gestisce i tag annotati o leggeri per segnare commit specifici.
+        </li>
+      </ul>
+
+      <ul>
+        <h2>Comandi Aggiuntivi</h2>
+        <hr />
+        <li>
+          <pre>git checkout -b <'branch'></pre>
+          Crea un nuovo ramo e passa ad esso.
+        </li>
+        <li>
+          <pre>git branch -d <'branch'></pre>
+          Cancella il ramo specificato.
+        </li>
+        <li>
+          <pre>git merge --abort</pre>
+          Annulla un merge in corso e ripristina lo stato precedente.
+        </li>
+        <li>
+          <pre>git rebase --abort</pre>
+          Annulla un rebase in corso e ripristina lo stato precedente.
+        </li>
+        <li>
+          <pre>git fetch --prune</pre>
+          Scarica i cambiamenti dal repository remoto e rimuove i riferimenti ai
+          rami eliminati.
+        </li>
+        <li>
+          <pre>git remote -v</pre>
+          Visualizza i repository remoti e le relative URL.
+        </li>
+        <li>
+          <pre>git tag -a <'tag'> -m</pre>
+          Crea un nuovo tag annotato.
+        </li>
+        <li>
+          <pre>git push --tags</pre>
+          Carica tutti i tag locali sul repository remoto.
+        </li>
+        <li>
+          <pre>git clean -n</pre>
+          Mostra i file non tracciati che verranno rimossi con git clean -f.
+        </li>
+        <li>
+          <pre>git stash list</pre>
+          Visualizza l'elenco degli stash.
+        </li>
+        <li>
+          <pre>git stash apply</pre>
+          Applica l'ultimo stash.
+        </li>
+        <li>
+          <pre>git cherry-pick <'commit'></pre>
+          Applica un singolo commit da un altro ramo.
+        </li>
+        <li>
+          <pre>git reflog</pre>
+          Visualizza la cronologia delle operazioni di riferimento, inclusi
+          commit, merge e reset.
+        </li>
+        <li>
+          <pre>git config --global user.name "Il Tuo Nome"</pre>
+          Imposta il nome utente globale per i commit.
+        </li>
+        <li>
+          <pre> git config --global user.email "tua@email.com"</pre>
+          Imposta l'email globale per i commit.
+        </li>
+      </ul>
+    </div>
+
+    <footer class="insidefooter">
+      <ul>
+        <li>
+          <a href="../index.html">Homepage</a>
+        </li>
+        <li>
+          <a href="markdownsheet.html">MARKDOWN_sheet</a>
+        </li>
+        <li>
+          <a href="htmlsheet.html">HTML_sheet</a>
+        </li>
+        <li><a href="cssheet.html">CSS_SHEET</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Comandi CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="documento">
+      <div class="navigazione">
+        <h2>Menù navigazione</h2>
+
+        <ul>
+          <li><a href="../Index.html">Indice</a></li>
+        </ul>
+
+        <p><b>Lezioni teoriche</b></p>
+        <ul>
+          <li><a href="./CSS.html">Teoria CSS </a></li>
+          <li><a href="./HTML.html">Teoria HTML</a></li>
+          <li><a href="./GIT.html">Teoria GIT</a></li>
+          <li><a href="./MARKDOWN.html">Teoria Markdown</a></li>
+        </ul>
+        <p><b>Helpers</b></p>
+        <ul>
+          <li><a href="./HTML_SHEET.html">Comandi HTML</a></li>
+          <li><a href="./GIT_SHEET.html">Comandi GIT</a></li>
+          <li><a href="./MARKDOWN_SHEET.html">Comandi Markdown</a></li>
+        </ul>
+      </div>
+      <div class="testo">
+        <h1>Lista dettagliata di alcuni comandi CSS e come utilizzarli</h1>
+
+        <h2>1. Selettori:</h2>
+
+        <ul>
+          <li>
+            <b>element</b>: Seleziona tutti gli elementi di tipo specificato. Ad
+            esempio, <b>p</b> selezionerà tutti i paragrafi.
+          </li>
+          <li>
+            <b>.classe</b>: Seleziona tutti gli elementi con la classe
+            specificata. Ad esempio, <b>.intro</b> selezionerà tutti gli
+            elementi con la classe "intro".
+          </li>
+          <li>
+            <b>#id</b>: Seleziona l'elemento con l'id specificato. Ad esempio,
+            <b>#header</b> selezionerà l'elemento con l'id "header".
+          </li>
+          <li>
+            <b>[attributo]</b>: Seleziona gli elementi con l'attributo
+            specificato. Ad esempio, <b>[type]</b> selezionerà tutti gli
+            elementi che hanno un attributo "type".
+          </li>
+          <li>
+            <b>element, element</b>: Seleziona più elementi separati da virgola.
+            Ad esempio, <b>h1, h2, h3</b> selezionerà tutti gli elementi di
+            intestazione h1, h2 e h3.
+          </li>
+          <li>
+            <b>element > element</b>: Seleziona un elemento figlio diretto. Ad
+            esempio, <b>div > p</b> selezionerà tutti i paragrafi che sono figli
+            diretti di un elemento div.
+          </li>
+          <li>
+            <b>element + element</b>: Seleziona un elemento fratello
+            immediatamente successivo. Ad esempio, <b>h2 + p</b> selezionerà il
+            primo paragrafo che segue immediatamente un elemento di intestazione
+            h2.
+          </li>
+          <li>
+            <b>element ~ element</b>: Seleziona tutti gli elementi fratelli
+            successivi. Ad esempio, <b>p ~ span</b> selezionerà tutti gli
+            elementi span che sono fratelli successivi di un paragrafo.
+          </li>
+          <li>
+            <b>Pseudoclassi di Stato</b>: Questi selettori permettono di
+            selezionare elementi in base al loro stato, come ad esempio
+            <b>:hover</b> per quando il mouse passa sopra un elemento,
+            <b>:active</b> per quando un elemento è attivato, o
+            <b>:focus</b> per quando un elemento ha lo stato di "focus".
+          </li>
+          <li>
+            <b>Pseudoelementi</b>: Consentono di selezionare parti specifiche di
+            un elemento, come ad esempio ::before per aggiungere contenuto prima
+            dell'elemento selezionato o ::after per aggiungere contenuto dopo
+            l'elemento selezionato.
+          </li>
+          <li>
+            <b>Selettori di Figlio Nth-child</b>: Consentono di selezionare gli
+            elementi in base alla loro posizione all'interno di un genitore,
+            come ad esempio `:nth-child(n)` per selezionare tutti gli elementi
+            figli che sono l'n-esimo figlio del loro genitore.
+          </li>
+          <li>
+            <b>Selettori di Figlio Nth-of-type</b>: Simili ai selettori di
+            Figlio Nth-child, ma si concentrano sul tipo di elemento anziché
+            sulla posizione.
+          </li>
+
+          <li>
+            <b>Selettori di Attributo Avanzati</b>: Oltre ai semplici selettori
+            di attributo, ci sono anche quelli più complessi come
+            <b>^=</b> (inizia con), <b>$=</b> (finisce con),
+            <b>*=</b> (contiene), che consentono di selezionare gli elementi in
+            base a determinati pattern all'interno degli attributi.
+          </li>
+          <li>
+            <b>Selettori di Testo e Contenuto</b>: Per esempio,
+            <b>:contains(text)</b> per selezionare elementi che contengono un
+            certo testo, o <b>:empty</b> per selezionare elementi senza figli.
+          </li>
+          <li>
+            <b>Selettori di Stato di Valore di Input</b>: Per esempio,
+            <b>:checked </b>per selezionare input radio o checkbox che sono
+            stati selezionati.
+          </li>
+        </ul>
+
+        <h2>2. Proprietà di layout:</h2>
+        <ul>
+          <li>
+            <b>display</b>: Specifica il tipo di display per un elemento. Ad
+            esempio, <b>display: block</b> renderà un elemento come blocco.
+            Oppure il comando <b>display: flex</b> crea un Flex Container
+            l'elemento a cui viene applicata la regola display: flex; diventa un
+            "flex container". Questo significa che gli elementi figlio diretti
+            di questo elemento verranno trattati come "flex items".
+
+            <ul>
+              <li>
+                Imposta la Direzione Predefinita: Per impostazione predefinita,
+                un flex container organizza i suoi flex items in una riga (da
+                sinistra a destra) se l'attributo flex-direction non viene
+                specificato. Puoi modificare la direzione del layout impostando
+                la proprietà <b>flex-direction</b> sul flex container.
+              </li>
+              <li>
+                Imposta la Dimensione dei Flex Items: Gli elementi figlio
+                diretti dell'elemento con display: flex; vengono considerati
+                "flex items" e verranno posizionati all'interno del flex
+                container. La dimensione dei flex items può essere controllata
+                utilizzando le proprietà CSS come <b>flex-grow</b>,
+                <b>flex-shrink</b> e <b>flex-basis</b>.
+              </li>
+              <li>
+                Allinea i <b>Flex Items</b>: Puoi controllare l'allineamento
+                degli elementi figlio diretti del flex container utilizzando le
+                proprietà CSS come <b>justify-content</b> per l'asse principale
+                e <b>align-items</b> per l'asse trasversale.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <b>float</b>: Posiziona un elemento a sinistra o a destra del
+            contenuto. Ad esempio, <b>float: left</b> sposterà un elemento a
+            sinistra.
+          </li>
+          <li>
+            <b>position</b>: Specifica il tipo di posizionamento per un
+            elemento. Ad esempio, <b>position: relative</b> posizionerà un
+            elemento in relazione alla sua posizione originale.
+          </li>
+          <li>
+            <b>top</b>, <b>right</b>, <b>bottom</b>, <b>left</b>: Specifica la
+            posizione di un elemento posizionato. Ad esempio,
+            <b>top: 50px</b> sposterà un elemento di 50 pixel dall'alto.
+          </li>
+          <li>
+            <b>z-index</b>: Specifica lo stacking order degli elementi
+            posizionati. Ad esempio, <b>z-index: 1</b> metterà un elemento sopra
+            gli altri con uno z-index inferiore.
+          </li>
+        </ul>
+
+        <h2>3. Dimensioni e spaziatura:</h2>
+        <ul>
+          <li>
+            <b>width</b>, <b>min-width</b>, <b>max-width</b>: Specifica la
+            larghezza di un elemento.
+          </li>
+          <li>
+            <b>height</b>, <b>min-height</b>, <b>max-height</b>: Specifica
+            l'altezza di un elemento.
+          </li>
+          <li><b>margin</b>: Specifica il margine esterno di un elemento.</li>
+          <li>
+            <b>padding</b>: Specifica il padding interno di un elemento. Ovvero
+            quanto distante dal bordo interno un elemento deve trovarsi
+          </li>
+          <li><b>border</b>: Specifica il bordo di un elemento.</li>
+        </ul>
+
+        <h2>4. Colori e sfondi:</h2>
+        <ul>
+          <li><b>color</b>: Specifica il colore del testo.</li>
+          <li>
+            <b>background-color</b>: Specifica il colore di sfondo di un
+            elemento.
+          </li>
+          <li><b>opacity</b>: Specifica l'opacità di un elemento.</li>
+        </ul>
+
+        <h2>5. Testo:</h2>
+        <ul>
+          <li><b>font-family</b>: Specifica il tipo di carattere del testo.</li>
+          <li>
+            <b>font-size</b>: Specifica la dimensione del carattere del testo.
+          </li>
+          <li>
+            <b>font-weight</b>: Specifica lo spessore del carattere del testo.
+          </li>
+          <li><b>text-align</b>: Specifica l'allineamento del testo.</li>
+          <li>
+            <b>text-decoration</b>: Specifica la decorazione del testo
+            (sottolineato, barrato, etc.).
+          </li>
+        </ul>
+
+        <h2>6. Effetti visivi:</h2>
+        <ul>
+          <li><b>box-shadow</b>: Aggiunge un'ombra a un elemento.</li>
+          <li>
+            <b>transition</b>: Specifica una transizione per le proprietà CSS.
+          </li>
+          <li>
+            <b>transform</b>: Applica una trasformazione 2D o 3D a un elemento.
+          </li>
+          <li><b>animation</b>: Specifica un'animazione per un elemento.</li>
+        </ul>
+
+        <h2>7. Pseudoclassi e pseudoelementi:</h2>
+        <ul>
+          <li>
+            <b>:hover</b>, <b>:active</b>, <b>:focus</b>: Pseudoclassi per gli
+            stati di interazione.
+          </li>
+          <li>
+            <b>::before</b>, <b>::after</b>: Pseudoelementi per aggiungere
+            contenuto prima o dopo un elemento.
+          </li>
+        </ul>
+        <div>
+          <h1>Breve guida su come implementare una formattazione CSS</h1>
+          <p>
+            Per creare una pagina CSS esistono vari metodi, un modo "semplice"
+            è, per esempio, quello di creare innanzitutto la pagina HTML,
+            definendo quindi i vari tag ai testi e utilizzare poi il tag
+            <b>&lt;div &gt;</b> alle varie sezioni interessate.
+          </p>
+          <p>
+            Il tag <b>&lt;div &gt;</b>viene utilizzato principalmente per
+            raggruppare e stilizzare altri elementi HTML fornendo una struttura
+            e una formattazione alla pagina (in poche parole raggrupperà i vari
+            elementi della pagina in "blocchi"). All'interno del tag div è poi
+            possibile specificare anche un <b>id</b> o una <b>classe</b>, che
+            renderà più semplice l'applicazione degli elementi css alla pagina
+            richiamando il nome dell'id o della classe.
+          </p>
+          <p>
+            Per fare un esempio, se si ha un testo con menù e si vuole
+            posizionare il menù a sinistra e il testo a destra, si deve
+            innanzitutto racchiudere l'intero body del testo html in un unico
+            blocco usando il tag <b>&lt;div&gt;</b> ,in modo da creare una base
+            per l'applicazione degli stili CSS.
+          </p>
+          <p>
+            Dopo di ciò si racchiudono, con due tag <b>&lt;div &gt;</b> separati
+            tra loro, sia il menù che il testo in modo da avere il menù e il
+            testo in due blocchi separati. Ai tre div creati verranno quindi
+            implementati delle classi/id come ad esempio <i>"documento"</i>,
+            <i>menù</i> e <i>testo</i> :
+          </p>
+
+          <ul>
+            <b>&lt;div class = "documento"&gt;</b>
+          </ul>
+          <p>
+            questo servirà ,come detto sopra, a identificar meglio ad
+            identificare meglio i blocchi per la formattazione css.
+          </p>
+          <p>
+            Fatto ciò verrà aperta la pagina html, appena creata, sul browser
+            cliccando sul file o aprendolo direttamente da visual studio.
+          </p>
+          <p>
+            La pagina non mostrerà nulla di particolare, questo perchè il tag
+            <b>&lt;div &gt;</b> non applica cambiamenti visibili. Per poter
+            modificare e abbellire la pagina usando il CSS, bisogna cliccare col
+            tasto destro sulla pagina e poi su analizza (oppure F12), questo
+            aprirà una finestra per poter agire direttamente sulla pagina html.
+            Andare infine sulla finestra {}Editor Stili (se si è su firefox).
+          </p>
+          <p>
+            In questa sezione sarà possibile implementare a piacimento i vari
+            comandi CSS vedendo direttamente la modifiche alla pagina, per
+            richiamare quindi i vari blocchi da modificare si utilizzeranno gli
+            id o le classi dei vari <b>&lt;div &gt;</b>(per gli ID si utilizzerà
+            il <b>#</b> per le classi il <b>.</b>)
+          </p>
+          <p>
+            Tornando quindi all'esempio di sopra, del menù a sinistra, è utile
+            utilizzare il comando "display : flex" in modo da "trasformare" il
+            blocco div in blocco flex (rendendoli quindi più "flessibili"
+            all'interno della pagina). Ad esempio :
+          </p>
+          <pre>
+            .documento {
+              display: flex;
+            }
+            .navigazione {
+              display: flex;
+              flex-direction: column;
+            }
+          </pre>
+          <p>
+            con il comando <b>flex-direction: column;</b> il menù verrà
+            posizionato a sinistra
+          </p>
+          <p>
+            Sarà poi possibile introdurre altri comandi per aggiundere altri
+            stili/abbellimenti
+            <b
+              >(Non aggiornare la pagina se non si vogliono perdere le varie
+              modifiche)</b
+            >
+          </p>
+          <p>
+            Quanto fatto fino ad ora però non implementa realmente il codice css
+            alla pagina, serviva solo per vedere come i comandi css avrebbero
+            modificato visivamente la pagina.
+          </p>
+          <p>
+            Per poter implementare le modifiche, bisogna creare un file
+            <b>nome.css</b> (o style.css) su visual studio, copiare e incollare
+            i vari comandi creati sulla pagina e salvare. Infine sull'head della
+            nostra pagina HTML scrivere:
+          </p>
+          <ul>
+            <b>&lt;link rel="stylesheet" href="nome.css" /&gt;</b>
+          </ul>
+          <p>
+            Questo permetterà di linkare la pagina html al file css appena
+            creato.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

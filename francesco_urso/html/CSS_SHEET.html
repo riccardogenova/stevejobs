@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../main.css" />
+    <title>CSS SHEET</title>
+  </head>
+  <body>
+    <section id="menù">
+      <h1><a href="../INDEX.html">Menù</a></h1>
+    </section>
+    <nav class="menu">
+      <section class="container">
+        <div class="column">
+          <h2>Lessons</h2>
+          <ul>
+            <li><a href="../html/MARKDOWN.html">Markdown</a></li>
+            <li><a href="../html/GIT.html">Git</a></li>
+            <li><a href="../html/HTML.html">HTML</a></li>
+            <li><a href="../html/CSS.html">CSS</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h2>Helpers</h2>
+          <ul>
+            <li>
+              <a href="../html/MARKDOWN_SHEET.html">Markdown Sheet</a>
+            </li>
+            <li>
+              <a href="../html/GIT_SHEET.html">Git Sheet</a>
+            </li>
+            <li>
+              <a href="../html/HTML_SHEET.html">HTML Sheet</a>
+            </li>
+            <li>
+              <a href="../html/CSS_SHEET.html">CSS Sheet</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </nav>
+    <div class="corpoTesto">
+      <section class="title">
+        <h1>CSS SHEET</h1>
+      </section>
+
+      <!-- Prima parte selettori -->
+      <section>
+        <h2>Selettori CSS</h2>
+        <p>Selettori divisi per tipologia:</p>
+        <section class="pointer">
+          <ul>
+            <li>Selettori di tipo</li>
+            <li>Selettori di classe</li>
+            <li>Selettori di ID</li>
+            <li>Selettori di figlio</li>
+            <li>Selettori discendenti</li>
+            <li>Selettori di figlio diretto</li>
+            <li>Selettori di attributo</li>
+            <li>Selettori di attributo con valore specifico</li>
+            <li>Selettori di pseudo-classe</li>
+          </ul>
+        </section>
+        <h3>Selettori di Tipo</h3>
+        <p>
+          I selettori di tipo selezionano tutti gli elementi HTML di un certo
+          tipo. Ad esempio, il selettore <b>p</b> seleziona tutti gli elementi
+          &lt;p&gt; presenti nel documento HTML. <br />
+          <code class="bloccoEvidenziato">
+            p { <br />
+            /* Regole CSS * <br />
+            }
+          </code>
+        </p>
+        <h3>Selettori di Classe</h3>
+        <p>
+          I selettori di classe selezionano gli elementi HTML che hanno un
+          determinato valore nell'attributo<b>class</b>. In CSS, i selettori di
+          classe iniziano con il carattere punto <b>.</b> seguito dal nome della
+          classe.<br />
+          <code class="bloccoEvidenziato">
+            .nome-classe { <br />
+            /* Regole CSS */ <br />
+            }
+          </code>
+        </p>
+        <h3>Selettori di ID</h3>
+        <p>
+          I selettori di ID selezionano un elemento HTML con un ID specifico. In
+          CSS, i selettori di ID iniziano con il carattere cancelletto
+          <b>#</b> seguito dal nome dell'ID. <br />
+          <code class="bloccoEvidenziato">
+            #nome-id { <br />
+            /* Regole CSS */ <br />
+            }
+          </code>
+        </p>
+        <h3>Selettori di figlio</h3>
+        <p>
+          I selettori di figlio selezionano gli elementi figlio di un elemento
+          specifico. Si utilizza lo spazio per separare il selettore
+          dell'elemento genitore dal selettore dell'elemento figlio. Ad esempio,
+          il selettore <b>ul li</b> selezionerà tutti gli elementi &lt;li&gt che
+          sono figli di un elemento &lt;ul&gt. <br />
+          <code class="bloccoEvidenziato">
+            ul li { <br />
+            /* Regole CSS */ <br />
+            }
+          </code>
+        </p>
+        <h3>Selettori discendenti</h3>
+        <p>
+          I selettori discendenti selezionano gli elementi che sono discendenti
+          diretti o indiretti di un altro elemento, indipendentemente dal
+          livello di annidamento. Si utilizza uno spazio per separare il
+          selettore dell'elemento genitore dal selettore dell'elemento
+          discendente. Ad esempio, il selettore <b>div p</b> selezionerà tutti
+          gli elementi &lt;p&gt; che sono discendenti di un elemento
+          &lt;div&gt;. <br />
+          <code class="bloccoEvidenziato">
+            div p { <br />
+            /* Regole CSS */ <br />
+            }
+          </code>
+        </p>
+        <h3>Selettori di figlio diretto</h3>
+        <p>
+          I selettori di figlio diretto selezionano solo gli elementi che sono
+          figli diretti di un elemento genitore specifico, senza considerare gli
+          elementi discendenti ulteriori. Si utilizza il carattere <b>></b> per
+          indicare un figlio diretto. Ad esempio, il selettore
+          <b>div > p</b> selezionerà solo gli elementi &lt;p&gt; che sono figli
+          diretti di un elemento &lt;div&gt;. <br />
+          <code class="bloccoEvidenziato">
+            div > p { <br />
+            /* Regole CSS */ <br />
+            }
+          </code>
+        </p>
+        <h3>Selettori di attributo</h3>
+        <p>
+          I selettori di attributo selezionano gli elementi che hanno un
+          attributo specifico o che soddisfano determinate condizioni sugli
+          attributi. Ad esempio, il selettore <b>[type]</b> seleziona tutti gli
+          elementi che hanno un attributo <b>type</b>, indipendentemente dal suo
+          valore. <br />
+          <code class="bloccoEvidenziato">
+            [attributo] { <br />
+            /* Regole CSS */ <br />
+            }
+          </code>
+        </p>
+        <h3>Selettori di attributo con valore specifico</h3>
+        <p>
+          I selettori di attributo con valore specifico selezionano gli elementi
+          che hanno un attributo specifico con un valore corrispondente. Ad
+          esempio, il selettore <b>[type="text"]</b> seleziona tutti gli
+          elementi che hanno un attributo type con valore <b>"text"</b>. <br />
+          <code class="bloccoEvidenziato">
+            [attributo="valore"] { <br />
+            /* Regole CSS */ <br />
+            }
+          </code>
+        </p>
+        <h3>Selettori di pseudo-classe</h3>
+        <p>
+          Le pseudo-classi selezionano elementi in uno stato specifico o in
+          relazione ad altri elementi, come ad esempio un link non visitato, un
+          elemento al passaggio del mouse, il primo elemento di un tipo e così
+          via. Le pseudo-classi iniziano con due punti <b>:</b> seguiti dal nome
+          della classe pseudo. <br />
+          <code class="bloccoEvidenziato">
+            selettore:pseudo-classe { <br />
+            /* Regole CSS */ <br />
+            }
+          </code>
+        </p>
+      </section>
+
+      <!-- Proprietà CSS -->
+      <section>
+        <h2>Proprietà CSS</h2>
+        <h3>Proprietà di Testo</h3>
+        <section class="pointer">
+          <ul>
+            <li>color: Specifica il colore del testo.</li>
+            <li>font-family: Specifica il tipo di carattere.</li>
+            <li>font-size: Specifica la dimensione del testo.</li>
+            <li>
+              font-weight: Specifica il peso del carattere (normale, grassetto,
+              ecc.).
+            </li>
+          </ul>
+        </section>
+        <p>
+          Esempio: <br />
+          <code class="bloccoEvidenziato">
+            p { <br />
+            color: #333; /* Colore del testo (espresso in codice esadecimale) */
+            <br />
+            font-family: Arial, sans-serif; /* Tipo di carattere */ <br />
+            font-size: 16px; /* Dimensione del testo */ <br />
+            font-weight: normal; /* Peso del carattere (normale) */ <br />
+            }
+          </code>
+        </p>
+        <h3>Proprietà di Background</h3>
+        <section class="pointer">
+          <ul>
+            <li>background-color: Specifica il colore dello sfondo.</li>
+            <li>background-image: Specifica un'immagine di sfondo.</li>
+            <li>
+              background-position: Specifica la posizione dell'immagine di
+              sfondo.
+            </li>
+          </ul>
+        </section>
+        <p>
+          Esempio: <br />
+          <code class="bloccoEvidenziato">
+            div { <br />
+            background-color: #f0f0f0; /* Colore dello sfondo (grigio chiaro) */
+            <br />
+            background-image: url('path/to/image.jpg'); /* Immagine di sfondo */
+            <br />
+            background-position: center center; /* Posizione dell'immagine di
+            sfondo (centro) */ <br />
+            }
+          </code>
+        </p>
+        <h3>Proprietà di Margine e Padding</h3>
+        <section class="pointer">
+          <ul>
+            <li>margin: Specifica il margine esterno di un elemento.</li>
+            <li>padding: Specifica lo spazio interno di un elemento.</li>
+          </ul>
+        </section>
+        <p>
+          Esempio: <br />
+          <code class="bloccoEvidenziato">
+            div { <br />
+            width: 200px; /* larghezza dell'elemento */ <br />
+            height: 100px; /* altezza dell'elemento */ <br />
+            background-color: #f0f0f0; /* colore di sfondo */ <br />
+            margin: 20px; /* margine esterno di 20 pixel su tutti i lati */
+            <br />
+            padding: 10px; /* spazio interno di 10 pixel su tutti i lati */
+            <br />
+            }
+          </code>
+        </p>
+        <h3>Proprietà di Bordo</h3>
+        <section class="pointer">
+          <ul>
+            <li>
+              border: Specifica lo stile, il colore e lo spessore del bordo.
+            </li>
+            <li>border-radius: Specifica il raggio degli angoli del bordo.</li>
+          </ul>
+        </section>
+        <p>
+          Esempio: <br />
+          <code class="bloccoEvidenziato">
+            div { <br />
+            width: 200px; /* larghezza dell'elemento */ <br />
+            height: 100px; /* altezza dell'elemento */ <br />
+            background-color: #f0f0f0; /* colore di sfondo */ <br />
+            border: 2px solid #333; /* bordo di 2 pixel di spessore, di colore
+            nero */ <br />
+            border-radius: 10px; /* angoli arrotondati di 10 pixel */ <br />
+            }
+          </code>
+        </p>
+      </section>
+      <!-- Unità di misura -->
+      <h2>Unità di Misura</h2>
+      <h3>Unità di Lunghezza</h3>
+      <section class="pointer">
+        <ul>
+          <li>px: Pixel.</li>
+          <li>em: Relativo alla dimensione del carattere.</li>
+          <li>%: Percentuale rispetto al contenitore genitore.</li>
+        </ul>
+      </section>
+      <p>
+        Esempio: <br />
+        <code class="bloccoEvidenziato">
+          .container { <br />
+          width: 500px; /* larghezza del contenitore in pixel */ <br />
+          font-size: 16px; /* dimensione del carattere di base in pixel */
+          <br />
+          } <br />
+          <br />
+          .box { <br />
+          width: 200px; /* larghezza dell'elemento in pixel */ <br />
+          height: 100px; /* altezza dell'elemento in pixel */ <br />
+          font-size: 1.2em; /* dimensione del carattere dell'elemento relativa
+          al font-size del contenitore */ <br />
+          margin: 20px; /* margine esterno dell'elemento in pixel */ <br />
+          padding: 10%; /* padding interno dell'elemento in percentuale rispetto
+          alla larghezza */ <br />
+          }
+        </code>
+      </p>
+      <h3>Unità di Colore</h3>
+      <section class="pointer">
+        <ul>
+          <li>Hexadecimal: #RRGGBB.</li>
+          <li>RGB: rgb(r, g, b).</li>
+          <li>RGBA: rgba(r, g, b, a) (con trasparenza).</li>
+        </ul>
+      </section>
+      <p>
+        Esempio: <br />
+        <code class="bloccoEvidenziato">
+          .hex-color { <br />
+          color: #ff0000; /* colore rosso in formato esadecimale */ <br />
+          background-color: #00ff00; /* colore verde in formato esadecimale */
+          <br />
+          } <br />
+          <br />
+          .rgb-color { <br />
+          color: rgb(0, 0, 255); /* colore blu in formato RGB */ <br />
+          background-color: rgb(255, 255, 0); /* colore giallo in formato RGB */
+          <br />
+          } <br />
+          <br />
+          .rgba-color { <br />
+          color: rgba(255, 0, 255, 0.5); /* colore magenta con 50% di
+          trasparenza in formato RGBA */ <br />
+          background-color: rgba(0, 255, 255, 0.8); /* colore ciano con 80% di
+          trasparenza in formato RGBA */ <br />
+          }
+        </code>
+      </p>
+      <!-- Ereditarietà e sovrascrittura -->
+      <h2>Eredità e Sovrascrittura</h2>
+      <p>
+        <b>Inheritance</b> Alcune proprietà vengono ereditate dagli elementi
+        figlio. <br />
+        <b>Sovrascrittura</b> Le regole CSS con maggiore specificità
+        sovrascrivono quelle meno specifiche. Le dichiarazioni più recenti
+        sovrascrivono quelle precedenti.
+      </p>
+      <h2>Guida utilizzo tramite Chrome</h2>
+      <section class="pointer">
+        <ol>
+          <li>Apri Google Chrome sul tuo computer.</li>
+          <li>
+            Nella barra degli strumenti del browser, fai clic su "Altro" (i tre
+            punti verticali) nella parte superiore destra.
+          </li>
+          <li>Seleziona "Altri strumenti" e poi "Strumenti sviluppatore".</li>
+          <li>Vai alla scheda "Console".</li>
+        </ol>
+      </section>
+      <p>Dopo aver aperto la console, possiamo iniziare con alcuni esempi:</p>
+      <section class="pointer">
+        <ul>
+          <li>
+            Per selezionare un elemento HTML, possiamo utilizzare
+            <b>document.querySelector()</b>.Ad esempio, se vogliamo selezionare
+            il primo paragrafo &lt;p&gt; nella pagina, possiamo digitare: <br />
+            <code class="bloccoEvidenziato">
+              const primoParagrafo = document.querySelector('p'); <br />
+              console.log(primoParagrafo);
+            </code>
+          </li>
+          <li>
+            Per modifica del testo di un elemento HTML, dopo aver selezionato un
+            elemento, possiamo modificare il suo testo utilizzando
+            <b>innerText</b> o <b>innerHTML</b>. Ad esempio, se vogliamo
+            cambiare il testo del primo paragrafo in "Questo è il nuovo testo":
+            <br />
+            <code class="bloccoEvidenziato">
+              primoParagrafo.innerText = "Questo è il nuovo testo";
+            </code>
+          </li>
+          <li>
+            Per la creazione di un nuovo elemento HTML, o anche creare nuovi
+            elementi HTML, si utilizza <b>document.createElement()</b>. Ad
+            esempio, se vogliamo creare un nuovo elemento &lt;div&gt; nella
+            pagina, possiamo digitare:<br />
+            <code class="bloccoEvidenziato">
+              const nuovoDiv = document.createElement('div'); <br />
+              console.log(nuovoDiv);
+            </code>
+          </li>
+          <li>
+            Per l'aggiunta di un nuovo elemento HTML alla pagina, possiamo
+            aggiungerlo con <b>appendChild()</b> o <b>insertBefore()</b>. Ad
+            esempio, se vogliamo aggiungere un nuovo elemento &lt;div&gt; alla
+            fine del body:<br />
+            <code class="bloccoEvidenziato">
+              document.body.appendChild(nuovaDiv);
+            </code>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <footer>
+      <section class="left">
+        <img
+          id="logo"
+          src="../img/logo-sja-150x38.png"
+          alt="Steve Jobs Academy"
+        />
+      </section>
+      <section class="center">
+        <p>Francesco Urso</p>
+      </section>
+      <section class="right">
+        <a href="https://github.com/francesco-urso" alt="francesco-urso">
+          <img
+            id="github"
+            src="../img/kisspng-github-computer-icons-github-logo-5b459a3d4de4a5.6554725315312881253191.png"
+            alt="GitHub"
+        /></a>
+      </section>
+    </footer>
+  </body>
+</html>

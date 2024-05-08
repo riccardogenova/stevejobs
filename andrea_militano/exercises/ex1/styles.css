@@ -1,0 +1,23 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.button {
+  background-color: #0099ff;
+  color: rgb(234, 255, 0);
+  border: 1px solid black;
+  padding: 10px 35px;
+  text-align: center;
+  font-size: 100px;
+}
+.button:active {
+  background-color: #0a639f;
+  color: rgb(160, 173, 17);
+}
+span {
+  font-size: 10em;
+}

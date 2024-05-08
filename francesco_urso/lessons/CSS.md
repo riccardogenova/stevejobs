@@ -1,8 +1,8 @@
-# CSS HELP
+# CSS
 
 ## Cos'è il CSS
 
-CSS, acronimo di "*Cascading Style Sheets*" (Fogli di Stile in Cascata), è un linguaggio di stile utilizzato per definire l'aspetto e la formattazione di documenti HTML e XML. È uno degli strumenti fondamentali per la progettazione e la presentazione delle pagine web.
+CSS, acronimo di "_Cascading Style Sheets_" (Fogli di Stile in Cascata), è un linguaggio di stile utilizzato per definire l'aspetto e la formattazione di documenti HTML e XML. È uno degli strumenti fondamentali per la progettazione e la presentazione delle pagine web.
 
 ## A cosa serve il CSS
 
@@ -55,18 +55,18 @@ I selettori CSS sono fondamentali per identificare gli elementi HTML a cui appli
 
 Le dichiarazioni di stile specificano come gli elementi selezionati dovrebbero essere visualizzati, definendo proprietà come colore, dimensione del testo, margine e padding. Ogni dichiarazione di stile è composta da una proprietà e un valore separati da due punti, ad esempio:
 
->color: red;\
-font-size: 16px;\
-margin-top: 20px;
+> color: red;\
+> font-size: 16px;\
+> margin-top: 20px;
 
 ### Regole CSS
 
 Le regole CSS combinano selettori e dichiarazioni di stile per definire come gli elementi HTML dovrebbero essere visualizzati. Una regola CSS è composta da un selettore seguito da un blocco di dichiarazioni di stile racchiuse tra parentesi graffe, ad esempio:
 
->```css
+> ```css
 > p {
->    color: blue;
->    font-size: 14px;
+>   color: blue;
+>   font-size: 14px;
 > }
 > ```
 
@@ -77,3 +77,32 @@ Il concetto di "cascata" nel CSS si riferisce all'ordine di priorità delle rego
 1. **Importanza**: Le regole con `!important` hanno la massima priorità e sovrascrivono tutte le altre regole.
 2. **Specificità**: Le regole con maggiore specificità hanno la priorità su quelle con minore specificità. Ad esempio, un selettore con un ID `(#id)` ha maggiore specificità rispetto a un selettore di classe `(.classe)`.
 3. **Ordine di Definizione**: Se le regole hanno la stessa importanza e specificità, l'ordine di definizione nel file CSS determina quale regola viene applicata per ultima.
+
+## CSSOM
+
+**CSSOM**, acronimo di "CSS Object Model", è una rappresentazione degli stili CSS presenti in un documento HTML, simile al DOM (Document Object Model) per la struttura HTML. Mentre il DOM rappresenta la struttura e il contenuto del documento HTML, il CSSOM rappresenta i fogli di stile CSS associati a quel documento.
+
+Il CSSOM fornisce un'API (Application Programming Interface) che consente ai programmatori di manipolare dinamicamente gli stili CSS di una pagina web attraverso JavaScript. Ciò significa che è possibile modificare, aggiungere o rimuovere regole CSS, classi, id e altre proprietà degli stili utilizzando script JavaScript.
+
+Alcune operazioni comuni che possono essere eseguite utilizzando il CSSOM includono:
+
+Modifica degli Stili Esistenti: È possibile selezionare gli elementi HTML e modificare i loro stili CSS direttamente attraverso JavaScript. Ad esempio, è possibile cambiare il colore di sfondo di un elemento quando l'utente interagisce con esso.
+Aggiunta di Nuovi Stili: È possibile creare nuove regole CSS dinamicamente e aggiungerle al CSSOM. Ciò consente di applicare stili personalizzati o aggiuntivi a specifici elementi HTML.
+Rimozione degli Stili: È possibile rimuovere regole CSS esistenti dal CSSOM, ad esempio per eliminare stili che non sono più necessari o per ripristinare lo stato predefinito di un elemento.
+Calcolo degli Stili Applicati: Il CSSOM fornisce metodi per calcolare gli stili effettivamente applicati a un elemento HTML, tenendo conto dell'ereditarietà, della specificità e dell'ordine di definizione delle regole CSS.
+In sintesi, il CSSOM è uno strumento potente che consente ai sviluppatori web di manipolare gli stili CSS in modo dinamico, offrendo maggiore flessibilità e possibilità di personalizzazione nell'interazione con il design e la presentazione delle pagine web.
+
+## CSS Sass
+
+**Sass** è un preprocessore CSS che estende la sintassi del CSS con funzionalità avanzate, rendendo più efficiente e organizzata la scrittura di fogli di stile per pagine web. Alcuni punti chiave riguardanti Sass:
+
+- **Sintassi più potente**: Sass offre una sintassi più avanzata rispetto al CSS tradizionale. Include funzionalità come variabili, nesting, mixin, ereditarietà e operatori, che semplificano la scrittura e la gestione dei fogli di stile.
+- **Variabili**: Con Sass è possibile definire variabili che possono contenere valori CSS, come colori o dimensioni, e riutilizzarle in tutto il foglio di stile. Questo aiuta a mantenere la coerenza e la facilità di aggiornamento dei valori comuni.
+- **Nesting**: Sass consente di nidificare le regole CSS all'interno di altre regole, rendendo più chiara la struttura del foglio di stile e riducendo la duplicazione del codice.
+- **Mixin**: I mixin sono blocchi di codice riutilizzabili che possono contenere una serie di dichiarazioni CSS. Possono accettare argomenti, rendendoli estremamente flessibili e utili per definire stili complessi che devono essere applicati a più elementi.
+- **Ereditarietà**: Sass supporta l'ereditarietà delle regole CSS, consentendo di definire regole comuni in una classe padre e di estenderle in classi figlio. Questo promuove una maggiore modularità e manutenibilità del codice.
+- **Operatori e funzioni**: Sass include operatori matematici e funzioni CSS come parte della sua sintassi, consentendo di eseguire operazioni aritmetiche e manipolazioni sui valori CSS direttamente all'interno del foglio di stile.
+- **Parti e Importazione**: Sass consente di organizzare i fogli di stile in parti più piccole e modulari, che possono essere importate e combinare in un unico file di output. Questo favorisce una migliore organizzazione del codice e una gestione più efficiente dei progetti più grandi.
+- **Compatibilità con CSS**: I file Sass possono essere facilmente convertiti in CSS puro utilizzando compilatori Sass, garantendo la piena compatibilità con i browser e l'integrazione senza problemi nei progetti web esistenti.
+
+**Sass è una potente estensione del CSS** che semplifica la scrittura e la gestione dei fogli di stile, fornendo funzionalità avanzate e una sintassi più intuitiva e organizzata. È ampiamente utilizzato nella comunità di sviluppo web per migliorare l'efficienza e la manutenibilità del codice CSS.

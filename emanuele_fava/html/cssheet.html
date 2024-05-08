@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>MARKDOWN_sheet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../main.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li>
+          <a href="../index.html">Homepage</a>
+        </li>
+        <li>
+          <a href="markdownsheet.html">MARKDOWN_sheet</a>
+        </li>
+        <li>
+          <a href="gitsheet.html">GIT_sheet</a>
+        </li>
+        <li>
+          <a href="htmlsheet.html">HTML_sheet</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="page_container">
+      <h1>CSS Cheat Sheet</h1>
+
+      <h2>Selettori</h2>
+      <hr />
+      <p>
+        I selettori CSS consentono di identificare gli elementi HTML a cui
+        applicare gli stili. Alcuni esempi comuni includono:
+      </p>
+      <ul>
+        <li>
+          <strong>Selettore di tipo</strong>: <code>p</code> per i paragrafi,
+          <code>h1</code> per i titoli di primo livello, ecc.
+        </li>
+        <li>
+          <strong>Selettore di classe</strong>: <code>.classe</code> per
+          selezionare elementi con una specifica classe.
+        </li>
+        <li>
+          <strong>Selettore di ID</strong>: <code>#id</code> per selezionare un
+          elemento con un ID specifico.
+        </li>
+        <li>
+          <strong>Selettore universale</strong>: <code>*</code> per selezionare
+          tutti gli elementi.
+        </li>
+        <li>
+          <strong>Selettore di discendente</strong>: <code>div p</code> per
+          selezionare tutti i paragrafi all'interno di un div.
+        </li>
+        <li>
+          <strong>Selettore figlio diretto</strong>: <code>ul > li</code> per
+          selezionare solo i li che sono figli diretti di ul.
+        </li>
+        <li>
+          <strong>Selettore di attributo</strong>: <code>a[href]</code> per
+          selezionare tutti gli anchor che hanno un attributo href.
+        </li>
+        <li>
+          <strong>Selettore di attributo con valore specifico</strong>:
+          <code>input[type="text"]</code> per selezionare tutti gli input di
+          tipo text.
+        </li>
+        <li>
+          <strong>Selettore di pseudo-classe</strong>: <code>a:hover</code> per
+          selezionare gli anchor quando vengono "hoverati" (passaggio del mouse
+          sopra).
+        </li>
+      </ul>
+      <code>
+        p { color: blue; } <br />
+        .classe { font-size: 16px; } <br />
+        #id { background-color: #f0f0f0; } <br />
+        div p { font-style: italic; } <br />
+        ul > li { list-style-type: square; } <br />
+        a[href] { text-decoration: underline; } <br />
+        input[type="text"] { border: 1px solid #ccc; } <br />
+        a:hover { color: red; }
+      </code>
+
+      <h3>Box</h3>
+      <hr />
+      <ul>
+        <li>
+          <strong>background-color</strong>: imposta il colore dello sfondo.
+        </li>
+        <li>
+          <strong>padding</strong>: definisce lo spazio interno dell'elemento.
+        </li>
+        <li>
+          <strong>margin</strong>: imposta lo spazio esterno dell'elemento.
+        </li>
+        <li>
+          <strong>border</strong>: definisce lo stile, lo spessore e il colore
+          del bordo.
+        </li>
+        <li><strong>border-radius</strong>: arrotonda gli angoli del bordo.</li>
+      </ul>
+      <code>
+        .box { background-color: #f0f0f0; <br />
+        padding: 20px; <br />
+        margin: 10px; <br />
+        border: 1px solid black; <br />
+        border-radius: 5px; }
+      </code>
+
+      <h3>Sfondo</h3>
+      <hr />
+      <ul>
+        <li>
+          <strong>background-image</strong>: imposta un'immagine di sfondo per
+          l'elemento.
+        </li>
+        <li>
+          <strong>background-repeat</strong>: specifica se e come l'immagine di
+          sfondo deve essere ripetuta.
+        </li>
+        <li>
+          <strong>background-position</strong>: definisce la posizione iniziale
+          dell'immagine di sfondo.
+        </li>
+      </ul>
+      <code>
+        .header { background-image: url('header-background.jpg'); <br />
+        background-repeat: no-repeat; <br />
+        background-position: center; }
+      </code>
+
+      <h3>Dimensioni e Posizionamento</h3>
+      <hr />
+      <ul>
+        <li><strong>width</strong>: imposta la larghezza dell'elemento.</li>
+        <li><strong>height</strong>: imposta l'altezza dell'elemento.</li>
+        <li>
+          <strong>max-width</strong>: specifica la larghezza massima
+          dell'elemento.
+        </li>
+        <li>
+          <strong>max-height</strong>: specifica l'altezza massima
+          dell'elemento.
+        </li>
+        <li>
+          <strong>position</strong>: imposta il metodo di posizionamento
+          dell'elemento (static, relative, absolute, fixed).
+        </li>
+        <li>
+          <strong>top, right, bottom, left</strong>: definiscono la posizione
+          dell'elemento rispetto al suo contenitore o al documento.
+        </li>
+      </ul>
+      <code>
+        .sidebar { width: 250px; <br />
+        max-width: 80%; <br />
+        position: fixed; <br />
+        top: 0; <br />
+        left: 0; }
+      </code>
+
+      <h3>Animazioni</h3>
+      <hr />
+      <ul>
+        <li>
+          <strong>animation-name</strong>: specifica il nome dell'animazione.
+        </li>
+        <li>
+          <strong>animation-duration</strong>: definisce la durata
+          dell'animazione.
+        </li>
+        <li>
+          <strong>animation-delay</strong>: specifica un ritardo prima
+          dell'inizio dell'animazione.
+        </li>
+        <li>
+          <strong>animation-timing-function</strong>: definisce la funzione di
+          temporizzazione dell'animazione.
+        </li>
+        <li>
+          <strong>animation-iteration-count</strong>: specifica quante volte
+          l'animazione deve ripetersi.
+        </li>
+      </ul>
+      <code>
+        @keyframes slide { from { transform: translateX(-100%); } to {
+        transform: translateX(0); } } .slide-in { animation-name: slide; <br />
+        animation-duration: 1s; <br />
+        animation-timing-function: ease-in-out; <br />
+        animation-delay: 0.5s; <br />
+        animation-iteration-count: 1; }
+      </code>
+    </div>
+
+    <footer class="insidefooter">
+      <ul>
+        <li>
+          <a href="../index.html">Homepage</a>
+        </li>
+        <li>
+          <a href="markdownsheet.html">MARKDOWN_sheet</a>
+        </li>
+        <li>
+          <a href="gitsheet.html">GIT_sheet</a>
+        </li>
+        <li>
+          <a href="htmlsheet.html">HTML_sheet</a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

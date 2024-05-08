@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50vh;
+}
+
+button {
+  height: 10vh;
+  width: 10vh;
+}

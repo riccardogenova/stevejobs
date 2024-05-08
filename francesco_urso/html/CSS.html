@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../main.css" />
+    <title>CSS</title>
+  </head>
+  <body>
+    <section id="menù">
+      <h2><a href="../INDEX.html">Menù</a></h2>
+    </section>
+    <nav>
+      <section class="container">
+        <div class="column">
+          <h2>Lessons</h2>
+          <ul>
+            <li><a href="../html/MARKDOWN.html">Markdown</a></li>
+            <li><a href="../html/GIT.html">Git</a></li>
+            <li><a href="../html/HTML.html">HTML</a></li>
+            <li><a href="../html/CSS.html">CSS</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h2>Helpers</h2>
+          <ul>
+            <li>
+              <a href="../html/MARKDOWN_SHEET.html">Markdown Sheet</a>
+            </li>
+            <li>
+              <a href="../html/GIT_SHEET.html">Git Sheet</a>
+            </li>
+            <li>
+              <a href="../html/HTML_SHEET.html">HTML Sheet</a>
+            </li>
+            <li>
+              <a href="../html/CSS_SHEET.html">CSS Sheet</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </nav>
+    <div class="corpoTesto">
+      <section class="title">
+        <h1>CSS</h1>
+      </section>
+      <h2>Cos'è il CSS</h2>
+      <p>
+        CSS, acronimo di "<em>Cascading Style Sheets</em>" (Fogli di Stile in
+        Cascata), è un linguaggio di stile utilizzato per definire l'aspetto e
+        la formattazione di documenti HTML e XML. È uno degli strumenti
+        fondamentali per la progettazione e la presentazione delle pagine web.
+      </p>
+      <h2>A cosa serve il CSS</h2>
+      <p>
+        Il CSS viene utilizzato per controllare l'aspetto visivo e la
+        disposizione degli elementi all'interno di una pagina web. Consente agli
+        sviluppatori di personalizzare l'aspetto dei siti web, definendo stili
+        per il testo, colori, sfondi, bordi, layout della pagina e molto altro
+        ancora.
+      </p>
+      <h3>Personalizzazione dell'Aspetto Visivo</h3>
+      <section class="pointer">
+        <ul>
+          <li>
+            <b>Stilizzazione del Testo:</b> Il CSS consente di definire il tipo
+            di carattere, la dimensione del testo, lo spaziamento delle righe e
+            altre proprietà relative al testo.
+          </li>
+          <li>
+            <b>Gestione dei Colori:</b> Attraverso il CSS è possibile definire
+            colori per il testo, lo sfondo, i bordi e altre parti degli elementi
+            della pagina, garantendo coerenza e coesione nel design.
+          </li>
+          <li>
+            <b>Definizione dello Sfondo:</b> È possibile utilizzare il CSS per
+            specificare immagini di sfondo, gradienti e colori di sfondo per gli
+            elementi della pagina, contribuendo a creare atmosfere visive
+            accattivanti.
+          </li>
+        </ul>
+      </section>
+      <h3>Controllo del Layout</h3>
+      <section class="pointer">
+        <ul>
+          <li>
+            <b>Posizionamento degli Elementi:</b> Con il CSS è possibile
+            controllare la posizione e l'allineamento degli elementi all'interno
+            della pagina, utilizzando tecniche come il posizionamento assoluto,
+            relativo e fisso.
+          </li>
+          <li>
+            <b>Gestione del Layout:</b> Il CSS offre diverse tecniche per
+            gestire il layout della pagina, inclusi layout a griglia, flessibili
+            e di tipo blocco, consentendo di creare design flessibili e
+            reattivi.
+          </li>
+          <li>
+            <b>Responsività:</b> Utilizzando il CSS, è possibile creare layout
+            che si adattano dinamicamente alle diverse dimensioni dello schermo
+            dei dispositivi, garantendo una buona esperienza utente su desktop,
+            tablet e dispositivi mobili.
+          </li>
+        </ul>
+      </section>
+      <h3>Miglioramento dell'Usabilità</h3>
+      <section class="pointer">
+        <ul>
+          <li>
+            <b>Feedback Visivo:</b> Attraverso l'uso di stili CSS, è possibile
+            fornire feedback visivi agli utenti, ad esempio attraverso cambi di
+            colore o animazioni quando si passa sopra un elemento con il mouse.
+          </li>
+          <li>
+            <b>Guida Visiva:</b> Il CSS può essere utilizzato per creare
+            elementi visivi che guidano l'utente attraverso il flusso
+            dell'interfaccia, migliorando l'usabilità complessiva del sito.
+          </li>
+          <li>
+            <b>Creazione di Interfacce Intuitive:</b> Utilizzando stili CSS
+            coerenti e ben progettati, è possibile creare interfacce utente
+            intuitive e facili da usare, contribuendo a migliorare l'esperienza
+            complessiva dell'utente.
+          </li>
+        </ul>
+      </section>
+      <h2>Breve Storia del CSS</h2>
+      <p>
+        Il CSS è stato introdotto per la prima volta nel 1996 dal World Wide Web
+        Consortium (W3C) come parte delle specifiche del web. Prima
+        dell'introduzione del CSS, lo stile delle pagine web veniva definito
+        direttamente nel markup HTML, rendendo difficile la separazione tra
+        struttura e presentazione. Il CSS ha introdotto un approccio più
+        modulare e flessibile alla progettazione web, consentendo agli
+        sviluppatori di separare lo stile dalla struttura del documento HTML.
+      </p>
+      <h2>Utilizzi del CSS</h2>
+      <p>
+        Il CSS è ampiamente utilizzato in tutti i settori del web design e dello
+        sviluppo web. Alcuni dei principali utilizzi del CSS includono:
+      </p>
+      <section class="pointer">
+        <ul>
+          <li>
+            <b>Progettazione di siti web:</b> Il CSS viene utilizzato per
+            progettare e personalizzare l'aspetto dei siti web, inclusi layout,
+            colori, tipografia e animazioni.
+          </li>
+          <li>
+            <b>Responsive Design:</b> Grazie al CSS è possibile creare layout
+            responsive che si adattano automaticamente alle dimensioni dello
+            schermo del dispositivo, garantendo una buona esperienza utente su
+            diversi dispositivi e dimensioni dello schermo.
+          </li>
+          <li>
+            <b>Creazione di interfacce utente:</b> Il CSS viene utilizzato per
+            progettare interfacce utente intuitive e gradevoli, migliorando
+            l'usabilità e l'accessibilità delle applicazioni web.
+          </li>
+          <li>
+            <b>Stilizzazione di documenti HTML e XML:</b> Il CSS è utilizzato
+            per definire stili per documenti HTML e XML, consentendo di
+            migliorare la leggibilità e l'aspetto dei contenuti.
+          </li>
+        </ul>
+      </section>
+      <h2>Concetti Chiave del CSS</h2>
+      <p>Alcuni concetti chiave da comprendere nel CSS includono:</p>
+      <h3>Selettori</h3>
+      <p>
+        I selettori CSS sono fondamentali per identificare gli elementi HTML a
+        cui applicare gli stili. Alcuni tipi comuni di selettori includono:
+      </p>
+      <section class="pointer">
+        <ul>
+          <li>
+            <b>Selettori di Tipo:</b> Selezionano gli elementi basati sul loro
+            tipo, ad esempio <code>p</code> per i paragrafi, <code>h1</code> per
+            i titoli di primo livello, ecc.
+          </li>
+          <li>
+            <b>Selettori di Classe:</b> Identificano gli elementi che hanno un
+            determinato valore nell'attributo <code>class</code>, ad esempio
+            <code>.classe</code>.
+          </li>
+          <li>
+            <b>Selettori di ID:</b> Identificano un elemento specifico con un ID
+            univoco, ad esempio <code>#id</code>.
+          </li>
+          <li>
+            <b>Selettori di Figlio/Discendente:</b> Selezionano elementi figlio
+            o discendenti di un elemento specifico, ad esempio
+            <code>ul li</code> per gli elementi &lt;li&gt; che sono figli di un
+            &lt;ul&gt;.
+          </li>
+        </ul>
+      </section>
+      <h3>Dichiarazioni di Stile</h3>
+      <p>
+        Le dichiarazioni di stile specificano come gli elementi selezionati
+        dovrebbero essere visualizzati, definendo proprietà come colore,
+        dimensione del testo, margine e padding. Ogni dichiarazione di stile è
+        composta da una proprietà e un valore separati da due punti, ad esempio:
+        <br />
+        <code class="bloccoEvidenziato"
+          >color: red;<br />
+          font-size: 16px;<br />
+          margin-top: 20px;
+        </code>
+      </p>
+      <h3>Regole CSS</h3>
+      <p>
+        Le regole CSS combinano selettori e dichiarazioni di stile per definire
+        come gli elementi HTML dovrebbero essere visualizzati. Una regola CSS è
+        composta da un selettore seguito da un blocco di dichiarazioni di stile
+        racchiuse tra parentesi graffe, ad esempio: <br />
+        <code class="bloccoEvidenziato">
+          p {<br />
+          color: blue;<br />
+          font-size: 14px;<br />
+          }
+        </code>
+      </p>
+      <h3>Fogli di Stile in Cascata</h3>
+      <p>
+        Il concetto di "cascata" nel CSS si riferisce all'ordine di priorità
+        delle regole CSS. Quando più regole vanno in conflitto tra loro, la
+        regola con maggiore specificità o importanza viene applicata. L'ordine
+        di priorità di applicazione delle regole è il seguente:
+      </p>
+      <section class="pointer">
+        <ol>
+          <li>
+            <b>Importanza</b>: Le regole con <code>!important</code> hanno la
+            massima priorità e sovrascrivono tutte le altre regole.
+          </li>
+          <li>
+            <b>Specificità</b>: Le regole con maggiore specificità hanno la
+            priorità su quelle con minore specificità. Ad esempio, un selettore
+            con un ID <code>(#id)</code> ha maggiore specificità rispetto a un
+            selettore di classe <code>(.classe)</code>.
+          </li>
+          <li>
+            <b>Ordine di Definizione</b>: Se le regole hanno la stessa
+            importanza e specificità, l'ordine di definizione nel file CSS
+            determina quale regola viene applicata per ultima.
+          </li>
+        </ol>
+      </section>
+      <h2>CSS DOM</h2>
+      <p>
+        Quando si parla di ricerca tramite CSS e DOM si utilizza <b>window</b> e
+        <b>document</b> in JavaScript, si fa riferimento alla capacità di
+        selezionare elementi HTML all'interno di una pagina web utilizzando le
+        query CSS e il DOM (Document Object Model). Il Document Object Model
+        (DOM) è una rappresentazione gerarchica dei nodi HTML all'interno di una
+        pagina web. Ogni elemento HTML è rappresentato da un nodo nel DOM, e
+        possiamo accedere a questi nodi utilizzando JavaScript per manipolare il
+        contenuto, la struttura e lo stile della pagina. La proprietà
+        <b>document</b> rappresenta il documento HTML stesso, mentre
+        <b>window</b> rappresenta la finestra del browser che contiene il
+        documento. Entrambe forniscono metodi per interagire con il DOM. <br />
+        Ecco come puoi utilizzare window e document per selezionare elementi
+        HTML utilizzando CSS selectors:
+      </p>
+      <section class="pointer">
+        <ul>
+          <li>
+            <b>Selezione tramite document.querySelector()</b>: Questo metodo
+            consente di selezionare il primo elemento che corrisponde al
+            selettore CSS specificato. <br />
+            <code class="bloccoEvidenziato">
+              const elemento = document.querySelector('#id-elemento');
+            </code>
+          </li>
+          <li>
+            <b>Selezione tramite document.querySelectorAll()</b>: Questo metodo
+            restituisce una NodeList contenente tutti gli elementi che
+            corrispondono al selettore CSS specificato. <br />
+            <code class="bloccoEvidenziato">
+              const elementi = document.querySelectorAll('.classe-elemento');
+            </code>
+          </li>
+          <li>
+            <b>Selezione tramite window.getComputedStyle()</b>: Questo metodo
+            restituisce gli stili calcolati per un elemento selezionato.
+            <br />
+            <code class="bloccoEvidenziato">
+              const stili = window.getComputedStyle(elemento);
+            </code>
+          </li>
+          <li>
+            <b>Manipolazione dei contenuti</b>: È possibile modificare il
+            contenuto di un elemento HTML selezionato utilizzando le proprietà
+            innerHTML, innerText o textContent. <br />
+            <code class="bloccoEvidenziato">
+              elemento.innerHTML = 'Nuovo Contenuto';
+            </code>
+          </li>
+        </ul>
+      </section>
+      <h2>CSS Sass</h2>
+      <p>
+        <b>Sass</b> è un preprocessore CSS che estende la sintassi del CSS con
+        funzionalità avanzate, rendendo più efficiente e organizzata la
+        scrittura di fogli di stile per pagine web. Alcuni punti chiave
+        riguardanti Sass:
+      </p>
+      <section class="pointer">
+        <ul>
+          <li>
+            <b>Sintassi più potente</b>: Sass offre una sintassi più avanzata
+            rispetto al CSS tradizionale. Include funzionalità come variabili,
+            nesting, mixin, ereditarietà e operatori, che semplificano la
+            scrittura e la gestione dei fogli di stile.
+          </li>
+          <li>
+            <b>Variabili</b>: Con Sass è possibile definire variabili che
+            possono contenere valori CSS, come colori o dimensioni, e
+            riutilizzarle in tutto il foglio di stile. Questo aiuta a mantenere
+            la coerenza e la facilità di aggiornamento dei valori comuni.
+          </li>
+          <li>
+            <b>Nesting</b>: Sass consente di nidificare le regole CSS
+            all'interno di altre regole, rendendo più chiara la struttura del
+            foglio di stile e riducendo la duplicazione del codice.
+          </li>
+          <li>
+            <b>Mixin</b>: I mixin sono blocchi di codice riutilizzabili che
+            possono contenere una serie di dichiarazioni CSS. Possono accettare
+            argomenti, rendendoli estremamente flessibili e utili per definire
+            stili complessi che devono essere applicati a più elementi.
+          </li>
+          <li>
+            <b>Ereditarietà</b>: Sass supporta l'ereditarietà delle regole CSS,
+            consentendo di definire regole comuni in una classe padre e di
+            estenderle in classi figlio. Questo promuove una maggiore modularità
+            e manutenibilità del codice.
+          </li>
+          <li>
+            <b>Operatori e funzioni</b>: Sass include operatori matematici e
+            funzioni CSS come parte della sua sintassi, consentendo di eseguire
+            operazioni aritmetiche e manipolazioni sui valori CSS direttamente
+            all'interno del foglio di stile.
+          </li>
+          <li>
+            <b>Parti e Importazione</b>: Sass consente di organizzare i fogli di
+            stile in parti più piccole e modulari, che possono essere importate
+            e combinare in un unico file di output. Questo favorisce una
+            migliore organizzazione del codice e una gestione più efficiente dei
+            progetti più grandi.
+          </li>
+          <li>
+            <b>Compatibilità con CSS</b>: I file Sass possono essere facilmente
+            convertiti in CSS puro utilizzando compilatori Sass, garantendo la
+            piena compatibilità con i browser e l'integrazione senza problemi
+            nei progetti web esistenti.
+          </li>
+        </ul>
+      </section>
+      <p>
+        <b>Sass è una potente estensione del CSS</b> che semplifica la scrittura
+        e la gestione dei fogli di stile, fornendo funzionalità avanzate e una
+        sintassi più intuitiva e organizzata. È ampiamente utilizzato nella
+        comunità di sviluppo web per migliorare l'efficienza e la manutenibilità
+        del codice CSS.
+      </p>
+    </div>
+    <footer>
+      <section class="left">
+        <img
+          id="logo"
+          src="../img/logo-sja-150x38.png"
+          alt="Steve Jobs Academy"
+        />
+      </section>
+      <section class="center">
+        <p>Francesco Urso</p>
+      </section>
+      <section class="right">
+        <a href="https://github.com/francesco-urso" alt="francesco-urso">
+          <img
+            id="github"
+            src="../img/kisspng-github-computer-icons-github-logo-5b459a3d4de4a5.6554725315312881253191.png"
+            alt="GitHub"
+        /></a>
+      </section>
+    </footer>
+  </body>
+</html>

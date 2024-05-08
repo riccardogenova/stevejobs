@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Front end: git sheet</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Indice Principale</a></li>
+          <li><a href="./git.html">Git lezioni</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h1>Istruzioni di Git</h1>
+
+    <ul>
+      <li><code>git init</code>: Inizializza una repository</li>
+      <li>
+        <code>git status</code>: Per vedere i file nella staging area (file non
+        tracciati, modificati o pronti per il commit)
+      </li>
+      <li>
+        <code>git remote add origin [URL]</code>: Collega la repository alla
+        repository GitHub
+      </li>
+      <li><code>git clone [URL]</code>: Clona un progetto GitHub sul locale</li>
+      <li>
+        <code>git push origin master</code> (o nome del branch): Carica i file
+        su GitHub
+      </li>
+      <li><code>clear</code>: Pulisce lo storico del terminale</li>
+      <li>
+        <code>git add [nome_del_file]</code>: Per aggiungere un file alla
+        staging area della repository
+      </li>
+      <li>
+        <code>git add *</code>: Per aggiungere tutti i file della cartella alla
+        staging area della repository
+      </li>
+      <li>
+        <code>git commit -m [nome_etichetta]</code>: Dare un commit (etichetta)
+        ad un file (nuovo o aggiornato)
+      </li>
+      <li>
+        <code>git log</code>: Per vedere la lista dei commit nella repository
+      </li>
+      <li>
+        <code>git reset [hash_commit]</code>: Resetta la repository al commit
+        specificato
+      </li>
+      <li>
+        <code>git checkout [nome_file]</code>: Scarta le modifiche del file e
+        ripristina la versione più recente dal repository
+      </li>
+      <li><code>git checkout [nome_branch]</code>: Cambia in un branch</li>
+      <li><code>git branch</code>: Lista i branch</li>
+      <li><code>git branch [nome]</code>: Crea un nuovo branch</li>
+      <li>
+        <code>git merge</code>: Unisce le modifiche del branch modificato al
+        branch corrente (spesso il master)
+      </li>
+    </ul>
+  </body>
+</html>

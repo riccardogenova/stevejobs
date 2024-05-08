@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS (Cascading Style Sheets)</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 20px;
+      }
+      h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      h2 {
+        font-size: 20px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+      p {
+        margin-bottom: 20px;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      li {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <ol>
+      <li>
+        <p><strong>Selezionare Elementi</strong>:</p>
+        <ul>
+          <li><strong>Selettore Universale</strong>: <code>* { ... }</code></li>
+          <li><strong>Selettore di Tipo</strong>: <code>p { ... }</code></li>
+          <li>
+            <strong>Selettore di Classe</strong>:
+            <code>.miaClasse { ... }</code>
+          </li>
+          <li><strong>Selettore di ID</strong>: <code>#mioID { ... }</code></li>
+          <li>
+            <strong>Selettore di Attributo</strong>:
+            <code>[type=&#39;text&#39;] { ... }</code>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p><strong>Proprietà di Stile</strong>:</p>
+        <ul>
+          <li><code>color</code>: Imposta il colore del testo.</li>
+          <li><code>font-family</code>: Specifica il tipo di carattere.</li>
+          <li><code>font-size</code>: Imposta la dimensione del testo.</li>
+          <li><code>font-weight</code>: Controlla lo spessore del testo.</li>
+          <li><code>text-align</code>: Allinea il testo.</li>
+          <li><code>background-color</code>: Imposta il colore di sfondo.</li>
+          <li><code>border</code>: Definisce i bordi.</li>
+          <li><code>margin</code>: Imposta i margini esterni.</li>
+          <li><code>padding</code>: Imposta i margini interni.</li>
+          <li><code>width</code>: Imposta la larghezza.</li>
+          <li><code>height</code>: Imposta l&#39;altezza.</li>
+        </ul>
+      </li>
+      <li>
+        <p><strong>Modello a Scatola (Box Model)</strong>:</p>
+        <ul>
+          <li>
+            <code>box-sizing</code>: Specifica come calcolare le dimensioni del
+            box.
+          </li>
+          <li>
+            <code>display</code>: Imposta il tipo di visualizzazione (blocco,
+            inline, flessibile, ecc.).
+          </li>
+          <li>
+            <code>position</code>: Controlla il posizionamento
+            dell&#39;elemento.
+          </li>
+          <li>
+            <code>float</code>: Allinea l&#39;elemento a sinistra o a destra.
+          </li>
+          <li><code>clear</code>: Pulisce il float.</li>
+        </ul>
+      </li>
+      <li>
+        <p><strong>Pseudoclassi e Pseudoelementi</strong>:</p>
+        <ul>
+          <li>
+            <code>:hover</code>: Applica stili quando il cursore è sopra
+            l&#39;elemento.
+          </li>
+          <li>
+            <code>:active</code>: Applica stili quando l&#39;elemento è
+            cliccato.
+          </li>
+          <li>
+            <code>:focus</code>: Applica stili quando l&#39;elemento ha il
+            focus.
+          </li>
+          <li>
+            <code>::before</code>: Inserisce contenuto prima dell&#39;elemento.
+          </li>
+          <li>
+            <code>::after</code>: Inserisce contenuto dopo l&#39;elemento.
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p><strong>Flexbox</strong>:</p>
+        <ul>
+          <li><code>display: flex</code>: Crea un contenitore flessibile.</li>
+          <li><code>flex-direction</code>: Imposta la direzione dei figli.</li>
+          <li>
+            <code>justify-content</code>: Allinea gli elementi lungo l&#39;asse
+            principale.
+          </li>
+          <li>
+            <code>align-items</code>: Allinea gli elementi lungo l&#39;asse
+            trasversale.
+          </li>
+          <li>
+            <code>flex-grow</code>: Specifica quanto spazio l&#39;elemento può
+            occupare.
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p><strong>Layout a Griglia (Grid Layout)</strong>:</p>
+        <ul>
+          <li><code>display: grid</code>: Crea una griglia.</li>
+          <li>
+            <code>grid-template-columns</code>: Specifica le colonne della
+            griglia.
+          </li>
+          <li>
+            <code>grid-template-rows</code>: Specifica le righe della griglia.
+          </li>
+          <li><code>grid-gap</code>: Imposta lo spazio tra le celle.</li>
+          <li>
+            <code>grid-area</code>: Assegna un&#39;area specifica alla cella.
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p><strong>Media Queries</strong>:</p>
+        <ul>
+          <li>
+            <code>@media screen and (max-width: 768px) { ... }</code>: Applica
+            stili in base alle dimensioni dello schermo.
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p><strong>Transizioni e Animazioni</strong>:</p>
+        <ul>
+          <li><code>transition</code>: Specifica le proprietà da animare.</li>
+          <li><code>animation</code>: Crea animazioni personalizzate.</li>
+        </ul>
+      </li>
+      <li>
+        <p><strong>Design Responsivo</strong>:</p>
+        <ul>
+          <li>Utilizza <strong>unità di visualizzazione</strong> (vw, vh).</li>
+          <li>Imposta larghezze massime e minime.</li>
+        </ul>
+      </li>
+      <li>
+        <p><strong>Icone di Carattere</strong>:</p>
+        <ul>
+          <li><code>@font-face</code>: Carica font personalizzati.</li>
+          <li>Utilizza icone di carattere (ad esempio, Font Awesome).</li>
+        </ul>
+      </li>
+    </ol>
+    <ol>
+      <li>
+        <p><strong>Text Styling</strong>:</p>
+        <ul>
+          <li>
+            <code>text-decoration</code>: Imposta la decorazione del testo
+            (sottolineato, barrato, ecc.).
+          </li>
+          <li>
+            <code>text-transform</code>: Trasforma il testo (maiuscolo,
+            minuscolo, iniziali maiuscole).
+          </li>
+          <li>
+            <code>letter-spacing</code>: Imposta la spaziatura tra le lettere.
+          </li>
+          <li><code>line-height</code>: Imposta l&#39;altezza della riga.</li>
+        </ul>
+      </li>
+      <li>
+        <p><strong>Background Properties</strong>:</p>
+        <ul>
+          <li>
+            <code>background-image</code>: Imposta un&#39;immagine di sfondo.
+          </li>
+          <li>
+            <code>background-repeat</code>: Specifica come ripetere
+            l&#39;immagine.
+          </li>
+          <li>
+            <code>background-position</code>: Imposta la posizione
+            dell&#39;immagine di sfondo.
+          </li>
+          <li>
+            <code>background-size</code>: Imposta la dimensione
+            dell&#39;immagine di sfondo.
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p><strong>Box Shadows and Borders</strong>:</p>
+        <ul>
+          <li><code>box-shadow</code>: Aggiunge ombre al box.</li>
+          <li><code>border-radius</code>: Arrotonda gli angoli del box.</li>
+          <li><code>border-color</code>: Imposta il colore del bordo.</li>
+          <li><code>border-width</code>: Imposta la larghezza del bordo.</li>
+        </ul>
+      </li>
+      <li>
+        <p><strong>Positioning and Layout</strong>:</p>
+        <ul>
+          <li>
+            <code>position: relative;</code>: Posiziona l&#39;elemento rispetto
+            alla sua posizione originale.
+          </li>
+          <li>
+            <code>position: absolute;</code>: Posiziona l&#39;elemento rispetto
+            al suo contenitore posizionato.
+          </li>
+          <li>
+            <code>position: fixed;</code>: Posiziona l&#39;elemento rispetto
+            alla finestra del browser.
+          </li>
+          <li><code>float: left;</code>: Allinea l&#39;elemento a sinistra.</li>
+        </ul>
+      </li>
+      <li>
+        <p><strong>Flexbox Alignment</strong>:</p>
+        <ul>
+          <li>
+            <code>align-items</code>: Allinea gli elementi lungo l&#39;asse
+            trasversale.
+          </li>
+          <li>
+            <code>justify-content</code>: Allinea gli elementi lungo l&#39;asse
+            principale.
+          </li>
+          <li>
+            <code>flex-wrap</code>: Specifica se gli elementi devono andare a
+            capo.
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p><strong>Typography</strong>:</p>
+        <ul>
+          <li>
+            <code>font-style</code>: Imposta lo stile del carattere (corsivo,
+            normale).
+          </li>
+          <li>
+            <code>font-variant</code>: Imposta le varianti del carattere
+            (maiuscolo, minuscolo).
+          </li>
+          <li>
+            <code>word-wrap</code>: Specifica come gestire le parole lunghe.
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p><strong>Opacity and Transparency</strong>:</p>
+        <ul>
+          <li>
+            <code>opacity</code>: Imposta la trasparenza dell&#39;elemento (da 0
+            a 1).
+          </li>
+          <li>
+            <code>rgba(255, 0, 0, 0.5)</code>: Utilizza il formato RGBA per
+            impostare il colore con trasparenza.
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p><strong>Overflow and Clipping</strong>:</p>
+        <ul>
+          <li>
+            <code>overflow: hidden;</code>: Nasconde il contenuto che supera i
+            limiti del box.
+          </li>
+          <li>
+            <code>clip-path</code>: Ritaglia l&#39;elemento in base a una forma
+            specifica.
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p><strong>Z-Index</strong>:</p>
+        <ul>
+          <li>
+            <code>z-index</code>: Imposta l&#39;ordine di sovrapposizione degli
+            elementi.
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p><strong>Custom Properties (CSS Variables)</strong>:</p>
+        <ul>
+          <li>
+            <code>--main-color: #007bff;</code>: Definisce una variabile CSS.
+          </li>
+          <li>
+            <code>background-color: var(--main-color);</code>: Utilizza la
+            variabile nei tuoi
+          </li>
+        </ul>
+      </li>
+    </ol>
+    <button onclick="location.href='../index.html';">Torna alla Home</button>
+  </body>
+</html>

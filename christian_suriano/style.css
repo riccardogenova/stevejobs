@@ -1,0 +1,132 @@
+a {
+  color: #1e1e1e; /* Cambia il colore base dei link */
+  text-decoration: none; /* togliere la sottolineatura  */
+  transition: 0.5s; /*comando per la transizione, il box si ingrandisce al passaggio del mouse, l'ho messo fuori dal box per fare la transizione sia in che out*/
+}
+
+/* Cambia il colore dei link quando vengono visitati */
+a:visited {
+  color: #1e1e1e;
+}
+
+/* Cambia il colore dei link quando vengono passati sopra */
+a:hover {
+  color: #1e1e1e;
+  width: 207px; /* Ingrandisci la larghezza al passaggio del mouse */
+  height: 147px; /* Ingrandisci l'altezza al passaggio del mouse */
+  box-shadow: 0px 0px 30px #1e1e1e57;
+}
+
+/* Cambia il colore dei link quando vengono selezionati */
+a:active {
+  color: #1e1e1e;
+}
+a {
+  padding-left: 10mm;
+  padding-right: 5mm;
+  padding-top: 25mm; /*il padding agisce sui bordi interni del box, fra la scritta e il box*/
+  margin: 5px; /* il margin agisce esternamente, spaziatura fra le scritte o i box*/
+
+  height: 140px;
+  width: 200px;
+  background-color: white;
+  box-shadow: 0px 0px 30px #1e1e1e2a;
+  border-radius: 20px; /*per rendere i bordi del box stondati*/
+
+  display: flex;
+  flex-wrap: wrap; /* Per consentire il wrapping degli elementi figlio */
+  gap: 10%;
+}
+
+.corpo {
+  background-color: #f4f4f4;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  margin: 5vh;
+  display: grid; /* display grid l'ho messo qua per spostare in DUE colonne le scritte*/
+  grid-template-columns: repeat(
+    2,
+    1fr
+  ); /* Creare due colonne con larghezza uguale */
+  grid-gap: 3px; /*spaziatura fra box e index*/
+}
+
+.index {
+  font-size: 137px;
+  font-weight: bold;
+  color: #1e1e1e;
+  text-align: left;
+  margin-right: 4vh;
+}
+#sub_index {
+  font-weight: bold;
+  font-size: 30px;
+  color: #707070;
+  text-align: left;
+  margin-right: 4vh;
+  position: absolute; /* Posizionamento assoluto */
+  top: 39%;
+}
+.scritte {
+  font-weight: bold;
+  font-size: 30px;
+  color: #1e1e1e;
+  display: grid; /* display grid l'ho messo qua per spostare in TRE colonne le scritte*/
+  grid-template-columns: repeat(
+    /* display grid e grid template columns serve per dire che visualizziamo un grid con un dato numero di colonne*/
+      3,
+    1fr
+  ); /* Creare due colonne con larghezza uguale */
+  grid-gap: 5px; /*gap orizzontale tra elementi del grid*/
+}
+
+.gitl {
+  color: #ff8800;
+  position: absolute;
+  margin-top: 38px;
+}
+.mdl {
+  color: #288cff;
+  position: absolute;
+  margin-top: 38px;
+}
+
+.cssl {
+  color: #a11eff;
+  position: absolute;
+  margin-top: 38px;
+}
+
+.box_neri {
+  background-color: #1e1e1e;
+}
+#cssN {
+  background-image: url(https://i.pinimg.com/736x/e3/2f/de/e32fde30a70da3c12d37ef477992e7de.jpg);
+  background-size: 112%;
+}
+#cssN:hover {
+  background-image: url(https://i.pinimg.com/736x/99/7a/15/997a15ce81193deb05094877a5a6d059.jpg);
+  background-size: 112%;
+}
+
+#mdN {
+  background-image: url(https://i.pinimg.com/736x/f8/e1/65/f8e165e1196980792d0798eec3219d3e.jpg);
+  background-size: cover;
+}
+#mdN:hover {
+  background-image: url(https://i.pinimg.com/736x/f2/e3/5c/f2e35c33543707406aaf83cde02db08d.jpg);
+  background-size: cover;
+}
+
+#gitN:hover {
+  background-color: #ff8800;
+}
+#git_c {
+  color: #f4f4f4;
+}
+#md_c {
+  color: #f4f4f4;
+}
+#css_c {
+  color: #f4f4f4;
+}

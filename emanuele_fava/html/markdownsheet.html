@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>MARKDOWN_sheet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../main.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li>
+          <a href="../index.html">Homepage</a>
+        </li>
+        <li>
+          <a href="gitsheet.html">GIT_sheet</a>
+        </li>
+        <li>
+          <a href="htmlsheet.html">HTML_sheet</a>
+        </li>
+        <li><a href="cssheet.html">CSS_SHEET</a></li>
+      </ul>
+    </nav>
+
+    <div class="page_container">
+      <h1>MARKDOWN_SHEET</h1>
+      <hr />
+      <ul>
+        <h2>Formattazione Testo:</h2>
+        <hr />
+        <li>
+          Grassetto: Utilizza due asterischi
+          <pre>**testo**</pre>
+          o due trattini bassi
+          <pre>__testo__</pre>
+          Esempio: <b>testo</b>
+        </li>
+        <li>
+          Corsivo: Utilizza un asterisco
+          <pre>*testo*</pre>
+          o un trattino basso
+          <pre>_testo_</pre>
+          Esempio: <i>testo</i>
+        </li>
+        <li>
+          Testo barrato: Utilizza due tilde
+          <pre>~~testo~~ </pre>
+          Esempio: <s>testo</s>
+        </li>
+      </ul>
+
+      <ul>
+        <h2>Titoli:</h2>
+        <hr />
+        Intestazioni: Utilizza da una a sei hashtag # per definire
+        l'intestazione di livello da 1 a 6.
+        <li><h1>Intestazione di livello 1</h1></li>
+        <pre># Intestazione di livello 1</pre>
+        <li><h2>Intestazione di livello 2</h2></li>
+        <pre>## Intestazione di livello 2</pre>
+        <li><h3>Intestazione di livello 3</h3></li>
+        <pre>### Intestazione di livello 3</pre>
+        <li><h4>Intestazione di livello 4</h4></li>
+        <pre>#### Intestazione di livello 4</pre>
+        <li><h5>Intestazione di livello 5</h5></li>
+        <pre>##### Intestazione di livello 5</pre>
+        <li><h6>Intestazione di livello 6</h6></li>
+        <pre>###### Intestazione di livello 6</pre>
+      </ul>
+
+      <ul>
+        <h2>Elenco non ordinato:</h2>
+        <hr />
+        Utilizza un trattino, un asterisco o un segno più seguito da spazio
+        <pre>- Elemento</pre>
+        Esempio:
+
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+      </ul>
+
+      <ol>
+        <h2>Elenco ordinato:</h2>
+        <hr />
+        utilizza 1. e a seguito di uno spazio l'elemento
+        <pre>1. Elemento</pre>
+        Esempio:
+        <li>Primo elemento</li>
+        <li>Secondo elemento</li>
+        <li>Terzo elemento</li>
+      </ol>
+
+      <ul>
+        <h2>Link:</h2>
+        <hr />
+        Link: Utilizza parentesi quadre per il testo del link seguito dall'URL
+        tra parentesi tonde
+        <pre>[testo](URL)</pre>
+        Esempio:
+        <a href="https://github.com/EmanueleFava">testo</a>
+      </ul>
+
+      <ul>
+        <h2>Immagini:</h2>
+        <hr />
+        Utilizza un punto esclamativo seguito da parentesi quadre per il testo
+        alternativo e l'URL dell'immagine tra parentesi tonde
+
+        <pre>![testo alternativo](URL)</pre>
+
+        Esempio:
+        <img
+          src="https://css-tricks.com/wp-content/uploads/2016/01/choose-markdown.jpg"
+          class="img_markdown"
+          alt="MARKDOWN"
+        />
+      </ul>
+      <ul>
+        <h2>Citazione:</h2>
+        <hr />
+        Utilizza il segno maggiore > seguito dal testo citato. Esempio:
+        <pre>> Questo è un esempio di citazione.</pre>
+        <q>Questo è un esempio di citazione.</q>
+      </ul>
+
+      <ul>
+        <h2>Codice inline:</h2>
+        <hr />
+        Utilizza backtick (grave accent) Esempio:
+        <pre>`testo`</pre>
+        <code>testo</code>
+      </ul>
+
+      <ol>
+        <h2>Tabelle in Markdown:</h2>
+        <hr />
+        <li>
+          <b>Definizione delle colonne</b>: Si Inizia definendo le colonne della
+          tua tabella, separandole con il carattere pipe `|`. Ogni colonna
+          corrisponderà a un elemento nella riga dell'intestazione.
+        </li>
+        <li>
+          <b>Intestazioni delle colonne</b>: Nella riga successiva, separa le
+          colonne con un'altra riga di caratteri `|`, e separa ogni colonna
+          dalle altre utilizzando il carattere di trattino `-`. Questo è
+          opzionale ma consigliato per rendere più leggibile la tabella.
+        </li>
+        <li>
+          <b>Inserimento dei dati</b>: Nelle righe successive, inserisci i dati
+          della tua tabella, separando gli elementi delle colonne con il
+          carattere pipe `|`.
+        </li>
+        <pre>
+        | Nome       | Età |
+        |------------|-----|
+        | Alice      |  25 |
+        | Bob        |  30 |
+        | Charlie    |  35 |
+        </pre>
+        <table>
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Età</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Alice</td>
+              <td>25</td>
+            </tr>
+            <tr>
+              <td>Bob</td>
+              <td>30</td>
+            </tr>
+            <tr>
+              <td>Charlie</td>
+              <td>35</td>
+            </tr>
+          </tbody>
+        </table>
+      </ol>
+    </div>
+
+    <footer class="insidefooter">
+      <ul>
+        <li>
+          <a href="../index.html">Homepage</a>
+        </li>
+        <li>
+          <a href="gitsheet.html">GIT_sheet</a>
+        </li>
+        <li>
+          <a href="htmlsheet.html">HTML_sheet</a>
+        </li>
+        <li><a href="cssheet.html">CSS_SHEET</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>

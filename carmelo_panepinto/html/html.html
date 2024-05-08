@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Web Front end: HTML</title>
+    <link rel="stylesheet" href="./html.css" />
+  </head>
+  <body>
+    <header>
+      <h1>HTML</h1>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Indice Principale</a></li>
+          <li><a href="./html_sheet.html">Html comandi</a></li>
+          <li><a href="#sezione1">Cos'è</a></li>
+          <li><a href="#sezione2">Caratteristiche</a></li>
+          <li><a href="#sezione3">Tag e attributi in HTML</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h2 id="sezione1">Cos'è</h2>
+    <p>
+      <b>HTML</b> un sistema di <i>HyperText Markup Leanguage</i>, è un
+      linguaggio di markup utilizzato per creare e strutturare pagine web. HTML
+      può essere immaginato come un linguaggio di mattoni: ogni elemento di una
+      pagina web viene descritto da specifici <b>tag</b>, come se fossero dei
+      mattoni predefiniti, che vengono combinati per costruire l'intera
+      struttura.
+    </p>
+    <h2 id="sezione2">Caratteristiche</h2>
+    <p>HTML si basa su tre principali features:</p>
+
+    <ul>
+      <li>
+        <b>HyperTex / Collegamenti Ipertestuali</b>, HTML è progettato per
+        supportare l'<i>ipertesto</i>, che è un tipo di testo che contiene
+        collegamenti ipertestuali, comunemente noti come <i>link</i> a altri
+        documenti, risorse o posizioni all'interno dello stesso documento;<br />
+      </li>
+      <li>
+        <b>Markup Leanguage</b>, HTML utilizza tag e attributi per definire la
+        struttura e il significato del contenuto della pagina web.
+        <ul>
+          <li>
+            I <i>tag</i> sono elementi delimitati da parentesi angolari < > che
+            indicano al browser come visualizzare il contenuto.
+          </li>
+          <li>
+            Gli <i>attributi</i> forniscono informazioni aggiuntive sui tag e
+            possono essere utilizzati per modificare il comportamento o
+            l'aspetto del contenuto;
+          </li>
+        </ul>
+      </li>
+      <li>
+        <b>Struttura Gerarchica</b>, Una pagina HTML è strutturata in modo
+        gerarchico utilizzando diversi elementi. Il documento HTML inizia con un
+        elemento &lt;html&gt; che contiene l'intero contenuto della pagina.
+        All'interno di &lt;html&gt;, ci sono due sezioni principali:<i>
+          &lt;head&gt; e &lt;body&gt; </i
+        >.
+        <ul>
+          <li>
+            Head: contiene metadati, come il titolo della pagina, collegamenti a
+            fogli di stile CSS e script JavaScript.
+          </li>
+          <li>
+            Body: contiene il contenuto effettivo della pagina, come testo,
+            immagini, video, forme e altro ancora.
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <h3 id="sezione3">Tag e attributi</h3>
+    <br />
+    <p>
+      All'interno dell'html, quindi sia nell'head che nel body, gli elementi
+      sono costituiti da <b>tag</b> che definiscono il tipo e/o la formattazione
+      dell'elemento, come <i>&lt;p&gt;...&lt;/p&gt;</i> per paragrafo o
+      <i>&lt;h1&gt;...&lt;/h1&gt;</i> per intestazione. Gli
+      <b>attributi</b> invece aggiungono informazioni ai tag, come
+      <i>scr</i> per il percorso di un'immagine (con tag &lt;img&gt;). <br />
+      Esistono anche elementi semantici come
+      <i>&lt;header&gt;, &lt;footer&gt;, &lt;nav&gt;, &lt;article&gt;</i> che
+      descrivono il significato del contenuto, oltre alla sua presentazione.
+    </p>
+
+    <h4>Alcuni esempi di Tag<br /></h4>
+    <ul>
+      <li>
+        Tag di struttura: definiscono la gerarchia e le sezioni principali di
+        una pagina web, come &lt;header&gt;, &lt;main&gt;, &lt;footer&gt;,
+        &lt;article&gt;, &lt;section&gt; ecc.<br />
+      </li>
+      <li>
+        Tag di testo: formattano il testo all'interno di una pagina, ad esempio
+        &lt;p&gt; per i paragrafi, &lt;h1&gt; per i titoli, &lt;b&gt; per il
+        grassetto e &lt;i&gt; per il corsivo.<br />
+      </li>
+      <li>
+        Tag di contenuti multimediali: inseriscono immagini, video e altri
+        contenuti multimediali all'interno della pagina, utilizzando tag come
+        &lt;img&gt;, &lt;video&gt;, &lt;audio&gt;..<br />
+      </li>
+      <li>
+        Tag di collegamenti: creano collegamenti ipertestuali ad altre pagine
+        web o risorse online, utilizzando il tag &lt;a&gt;.<br />
+      </li>
+      <li>
+        Tag di form: permettono di creare moduli per la raccolta di dati dagli
+        utenti, utilizzando tag come &lt;form&gt;, &lt;input&gt;,
+        &lt;select&gt;, &lt;textarea&gt; ecc.<br />
+      </li>
+    </ul>
+    <h2>Altri comandi utili<br /></h2>
+    <ul>
+      <li>git status: Mostra lo stato corrente del repository Git. <br /></li>
+      <li>
+        git branch: Mostra i branch attualmente presenti nel repository.<br />
+      </li>
+      <li>
+        git checkout &lt;nome del branch&gt;: Cambia branch nel repository.
+        <br />
+      </li>
+      <li>
+        git merge &lt;nome del branch&gt;: Unisce un branch con il branch
+        corrente.
+        <br />
+      </li>
+    </ul>
+
+    <h2>Esempio di codice html</h2>
+    <br />
+    <p>
+      Ecco un esempio di codice HTML semplice per creare un titolo e un
+      paragrafo: <br />
+    </p>
+    <code>
+      &lt;html&gt; <br />
+
+      &lt;head&gt; <br />
+
+      &lt;title&gt; Titolo della pagina &lt;title&gt; <br />
+
+      &lt;/head&gt; <br />
+
+      &lt;body&gt;<br />
+
+      &lt;h1&gt; Titolo principale &lt;/h1&gt;<br />
+
+      &lt;p&gt; Questo è un paragrafo di testo. &lt;/p&gt;<br />
+
+      &lt;/body&gt;<br />
+
+      &lt;/html&gt;<br />
+    </code>
+  </body>
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>MARKDOWN_sheet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../main.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li>
+          <a href="../index.html">Homepage</a>
+        </li>
+        <li>
+          <a href="markdownsheet.html">MARKDOWN_sheet</a>
+        </li>
+        <li>
+          <a href="gitsheet.html">GIT_sheet</a>
+        </li>
+        <li><a href="cssheet.html">CSS_SHEET</a></li>
+      </ul>
+    </nav>
+    <div class="page_container">
+      <h1>HTML_SHEET</h1>
+      <hr />
+      <h2>Formattazione del testo</h2>
+      <hr />
+      <ul>
+        <li>
+          <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>,
+          <code>&lt;h3&gt;</code>, <code>&lt;h4&gt;</code>,
+          <code>&lt;h5&gt;</code>, <code>&lt;h6&gt;</code>: Intestazioni di
+          diversi livelli.
+          <h1>Titolo Principale</h1>
+          <hr />
+          <h2>Sotto titolo</h2>
+          <hr />
+          <code>&lt;h1&gt;Titolo Principale&lt;/h1&gt</code><br />
+          <code>&lt;h2&gt;Sotto titolo&lt;/h2&gt</code>
+        </li>
+        <br />
+        <li>
+          <code>&lt;p&gt;</code>: Paragrafi di testo.
+          <p>Questo è un paragrafo di testo</p>
+          <code>&lt;p&gt;Questo è un paragrafo di testo&lt;/p&gt</code>
+        </li>
+        <br />
+        <li>
+          <code>&lt;strong&gt;</code>: Testo in grassetto. <br />
+          <br />
+          <strong>Testo in grassetto</strong>
+          <hr />
+          <pre><code>&lt;strong&gt;Testo in grassetto&lt;/strong&gt;</code></pre>
+        </li>
+        <li>
+          <code>&lt;em&gt;</code>: Testo in corsivo. <br />
+          <br />
+          <em>Testo in corsivo</em>
+          <hr />
+          <pre><code>&lt;em&gt;Testo in corsivo&lt;/em&gt;</code></pre>
+        </li>
+        <li>
+          <code>&lt;u&gt;</code>: Testo sottolineato. <br /><br />
+          <u>Testo sottolineato</u>
+          <hr />
+          <pre><code>&lt;u&gt;Testo sottolineato&lt;/u&gt;</code></pre>
+        </li>
+        <li>
+          <code>&lt;br&gt;</code>: Introduzione di un'interruzione di riga.
+          <br />
+          Prima riga <br />
+          Seconda riga
+          <pre><code>Prima riga.&lt;br&gt;Seconda riga.</code></pre>
+        </li>
+        <li>
+          <code>&lt;hr&gt;</code>: Creazione di una riga orizzontale.
+          <hr />
+          <pre><code>&lt;hr&gt;</code></pre>
+        </li>
+      </ul>
+
+      <h2>Link e navigazione</h2>
+      <hr />
+      <ul>
+        <li>
+          <code>&lt;a&gt;</code>: Definizione di un link ipertestuale. <br />
+          <a href="https://www.example.com">Link</a>
+          <pre><code>&lt;a href="https://www.example.com"&gt;Link&lt;/a&gt;</code></pre>
+        </li>
+        <li>
+          <code>&lt;nav&gt;</code>: Definizione di una sezione di navigazione.
+          <pre><code>&lt;nav&gt;
+    &lt;a href="#"&gt;Home&lt;/a&gt; 
+    &lt;a href="#"&gt;About&lt;/a&gt; 
+    &lt;a href="#"&gt;Contatti&lt;/a&gt;
+&lt;/nav&gt;</code></pre>
+          <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contatti</a>
+          </nav>
+          <br />
+        </li>
+        <li>
+          <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>,
+          <code>&lt;li&gt;</code>: Creazione di elenchi non ordinati e ordinati.
+          <pre><code>&lt;ul&gt;
+    &lt;li&gt;Elemento 1&lt;/li&gt;
+    &lt;li&gt;Elemento 2&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+    &lt;li&gt;Elemento 1&lt;/li&gt;
+    &lt;li&gt;Elemento 2&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+        </li>
+      </ul>
+      <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+      </ul>
+
+      <ol>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+      </ol>
+
+      <h2>Multimedia</h2>
+      <hr />
+      <ul>
+        <li>
+          <code>&lt;img&gt;</code>: Inserimento di immagini. <br />
+          <br />
+          <img src="immagine.jpg" alt=" " />
+          <pre><code>&lt;img src="immagine.jpg" alt="Descrizione dell'immagine"&gt;</code></pre>
+        </li>
+        <li>
+          <code>&lt;video&gt;</code>: Inserimento di video. <br />
+          <br />
+          <video controls>
+            <source src="video.mp4" type="video/mp4" />
+            Il tuo browser non supporta il tag video.
+          </video>
+          <pre><code>&lt;video controls&gt;
+    &lt;source src="video.mp4" type="video/mp4"&gt;
+    Il tuo browser non supporta il tag video.
+&lt;/video&gt;</code></pre>
+        </li>
+        <li>
+          <code>&lt;audio&gt;</code>: Inserimento di file audio.
+          <pre><code>&lt;audio controls&gt;
+    &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+    Il tuo browser non supporta il tag audio.
+&lt;/audio&gt;</code></pre>
+        </li>
+      </ul>
+
+      <h2>Tabelle</h2>
+      <hr />
+      <ul>
+        <li>
+          <code>&lt;table&gt;</code>: Creazione di una tabella. <br />
+          <br />
+          <table>
+            <tr>
+              <th>Intestazione 1</th>
+              <th>Intestazione 2</th>
+            </tr>
+            <tr>
+              <td>Dato 1</td>
+              <td>Dato 2</td>
+            </tr>
+          </table>
+          <pre><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Intestazione 1&lt;/th&gt;
+        &lt;th&gt;Intestazione 2&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Dato 1&lt;/td&gt;
+        &lt;td&gt;Dato 2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+        </li>
+        <li><code>&lt;tr&gt;</code>: Definizione di una riga nella tabella.</li>
+        <li>
+          <code>&lt;th&gt;</code>: Definizione di una cella dell'intestazione
+          della tabella.
+        </li>
+        <li>
+          <code>&lt;td&gt;</code>: Definizione di una cella nella tabella.
+        </li>
+      </ul>
+
+      <h2>Formulari</h2>
+      <hr />
+      <ul>
+        <li>
+          <code>&lt;form&gt;</code>: Definizione di un modulo. <br />
+          <br />
+          <form action="/submit" method="post">
+            <label for="username">Nome utente:</label>
+            <input type="text" id="username" name="username" />
+            <button type="submit">Invia</button>
+          </form>
+          <pre><code>&lt;form action="/submit" method="post"&gt;
+    &lt;label for="username"&gt;Nome utente:&lt;/label&gt;
+    &lt;input type="text" id="username" name="username"&gt;
+    &lt;button type="submit"&gt;Invia&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+        </li>
+        <li>
+          <code>&lt;input&gt;</code>: Creazione di campi di input. <br />
+          <br />
+          <input type="text" placeholder="Inserisci il testo" />
+          <pre><code>&lt;input type="text" placeholder="Inserisci il testo"&gt;</code></pre>
+        </li>
+        <li>
+          <code>&lt;textarea&gt;</code>: Creazione di un campo di testo
+          multilinea. <br />
+          <br />
+          <textarea
+            rows="4"
+            cols="50"
+            placeholder="Inserisci il testo"
+          ></textarea>
+          <pre><code>&lt;textarea rows="4" cols="50" placeholder="Inserisci il testo"&gt;&lt;/textarea&gt;</code></pre>
+        </li>
+        <li>
+          <code>&lt;button&gt;</code>: Creazione di pulsanti. <br /><br />
+          <button type="button">Clicca qui</button>
+          <pre><code>&lt;button type="button"&gt;Clicca qui&lt;/button&gt;</code></pre>
+        </li>
+      </ul>
+
+      <h2>Struttura della pagina</h2>
+      <hr />
+      <ul>
+        <li>
+          <code>&lt;html&gt;</code>: Elemento radice di un documento HTML.
+        </li>
+        <li>
+          <code>&lt;head&gt;</code>: Contenitore per metadati e collegamenti
+          allo stile.
+        </li>
+        <li>
+          <code>&lt;title&gt;</code>: Definizione del titolo della pagina.
+        </li>
+        <li><code>&lt;body&gt;</code>: Contenuto principale della pagina.</li>
+      </ul>
+
+      <h2>Semantica</h2>
+      <hr />
+      <ul>
+        <li><code>&lt;header&gt;</code>: Intestazione di una sezione.</li>
+        <li><code>&lt;footer&gt;</code>: Piè di pagina di una sezione.</li>
+        <li><code>&lt;section&gt;</code>: Sezione generica di una pagina.</li>
+        <li>
+          <code>&lt;article&gt;</code>: Contenuto autonomo che può essere
+          distribuito e riciclato.
+        </li>
+        <li>
+          <code>&lt;aside&gt;</code>: Contenuto correlato all'articolo
+          principale ma che può essere considerato separato da esso.
+        </li>
+      </ul>
+    </div>
+
+    <footer class="insidefooter">
+      <ul>
+        <li>
+          <a href="../index.html">Homepage</a>
+        </li>
+        <li>
+          <a href="markdownsheet.html">MARKDOWN_sheet</a>
+        </li>
+        <li>
+          <a href="gitsheet.html">GIT_sheet</a>
+        </li>
+        <li><a href="cssheet.html">CSS_SHEET</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>

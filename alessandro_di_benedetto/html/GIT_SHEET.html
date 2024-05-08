@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>INDICE</h1>
+      <p>helpers</p>
+      <a href="CSS_SHEET.html">CSS_SHEET</a><br />
+      <a href="MARKDOWN_SHEET.html">MARKDOWN_SHEET</a><br />
+      <a href="HTML_SHEET.html">HTML_SHEET</a><br />
+      <p>lessons</p>
+      <a href="CSS.html">CSS</a><br />
+      <a href="MARKDOWN.html">MARKDOWN</a><br />
+      <a href="GIT.html">GIT</a><br />
+      <a href="HTML.html">HTML</a><br />
+    </header>
+    <h2>Configurazioni di base di Git</h2>
+    <p>Configuriamo il nostro git con le nostre credenziali di GitHub:</p>
+    <pre><code>git config --global user.name 'Tuo Nome GitHub'
+git config --global user.email email@github.com
+    </code></pre>
+
+    <h3>Ci sono due modi per instanziare un progetto</h3>
+    <ol>
+      <li>Inizializziamo un progetto non esistente:</li>
+    </ol>
+    <pre><code>git init
+    </code></pre>
+
+    <ol start="2">
+      <li>Inizializziamo un progetto esistente su un server Git:</li>
+    </ol>
+    <pre><code>git clone serverURL.git
+    Esempio: git clone https://github.com/tesseslol/irixos-websites.git
+    </code></pre>
+    <p>
+      Git clone permette di copiare il file .git del server e anche il
+      repository.
+    </p>
+
+    <h2>Configurazione del server remoto</h2>
+    <p>
+      Con questo comando visualizziamo la lista di server remoti salvati con
+      relativo URL:
+    </p>
+    <pre><code>git remote -v
+    </code></pre>
+    <p>P.S. di solito il server principale si chiama origin</p>
+    <p>Ora aggiungiamo un server remoto:</p>
+    <pre><code>git remote add identificatoreServerRemoto UrlServerRemoto
+    Esempio: git remote add origin https://github.com/tesseslol/irixos-websites.git
+    </code></pre>
+    <h2>Lavoriamo nel progetto:</h2>
+    <p>Aggiungiamo i file dalla directory del progetto all'index:</p>
+    <pre><code>git add nome_file
+</code></pre>
+    <p>
+      Si può utilizzare l'asterisco per aggiungere tutti i file. Se si vuole
+      escludere un file dalla selezione totale (con l'asterisco) basta creare un
+      file denominato .gitignore e metterci all'interno i file che non si
+      vogliono aggiungere all'INDEX.
+    </p>
+    <p>Ora aggiungiamo i file dell'INDEX all'HEAD:</p>
+    <pre><code>git commit -m "Messaggio del commit"
+</code></pre>
+    <p>Per non tracciare il file usiamo l'argomento -a:</p>
+    <pre><code>git commit -a -m "Messaggio del commit"
+</code></pre>
+    <p>Annullamento dei commit:</p>
+    <pre><code>git commit --amend</code></pre>
+    <p>Cancellare un file da Git:</p>
+    <pre><code>git rm nomeFile</code></pre>
+    <p>Il file ritorna allo stato precedente dell’ultimo commit:</p>
+    <pre><code>git checkout -- nomeFile</code></pre>
+
+    <h2>Lavorare con il server remoto</h2>
+    <p>Aggiornare il tuo repository locale alla commit più recente:</p>
+    <pre><code>git pull</code></pre>
+    <p>Se vogliamo fare l'upload dei commit nel progetto usiamo:</p>
+    <pre><code>git push identificatoreServerRemoto nomeBranch
+Esempio: git push origin master</code></pre>
+    <p>Se vogliamo rinominare un file in remoto:</p>
+    <pre><code>git remote rename identificatoreServerRemoto nomeFileVecchio nomeFileNuovo</code></pre>
+    <p>Se vogliamo eliminare un file in remoto:</p>
+    <pre><code>git remote rm nomeFile</code></pre>
+
+    <h2>Stato del progetto</h2>
+    <p>Per vedere le modifiche del progetto digitiamo:</p>
+    <pre><code>git status</code></pre>
+    <p>Per vedere i cambiamenti dei singoli files digitiamo:</p>
+    <pre><code>git diff</code></pre>
+    <p>Vedere tutti i commit:</p>
+    <pre><code>git log</code></pre>
+
+    <h2>Gestire i tag</h2>
+    <p>Per visualizzare tutte le versioni eseguimo il comando:</p>
+    <pre><code>git tag</code></pre>
+    <p>Per visualizzare tutte le versioni con un determinato numero:</p>
+    <pre><code>git tag -l 1*</code></pre>
+    <p>Creazione di un tag:</p>
+    <pre><code>git tag -a versioneSoftware -m "nota sul tag"
+Esempio: git tag -a 1.2.3rc1 -m "aggiornato la navbar"</code></pre>
+    <p>Vedere tutte le modifiche di un tag:</p>
+    <pre><code>git show 1.2.3rc1</code></pre>
+    <p>Condividere i tag:</p>
+    <pre><code>git push identificatoreServerRemoto tagDaPubblicare
+Esempio: git push origin 1.2.3rc1</code></pre>
+    <p>Condividere tutti i tag:</p>
+    <pre><code>git push identificatoreServerRemoto --tag
+Esempio: git push origin --tag</code></pre>
+
+    <h2>Gestire i Branch</h2>
+    <p>Lista dei Rami:</p>
+    <pre><code>git branch</code></pre>
+    <p>Creiamo un branch con:</p>
+    <pre><code>git branch nomeBranch
+Esempio: git branch feature</code></pre>
+    <p>Cambia i rami:</p>
+    <pre><code>git checkout nomeBranch
+Esempio: git checkout feature</code></pre>
+    <p>Per ritornare al branch originale digitiamo:</p>
+    <pre><code>git checkout master</code></pre>
+    <p>Eliminare il ramo:</p>
+    <pre><code>git branch -d nomeBranch
+Esempio: git branch -d feature</code></pre>
+    <p>Crea il ramo e passa a quel branch:</p>
+    <pre><code>git checkout -b nomeBranch
+Esempio: git checkout -b feature</code></pre>
+    <p>
+      Per unire il branch al repository originale usiamo (ricordatevi di fare un
+      commit nel branch):
+    </p>
+    <pre><code>git checkout master
+git merge feature</code></pre>
+
+    <h2>Git Parameters:</h2>
+    <p><strong>Inizializza l'area di lavoro</strong></p>
+    <pre><code>clone      Clona un repository in una cartella
+init       Crea un git repository o ne inizializza uno</code></pre>
+    <h2>Lavorare nel progetto corrente</h2>
+    <code>add</code>: Aggiungere i file nell'INDEX<br />
+    <code>mv</code>: Muove o rinomina un file o una directory<br />
+    <code>reset</code>: Resetta l'HEAD corrente nello stato specificato<br />
+    <code>rm</code>: Rimuove i file dalla directory corrente e dall'INDEX<br />
+
+    <h2>Mostra la cronologia e lo stato</h2>
+    <code>bisect</code>: Utilizza la ricerca binaria per trovare il commit che
+    ha introdotto un bug<br />
+    <code>grep</code>: Stampa le righe che corrispondono a un pattern<br />
+    <code>log</code>: Mostra il log dei commit<br />
+    <code>status</code>: Stato del contenuto di un progetto<br />
+    <code>show</code>: Mostra vari tipi di oggetti<br />
+
+    <h2>Grow, mark and tweak your common history</h2>
+    <code>branch</code>: Visualizza, crea ed elimina i rami (branches)<br />
+    <code>checkout</code>: Cambia ramo (branches) o ripristina la struttura
+    dell'area di lavoro<br />
+    <code>commit</code>: Registra le modifiche del repository<br />
+    <code>diff</code>: Confronta i commit (es. commit e area di lavoro)<br />
+    <code>merge</code>: Unisce una o più cronologie di sviluppo<br />
+    <code>rebase</code>: Reapplica i commit su un'altra base<br />
+    <code>tag</code>: Crea, visualizza la lista, elimina o verifica il tag della
+    versione del progetto<br />
+
+    <h2>Collabora</h2>
+    <code>fetch</code>: Scarica oggetti e riferimenti da un altro repository<br />
+    <code>pull</code>: Scarica e integra con un altro repository o un ramo
+    locale<br />
+    <code>push</code>: Aggiorna i riferimenti remoti insieme agli oggetti
+    associati<br />
+  </body>
+</html>

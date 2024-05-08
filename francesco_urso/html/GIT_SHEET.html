@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../main.css" />
+    <title>GIT SHEET</title>
+  </head>
+  <body>
+    <section id="menù">
+      <h2><a href="../INDEX.html">Menù</a></h2>
+    </section>
+    <nav>
+      <section class="container">
+        <div class="column">
+          <h2>Lessons</h2>
+          <ul>
+            <li><a href="../html/MARKDOWN.html">Markdown</a></li>
+            <li><a href="../html/GIT.html">Git</a></li>
+            <li><a href="../html/HTML.html">HTML</a></li>
+            <li><a href="../html/CSS.html">CSS</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h2>Helpers</h2>
+          <ul>
+            <li>
+              <a href="../html/MARKDOWN_SHEET.html">Markdown Sheet</a>
+            </li>
+            <li>
+              <a href="../html/GIT_SHEET.html">Git Sheet</a>
+            </li>
+            <li>
+              <a href="../html/HTML_SHEET.html">HTML Sheet</a>
+            </li>
+            <li>
+              <a href="../html/CSS_SHEET.html">CSS Sheet</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </nav>
+    <div class="corpoTesto">
+      <section class="title">
+        <h1>GIT SHEET</h1>
+      </section>
+      <section>
+        <h2>Forma generale</h2>
+        <p>
+          Questa stringa di utilizzo è la forma generale del comando git con la
+          sua sintassi e le opzioni supportate.
+        </p>
+        <section class="pointer">
+          <span class="evidenziato">
+            <ul>
+              <li>
+                <code>-v | --version</code>: Stampa la versione di Git
+                installata.
+              </li>
+              <li>
+                <code>-h | --help</code>: Stampa l'elenco delle opzioni del
+                comando git.
+              </li>
+              <li>
+                <code>-C &lt;path&gt;</code>: Specifica un percorso diverso da
+                utilizzare come directory corrente per l'esecuzione del comando.
+              </li>
+              <li>
+                <code>-c &lt;name&gt;=&lt;value&gt;</code>: Imposta una
+                variabile di configurazione per l'ambito del comando.
+              </li>
+              <li>
+                <code>--exec-path[=&lt;path&gt;]</code>: Specifica un percorso
+                alternativo per cercare i file eseguibili di Git.
+              </li>
+              <li>
+                <code>--html-path</code>: Mostra il percorso della
+                documentazione HTML di Git.
+              </li>
+              <li>
+                <code>--man-path</code>: Mostra il percorso della documentazione
+                manuale di Git.
+              </li>
+              <li>
+                <code>--info-path</code>: Mostra il percorso della
+                documentazione di Git in formato info.
+              </li>
+              <li>
+                <code>-p | --paginate | -P | --no-pager</code>: Controlla il
+                paging dell'output del comando (-p e --paginate attivano il
+                paging, -P e --no-pager lo disattivano).
+              </li>
+              <li>
+                <code>--no-replace-objects</code>: Disabilita il rimpiazzo degli
+                oggetti durante l'importazione di un repository.
+              </li>
+              <li>
+                <code>--bare</code>: Crea un repository Git "bare" senza una
+                directory di lavoro.
+              </li>
+              <li>
+                <code>--git-dir=&lt;path&gt;</code>: Specifica un percorso
+                diverso per il repository Git.
+              </li>
+              <li>
+                <code>--work-tree=&lt;path&gt;</code>: Specifica un percorso
+                diverso per la directory di lavoro del repository Git.
+              </li>
+              <li>
+                <code>--namespace=&lt;name&gt;</code>: Specifica uno spazio dei
+                nomi Git.
+              </li>
+              <li>
+                <code>--super-prefix=&lt;path&gt;</code>: Specifica un prefisso
+                per i repository sovrapposti.
+              </li>
+              <li>
+                <code>--config-env=&lt;name&gt;=&lt;envvar&gt;</code>: Imposta
+                una variabile di configurazione con il valore di un'variabile
+                d'ambiente.
+              </li>
+            </ul>
+          </span>
+        </section>
+        <section>
+          <h2>Comandi base</h2>
+          <span class="evidenziato">
+            <p>
+              <b>clone</b>: Clona un repository in una nuova directory. <br />
+              <code>git clone https://github.com/utente/repository.git </code>
+            </p>
+            <p>
+              <b>init</b>: Crea un repository Git vuoto o reinizializza uno
+              esistente. <br />
+              <code>git init </code>
+            </p>
+            <p>
+              <b>add</b>: Aggiunge i contenuti dei file all'indice. <br />
+              <code>git add nomefile.txt </code>
+            </p>
+            <p>
+              <b>mv</b>: Sposta o rinomina un file, una directory o un symlink.
+              <br />
+
+              <code>git mv vecchio_nome nuovo_nome </code>
+            </p>
+            <p>
+              <b>restore</b>: Ripristina i file nell'albero di lavoro. <br />
+              <code>git restore nomefile.txt </code>
+            </p>
+            <p>
+              <b>rm</b>: Rimuove i file dall'albero di lavoro e dall'indice.
+              <br />
+              <code>git rm file_da_rimuovere.txt </code>
+            </p>
+            <p>
+              <b>bisect</b>: Utilizza la ricerca binaria per trovare il commit
+              che ha introdotto un bug. <br />
+              <code>git bisect start </code>
+            </p>
+            <p>
+              <b>diff</b>: Mostra le modifiche tra i commit, il commit e
+              l'albero di lavoro, ecc. <br />
+              <code>git diff HEAD~1 </code>
+            </p>
+            <p>
+              <b>grep</b>: Stampa le righe corrispondenti a un pattern. <br />
+              <code>git grep "pattern" </code>
+            </p>
+            <p>
+              <b>log</b>: Mostra i log dei commit. <br />
+              <code>git log </code>
+            </p>
+            <p>
+              <b>show</b>: Mostra vari tipi di oggetti. <br />
+              <code>git show HEAD </code>
+            </p>
+            <p>
+              <b>status</b>: Mostra lo stato dell'albero di lavoro. <br />
+              <code>git status </code>
+            </p>
+            <p>
+              <b>branch</b>: Elenca, crea o elimina branch. <br />
+              <code>git branch </code>
+            </p>
+            <p>
+              <b>commit</b>: Registra le modifiche nel repository. <br />
+              <code>git commit -m "Messaggio di commit" </code>
+            </p>
+            <p>
+              <b>merge</b>: Unisce due o più storie di sviluppo. <br />
+              <code>git merge branch_da_unire </code>
+            </p>
+            <p>
+              <b>rebase</b>: Riapplica i commit su un'altra punta base. <br />
+              <code>git rebase master </code>
+            </p>
+            <p>
+              <b>reset</b>: Resetta HEAD corrente allo stato specificato. <br />
+              <code>git reset --hard HEAD~2 </code>
+            </p>
+            <p>
+              <b>switch</b>: Cambia branch. <br />
+              <code>git switch nome_del_branch </code>
+            </p>
+            <p>
+              <b>tag</b>: Crea, elenca, elimina o verifica un tag firmato con
+              GPG. <br />
+              <code>git tag -a v1.0 -m "Versione 1.0" </code>
+            </p>
+            <p>
+              <b>fetch</b>: Scarica oggetti e riferimenti da un altro
+              repository. <br />
+              <code>git fetch origin </code>
+            </p>
+            <p>
+              <b>pull</b>: Esegue il fetch e l'integrazione con un altro
+              repository o un branch locale. <br />
+              <code>git pull origin master </code>
+            </p>
+            <p>
+              <b>push</b>: Aggiorna i riferimenti remoti insieme agli oggetti
+              associati. <br />
+              <code>git push origin master </code>
+            </p>
+          </span>
+        </section>
+        <section>
+          <span class="evidenziato">
+            <h2>Comandi composti</h2>
+            <p>
+              Clonare un Repository Git <br />
+              <code>
+                git clone &lt;https://github.com/utente/repository.git&gt;
+                &lt;directory_di_destinazione&gt;
+              </code>
+            </p>
+            <p>
+              Aggiungere un File, Fare Commit e Push sul Repository Remoto
+              <br />
+              <code class="bloccoEvidenziato">
+                git add nomefile.txt <br />
+                git commit -m "Aggiunto nuovo file" <br />
+                git push origin master
+              </code>
+            </p>
+            <p>
+              Creare un Nuovo Branch, Effettuare delle Modifiche e Fare Merge:
+              <br />
+              <code class="bloccoEvidenziato">
+                git checkout -b nuovo-branch <br />
+                #Effettua le modifiche ai file...<br />
+                git add . <br />
+                git commit -m "Modifiche sul nuovo branch"<br />
+                git checkout master <br />
+                git merge nuovo-branch
+              </code>
+            </p>
+          </span>
+        </section>
+        <section>
+          <h2>Istruzioni base</h2>
+          <section class="texbody">
+            <p>
+              Queste sono le istruzioni di base per utilizzare Git e gestire un
+              repository.
+            </p>
+          </section>
+          <section class="pointer">
+            <span class="evidenziato">
+              <ol>
+                <li>
+                  <code>git init</code>:<br />
+                  Inizializza una repository sul mio progetto, creando una
+                  cartella nascosta <code>.git</code> che conterrà le
+                  informazioni di versionamento.
+                </li>
+                <li>
+                  <code>git status</code>:<br />
+                  Visualizza lo stato attuale della repository, mostrando i file
+                  modificati, aggiunti o non tracciati.
+                </li>
+                <li>
+                  <code>git add &lt;cartella&gt;</code>:<br />
+                  Aggiunge i file specificati alla zona di stage di Git, pronti
+                  per essere committati. Con <code>git add .</code> vengono
+                  aggiunti tutti i file modificati nella repository.
+                </li>
+                <li>
+                  <code>git commit -m "descrizione del commit"</code>:<br />
+                  Registra le modifiche nella repository con una descrizione
+                  fornita dall'utente.
+                </li>
+                <li>
+                  <code>git log</code>:<br />
+                  Visualizza lo storico dei commit, mostrando l'autore, la data
+                  e la descrizione di ciascun commit.
+                </li>
+                <li>
+                  <code>git reset &lt;hash del commit&gt;</code>:<br />
+                  Annulla le modifiche fino al commit specificato, riportando il
+                  repository allo stato precedente.
+                </li>
+                <li>
+                  <code>git checkout &lt;percorso file&gt;</code>:<br />
+                  Scarta le modifiche fatte a un file specifico, ripristinandolo
+                  allo stato precedente.
+                </li>
+                <li>
+                  <code>git branch</code>:<br />
+                  Visualizza la lista dei branch presenti nella repository.
+                </li>
+                <li>
+                  <code>git branch &lt;nome branch&gt;</code>:<br />
+                  Crea un nuovo branch con il nome specificato.
+                </li>
+                <li>
+                  <code>git checkout &lt;nome branch&gt;</code>:<br />
+                  Spostarsi nel branch che di interessa, consentendo di lavorare
+                  su di esso.
+                </li>
+              </ol>
+            </span>
+          </section>
+        </section>
+        <section>
+          <h2>Upload su github</h2>
+          <p>Queste sono le istruzioni per effettuare l'upload su github:</p>
+          <span class="evidenziato">
+            <section class="pointer">
+              <ol>
+                <li>
+                  <code
+                    >git remote add origin
+                    https://github.com/&lt;tuonomeutente/tuorepository.git&gt;</code
+                  >:<br />
+                  Collega la repository locale a quella su GitHub, utilizzando
+                  l'URL del repository remoto. Il nome "origin" è
+                  convenzionalmente utilizzato per riferirsi al repository
+                  remoto principale.
+                </li>
+                <li>
+                  <code>git push origin main</code>:<br />
+                  Esegue l'upload delle modifiche presenti nel branch "main"
+                  della repository locale su GitHub. Il comando "push"
+                  sincronizza le modifiche locali con il repository remoto
+                  specificato. Assicurati di avere i permessi necessari per
+                  eseguire questa operazione sul repository remoto.
+                </li>
+              </ol>
+            </section>
+            <section class="pointer">
+              <p>Per rimuovere il collegamento:</p>
+              <ol>
+                <li>
+                  <code
+                    >git remote remove origin
+                    https://github.com/&lt;tuonomeutente/tuorepository.git&gt;</code
+                  >:<br />
+                  Rimuove il collegamento al repository remoto denominato
+                  "origin". Questo comando è utile se si desidera collegare la
+                  repository locale a un altro repository remoto o rimuovere
+                  completamente il collegamento esistente.
+                </li>
+              </ol>
+            </section>
+          </span>
+          <section class="subtitle"></section>
+        </section>
+        <h2>Clonare un repository</h2>
+        <span class="evidenziato">
+          <p>
+            Questo comando clona un repository remoto dal sito GitHub sul tuo
+            computer locale. Sostituisci &lt;URL&gt; con l'URL del repository
+            che desideri clonare. Ciò creerà una copia del repository remoto sul
+            tuo computer locale, consentendoti di lavorare sui file e
+            contribuire al progetto. <br />
+            <code>git clone &lt; url&gt;</code>
+          </p>
+        </span>
+        <h2>Creare gli Alias</h2>
+        <span class="evidenziato">
+          <p>
+            <b>Git alias</b> consente di creare alias personalizzati per i
+            comandi Git, rendendo più rapido l'utilizzo di sequenze di comandi
+            frequentemente utilizzate.
+          </p>
+          <p><b>Creazione Alias</b></p>
+          <section class="pointer">
+            <ol>
+              <li>
+                Puoi creare un alias per un comando Git utilizzando il comando
+                <code>git config</code>. Ad esempio, se desideri creare un alias
+                per il comando <code>git status</code>, puoi eseguire il
+                seguente comando che creerà un alias <code>st</code> per il
+                comando status.<br />
+              </li>
+            </ol>
+            <ul>
+              <ul>
+                <li>
+                  <code>git config --global alias.st status</code>
+                </li>
+              </ul>
+            </ul>
+          </section>
+          <p>
+            Dopo aver creato l'alias, puoi utilizzarlo come un normale comando
+            Git. Ad esempio, invece di digitare <code>git status</code>, ora
+            puoi digitare semplicemente <code>git st</code> per ottenere lo
+            stesso risultato.
+          </p>
+          <section class="pointer">
+            <ul>
+              <ul>
+                <li>
+                  <code>git st</code>
+                </li>
+              </ul>
+            </ul>
+          </section>
+        </span>
+        <h2>Visualizzare tutti gli Alias</h2>
+        <span class="evidenziato">
+          <p>
+            Puoi visualizzare tutti gli alias configurati eseguendo il comando:
+            <br />
+            <code>git config --get-regexp alias </code>
+          </p>
+          <p>
+            Per cancellare un alias in Git, puoi utilizzare il comando
+            <code>git config --global --unset alias.&lt;nome_alias&gt;</code>,
+            dove &lt;nome_alias&gt; è il nome dell'alias che desideri
+            cancellare. <br />
+            <code> git config --global --unset alias.st </code>
+          </p>
+        </span>
+      </section>
+    </div>
+    <footer>
+      <section class="left">
+        <img
+          id="logo"
+          src="../img/logo-sja-150x38.png"
+          alt="Steve Jobs Academy"
+        />
+      </section>
+      <section class="center">
+        <p>Francesco Urso</p>
+      </section>
+      <section class="right">
+        <a href="https://github.com/francesco-urso" alt="francesco-urso">
+          <img
+            id="github"
+            src="../img/kisspng-github-computer-icons-github-logo-5b459a3d4de4a5.6554725315312881253191.png"
+            alt="GitHub"
+        /></a>
+      </section>
+    </footer>
+  </body>
+</html>

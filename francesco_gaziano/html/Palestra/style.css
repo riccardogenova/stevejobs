@@ -1,0 +1,58 @@
+@keyframes SlidefromBottom {
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+
+.nav
+{
+    position: relative;
+    display: flex;
+    font-size: 1.2em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+section[name = 'sec-nav'], a 
+{
+    color: black;
+    width: 100%;
+    text-decoration: none;
+}
+.nav-link 
+{
+    display: flex;
+    margin: 0px 5px 15px;
+    justify-content: space-around;
+}
+
+ section[name = 'sec-nav'], ul > li
+{
+ text-decoration: none;   
+ list-style-type: none;
+}
+
+
+section[name = 'sec-nav'], ul > li:hover
+{
+    color: aliceblue;
+}
+
+#Goku
+{
+    justify-content: center;
+    justify-items: center;
+    margin: auto;
+    width: 680px;
+    height: 420px;
+    border: 2px solid #000;
+    border-radius: 20px 20px 20px 20px ;
+    background-image: url('https://i.pinimg.com/736x/cb/37/ab/cb37ab9cd3f3fc0819de1b80bad0fd12.jpg');
+    background:cover;
+    animation-delay: 2s;
+    animation-direction: normal;
+    animation: SlidefromBottom;
+}
+

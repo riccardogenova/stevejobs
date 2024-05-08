@@ -1,0 +1,1 @@
+HTML, acronimo di HyperText Markup Language, è il linguaggio standard utilizzato per creare e strutturare le pagine web. Consiste in una serie di elementi (tag) che definiscono il contenuto della pagina, come testo, immagini, link e altri elementi multimediali. HTML fornisce la struttura di base su cui vengono poi applicati stili CSS e funzionalità interattive tramite JavaScript.

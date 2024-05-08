@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git_sheet</title>
+    <style>
+        code {
+          font-family: Consolas,"courier new";
+          color: rgb(12, 12, 12);
+          background-color: #f1f1f1;
+          padding: 2px;
+          font-size: 70%;
+        }
+        </style>
+</head>
+<body>
+    <p>
+        <a href="C:\Users\camon\Documents\Steve jobs\Web_front_end\index.html">Home</a>
+        <a href="C:\Users\camon\Documents\Steve jobs\Web_front_end\Html\Lessons\GIT.html">Lesson</a>
+    </p>
+    <h1 id="configurazioni-di-base-di-git">Configurazioni di base di git</h1>
+<p>Configuriamo il nostro git con le nostre credenziali di GitHub:</p>
+<pre><code>git config --global user<span class="hljs-selector-class">.name</span> <span class="hljs-string">'Tuo Nome GitHub'</span>
+git config --global user<span class="hljs-selector-class">.email</span> email@github.com
+</code></pre><h4 id="ci-sono-due-modi-per-instanzire-un-progetto">Ci sono due modi per instanzire un progetto</h4>
+<ol>
+<li>Inizializziamo un progetto non esistente:</li>
+</ol>
+<p>git init</p>
+<ol>
+<li>Inizializziamo un progetto esistente su un server git:</li>
+</ol>
+<p>git clone serverURL.git Esempio: git clone <a href="https://github.com/tesseslol/irixos-websites.git">https://github.com/tesseslol/irixos-websites.git</a> Git clone permette di copiare il .git file del server e anche il repository.</p>
+<h1 id="configurazione-del-server-remoto">Configurazione del server remoto</h1>
+<p>Con questo comando visualizziamo la lista di server remoti salvati con relativo url:</p>
+<pre><code><span class="hljs-attribute">git remote -v</span>
+</code></pre><p>P.S. di solito il server principale si chiama origin</p>
+<p>Ora aggiungiamo un server remoto:</p>
+<pre><code>git remote <span class="hljs-keyword">add</span><span class="bash"> identificatoreServerRemoto UrlServerRemoto
+</span>Esempio: git remote <span class="hljs-keyword">add</span><span class="bash"> origin https://github.com/tesseslol/irixos-websites.git</span>
+</code></pre><h1 id="lavoriamo-nel-progetto-">Lavoriamo nel progetto:</h1>
+<p>Aggiungiamo i file dalla directory del progetto all&#39;index:</p>
+<pre><code>git <span class="hljs-keyword">add</span><span class="bash"> nome_file</span>
+</code></pre><p>Si può utilizzare l&#39;asterisco per aggiungere tutti i file. Se si vuole escludere un file dalla selezione totale (con l&#39;asterisco) basta creare un file denominato .gitignore e metterci all&#39;interno i file che non si vogliono aggiungere al INDEX.</p>
+<p>Ora aggiungiamo i file dell&#39;index all&#39;head:</p>
+<pre><code><span class="hljs-attribute">git</span> commit -m <span class="hljs-string">"Messaggio del commit"</span>
+</code></pre><p>Per non tracciare il file usiamo l&#39;argomento -a:</p>
+<pre><code>git commit -<span class="hljs-selector-tag">a</span> -m <span class="hljs-string">"Messaggio del commit"</span>
+</code></pre><p>Annullamento dei commit:</p>
+<pre><code>git <span class="hljs-keyword">commit</span> <span class="hljs-comment">--amend</span>
+</code></pre><p>Cancellare un file da git:</p>
+<pre><code><span class="hljs-attribute">git rm nomeFile</span>
+</code></pre><p>Il file ritorna allo stato precedente dell’ultimo commit:</p>
+<pre><code>git checkout <span class="hljs-comment">-- nomeFile</span>
+</code></pre><h1 id="lavorare-con-il-server-remoto">Lavorare con il server remoto</h1>
+<p>Aggiornare il tuo repository locale alla commit più recente:</p>
+<pre><code><span class="hljs-attribute">git pull</span>
+</code></pre><p>Se vogliamo fare l&#39;upload dei commit nel progetto usiamo:</p>
+<pre><code>git <span class="hljs-keyword">push</span> identificatoreServerRemoto nomeBranch
+<span class="hljs-symbol">Esempio:</span> git <span class="hljs-keyword">push</span> origin master
+</code></pre><p>Se vogliamo rinominare un file in remoto:</p>
+<pre><code>git remote <span class="hljs-built_in">rename</span> identificatoreServerRemoto nomeFileVecchio nomeFileNuovo
+</code></pre><p>Se vogliamo eliminare un file in remoto:</p>
+<pre><code><span class="hljs-attribute">git remote rm nomeFile</span>
+</code></pre><h1 id="stato-del-progetto">Stato del progetto</h1>
+<p>Per vedere le modifiche del progetto digitiamo:</p>
+<pre><code><span class="hljs-attribute">git status</span>
+</code></pre><p>Per vedere i cambiamenti dei singoli files digitiamo:</p>
+<pre><code><span class="hljs-attribute">git diff</span>
+</code></pre><p>Vedere tutti i commit:</p>
+<pre><code>git <span class="hljs-built_in">log</span>
+</code></pre><h1 id="gestire-i-tag">Gestire i tag</h1>
+<p>Per visualizzare tutte le versioni eseguimo il comando:</p>
+<pre><code>git <span class="hljs-keyword">tag</span>
+</code></pre><p>Per visualizzare tutte le versioni con un determinato numero:</p>
+<pre><code>git <span class="hljs-keyword">tag</span> <span class="hljs-title">-l</span> <span class="hljs-number">1</span>*
+</code></pre><p>Creazione di un tag:</p>
+<pre><code>git <span class="hljs-keyword">tag</span> <span class="hljs-title">-a</span> versioneSoftware -m <span class="hljs-string">"nota sul tag"</span>
+Esempio: git <span class="hljs-keyword">tag</span> <span class="hljs-title">-a</span> <span class="hljs-number">1.2</span>.<span class="hljs-number">3</span>rc1 -m <span class="hljs-string">"aggiornato la navbar"</span>
+</code></pre><p>Vedere tutte le modifiche di un tag:</p>
+<pre><code><span class="hljs-selector-tag">git</span> <span class="hljs-selector-tag">show</span> 1<span class="hljs-selector-class">.2</span><span class="hljs-selector-class">.3rc1</span>
+</code></pre><p>Condividere i tag:</p>
+<pre><code>git <span class="hljs-keyword">push</span> identificatoreServerRemoto tagDaPubblicare
+<span class="hljs-symbol">Esempio:</span> git <span class="hljs-keyword">push</span> origin <span class="hljs-number">1.2</span><span class="hljs-number">.3</span>rc1 
+</code></pre><p>Condividere tutti i tag:</p>
+<pre><code>git push identificatoreServerRemoto --<span class="hljs-keyword">tag</span>
+<span class="hljs-title">Esempio</span>: git push origin --<span class="hljs-keyword">tag</span>
+</code></pre><h1 id="gestire-i-branch">Gestire i Branch</h1>
+<p>Lista dei Rami:</p>
+<pre><code><span class="hljs-attribute">git branch</span>
+</code></pre><p>Creiamo un branch con:</p>
+<pre><code><span class="hljs-symbol">git</span> <span class="hljs-keyword">branch </span>nomeBranch
+<span class="hljs-symbol">Esempio</span>: git <span class="hljs-keyword">branch </span>feature
+</code></pre><p>Cambia i rami:</p>
+<pre><code>git checkout nomeBranch
+<span class="hljs-symbol">Esempio:</span> git checkout feature
+</code></pre><p>Per ritornare al branch originale digitiamo:</p>
+<pre><code>git checkout <span class="hljs-literal">master</span>
+</code></pre><p>Eliminare il ramo:</p>
+<pre><code><span class="hljs-symbol">git</span> <span class="hljs-keyword">branch </span>-d nomeBranch
+<span class="hljs-symbol">Esempio</span>: git <span class="hljs-keyword">branch </span>-d feature
+</code></pre><p>Crea il ramo e passa a quel branch:</p>
+<pre><code>git checkout -<span class="hljs-selector-tag">b</span> nomeBranch
+Esempio: git checkout -<span class="hljs-selector-tag">b</span> feature
+</code></pre><p>Per unire il branch al repository originale usiamo (ricordatevi di fare un commit nel branch):</p>
+<pre><code>git checkout <span class="hljs-keyword">master</span>
+<span class="hljs-title">git</span> merge feature
+</code></pre><h1 id="git-parameters-">Git Parameters:</h1>
+<p><strong><em>Inizializza l&#39;area di lavoro</em></strong></p>
+<pre><code><span class="hljs-keyword">clone</span>      <span class="hljs-title">Clona</span> un repository <span class="hljs-keyword">in</span> una cartella
+init       Crea un git repository o <span class="hljs-keyword">ne</span> inizializza uno
+</code></pre><p><strong><em>Lavorare nel progetto corrente</em></strong></p>
+<pre><code><span class="hljs-built_in">add</span>        Aggiungere i <span class="hljs-built_in">file</span> nel INDEX
+mv         Muove o rinomina un <span class="hljs-built_in">file</span>, una <span class="hljs-built_in">directory</span>
+reset      Resetta il corrente HEAD nello stato specificato
+rm         Rimuove i <span class="hljs-built_in">file</span> dalla <span class="hljs-built_in">directory</span> corrente e nel INDEX
+</code></pre><p><strong><em>Mostra la cronologia e lo stato</em></strong></p>
+<pre><code>bisect     <span class="hljs-keyword">Use</span> <span class="hljs-built_in">binary</span> <span class="hljs-keyword">search</span> <span class="hljs-keyword">to</span> find the <span class="hljs-keyword">commit</span> that introduced a bug
+grep       Print <span class="hljs-keyword">lines</span> matching a pattern
+<span class="hljs-keyword">log</span>        Mostra i <span class="hljs-keyword">commit</span> <span class="hljs-keyword">log</span>
+<span class="hljs-keyword">status</span>     stato del contenuto di un progetto
+<span class="hljs-keyword">show</span>       <span class="hljs-keyword">Show</span> various types <span class="hljs-keyword">of</span> objects
+</code></pre><p><strong><em>Grow, mark and tweak your common history</em></strong></p>
+<pre><code>branch     Visualizza, crea e elimina ramo (branches)
+checkout   Cambia ramo (branches) o ripristina la strotura dell'area di lavoro 
+<span class="hljs-keyword">commit</span>     Registra le modifiche del repository
+diff       Confronta i <span class="hljs-keyword">commit</span> (esp: <span class="hljs-keyword">commit</span> e area di lovoro)
+<span class="hljs-keyword">merge</span>      Unisce una o <span class="hljs-keyword">pi</span>ù cronologie di sviluppo
+rebase     Reapply commits <span class="hljs-keyword">on</span> top <span class="hljs-keyword">of</span> another base tip
+tag        Crea, visualizza la lista, elimina o verifica il tag della versione del progetto
+</code></pre><p><strong><em>Collabora</em></strong></p>
+<pre><code>fetch      Download objects <span class="hljs-keyword">and</span> refs <span class="hljs-built_in">from</span> another repository
+pull       Fetch <span class="hljs-built_in">from</span> <span class="hljs-keyword">and</span> integrate <span class="hljs-keyword">with</span> another repository <span class="hljs-keyword">or</span> <span class="hljs-keyword">a</span> <span class="hljs-built_in">local</span> branch
+push       Update remote refs along <span class="hljs-keyword">with</span> associated objects
+</code></pre><h1 id="crea-un-nuovo-repository-sulla-riga-di-comando">Crea un nuovo repository sulla riga di comando</h1>
+<pre><code>echo <span class="hljs-string">"# Web-front-end"</span> &gt;&gt; README.md
+git init
+git <span class="hljs-keyword">add</span><span class="bash"> README.md
+</span>git commit -m <span class="hljs-string">"first commit"</span>
+git branch -M main
+git remote <span class="hljs-keyword">add</span><span class="bash"> origin https://github.com/V1NX3R/Web-front-end.git
+</span>git push -u origin main
+</code></pre><h1 id="o-esegui-il-push-di-un-repository-esistente-dalla-riga-di-comando">o esegui il push di un repository esistente dalla riga di comando</h1>
+<pre><code><span class="hljs-symbol">git</span> remote <span class="hljs-keyword">add </span>origin https://github.com/V1NX3R/Web-front-<span class="hljs-meta">end</span>.git
+<span class="hljs-symbol">git</span> <span class="hljs-keyword">branch </span>-M main
+<span class="hljs-symbol">git</span> <span class="hljs-keyword">push </span>-u origin main
+</code></pre>
+</body>
+</html>
