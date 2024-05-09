@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JavaScript Cheat Sheet</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="../main.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li><a href="../index.html">Homepage</a></li>
+        <li><a href="markdownsheet.html">MARKDOWN_sheet</a></li>
+        <li><a href="gitsheet.html">GIT_sheet</a></li>
+        <li><a href="htmlsheet.html">HTML_sheet</a></li>
+      </ul>
+    </nav>
+
+    <div class="page_container">
+      <h1>JavaScript Cheat Sheet</h1>
+
+      <h2>Operatori di Comparazione</h2>
+      <hr />
+      <ul>
+        <li>
+          <strong>==</strong>: verifica l'uguaglianza "debole", consentendo la
+          coercizione dei tipi. <br />
+          Esempio: <code>5 == '5'</code> è vero.
+        </li>
+        <li>
+          <strong>===</strong>: verifica l'uguaglianza "rigorosa", dove i tipi
+          devono essere uguali oltre ai valori. <br />
+          Esempio: <code>5 === '5'</code> è falso.
+        </li>
+        <li>
+          <strong>!=</strong>: verifica la disuguaglianza "debole", simile a
+          <code>==</code> ma al contrario. <br />
+          Esempio: <code>5 != '5'</code> è falso.
+        </li>
+        <li>
+          <strong>!==</strong>: verifica la disuguaglianza "rigorosa", simile a
+          <code>===</code> ma al contrario. <br />
+          Esempio: <code>5 !== '5'</code> è vero.
+        </li>
+      </ul>
+
+      <h2>Variabili e Tipi di Dati</h2>
+      <hr />
+      <ul>
+        <li>
+          <strong>let</strong>: dichiara una variabile che può essere
+          riassegnata.
+        </li>
+        <li>
+          <strong>const</strong>: dichiara una costante (non modificabile).
+        </li>
+        <li>
+          <strong>var</strong>: dichiarazione di variabile (vecchio stile, non
+          raccomandato).
+        </li>
+        <li><strong>String</strong>: testo (racchiuso tra virgolette).</li>
+        <li><strong>Number</strong>: numeri interi o decimali.</li>
+        <li><strong>Boolean</strong>: valori vero o falso.</li>
+        <li><strong>null</strong>: indica un valore assente o vuoto.</li>
+        <li>
+          <strong>undefined</strong>: indica una variabile dichiarata ma senza
+          valore assegnato.
+        </li>
+      </ul>
+      <code>
+        let nome = 'Mario'; <br />
+        const eta = 30; <br />
+        var indirizzo = 'Via Roma'; <br />
+        let isOnline = true; <br />
+        let prezzo = 9.99; <br />
+        let nulla = null; <br />
+        let senzaDefinizione; // undefined
+      </code>
+
+      <h2>Funzioni</h2>
+      <hr />
+      <ul>
+        <li><strong>function</strong>: dichiara una funzione.</li>
+        <li>
+          <strong>arrow function</strong>: sintassi breve per le funzioni.
+        </li>
+        <li>
+          <strong>high-order functions</strong>: funzioni che prendono altre
+          funzioni come parametri o restituiscono funzioni.
+        </li>
+        <li>
+          <strong>callback</strong>: una funzione passata come argomento a
+          un'altra funzione.
+        </li>
+      </ul>
+      <code>
+        function saluta(nome) { <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;return 'Ciao ' + nome; <br />
+        } <br /><br />
+        const add = (a, b) => a + b; <br /><br />
+        function eseguiCallback(callback) { <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;callback('Funzione di callback'); <br />
+        } <br />
+        eseguiCallback(console.log); // Funzione di callback
+      </code>
+
+      <h2>Array</h2>
+      <hr />
+      <ul>
+        <li>
+          <strong>Inizializzazione</strong>: Crea un array con valori iniziali.
+          <br />
+          <code>
+            let arr = [1, 2, 3, 4, 5]; <br />
+            let arrVuoto = []; <br />
+          </code>
+        </li>
+        <li>
+          <strong>Accesso agli elementi</strong>: Accesso agli elementi di un
+          array per indice. <br />
+          <code>
+            let primoElemento = arr[0]; // 1 <br />
+            let ultimoElemento = arr[arr.length - 1]; // 5 <br />
+          </code>
+        </li>
+        <li>
+          <strong>Array.push</strong>: Aggiunge uno o più elementi alla fine di
+          un array. <br />
+          <code> arr.push(6); // [1, 2, 3, 4, 5, 6] <br /> </code>
+        </li>
+        <li>
+          <strong>Array.pop</strong>: Rimuove l'ultimo elemento di un array.
+          <br />
+          <code>
+            let rimosso = arr.pop(); // 6 <br />
+            console.log(arr); // [1, 2, 3, 4, 5] <br />
+          </code>
+        </li>
+        <li>
+          <strong>Array.slice</strong>: Restituisce una parte di un array senza
+          modificarlo. <br />
+          <code> let slice = arr.slice(1, 3); // [2, 3] <br /> </code>
+        </li>
+        <li>
+          <strong>Array.splice</strong>: Aggiunge o rimuove elementi in un
+          array. <br />
+          <code>
+            arr.splice(2, 1); // Rimuove un elemento all'indice 2 <br />
+          </code>
+        </li>
+        <li>
+          <strong>Array.concat</strong>: Unisce due o più array. <br />
+          <code>
+            let arr2 = [6, 7, 8]; <br />
+            let unione = arr.concat(arr2); // [1, 2, 3, 4, 5, 6, 7, 8] <br />
+          </code>
+        </li>
+        <li>
+          <strong>Array.indexOf</strong>: Restituisce l'indice di un elemento
+          nell'array. <br />
+          <code> let indice = arr.indexOf(3); // 2 <br /> </code>
+        </li>
+        <li>
+          <strong>Array.includes</strong>: Controlla se un array contiene un
+          elemento specifico. <br />
+          <code> let haDue = arr.includes(2); // true <br /> </code>
+        </li>
+      </ul>
+
+      <h2>Manipolazione del DOM</h2>
+      <hr />
+      <ul>
+        <li>
+          <strong>document.getElementById</strong>: Ottiene un elemento per ID.
+        </li>
+        <li>
+          <strong>document.querySelector</strong>: Ottiene il primo elemento che
+          corrisponde a un selettore CSS.
+        </li>
+        <li>
+          <strong>document.querySelectorAll</strong>: Ottiene tutti gli elementi
+          che corrispondono a un selettore CSS.
+        </li>
+        <li>
+          <strong>addEventListener</strong>: Aggiunge un listener per gli
+          eventi.
+        </li>
+        <li>
+          <strong>removeEventListener</strong>: Rimuove un listener per gli
+          eventi.
+        </li>
+        <li>
+          <strong>setAttribute</strong>: Imposta un attributo su un elemento.
+        </li>
+        <li>
+          <strong>getAttribute</strong>: Ottiene un attributo di un elemento.
+        </li>
+        <li><strong>removeChild</strong>: Rimuove un elemento dal DOM.</li>
+        <li>
+          <strong>cloneNode</strong>: Crea una copia di un nodo. Passando `true`
+          copia anche i nodi figli; `false` copia solo il nodo stesso.
+        </li>
+      </ul>
+      <code>
+        let elemento = document.querySelector('.myClass'); <br />
+        elemento.setAttribute('title', 'Nuovo titolo'); <br />
+        console.log(elemento.getAttribute('title')); // "Nuovo titolo"
+        <br /><br />
+
+        let elementoPadre = document.getElementById('parent'); <br />
+        let elementoFiglio = document.querySelector('.child'); <br />
+        elementoPadre.removeChild(elementoFiglio); <br /><br />
+
+        let nodoOriginale = document.getElementById('original'); <br />
+        let nodoCopia = nodoOriginale.cloneNode(false); // Copia solo il nodo
+        stesso senza eventi
+      </code>
+
+      <h2>Console</h2>
+      <hr />
+      <ul>
+        <li><strong>console.log</strong>: Stampa messaggi o variabili.</li>
+        <li><strong>console.error</strong>: Stampa errori.</li>
+        <li><strong>console.warn</strong>: Stampa avvisi.</li>
+      </ul>
+      <code>
+        console.log('Messaggio di log'); <br />
+        console.error('Errore'); <br />
+        console.warn('Avviso');
+      </code>
+    </div>
+
+    <footer class="insidefooter">
+      <ul>
+        <li><a href="../index.html">Homepage</a></li>
+        <li><a href="markdownsheet.html">MARKDOWN_sheet</a></li>
+        <li><a href="gitsheet.html">GIT_sheet</a></li>
+        <li><a href="htmlsheet.html">HTML_sheet</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>

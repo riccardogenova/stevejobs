@@ -92,6 +92,7 @@ li {
 .container {
   background-image: url(logo.png);
   background-size: 215vh;
+  background-repeat: no-repeat;
 }
 
 .page_container {
