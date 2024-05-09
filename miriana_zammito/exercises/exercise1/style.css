@@ -1,0 +1,32 @@
+section {
+  display: flex;
+  justify-content: center;
+  color: rgba(60, 63, 63, 0.656);
+  text-align: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 5vh;
+}
+
+.container {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 50%;
+}
+
+button {
+  background-color: #00798c;
+  font-size: 5vh;
+  color: white;
+  border: none;
+  width: 10vh;
+  height: 10vh;
+  margin: 10vh;
+  cursor: pointer;
+}

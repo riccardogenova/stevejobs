@@ -37,7 +37,7 @@ h4 {
 
 p {
   color: #797c82;
-  font-size: 3vh;
+  font-size: 2.5vh;
   text-align: justify;
   text-justify: inter-word;
 }
@@ -54,7 +54,7 @@ p {
 }
 
 .interno {
-  /* position: relative; /*se ci son 2 div e voglio spostare secondo div interno in base al primo*/
+  /* position: relative, se ci son 2 div e voglio spostare secondo div interno in base al primo*/
   background-color: white;
   text-align: center;
   width: 52%;
@@ -62,7 +62,7 @@ p {
   margin: auto;
 }
 .interno-2 {
-  /* position: absolute; /*se ci son 2 div e voglio spostare secondo div interno in base al primo*/
+  /* position: absolute, se ci son 2 div e voglio spostare secondo div interno in base al primo*/
   background-color: #fbd35e;
   opacity: 0.3;
   text-align: center;
@@ -132,13 +132,7 @@ button {
   cursor: pointer;
   width: 100px;
   overflow: hidden;
-  /* Altri stili per il pulsante */
 }
-
-/* Effetto hover per il pulsante */
-/*button:hover {
-  background-color: #fbd35e; /* Cambia colore di sfondo al passaggio del mouse 
-}*/
 
 /* Stile per un pulsante disabilitato */
 button:disabled {
@@ -169,7 +163,7 @@ button:disabled {
   text-decoration: center;
   padding: 14px 15px;
   text-decoration: none;
-  font-size: 3vh;
+  font-size: 2vh;
 }
 
 .navbar a:hover {
@@ -178,46 +172,12 @@ button:disabled {
   border-radius: 25px;
 }
 
-/*
-.navbar ul li a::after {
-  content: "";
-  width: 0%;
-  height: 2px;
-  background: #e56b6f;
-  display: block;
-  margin: auto;
-  transition: 0.5s;
-}
-
-.navbar ul li a:hover::after {
-  width: 100%;
-  border-radius: 5px;
-}
-
-.navbar ul li a:hover {
-  font-weight: 800;
-  font-size: 25px;
-}
-*/
-
-/*====================================================================*/
-/*
-a {
-  text-decoration: none;
-  color: white;
-}
-
-a:hover {
-  text-decoration: underline;
-  color: white;
-}*/
-
 /*=========================================================================*/
 
 .hero-testo {
   position: absolute;
   text-align: center;
-  font-size: 9vh;
+  font-size: 8.5vh;
   top: 60%;
   left: 50%;
   /* Usa 'transform' per centrare esattamente il testo nel div */
