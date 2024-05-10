@@ -16,31 +16,31 @@ function onFind(elements, index, array) {
 people.findIndex(onFind);
 
 //4
-const numbers = [1, 2, 3, 4, 5];
+const numbers2 = [1, 2, 3, 4, 5];
 
 function onReduce(acc, elements, index, array) {
   acc = index + elements;
   return acc;
 }
 
-numbers.reduce(onReduce, 0);
+numbers2.reduce(onReduce, 0);
 
 //3
-const people = [
+const people2 = [
   { name: 'Alice', age: '25' },
   { name: 'Bob', age: '17' },
   { name: 'Charlie', age: '20' },
 ];
 
-function onFind(elements, index, array) {
+function onFind2(elements) {
   if (elements.age < 18) {
     return elements.name;
   }
 }
 
-people.find(onFind);
+people2.find(onFind2);
 //2
-const numbers = ['1', '2', '3', '4', '5'];
+const numbers3 = ['1', '2', '3', '4', '5'];
 
 function onFilter(elements, index, array) {
   if (elements % 2 == 1 && elements > 3) {
@@ -48,32 +48,32 @@ function onFilter(elements, index, array) {
   }
 }
 
-numbers.filter(onFilter);
+numbers3.filter(onFilter);
 //1
-const numbers = ['1', '2', '3', '4'];
+const numbers4 = ['1', '2', '3', '4'];
 
 function onMap(elements, index, array) {
   return elements * 3;
 }
 
-numbers.map(onMap);
+numbers4.map(onMap);
 
 //6
-const people = [
+const people4 = [
   { name: 'Alice', age: 25 },
   { name: 'Bob', age: 17 },
   { name: 'Charlie', age: 20 },
   { name: 'David', age: 30 },
 ];
-const people2 = [];
+const people5 = [];
 
-function onFilter(elements, index, array) {
+function onFilter3(elements, index, array) {
   if (elements.age >= 20) {
-    people2.push(elements.name);
+    people5.push(elements.name);
   }
 }
 
-people.filter(onFilter);
+people5.filter(onFilter3);
 
 //7
 
@@ -84,35 +84,35 @@ const purchases = [
   { customer: 'Charlie', price: 25 },
 ];
 
-function onReduce(acc, elements, index, array) {
+function onReduce3(acc, elements, index, array) {
   if (elements.customer == 'Alice') {
     acc = elements.price + acc;
   }
   return acc;
 }
 
-purchases.reduce(onReduce, 0);
+purchases.reduce(onReduce3, 0);
 
 //8
-const people = ['Alice', 'Bob', 'Charlie', 'Alice'];
+const people6 = ['Alice', 'Bob', 'Charlie', 'Alice'];
 
-function onFindIndex(elements, index, array) {
+function onFindIndex(elements) {
   if (elements.startsWith('B')) {
     return true;
   } else return false;
 }
 
-people.findIndex(onFindIndex);
+people6.findIndex(onFindIndex);
 
 //9
 
 const words = ['mela', 'banana', 'gatto', 'cane', 'elefante'];
 
-function onReduce(acc, elements, index, array) {
+function onReduce4(acc, elements) {
   if (elements.startsWith('e')) {
     acc = elements.length + acc;
   }
   return acc;
 }
 
-words.reduce(onReduce, 0);
+words.reduce(onReduce4, 0);

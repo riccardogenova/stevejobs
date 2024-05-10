@@ -6,7 +6,7 @@
 
 const numbers = [1, 2, 3, 4, 5];
 
-function triple(element, index, array) {
+function triple(element) {
   return element * 3;
 }
 
@@ -18,7 +18,7 @@ console.log(tripleNumbers);
 
 const numbers2 = [1, 2, 3, 4, 5, 6, 7, 23];
 
-function odd(element, index, array) {
+function odd(element) {
   if (element % 2 != 0 && element > 3) return true;
   return false;
 }
@@ -35,7 +35,7 @@ const people = [
   { name: 'Charlie', age: 20 },
 ];
 
-function underage(element, index, array) {
+function underage(element) {
   if (element.age < 18) return true;
   return false;
 }
@@ -48,7 +48,7 @@ console.log(underagePeople);
 
 const numbers3 = [1, 2, 3, 4, 5, 5, 200, 23];
 
-function sum(acc, element, index, array) {
+function sum(acc, element) {
   acc += element;
   return acc;
 }
@@ -65,13 +65,13 @@ const people2 = [
   { name: 'Charlie', age: 20 },
 ];
 
-function index(element, index, array) {
+function index(element) {
   if (element.age >= 18 && element.age <= 24) return true;
   return false;
 }
 
 const peopleIndex = people2.findIndex(index);
-
+console.log(peopleIndex);
 // Esercizi Complessi
 
 // 1.Data un'array di persone, crea un nuovo array contenente solo i nomi delle persone di età maggiore di 20 anni.
@@ -83,7 +83,7 @@ const people3 = [
   { name: 'David', age: 30 },
 ];
 
-function over20(element, index, array) {
+function over20(element) {
   if (element.age > 20) return element.name;
 }
 
@@ -100,33 +100,33 @@ const purchases = [
   { customer: 'Charlie', price: 25 },
 ];
 
-function totalPrice(acc, element, index, array) {
+function totalPrice(acc, element) {
   if (element.customer === 'Alice') return (acc += element.price);
   return acc;
 }
 
 const alicePurchases = purchases.filter(totalPrice).map(totalPrice).reduce(totalPrice, 0);
-
+console.log(alicePurchases);
 //  3.Data un'array di persone, trova l'indice della prima persona il cui nome inizia con la B
 
 const people4 = ['Alice', 'Bob', 'Charlie', 'Alice'];
 
-function indexB(element, index, array) {
+function indexB(element) {
   if (element.startsWith('B')) return true;
   return false;
 }
 
 const nameB = people4.findIndex(indexB);
-
+console.log(nameB);
 // 4.Data un'array di parole, calcola la somma delle lunghezze delle parole che iniziano con la e
 
 const words = ['mela', 'banana', 'gatto', 'cane', 'elefante'];
 
-function findE(element, index, array) {
+function findE(element) {
   if (element.startsWith('e')) return element;
 }
 
-function sumLength(acc, element, index, array) {
+function sumLength(acc, element) {
   acc += element.length;
   return acc;
 }
@@ -139,7 +139,7 @@ console.log(letterE);
 
 const numbers4 = [1, 4, 9, 16, 25];
 
-function sumSqrt(acc, element, index, array) {
+function sumSqrt(acc, element) {
   acc += Math.sqrt(element);
   return acc;
 }

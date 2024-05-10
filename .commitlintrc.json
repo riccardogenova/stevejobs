@@ -1,0 +1,34 @@
+{
+  "extends": ["@commitlint/config-conventional"],
+  "rules": {
+    "header-max-length": [2, "always", 100],
+    "type-enum": [2, "always", ["chore", "docs", "feat", "fix", "refactor"]],
+    "scope-case": [2, "always", "lower-case"],
+    "scope-enum": [
+      2,
+      "always",
+      [
+        "maintainer",
+        "alessandra_lo_coco",
+        "alessandro_di_benedetto",
+        "alessio_di_noto",
+        "andrea_militano",
+        "angelo_lo_presti",
+        "antonio_castagna",
+        "carmelo_panepinto",
+        "christian_suriano",
+        "daniele_ruoppolo",
+        "emanuele_fava",
+        "fabio_arena",
+        "federico_costanzo",
+        "francesco_gaziano",
+        "francesco_urso",
+        "mattia_scichilone",
+        "miriana_zammito",
+        "samuel_messina",
+        "valerio_bottari",
+        "vincenzo_camonita"
+      ]
+    ]
+  }
+}

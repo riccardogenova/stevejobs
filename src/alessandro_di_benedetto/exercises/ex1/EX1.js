@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var flag = 0;
 
   plusButton.addEventListener('click', function () {
-    counter++;
+    // counter++;
     contatore.textContent = flag;
   });
 
