@@ -1,3 +1,5 @@
+<!-- @format -->
+
 <!-- Questo è un commento che verrà ignorato durante la visualizzazione -->
 
 <!-- Simbologia -->

@@ -1,3 +1,5 @@
+<!-- @format -->
+
 <!doctype html>
 <html lang="it">
   <head>
@@ -82,52 +84,36 @@
       <h2 id="struttura">Struttura di Base</h2>
       <section class="pointer">
         <ul>
+          <li><code>&lt;!DOCTYPE&gt;</code>: Definisce il tipo di documento HTML e la sua versione.</li>
+          <li><code>&lt;html&gt;</code>: Il contenitore radice di un documento HTML.</li>
           <li>
-            <code>&lt;!DOCTYPE&gt;</code>: Definisce il tipo di documento HTML e
-            la sua versione.
+            <code>&lt;head&gt;</code>: Contiene metadati (come il titolo della pagina, collegamenti a fogli di stile e
+            script) che non vengono visualizzati direttamente nella pagina web.
           </li>
           <li>
-            <code>&lt;html&gt;</code>: Il contenitore radice di un documento
-            HTML.
+            <code>&lt;title&gt;</code>: Definisce il titolo della pagina, che appare nella barra del titolo del browser.
+          </li>
+          <li><code>&lt;body&gt;</code>: Contiene il contenuto visibile della pagina web.</li>
+          <li>
+            <code>&lt;meta&gt;</code>: Definisce metadati aggiuntivi che non vengono visualizzati direttamente nella
+            pagina, come la codifica dei caratteri, la descrizione della pagina per i motori di ricerca, i tag delle
+            parole chiave, ecc.
           </li>
           <li>
-            <code>&lt;head&gt;</code>: Contiene metadati (come il titolo della
-            pagina, collegamenti a fogli di stile e script) che non vengono
-            visualizzati direttamente nella pagina web.
+            <code>&lt;link&gt;</code>: Collega il documento HTML a un foglio di stile esterno (CSS) o a altre risorse
+            esterne come icone del sito, font, file di script, ecc
           </li>
           <li>
-            <code>&lt;title&gt;</code>: Definisce il titolo della pagina, che
-            appare nella barra del titolo del browser.
+            <code>&lt;script&gt;</code>: Utilizzato per inserire script JavaScript all'interno della pagina HTML o per
+            collegare script esterni.
           </li>
           <li>
-            <code>&lt;body&gt;</code>: Contiene il contenuto visibile della
-            pagina web.
+            <code>&lt;style&gt;</code>: Definisce stili CSS direttamente all'interno del documento HTML, per regolare
+            l'aspetto e la formattazione del contenuto.
           </li>
           <li>
-            <code>&lt;meta&gt;</code>: Definisce metadati aggiuntivi che non
-            vengono visualizzati direttamente nella pagina, come la codifica dei
-            caratteri, la descrizione della pagina per i motori di ricerca, i
-            tag delle parole chiave, ecc.
-          </li>
-          <li>
-            <code>&lt;link&gt;</code>: Collega il documento HTML a un foglio di
-            stile esterno (CSS) o a altre risorse esterne come icone del sito,
-            font, file di script, ecc
-          </li>
-          <li>
-            <code>&lt;script&gt;</code>: Utilizzato per inserire script
-            JavaScript all'interno della pagina HTML o per collegare script
-            esterni.
-          </li>
-          <li>
-            <code>&lt;style&gt;</code>: Definisce stili CSS direttamente
-            all'interno del documento HTML, per regolare l'aspetto e la
-            formattazione del contenuto.
-          </li>
-          <li>
-            <code>&lt;base&gt;</code>: Definisce l'URL di base per risorse
-            relative all'interno della pagina, come collegamenti ipertestuali e
-            immagini.
+            <code>&lt;base&gt;</code>: Definisce l'URL di base per risorse relative all'interno della pagina, come
+            collegamenti ipertestuali e immagini.
           </li>
         </ul>
       </section>
@@ -135,8 +121,7 @@
       <section class="pointer">
         <ul>
           <li>
-            <code>&lt;h1&gt;, &lt;h2&gt;, ..., &lt;h6&gt;</code>: Definisce i
-            titoli di diversi livelli di importanza.
+            <code>&lt;h1&gt;, &lt;h2&gt;, ..., &lt;h6&gt;</code>: Definisce i titoli di diversi livelli di importanza.
           </li>
           <li><code>&lt;p&gt;</code>: Definisce un paragrafo di testo.</li>
           <li><code>&lt;a&gt;</code>: Crea un link ipertestuale.</li>
@@ -144,56 +129,44 @@
           <li><code>&lt;em&gt;</code>: Rende il testo in corsivo.</li>
           <li><code>&lt;u&gt;</code>: Sottolinea il testo.</li>
           <li>
-            <code>&lt;span&gt;</code>: Definisce un'area di testo in linea o un
-            gruppo di elementi in linea. Viene spesso utilizzato per applicare
-            stili o manipolare parti specifiche del testo.
+            <code>&lt;span&gt;</code>: Definisce un'area di testo in linea o un gruppo di elementi in linea. Viene
+            spesso utilizzato per applicare stili o manipolare parti specifiche del testo.
           </li>
           <li>
-            <code>&lt;br&gt;</code>: Inserisce un'interruzione di riga, forzando
-            il testo successivo a scendere alla riga successiva. È utile quando
-            si desidera inserire una nuova linea senza creare un nuovo
-            paragrafo.
+            <code>&lt;br&gt;</code>: Inserisce un'interruzione di riga, forzando il testo successivo a scendere alla
+            riga successiva. È utile quando si desidera inserire una nuova linea senza creare un nuovo paragrafo.
           </li>
           <li>
-            <code>&lt;pre&gt;</code>: Definisce il testo preformattato,
-            mantenendo la formattazione originale, come spazi e ritorni a capo.
-            Utile per la visualizzazione di codice o testo formattato.
+            <code>&lt;pre&gt;</code>: Definisce il testo preformattato, mantenendo la formattazione originale, come
+            spazi e ritorni a capo. Utile per la visualizzazione di codice o testo formattato.
           </li>
           <li>
-            <code>&lt;blockquote&gt;</code>: Definisce un blocco di citazione,
-            solitamente visualizzato con un margine sinistro più ampio. Spesso
-            utilizzato per citazioni di testo da altre fonti.
+            <code>&lt;blockquote&gt;</code>: Definisce un blocco di citazione, solitamente visualizzato con un margine
+            sinistro più ampio. Spesso utilizzato per citazioni di testo da altre fonti.
           </li>
           <li>
-            <code>&lt;cite&gt;</code>: Definisce il titolo di una fonte citata,
-            come un libro, un articolo o un'altra risorsa. Di solito è
-            visualizzato in corsivo.
+            <code>&lt;cite&gt;</code>: Definisce il titolo di una fonte citata, come un libro, un articolo o un'altra
+            risorsa. Di solito è visualizzato in corsivo.
           </li>
           <li>
-            <code>&lt;code&gt;</code>: Definisce il testo come codice di
-            programmazione, mostrandolo con una formattazione monospazio. Utile
-            per mostrare esempi di codice all'interno di un paragrafo.
+            <code>&lt;code&gt;</code>: Definisce il testo come codice di programmazione, mostrandolo con una
+            formattazione monospazio. Utile per mostrare esempi di codice all'interno di un paragrafo.
           </li>
           <li>
-            <code>&lt;sub&gt;</code>: Definisce il testo come esponente,
-            posizionandolo leggermente più in basso della linea di base. Spesso
-            utilizzato per indicare pedici.
+            <code>&lt;sub&gt;</code>: Definisce il testo come esponente, posizionandolo leggermente più in basso della
+            linea di base. Spesso utilizzato per indicare pedici.
           </li>
           <li>
-            <code>&lt;sup&gt;</code>: Definisce il testo come apice,
-            posizionandolo leggermente più in alto della linea di base. Spesso
-            utilizzato per indicare numeri ordinali o esponenti.
+            <code>&lt;sup&gt;</code>: Definisce il testo come apice, posizionandolo leggermente più in alto della linea
+            di base. Spesso utilizzato per indicare numeri ordinali o esponenti.
           </li>
           <li>
-            Il testo è racchiuso all'interno di un paragrafo &lt;p&gt;. I
-            caratteri &lt; e &gt; all'interno del testo sono sostituiti con
-            &amp;lt; e &amp;gt; rispettivamente per evitare che vengano
-            interpretati come tag HTML.
+            Il testo è racchiuso all'interno di un paragrafo &lt;p&gt;. I caratteri &lt; e &gt; all'interno del testo
+            sono sostituiti con &amp;lt; e &amp;gt; rispettivamente per evitare che vengano interpretati come tag HTML.
           </li>
           <li>
-            <code>&amp;amp;</code> in HTML puoi utilizzare la sequenza di escape
-            &amp;amp;. In questo modo, il browser interpreterà &amp;amp; come
-            &amp; e non come un'entità HTML.
+            <code>&amp;amp;</code> in HTML puoi utilizzare la sequenza di escape &amp;amp;. In questo modo, il browser
+            interpreterà &amp;amp; come &amp; e non come un'entità HTML.
           </li>
         </ul>
       </section>
@@ -203,33 +176,29 @@
           <li><code>&lt;ul&gt;</code>: Definisce un elenco non ordinato.</li>
           <li><code>&lt;ol&gt;</code>: Definisce un elenco ordinato.</li>
           <li>
-            <code>&lt;li&gt;</code>: Definisce un elemento di un elenco (usato
-            all'interno di <code>&lt;ul&gt;</code> o <code>&lt;ol&gt;</code>).
+            <code>&lt;li&gt;</code>: Definisce un elemento di un elenco (usato all'interno di <code>&lt;ul&gt;</code> o
+            <code>&lt;ol&gt;</code>).
           </li>
           <li>
-            <code>&lt;dl&gt;</code>: Definisce una lista di definizioni,
-            composta da coppie di termini (<code>&lt;dt&gt;</code>) e le loro
-            definizioni (<code>&lt;dd&gt;</code>).
+            <code>&lt;dl&gt;</code>: Definisce una lista di definizioni, composta da coppie di termini
+            (<code>&lt;dt&gt;</code>) e le loro definizioni (<code>&lt;dd&gt;</code>).
           </li>
           <li>
-            <code>&lt;dt&gt;</code>: Definisce un termine o un elemento di una
-            lista di definizioni (<code>&lt;dl&gt;</code>).
+            <code>&lt;dt&gt;</code>: Definisce un termine o un elemento di una lista di definizioni
+            (<code>&lt;dl&gt;</code>).
           </li>
           <li>
-            <code>&lt;dd&gt;</code>: Definisce la definizione di un termine o di
-            un elemento di una lista di definizioni (<code>&lt;dl&gt;</code>).
+            <code>&lt;dd&gt;</code>: Definisce la definizione di un termine o di un elemento di una lista di definizioni
+            (<code>&lt;dl&gt;</code>).
+          </li>
+          <li><code>&lt;menu&gt;</code>: Definisce un elenco di comandi o opzioni di menu.</li>
+          <li>
+            <code>&lt;dir&gt;</code>: <strong>Obsoleto</strong> in HTML5, ma in passato veniva utilizzato per definire
+            un elenco di directory.
           </li>
           <li>
-            <code>&lt;menu&gt;</code>: Definisce un elenco di comandi o opzioni
-            di menu.
-          </li>
-          <li>
-            <code>&lt;dir&gt;</code>: <strong>Obsoleto</strong> in HTML5, ma in
-            passato veniva utilizzato per definire un elenco di directory.
-          </li>
-          <li>
-            <code>&lt;menuitem&gt;</code>: Definisce un elemento di menu
-            all'interno di un elemento <code>&lt;menu&gt;</code>.
+            <code>&lt;menuitem&gt;</code>: Definisce un elemento di menu all'interno di un elemento
+            <code>&lt;menu&gt;</code>.
           </li>
         </ul>
       </section>
@@ -237,38 +206,29 @@
       <section class="pointer">
         <ul>
           <li><code>&lt;img&gt;</code>: Inserisce un'immagine nella pagina.</li>
+          <li><code>&lt;audio&gt;</code>: Inserisce un file audio nella pagina.</li>
+          <li><code>&lt;video&gt;</code>: Inserisce un file video nella pagina.</li>
           <li>
-            <code>&lt;audio&gt;</code>: Inserisce un file audio nella pagina.
+            <code>&lt;iframe&gt;</code>: Incorpora una finestra di navigazione secondaria all'interno di una pagina web,
+            consentendo di visualizzare contenuti provenienti da un'altra fonte.
           </li>
           <li>
-            <code>&lt;video&gt;</code>: Inserisce un file video nella pagina.
+            <code>&lt;embed&gt;</code>: Incorpora contenuti multimediali, come file audio o video, direttamente
+            all'interno di una pagina web.
           </li>
           <li>
-            <code>&lt;iframe&gt;</code>: Incorpora una finestra di navigazione
-            secondaria all'interno di una pagina web, consentendo di
-            visualizzare contenuti provenienti da un'altra fonte.
+            <code>&lt;object&gt;</code>: Definisce un oggetto incorporato all'interno di una pagina web, che può
+            includere varie forme di contenuto multimediale, come file audio, video, Flash, ecc.
           </li>
           <li>
-            <code>&lt;embed&gt;</code>: Incorpora contenuti multimediali, come
-            file audio o video, direttamente all'interno di una pagina web.
+            <code>&lt;source&gt;</code>: Definisce risorse multimediali alternative per essere utilizzate da elementi
+            come <code>&lt;audio&gt;</code> e <code>&lt;video&gt;</code>. È utile per fornire supporto a più formati di
+            file multimediali.
           </li>
           <li>
-            <code>&lt;object&gt;</code>: Definisce un oggetto incorporato
-            all'interno di una pagina web, che può includere varie forme di
-            contenuto multimediale, come file audio, video, Flash, ecc.
-          </li>
-          <li>
-            <code>&lt;source&gt;</code>: Definisce risorse multimediali
-            alternative per essere utilizzate da elementi come
-            <code>&lt;audio&gt;</code> e <code>&lt;video&gt;</code>. È utile per
-            fornire supporto a più formati di file multimediali.
-          </li>
-          <li>
-            <code>&lt;track&gt;</code>: Definisce sottotitoli, tracce audio o
-            tracce di testo per elementi multimediali come
-            <code>&lt;audio&gt;</code> e <code>&lt;video&gt;</code>. È
-            utilizzato per fornire supporto per la sottotitolazione e la
-            trascrizione del testo.
+            <code>&lt;track&gt;</code>: Definisce sottotitoli, tracce audio o tracce di testo per elementi multimediali
+            come <code>&lt;audio&gt;</code> e <code>&lt;video&gt;</code>. È utilizzato per fornire supporto per la
+            sottotitolazione e la trascrizione del testo.
           </li>
         </ul>
       </section>
@@ -276,89 +236,55 @@
       <section class="pointer">
         <ul>
           <li><code>&lt;table&gt;</code>: Definisce una tabella.</li>
+          <li><code>&lt;tr&gt;</code>: Definisce una riga all'interno di una tabella.</li>
+          <li><code>&lt;td&gt;</code>: Definisce una cella dati all'interno di una riga di tabella.</li>
+          <li><code>&lt;th&gt;</code>: Definisce una cella intestazione all'interno di una riga di tabella.</li>
           <li>
-            <code>&lt;tr&gt;</code>: Definisce una riga all'interno di una
-            tabella.
+            <code>&lt;caption&gt;</code>: Definisce il titolo o la descrizione di una tabella. Viene solitamente
+            posizionato all'inizio della tabella, prima di qualsiasi riga o cella.
           </li>
           <li>
-            <code>&lt;td&gt;</code>: Definisce una cella dati all'interno di una
-            riga di tabella.
+            <code>&lt;colgroup&gt;</code>: Definisce un gruppo di colonne all'interno di una tabella, consentendo di
+            applicare stili o altre proprietà a un insieme di colonne.
           </li>
           <li>
-            <code>&lt;th&gt;</code>: Definisce una cella intestazione
-            all'interno di una riga di tabella.
+            <code>&lt;col&gt;</code>: Definisce una singola colonna all'interno di un gruppo di colonne
+            (<code>&lt;colgroup&gt;</code>). Viene utilizzato per specificare larghezza, stili e altre proprietà per una
+            colonna specifica.
           </li>
           <li>
-            <code>&lt;caption&gt;</code>: Definisce il titolo o la descrizione
-            di una tabella. Viene solitamente posizionato all'inizio della
-            tabella, prima di qualsiasi riga o cella.
+            <code>&lt;thead&gt;</code>: Definisce l'intestazione di una tabella, contenente righe
+            (<code>&lt;tr&gt;</code>) di celle di intestazione (<code>&lt;th&gt;</code>). È utilizzato per identificare
+            le righe di intestazione della tabella.
           </li>
           <li>
-            <code>&lt;colgroup&gt;</code>: Definisce un gruppo di colonne
-            all'interno di una tabella, consentendo di applicare stili o altre
-            proprietà a un insieme di colonne.
+            <code>&lt;tbody&gt;</code>: Definisce il corpo principale di una tabella, contenente righe
+            (<code>&lt;tr&gt;</code>) di celle di dati (<code>&lt;td&gt;</code>). È utilizzato per identificare le righe
+            di dati della tabella, separate dall'intestazione.
           </li>
           <li>
-            <code>&lt;col&gt;</code>: Definisce una singola colonna all'interno
-            di un gruppo di colonne (<code>&lt;colgroup&gt;</code>). Viene
-            utilizzato per specificare larghezza, stili e altre proprietà per
-            una colonna specifica.
-          </li>
-          <li>
-            <code>&lt;thead&gt;</code>: Definisce l'intestazione di una tabella,
-            contenente righe (<code>&lt;tr&gt;</code>) di celle di intestazione
-            (<code>&lt;th&gt;</code>). È utilizzato per identificare le righe di
-            intestazione della tabella.
-          </li>
-          <li>
-            <code>&lt;tbody&gt;</code>: Definisce il corpo principale di una
-            tabella, contenente righe (<code>&lt;tr&gt;</code>) di celle di dati
-            (<code>&lt;td&gt;</code>). È utilizzato per identificare le righe di
-            dati della tabella, separate dall'intestazione.
-          </li>
-          <li>
-            <code>&lt;tfoot&gt;</code>: Definisce il piè di pagina di una
-            tabella, contenente righe (<code>&lt;tr&gt;</code>) di celle di
-            riassunto o di totale (<code>&lt;td&gt;</code> o
-            <code>&lt;th&gt;</code>). È utilizzato per identificare le righe di
-            riepilogo o di totale della tabella.
+            <code>&lt;tfoot&gt;</code>: Definisce il piè di pagina di una tabella, contenente righe
+            (<code>&lt;tr&gt;</code>) di celle di riassunto o di totale (<code>&lt;td&gt;</code> o
+            <code>&lt;th&gt;</code>). È utilizzato per identificare le righe di riepilogo o di totale della tabella.
           </li>
         </ul>
       </section>
       <h2 id="form">Form</h2>
       <section class="pointer">
         <ul>
-          <li>
-            <code>&lt;form&gt;</code>: Definisce un modulo per la raccolta di
-            input utente.
-          </li>
+          <li><code>&lt;form&gt;</code>: Definisce un modulo per la raccolta di input utente.</li>
           <li><code>&lt;input&gt;</code>: Definisce un campo di input.</li>
-          <li>
-            <code>&lt;textarea&gt;</code>: Definisce un'area di testo
-            multi-riga.
-          </li>
-          <li>
-            <code>&lt;button&gt;</code>: Definisce un pulsante cliccabile.
-          </li>
-          <li>
-            <code>&lt;label&gt;</code>: Definisce l'etichetta di un campo di
-            input.
-          </li>
+          <li><code>&lt;textarea&gt;</code>: Definisce un'area di testo multi-riga.</li>
+          <li><code>&lt;button&gt;</code>: Definisce un pulsante cliccabile.</li>
+          <li><code>&lt;label&gt;</code>: Definisce l'etichetta di un campo di input.</li>
           <li><code>&lt;select&gt;</code>: Definisce un menu a discesa.</li>
-          <li>
-            <code>&lt;option&gt;</code>: Definisce un'opzione all'interno di un
-            menu a discesa.
-          </li>
+          <li><code>&lt;option&gt;</code>: Definisce un'opzione all'interno di un menu a discesa.</li>
         </ul>
       </section>
     </div>
     <footer>
       <section class="left">
-        <img
-          id="logo"
-          src="../img/logo-sja-150x38.png"
-          alt="Steve Jobs Academy"
-        />
+        <img id="logo" src="../img/logo-sja-150x38.png" alt="Steve Jobs Academy" />
       </section>
       <section class="center">
         <p>Francesco Urso</p>

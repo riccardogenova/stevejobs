@@ -1,3 +1,5 @@
+<!-- @format -->
+
 Git è un potente strumento di controllo versione open source utilizzato dagli sviluppatori per tenere traccia delle modifiche apportate al codice sorgente. Immagina uno strumento che ti permetta di tornare indietro nel tempo e recuperare versioni precedenti di un file, oppure di lavorare contemporaneamente su diverse parti di un progetto senza creare confusione. Questo è ciò che Git fa!
 
 Ecco alcuni dei concetti chiave di Git:

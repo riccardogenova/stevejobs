@@ -1,3 +1,5 @@
+<!-- @format -->
+
 # Cos'è il Markdown?
 
 Il Markdown è un linguaggio di markup leggero e semplice da usare per formattare il testo su piattaforme web. In sostanza, è una forma di scrivere testo con semplici caratteri che poi possono essere convertiti in HTML per visualizzarlo su un sito web. È progettato per essere facile da leggere e scrivere anche senza conoscenze approfondite di codifica.

@@ -1,8 +1,10 @@
+/** @format */
+
 //5
 const people = [
-  { name: "Alice", age: "25" },
-  { name: "Bob", age: "17" },
-  { name: "Charlie", age: "20" },
+  { name: 'Alice', age: '25' },
+  { name: 'Bob', age: '17' },
+  { name: 'Charlie', age: '20' },
 ];
 
 function onFind(elements, index, array) {
@@ -25,9 +27,9 @@ numbers.reduce(onReduce, 0);
 
 //3
 const people = [
-  { name: "Alice", age: "25" },
-  { name: "Bob", age: "17" },
-  { name: "Charlie", age: "20" },
+  { name: 'Alice', age: '25' },
+  { name: 'Bob', age: '17' },
+  { name: 'Charlie', age: '20' },
 ];
 
 function onFind(elements, index, array) {
@@ -38,7 +40,7 @@ function onFind(elements, index, array) {
 
 people.find(onFind);
 //2
-const numbers = ["1", "2", "3", "4", "5"];
+const numbers = ['1', '2', '3', '4', '5'];
 
 function onFilter(elements, index, array) {
   if (elements % 2 == 1 && elements > 3) {
@@ -48,7 +50,7 @@ function onFilter(elements, index, array) {
 
 numbers.filter(onFilter);
 //1
-const numbers = ["1", "2", "3", "4"];
+const numbers = ['1', '2', '3', '4'];
 
 function onMap(elements, index, array) {
   return elements * 3;
@@ -58,10 +60,10 @@ numbers.map(onMap);
 
 //6
 const people = [
-  { name: "Alice", age: 25 },
-  { name: "Bob", age: 17 },
-  { name: "Charlie", age: 20 },
-  { name: "David", age: 30 },
+  { name: 'Alice', age: 25 },
+  { name: 'Bob', age: 17 },
+  { name: 'Charlie', age: 20 },
+  { name: 'David', age: 30 },
 ];
 const people2 = [];
 
@@ -76,14 +78,14 @@ people.filter(onFilter);
 //7
 
 const purchases = [
-  { customer: "Alice", price: 20 },
-  { customer: "Bob", price: 30 },
-  { customer: "Alice", price: 15 },
-  { customer: "Charlie", price: 25 },
+  { customer: 'Alice', price: 20 },
+  { customer: 'Bob', price: 30 },
+  { customer: 'Alice', price: 15 },
+  { customer: 'Charlie', price: 25 },
 ];
 
 function onReduce(acc, elements, index, array) {
-  if (elements.customer == "Alice") {
+  if (elements.customer == 'Alice') {
     acc = elements.price + acc;
   }
   return acc;
@@ -92,10 +94,10 @@ function onReduce(acc, elements, index, array) {
 purchases.reduce(onReduce, 0);
 
 //8
-const people = ["Alice", "Bob", "Charlie", "Alice"];
+const people = ['Alice', 'Bob', 'Charlie', 'Alice'];
 
 function onFindIndex(elements, index, array) {
-  if (elements.startsWith("B")) {
+  if (elements.startsWith('B')) {
     return true;
   } else return false;
 }
@@ -104,10 +106,10 @@ people.findIndex(onFindIndex);
 
 //9
 
-const words = ["mela", "banana", "gatto", "cane", "elefante"];
+const words = ['mela', 'banana', 'gatto', 'cane', 'elefante'];
 
 function onReduce(acc, elements, index, array) {
-  if (elements.startsWith("e")) {
+  if (elements.startsWith('e')) {
     acc = elements.length + acc;
   }
   return acc;

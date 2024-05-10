@@ -1,3 +1,5 @@
+<!-- @format -->
+
 # Markdown
 
 Il **markdown** è un linguaggio di markup leggero e facile da usare, progettato per la formattazione del testo in modo semplice e intuitivo. É utilizzato per scrivere documentazione, articoli, e anche per formattare testi su piattaforme online come **github** Reddit eccetera…

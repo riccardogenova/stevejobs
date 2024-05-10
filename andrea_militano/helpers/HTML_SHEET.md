@@ -1,3 +1,5 @@
+<!-- @format -->
+
 `<!DOCTYPE html>`: Definisce il tipo di documento HTML e la sua versione.
 
 _`<html></html>`_: Il contenitore radice di un documento HTML.

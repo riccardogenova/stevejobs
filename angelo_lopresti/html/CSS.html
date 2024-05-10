@@ -1,3 +1,5 @@
+<!-- @format -->
+
 <!doctype html>
 <html>
   <head>
@@ -7,283 +9,221 @@
     <h1>COSA È CSS</h1>
     <p>
       CSS, acronimo di Cascading Style Sheets,<br />
-      è un linguaggio di stile utilizzato per definire l'aspetto e la
-      formattazione di documenti HTML,<br />
-      XHTML e XML. Con CSS, è possibile controllare il layout, <br />i colori, i
-      tipi di carattere, le dimensioni e altri aspetti visivi di un sito web.<br />
-      I fogli di stile CSS separano il contenuto strutturale di una pagina web
-      dalla sua presentazione,<br />
+      è un linguaggio di stile utilizzato per definire l'aspetto e la formattazione di documenti HTML,<br />
+      XHTML e XML. Con CSS, è possibile controllare il layout, <br />i colori, i tipi di carattere, le dimensioni e
+      altri aspetti visivi di un sito web.<br />
+      I fogli di stile CSS separano il contenuto strutturale di una pagina web dalla sua presentazione,<br />
       consentendo agli sviluppatori di apportare modifiche di stile senza<br />
-      dover modificare il codice HTML sottostante. Questo approccio favorisce
-      una maggiore flessibilità,<br />
+      dover modificare il codice HTML sottostante. Questo approccio favorisce una maggiore flessibilità,<br />
       manutenibilità e facilità di aggiornamento dei siti web.
     </p>
     <h2>FUNZIONI PRINCIPALI DI CSS</h2>
     <p>
-      **Selezione degli elementi**: CSS permette agli sviluppatori di
-      selezionare gli elementi HTML sui quali applicare uno stile.<br />
-      Le selezioni possono essere fatte in base al tipo di elemento (ad
-      esempio,<br />
+      **Selezione degli elementi**: CSS permette agli sviluppatori di selezionare gli elementi HTML sui quali applicare
+      uno stile.<br />
+      Le selezioni possono essere fatte in base al tipo di elemento (ad esempio,<br />
       `p` per paragrafi, `h1` per intestazioni di primo livello),<br />
-      alle classi (`class="nomeclasse"` nell'HTML) o agli ID (`id="nomeid"`
-      nell'HTML).
+      alle classi (`class="nomeclasse"` nell'HTML) o agli ID (`id="nomeid"` nell'HTML).
     </p>
     <p>
-      **Proprietà e valori**: Le proprietà definiscono gli aspetti degli
-      elementi che si desidera stilizzare,<br />
+      **Proprietà e valori**: Le proprietà definiscono gli aspetti degli elementi che si desidera stilizzare,<br />
       come il colore del testo, il tipo di carattere, il padding,<br />
       il margine, ecc. Ogni proprietà può essere associata a un valore che
       <br />specifica come tale aspetto dovrebbe apparire.
     </p>
     <p>
-      **Cascata**: La "C" in CSS sta per "cascading" (cascata), che si riferisce
-      all'ordine di priorità con cui<br />
+      **Cascata**: La "C" in CSS sta per "cascading" (cascata), che si riferisce all'ordine di priorità con cui<br />
       le regole CSS vengono applicate agli elementi.<br />
-      Le regole definite più specificamente hanno la priorità su quelle più
-      generiche.<br />
-      Ad esempio, una regola definita per un ID avrà la precedenza su una regola
-      definita per una classe.
+      Le regole definite più specificamente hanno la priorità su quelle più generiche.<br />
+      Ad esempio, una regola definita per un ID avrà la precedenza su una regola definita per una classe.
     </p>
     <p>
-      **Ereditarietà**: Molti stili CSS vengono ereditati dagli elementi
-      genitori ai figli.<br />
+      **Ereditarietà**: Molti stili CSS vengono ereditati dagli elementi genitori ai figli.<br />
       Ad esempio, se si imposta il colore del testo di un elemento `div`,<br />
-      di solito il testo all'interno di quel `div` erediterà il colore di
-      default,<br />
+      di solito il testo all'interno di quel `div` erediterà il colore di default,<br />
       a meno che non venga specificato diversamente.
     </p>
     <p>
-      **Box model**: Il box model di CSS descrive il modo in cui gli elementi
-      HTML sono visualizzati come scatole rettangolari.<br />
+      **Box model**: Il box model di CSS descrive il modo in cui gli elementi HTML sono visualizzati come scatole
+      rettangolari.<br />
       Ogni elemento ha margini, padding, un bordo e il contenuto stesso,<br />
-      e le dimensioni di questi componenti possono essere controllate tramite
-      CSS.
+      e le dimensioni di questi componenti possono essere controllate tramite CSS.
     </p>
     <p>
-      **Media query**: Le media query consentono di applicare stili diversi in
-      base alle caratteristiche<br />
+      **Media query**: Le media query consentono di applicare stili diversi in base alle caratteristiche<br />
       del dispositivo su cui viene visualizzata la pagina,<br />
-      come la larghezza dello schermo, l'orientamento, <br />la risoluzione,
-      ecc. Ciò consente di realizzare layout responsive,<br />
+      come la larghezza dello schermo, l'orientamento, <br />la risoluzione, ecc. Ciò consente di realizzare layout
+      responsive,<br />
       adattabili a dispositivi di diverse dimensioni.
     </p>
     <p>
-      **Flexbox e Grid**: Questi sono due sistemi di layout CSS avanzati che
-      consentono di organizzare gli elementi<br />
-      in modo più flessibile e responsivo. Flexbox è particolarmente utile per
-      il posizionamento degli elementi<br />
-      lungo un singolo asse (orizzontale o verticale), mentre Grid permette di
-      creare<br />
+      **Flexbox e Grid**: Questi sono due sistemi di layout CSS avanzati che consentono di organizzare gli elementi<br />
+      in modo più flessibile e responsivo. Flexbox è particolarmente utile per il posizionamento degli elementi<br />
+      lungo un singolo asse (orizzontale o verticale), mentre Grid permette di creare<br />
       layout bidimensionali più complessi.
     </p>
     <p>
-      **Selezionatori avanzati**: Oltre alle selezioni di base basate sul tipo
-      di elemento, classe e ID,<br />
+      **Selezionatori avanzati**: Oltre alle selezioni di base basate sul tipo di elemento, classe e ID,<br />
       CSS offre una vasta gamma di selezionatori avanzati che consentono
-      <br />di individuare gli elementi in base alla loro posizione nel
-      documento,<br />
-      alla loro relazione con altri elementi, allo stato (come hover o focus),
-      ecc.
+      <br />di individuare gli elementi in base alla loro posizione nel documento,<br />
+      alla loro relazione con altri elementi, allo stato (come hover o focus), ecc.
     </p>
     <p>
-      **Trasformazioni e transizioni**: CSS permette di applicare trasformazioni
-      come rotazioni, scalature, <br />traslazioni e inclinazioni agli elementi
-      HTML. Queste trasformazioni possono essere animate utilizzando<br />
-      le transizioni CSS, che consentono di creare effetti di animazione
-      fluidi<br />
+      **Trasformazioni e transizioni**: CSS permette di applicare trasformazioni come rotazioni, scalature,
+      <br />traslazioni e inclinazioni agli elementi HTML. Queste trasformazioni possono essere animate utilizzando<br />
+      le transizioni CSS, che consentono di creare effetti di animazione fluidi<br />
       senza utilizzare JavaScript.
     </p>
     <p>
-      **Fogli di stile esterni**: CSS può essere incluso nei documenti HTML in
-      tre modi principali: inline<br />
+      **Fogli di stile esterni**: CSS può essere incluso nei documenti HTML in tre modi principali: inline<br />
       (all'interno degli attributi `style` degli elementi HTML),
-      <br />incorporato (all'interno del tag `style` all'interno dell'elemento
-      `head` del documento HTML) o esterno<br />
-      (in un file CSS separato collegato al documento HTML tramite il tag
-      `link`). <br />L'uso di fogli di stile esterni è generalmente preferito
-      per<br />
+      <br />incorporato (all'interno del tag `style` all'interno dell'elemento `head` del documento HTML) o esterno<br />
+      (in un file CSS separato collegato al documento HTML tramite il tag `link`). <br />L'uso di fogli di stile esterni
+      è generalmente preferito per<br />
       favorire una maggiore separazione tra struttura e presentazione.
     </p>
     <p>
-      **Prefissi del venditore**: Alcune funzionalità CSS avanzate potrebbero
-      richiedere l'utilizzo di prefissi specifici<br />del venditore per
-      garantire la compatibilità tra browser. Ad esempio,<br />
-      alcune proprietà CSS3 potrebbero richiedere prefissi come `-webkit-`,
-      `-moz-`, `-ms-`, `-o-`, ecc.,<br />
+      **Prefissi del venditore**: Alcune funzionalità CSS avanzate potrebbero richiedere l'utilizzo di prefissi
+      specifici<br />del venditore per garantire la compatibilità tra browser. Ad esempio,<br />
+      alcune proprietà CSS3 potrebbero richiedere prefissi come `-webkit-`, `-moz-`, `-ms-`, `-o-`, ecc.,<br />
       per funzionare correttamente su diversi browser.
     </p>
     <p>
       **Variabili CSS**: CSS supporta l'uso di variabili personalizzate,
-      <br />che consentono di definire valori che possono essere riutilizzati in
-      tutto il foglio di stile.<br />
-      Ciò facilita la gestione e la coerenza degli stili all'interno di un
-      progetto.
+      <br />che consentono di definire valori che possono essere riutilizzati in tutto il foglio di stile.<br />
+      Ciò facilita la gestione e la coerenza degli stili all'interno di un progetto.
     </p>
     <p>
-      **Ottimizzazione e prestazioni**: Per garantire che un sito web si carichi
-      rapidamente e sia reattivo,<br />
-      è importante ottimizzare i fogli di stile CSS, riducendo la
-      complessità,<br />
-      eliminando il codice superfluo e utilizzando tecniche come la
-      concatenazione e <br />la minificazione per ridurre la dimensione dei file
-      CSS.
+      **Ottimizzazione e prestazioni**: Per garantire che un sito web si carichi rapidamente e sia reattivo,<br />
+      è importante ottimizzare i fogli di stile CSS, riducendo la complessità,<br />
+      eliminando il codice superfluo e utilizzando tecniche come la concatenazione e <br />la minificazione per ridurre
+      la dimensione dei file CSS.
     </p>
     <p>
-      **CSS preprocessors e postprocessors**: Esistono strumenti come Sass, Less
-      e Stylus che estendono le funzionalità di CSS consentendo <br />l'uso di
-      funzionalità come variabili, mixins, funzioni e altro ancora.<br />
+      **CSS preprocessors e postprocessors**: Esistono strumenti come Sass, Less e Stylus che estendono le funzionalità
+      di CSS consentendo <br />l'uso di funzionalità come variabili, mixins, funzioni e altro ancora.<br />
       Allo stesso modo, ci sono strumenti postprocessor come Autoprefixer che<br />
-      automatizzano l'aggiunta di prefissi del venditore al CSS per garantire la
-      compatibilità tra browser.
+      automatizzano l'aggiunta di prefissi del venditore al CSS per garantire la compatibilità tra browser.
     </p>
     <p>
-      **Pseudoclassi e pseudoelementi**: CSS offre la possibilità di selezionare
-      elementi in base a stati o condizioni specifiche.<br />
+      **Pseudoclassi e pseudoelementi**: CSS offre la possibilità di selezionare elementi in base a stati o condizioni
+      specifiche.<br />
       Le pseudoclassi come `:hover`, `:active`, `:focus` consentono di <br />
-      applicare stili agli elementi quando si verificano determinate interazioni
-      dell'utente.<br />
+      applicare stili agli elementi quando si verificano determinate interazioni dell'utente.<br />
       I pseudoelementi come `::before` e `::after` consentono di aggiungere<br />
-      contenuto generato dal CSS prima o dopo il contenuto effettivo di un
-      elemento.
+      contenuto generato dal CSS prima o dopo il contenuto effettivo di un elemento.
     </p>
     <p>
-      **Trasformazioni 3D e animazioni**: CSS supporta anche trasformazioni 3D
-      che consentono di creare effetti tridimensionali sulle pagine web.<br />
-      Inoltre, le animazioni CSS permettono di definire sequenze di
-      transizioni<br />
-      e trasformazioni che possono essere applicate agli elementi per creare
-      effetti visivi dinamici.
+      **Trasformazioni 3D e animazioni**: CSS supporta anche trasformazioni 3D che consentono di creare effetti
+      tridimensionali sulle pagine web.<br />
+      Inoltre, le animazioni CSS permettono di definire sequenze di transizioni<br />
+      e trasformazioni che possono essere applicate agli elementi per creare effetti visivi dinamici.
     </p>
     <p>
-      **Unità di misura**: CSS supporta una vasta gamma di unità di misura per
-      dimensioni come pixel (`px`),<br />
-      percentuali (`%`), em (`em`), rem (`rem`), <br />viewport width (`vw`),
-      viewport height (`vh`) e altre. <br />Queste unità offrono flessibilità
-      nel definire dimensioni e<br />
+      **Unità di misura**: CSS supporta una vasta gamma di unità di misura per dimensioni come pixel (`px`),<br />
+      percentuali (`%`), em (`em`), rem (`rem`), <br />viewport width (`vw`), viewport height (`vh`) e altre.
+      <br />Queste unità offrono flessibilità nel definire dimensioni e<br />
       posizioni degli elementi in base ai requisiti del layout.
     </p>
     <p>
-      **Flessibilità tipografica**: CSS offre numerosi attributi per controllare
-      l'aspetto del testo, <br />inclusi il tipo di carattere (`font-family`),
-      la dimensione del carattere (`font-size`),<br />
+      **Flessibilità tipografica**: CSS offre numerosi attributi per controllare l'aspetto del testo, <br />inclusi il
+      tipo di carattere (`font-family`), la dimensione del carattere (`font-size`),<br />
       lo stile (`font-style`), il peso (`font-weight`),<br />
       il colore (`color`), il decoro (`text-decoration`) e altro ancora.
     </p>
     <p>
-      **Media query avanzate**: Oltre alle media query standard basate su
-      dimensioni dello schermo,<br />
+      **Media query avanzate**: Oltre alle media query standard basate su dimensioni dello schermo,<br />
       CSS offre funzionalità avanzate per selezionare elementi in base<br />
       a caratteristiche come la risoluzione dello schermo (`resolution`),<br />
-      il supporto al touch (`hover: none`), <br />il supporto al dispositivo
-      (`pointer: coarse` o `pointer: fine`) e altro ancora.
+      il supporto al touch (`hover: none`), <br />il supporto al dispositivo (`pointer: coarse` o `pointer: fine`) e
+      altro ancora.
     </p>
     <p>
-      **Trasparenza e sfondo**: CSS consente di controllare la trasparenza degli
-      elementi utilizzando la proprietà `opacity` e di <br />applicare sfondi
-      tramite la proprietà `background`. È possibile utilizzare immagini,
-      gradienti, <br />colori solidi o combinazioni di essi come sfondo degli
-      elementi.
+      **Trasparenza e sfondo**: CSS consente di controllare la trasparenza degli elementi utilizzando la proprietà
+      `opacity` e di <br />applicare sfondi tramite la proprietà `background`. È possibile utilizzare immagini,
+      gradienti, <br />colori solidi o combinazioni di essi come sfondo degli elementi.
     </p>
     <p>
-      **Supporto per la stampa**: CSS offre funzionalità specifiche per la
-      formattazione e la presentazione delle pagine<br />
-      quando vengono stampate. Questo include la possibilità di nascondere o
-      visualizzare elementi specifici,<br />
+      **Supporto per la stampa**: CSS offre funzionalità specifiche per la formattazione e la presentazione delle
+      pagine<br />
+      quando vengono stampate. Questo include la possibilità di nascondere o visualizzare elementi specifici,<br />
       definire stili di stampa ottimizzati e gestire la paginazione.
     </p>
     <p>
-      **Stilizzazione del testo**: CSS permette di controllare il colore, la
-      dimensione, <br />il tipo di carattere e lo stile del testo in una pagina
-      web.
+      **Stilizzazione del testo**: CSS permette di controllare il colore, la dimensione, <br />il tipo di carattere e lo
+      stile del testo in una pagina web.
     </p>
     <p>
-      **Stilizzazione dei colori e degli sfondi**: È possibile impostare il
-      colore di sfondo di un elemento e modificarne le proprietà<br />
+      **Stilizzazione dei colori e degli sfondi**: È possibile impostare il colore di sfondo di un elemento e
+      modificarne le proprietà<br />
       relative al colore come il colore di testo, colore del bordo, etc.
     </p>
     <p>
-      **Gestione dei layout**: CSS consente di controllare il posizionamento
-      degli elementi all'interno della pagina, <br />sia in termini di
-      dimensioni che di posizione, <br />tramite proprietà come margin, padding,
-      display, position, float, etc.
+      **Gestione dei layout**: CSS consente di controllare il posizionamento degli elementi all'interno della pagina,
+      <br />sia in termini di dimensioni che di posizione, <br />tramite proprietà come margin, padding, display,
+      position, float, etc.
     </p>
     <p>
-      **Creazione di layout flessibili e responsivi**: Grazie a tecnologie come
-      Flexbox e CSS Grid, CSS permette di creare layout che si adattano<br />
+      **Creazione di layout flessibili e responsivi**: Grazie a tecnologie come Flexbox e CSS Grid, CSS permette di
+      creare layout che si adattano<br />
       in modo dinamico a diversi dispositivi e dimensioni dello schermo.
     </p>
     <p>
-      **Aggiunta di decorazioni e animazioni**: CSS offre la possibilità di
-      aggiungere effetti visivi come ombre,<br />
-      bordi arrotondati, transizioni e animazioni, <br />per rendere il sito web
-      più dinamico e accattivante.
+      **Aggiunta di decorazioni e animazioni**: CSS offre la possibilità di aggiungere effetti visivi come ombre,<br />
+      bordi arrotondati, transizioni e animazioni, <br />per rendere il sito web più dinamico e accattivante.
     </p>
     <p>
-      **Controllo delle transizioni e degli effetti di animazione**: Con le
-      transizioni e le animazioni CSS, è possibile creare effetti di
-      transizione<br />
-      fluidi tra gli stati di un elemento o animazioni più complesse, <br />come
-      rotazioni, scalature e spostamenti.
+      **Controllo delle transizioni e degli effetti di animazione**: Con le transizioni e le animazioni CSS, è possibile
+      creare effetti di transizione<br />
+      fluidi tra gli stati di un elemento o animazioni più complesse, <br />come rotazioni, scalature e spostamenti.
     </p>
     <p>
-      **Adattamento al supporto stampa**: CSS consente di definire stili
-      specifici per la stampa,<br />
-      in modo che la presentazione del contenuto sia ottimizzata quando viene
-      stampata su carta.
+      **Adattamento al supporto stampa**: CSS consente di definire stili specifici per la stampa,<br />
+      in modo che la presentazione del contenuto sia ottimizzata quando viene stampata su carta.
     </p>
     <p>
-      **Gestione delle tabelle**: CSS permette di personalizzare l'aspetto delle
-      tabelle HTML, modificando bordi,<br />
+      **Gestione delle tabelle**: CSS permette di personalizzare l'aspetto delle tabelle HTML, modificando bordi,<br />
       sfondi, spaziatura e allineamento del testo all'interno delle celle.
     </p>
     <p>
-      **Creazione di menu di navigazione e interfacce utente**: CSS può essere
-      utilizzato per creare menu di navigazione interattivi, pulsanti,
+      **Creazione di menu di navigazione e interfacce utente**: CSS può essere utilizzato per creare menu di navigazione
+      interattivi, pulsanti,
       <br />modali e altri elementi dell'interfaccia utente.
     </p>
     <p>
-      **Compatibilità e accessibilità**: CSS offre strumenti per migliorare la
-      compatibilità del sito con diversi browser<br />
+      **Compatibilità e accessibilità**: CSS offre strumenti per migliorare la compatibilità del sito con diversi
+      browser<br />
       e dispositivi, nonché per garantire un'esperienza utente accessibile,<br />
       ad esempio attraverso la gestione dei colori e del contrasto.
     </p>
     <p>
-      **Gestire la responsive del sito**: Il CSS ti permette di creare siti web
-      rispondenti,<br />
-      che si adattano automaticamente a schermi di computer, tablet e
-      smartphone, <br />offrendo un'esperienza di navigazione ottimale su
-      qualsiasi dispositivo.
+      **Gestire la responsive del sito**: Il CSS ti permette di creare siti web rispondenti,<br />
+      che si adattano automaticamente a schermi di computer, tablet e smartphone, <br />offrendo un'esperienza di
+      navigazione ottimale su qualsiasi dispositivo.
     </p>
     <p>
-      **Migliorare l'accessibilità del sito**: Con il CSS puoi rendere il tuo
-      sito web accessibile a persone con disabilità,<br />
-      ad esempio aumentando la dimensione dei font o migliorando il contrasto
-      dei colori.
+      **Migliorare l'accessibilità del sito**: Con il CSS puoi rendere il tuo sito web accessibile a persone con
+      disabilità,<br />
+      ad esempio aumentando la dimensione dei font o migliorando il contrasto dei colori.
     </p>
     <p>
-      **Selettore**: Il selettore è come un puntatore laser che individua gli
-      elementi HTML a cui vuoi applicare lo stile. <br />Può essere preciso (per
-      esempio,<br />
-      h1 per tutte le intestazioni di primo livello) o più generico (come p per
-      tutti i paragrafi).
+      **Selettore**: Il selettore è come un puntatore laser che individua gli elementi HTML a cui vuoi applicare lo
+      stile. <br />Può essere preciso (per esempio,<br />
+      h1 per tutte le intestazioni di primo livello) o più generico (come p per tutti i paragrafi).
     </p>
     <p>
-      **Dichiarazioni**: Le dichiarazioni definiscono le proprietà che vuoi
-      modificare, come il colore del font, <br />la dimensione del testo, il
-      tipo di carattere e la marginatura.<br />
+      **Dichiarazioni**: Le dichiarazioni definiscono le proprietà che vuoi modificare, come il colore del font,
+      <br />la dimensione del testo, il tipo di carattere e la marginatura.<br />
       Vengono racchiuse tra parentesi graffe e separate da punti e virgola.
     </p>
     <p>
       **Cascading**: Le regole CSS sono definite in un ordine gerarchico.<br />
-      Se hai più regole che si applicano allo stesso elemento, vince la regola
-      più specifica.<br />
+      Se hai più regole che si applicano allo stesso elemento, vince la regola più specifica.<br />
       Questo è il concetto di cascata.
     </p>
     <p>
-      **Specificità**: La specificità di una regola è determinata dal numero e
-      dal tipo di selettori utilizzati.<br />
-      Ad esempio, un selettore ID ha più specificità di un selettore di
-      classe,<br />
+      **Specificità**: La specificità di una regola è determinata dal numero e dal tipo di selettori utilizzati.<br />
+      Ad esempio, un selettore ID ha più specificità di un selettore di classe,<br />
       che a sua volta ne ha più di un selettore di tipo.
     </p>
     <p>**color**: Definisce il colore del testo<br /></p>
@@ -293,35 +233,25 @@
     <p>**margin**: Definisce lo spazio intorno all'elemento<br /></p>
     <p>**padding**: Definisce lo spazio all'interno dell'elemento<br /></p>
     <p>**border**: Definisce un bordo intorno all'elemento<br /></p>
+    <p>**display**: Controlla come viene visualizzato un elemento (ad esempio, block, inline, flex)<br /></p>
+    <p>**position**: Posiziona l'elemento nella pagina (ad esempio, static, absolute, relative)<br /></p>
     <p>
-      **display**: Controlla come viene visualizzato un elemento (ad esempio,
-      block, inline, flex)<br />
-    </p>
-    <p>
-      **position**: Posiziona l'elemento nella pagina (ad esempio, static,
-      absolute, relative)<br />
-    </p>
-    <p>
-      **Layout con Flexbox e Grid**: Flexbox e Grid sono due moduli CSS potenti
-      che permettono di creare layout complessi in modo flessibile<br />
+      **Layout con Flexbox e Grid**: Flexbox e Grid sono due moduli CSS potenti che permettono di creare layout
+      complessi in modo flessibile<br />
       e adattabile.Con Flexbox puoi disporre gli elementi in fila o colonna,
-      <br />definendo la loro dimensione, allineamento e distribuzione
-      all'interno del contenitore.<br />Grid, invece, offre un sistema di
-      griglia più strutturato,<br />
-      ideale per creare layout con più colonne e righe, <br />come gallerie di
-      immagini o schede di prodotto
+      <br />definendo la loro dimensione, allineamento e distribuzione all'interno del contenitore.<br />Grid, invece,
+      offre un sistema di griglia più strutturato,<br />
+      ideale per creare layout con più colonne e righe, <br />come gallerie di immagini o schede di prodotto
     </p>
     <p>
-      **Media Query**:Le Media Query ti permettono di adattare il design del tuo
-      sito web a seconda del dispositivo<br />
-      utilizzato dall'utente (computer, tablet, smartphone).<br />Puoi definire
-      regole CSS specifiche per diverse dimensioni di schermo,<br />
-      orientamenti e risoluzioni, garantendo un'esperienza ottimale su qualsiasi
-      dispositivo.
+      **Media Query**:Le Media Query ti permettono di adattare il design del tuo sito web a seconda del dispositivo<br />
+      utilizzato dall'utente (computer, tablet, smartphone).<br />Puoi definire regole CSS specifiche per diverse
+      dimensioni di schermo,<br />
+      orientamenti e risoluzioni, garantendo un'esperienza ottimale su qualsiasi dispositivo.
     </p>
     <p>
-      **Animazioni e Transizioni**:CSS Animations e Transitions ti permettono di
-      aggiungere effetti dinamici al tuo sito web,<br />
+      **Animazioni e Transizioni**:CSS Animations e Transitions ti permettono di aggiungere effetti dinamici al tuo sito
+      web,<br />
       come animazioni di testo, hover su elementi o transizioni fluide<br />
       tra le pagine.Puoi creare animazioni semplici o complesse,<br />
       utilizzando proprietà CSS dedicate come animation, transform e transition.
@@ -341,8 +271,7 @@
       }<br />
       <br />```<br />
 
-      **font-family**: Specifica il tipo di carattere da utilizzare per il
-      testo.<br />
+      **font-family**: Specifica il tipo di carattere da utilizzare per il testo.<br />
       <br />```css<br />
       <br />body { <br />font-family: Arial, sans-serif;<br />
       }<br />
@@ -354,15 +283,13 @@
       }<br />
       <br />```<br />
 
-      **font-weight**: Specifica il peso del carattere (normale, bold, più
-      leggero, ecc.).<br />
+      **font-weight**: Specifica il peso del carattere (normale, bold, più leggero, ecc.).<br />
       <br />```css<br />
       <br />strong { <br />font-weight: bold;<br />
       }<br />
       <br />```<br />
 
-      **text-align**: Allinea il testo (a sinistra, a destra, al centro,
-      giustificato).<br />
+      **text-align**: Allinea il testo (a sinistra, a destra, al centro, giustificato).<br />
       <br />```css<br />
       <br />.center { <br />text-align: center;<br />
       }<br />
@@ -374,8 +301,7 @@
       }<br />
       <br />```<br />
 
-      **text-decoration**: Aggiunge decorazioni al testo (sottolineato, barrato,
-      sovrascritto).<br />
+      **text-decoration**: Aggiunge decorazioni al testo (sottolineato, barrato, sovrascritto).<br />
       <br />```css<br />
       <br />a { <br />text-decoration: none;<br />
       }<br />
@@ -410,8 +336,7 @@
 
       **box-shadow**: Aggiunge un'ombra al contenuto di un elemento.<br />
       <br />```css<br />
-      <br />.shadow-example { <br />box-shadow: 3px 3px 5px rgba(0, 0, 0,
-      0.3);<br />
+      <br />.shadow-example { <br />box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);<br />
       }<br />
       <br />```<br />
 
@@ -429,8 +354,7 @@
 
       **background-image**: Imposta un'immagine di sfondo per un elemento.<br />
       <br />```css<br />
-      <br />.bg-image-example { <br />background-image:
-      url('path/to/image.jpg');<br />
+      <br />.bg-image-example { <br />background-image: url('path/to/image.jpg');<br />
       }<br />
       ```<br />
 
@@ -443,8 +367,7 @@
       }<br />
       <br />```<br />
 
-      **transition**: Specifica la transizione di uno o più attributi di un
-      elemento.<br />
+      **transition**: Specifica la transizione di uno o più attributi di un elemento.<br />
       <br />```css<br />
       <br />.transition-example { <br />transition: color 0.3s ease-in-out;<br />
       }<br />
@@ -472,8 +395,7 @@
 
     **position**: Imposta il tipo di posizionamento di un elemento.<br />
     <br />```css<br />
-    <br />.position-example { <br />position: relative; /* oppure absolute,
-    fixed, sticky */<br />
+    <br />.position-example { <br />position: relative; /* oppure absolute, fixed, sticky */<br />
     <br />top: 20px;<br />
     <br />left: 30px;<br />
     <br />}<br />
@@ -481,68 +403,55 @@
 
     **overflow**: Specifica il comportamento dello sforzo di un elemento.<br />
     <br />```css<br />
-    <br />.overflow-example { <br />overflow: auto; /* oppure hidden, scroll,
-    visible */<br />
+    <br />.overflow-example { <br />overflow: auto; /* oppure hidden, scroll, visible */<br />
     }<br />
     <br />```<br />
 
-    **text-align**: Imposta l'allineamento del testo all'interno di un
-    elemento.<br />
+    **text-align**: Imposta l'allineamento del testo all'interno di un elemento.<br />
     <br />```css<br />
-    <br />.text-align-example { <br />text-align: center; /* oppure left, right,
-    justify */<br />
+    <br />.text-align-example { <br />text-align: center; /* oppure left, right, justify */<br />
     }<br />
     <br />```<br />
 
     **display**: Imposta il tipo di display di un elemento.<br />
     <br />```css<br />
-    <br />.display-example { <br />display: inline-block; /* oppure block,
-    inline, none */<br />
+    <br />.display-example { <br />display: inline-block; /* oppure block, inline, none */<br />
     }<br />
     <br />```<br />
 
     **cursor**: Imposta l'aspetto del cursore quando passa sopra un elemento.<br />
     <br />```css<br />
-    <br />.cursor-example { <br />cursor: pointer; /* oppure help, progress,
-    wait, text, etc. */<br />
+    <br />.cursor-example { <br />cursor: pointer; /* oppure help, progress, wait, text, etc. */<br />
     }<br />
     <br />```<br />
 
     **visibility**: Imposta se un elemento è visibile o nascosto.<br />
     <br />```css<br />
-    <br />.visibility-example { <br />visibility: hidden; /* oppure visible,
-    collapse */<br />
+    <br />.visibility-example { <br />visibility: hidden; /* oppure visible, collapse */<br />
     }<br />
     <br />```<br />
 
-    **z-index**: Imposta la profondità dell'elemento rispetto agli altri
-    elementi.<br />
+    **z-index**: Imposta la profondità dell'elemento rispetto agli altri elementi.<br />
     <br />```css<br />
-    <br />.z-index-example { <br />z-index: 1; /* Il valore può essere positivo
-    o negativo */<br />
+    <br />.z-index-example { <br />z-index: 1; /* Il valore può essere positivo o negativo */<br />
     }<br />
     <br />```<br />
 
-    **transition**: Applica una transizione animata a una o più proprietà di un
-    elemento.<br />
+    **transition**: Applica una transizione animata a una o più proprietà di un elemento.<br />
     <br />```css<br />
-    <br />.transition-example { <br />transition: width 0.5s ease-in-out; /*
-    oppure height, background-color, etc. */<br />
+    <br />.transition-example { <br />transition: width 0.5s ease-in-out; /* oppure height, background-color, etc. */<br />
     }<br />
     <br />```<br />
 
-    **transform**: Applica una trasformazione (traslazione, rotazione, scala) a
-    un elemento.<br />
+    **transform**: Applica una trasformazione (traslazione, rotazione, scala) a un elemento.<br />
     <br />```css<br />
     <br />.transform-example { <br />transform: rotate(45deg) scale(1.2);<br />
     }<br />
     <br />```<br />
 
-    **box-sizing**: Specifica come calcolare la dimensione totale di un elemento
-    (content-box, border-box).<br />
+    **box-sizing**: Specifica come calcolare la dimensione totale di un elemento (content-box, border-box).<br />
     <br />```css<br />
-    <br />.box-sizing-example { <br />box-sizing: border-box; /* oppure
-    content-box */<br />
+    <br />.box-sizing-example { <br />box-sizing: border-box; /* oppure content-box */<br />
     }<br />
     <br />```<br />
   </body>

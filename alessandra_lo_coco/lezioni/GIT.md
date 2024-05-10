@@ -1,3 +1,5 @@
+<!-- @format -->
+
 GIT è un sistema di controllo delle versioni distribuito utilizzato principalmente
 nello sviluppo software.
 E' progettato per tenere traccia delle modifiche apportate ai file nel corso del tempo,

@@ -1,3 +1,5 @@
+<!-- @format -->
+
 <!doctype html>
 <html>
   <head>
@@ -18,62 +20,47 @@
     </header>
     <h2 id="sezione1">Cos'è</h2>
     <p>
-      <b>CSS</b>, <i>Cascading Scale Sheets</i>, è il linguaggio di
-      programmazione principale per definire l'aspetto e le formattazioni delle
-      pagine web. Spesso affiancato ad HTML, che costituisce lo "scheletro" di
-      una pagina web, Css permette di controllarne l'aspetto visivo, includendo
-      elementi come layout, colori, tipografia, dimensioni e posizioni degli
-      elementi, e molto altro ancora. È uno strumento fondamentale per la
-      progettazione web moderna, consentendo una separazione chiara tra la
-      struttura (HTML) e la presentazione (CSS) di una pagina web.
+      <b>CSS</b>, <i>Cascading Scale Sheets</i>, è il linguaggio di programmazione principale per definire l'aspetto e
+      le formattazioni delle pagine web. Spesso affiancato ad HTML, che costituisce lo "scheletro" di una pagina web,
+      Css permette di controllarne l'aspetto visivo, includendo elementi come layout, colori, tipografia, dimensioni e
+      posizioni degli elementi, e molto altro ancora. È uno strumento fondamentale per la progettazione web moderna,
+      consentendo una separazione chiara tra la struttura (HTML) e la presentazione (CSS) di una pagina web.
     </p>
     <h2 id="sezione2">Caratteristiche</h2>
     <p>HTML si basa su tre principali features:</p>
     <br />
     <ul>
       <li>
-        <b>Separazione di contenuti</b>, , CSS permette di modificare l'aspetto
-        di un sito web senza dover alterare il codice HTML. Questo rende il
-        codice più pulito, organizzato e facile da mantenere;<br />
+        <b>Separazione di contenuti</b>, , CSS permette di modificare l'aspetto di un sito web senza dover alterare il
+        codice HTML. Questo rende il codice più pulito, organizzato e facile da mantenere;<br />
       </li>
       <li>
-        <b>Riutilizzabilità</b>, Le regole CSS possono essere applicate a più
-        elementi di una pagina o addirittura a interi siti web, garantendo
-        coerenza e risparmiando tempo;
+        <b>Riutilizzabilità</b>, Le regole CSS possono essere applicate a più elementi di una pagina o addirittura a
+        interi siti web, garantendo coerenza e risparmiando tempo;
       </li>
       <li>
-        <b>Esperienza utente</b>, CSS può creare un'esperienza utente più
-        piacevole e coinvolgente, aumentando la fruibilità e il tempo di
-        permanenza sul sito.
+        <b>Esperienza utente</b>, CSS può creare un'esperienza utente più piacevole e coinvolgente, aumentando la
+        fruibilità e il tempo di permanenza sul sito.
       </li>
     </ul>
 
     <h2 id="sezione3">Come funziona</h2>
     <p>
       In primo luogo,
-      <i>css agisce direttamente sul codice HTML già strutturato</i>; è quindi
-      raro che venga utilizzato da solo, piuttosto che venire applicato allo
-      scheletro HTML già esistente. Il CSS funziona attraverso un sistema di
-      <b>regole e sezioni</b>. <br />Le regole
-      <i>definiscono le proprietà da applicare agli elementi HTML</i>, come il
-      colore di sfondo, il tipo di carattere, la dimensione del testo e la
-      posizione. Le sezioni, invece,
-      <i>raggruppano le regole per organizzarle e darle un senso di coerenza</i
-      >. <br />Il primo passo è incorporare il codice CSS al codice HTML, che si
-      può fare o da un file esterno, colegando in seguito il file .css tramite
-      un &lt;link&gt;, oppure scrivendo direttamente i comandi nell'head
-      dell'html, racchiusi tra i tag &lt;style&gt;. In seguito il browser
-      analizza le regole CSS e le organizza in base alla loro specificità: la
-      regola più specifica per un determinato elemento ha la precedenza.
-      <br />Nel caso in cui si verifichino <i>conflitti tra regole</i>, questi
-      vengono gestiti usando la <b>cascata</b> (da qui il nome "<i
-        >Cascading Style Sheets</i
-      >"): essa garantisce che _le regole più specifiche abbiano la precedenza
-      su quelle più generiche_. In caso di conflitti, la regola con la selezione
-      più precisa e un maggior numero di selettori vince. <br />Le proprietà CSS
-      definite vengono infine applicate agli elementi HTML corrispondenti: Il
-      layout di pagina, i colori, i font e tutti gli aspetti visivi prendono
-      forma.
+      <i>css agisce direttamente sul codice HTML già strutturato</i>; è quindi raro che venga utilizzato da solo,
+      piuttosto che venire applicato allo scheletro HTML già esistente. Il CSS funziona attraverso un sistema di
+      <b>regole e sezioni</b>. <br />Le regole <i>definiscono le proprietà da applicare agli elementi HTML</i>, come il
+      colore di sfondo, il tipo di carattere, la dimensione del testo e la posizione. Le sezioni, invece,
+      <i>raggruppano le regole per organizzarle e darle un senso di coerenza</i>. <br />Il primo passo è incorporare il
+      codice CSS al codice HTML, che si può fare o da un file esterno, colegando in seguito il file .css tramite un
+      &lt;link&gt;, oppure scrivendo direttamente i comandi nell'head dell'html, racchiusi tra i tag &lt;style&gt;. In
+      seguito il browser analizza le regole CSS e le organizza in base alla loro specificità: la regola più specifica
+      per un determinato elemento ha la precedenza. <br />Nel caso in cui si verifichino <i>conflitti tra regole</i>,
+      questi vengono gestiti usando la <b>cascata</b> (da qui il nome "<i>Cascading Style Sheets</i>"): essa garantisce
+      che _le regole più specifiche abbiano la precedenza su quelle più generiche_. In caso di conflitti, la regola con
+      la selezione più precisa e un maggior numero di selettori vince. <br />Le proprietà CSS definite vengono infine
+      applicate agli elementi HTML corrispondenti: Il layout di pagina, i colori, i font e tutti gli aspetti visivi
+      prendono forma.
     </p>
 
     <h4 id="sezione4">Esempio regole in CSS<br /></h4>
@@ -82,81 +69,61 @@
       <ul>
         <li><i>h1 { color: red; }</i> -> Colora tutti i titoli h1 in rosso.</li>
         <li>
-          <i>.testo-centrato { text-align: center; }</i> -> Centra il testo
-          all'interno degli elementi con classe "testo-centrato".
+          <i>.testo-centrato { text-align: center; }</i> -> Centra il testo all'interno degli elementi con classe
+          "testo-centrato".
         </li>
-        <li>
-          <i>#pulsante { background-color: blue; }</i> -> Imposta lo sfondo blu
-          per l'elemento con id "pulsante".
-        </li>
+        <li><i>#pulsante { background-color: blue; }</i> -> Imposta lo sfondo blu per l'elemento con id "pulsante".</li>
       </ul>
       <li><b>Proprietà CSS:</b></li>
       <ul>
         <li>
-          <i
-            >color, font-family, font-size, background-color, padding, border,
-            text-align</i
-          >
-          sono solo alcuni esempi delle numerose proprietà CSS che definiscono
-          l'aspetto degli elementi.
+          <i>color, font-family, font-size, background-color, padding, border, text-align</i>
+          sono solo alcuni esempi delle numerose proprietà CSS che definiscono l'aspetto degli elementi.
         </li>
       </ul>
       <li><b>Combinazione di Regole:</b></li>
       <ul>
         <li>
-          È possibile combinare regole più specifiche per ottenere stili
-          precisi. Ad esempio, si può definire uno stile per tutti i paragrafi e
-          uno stile diverso per i paragrafi all'interno di una sezione
-          specifica.
+          È possibile combinare regole più specifiche per ottenere stili precisi. Ad esempio, si può definire uno stile
+          per tutti i paragrafi e uno stile diverso per i paragrafi all'interno di una sezione specifica.
         </li>
       </ul>
     </ul>
 
     <h2 id="sezione5">Esempio selettori in CSS</h2>
     <p>
-      I selettori CSS sono come i fari di un sito web: illuminano gli elementi
-      HTML a cui si applicano gli stili,
+      I selettori CSS sono come i fari di un sito web: illuminano gli elementi HTML a cui si applicano gli stili,
       <i>definendo quale parte del contenuto deve essere formattata</i>.
     </p>
     <ul>
       <il
-        ><b>Selettore per tag</b>: Seleziona tutti gli elementi di un tipo
-        specifico, come &lt;p&gt;, &lt;h1&gt; o &lt;img&gt;. Esempio: p { color:
-        red; } - Colora tutti i paragrafi in rosso.</il
+        ><b>Selettore per tag</b>: Seleziona tutti gli elementi di un tipo specifico, come &lt;p&gt;, &lt;h1&gt; o
+        &lt;img&gt;. Esempio: p { color: red; } - Colora tutti i paragrafi in rosso.</il
       >
       <il
-        ><b>Selettore per id</b>: Seleziona un elemento univoco grazie al suo id
-        univoco. Esempio: #header { background-color: blue; } - Imposta lo
-        sfondo blu per l'elemento con id "header".</il
+        ><b>Selettore per id</b>: Seleziona un elemento univoco grazie al suo id univoco. Esempio: #header {
+        background-color: blue; } - Imposta lo sfondo blu per l'elemento con id "header".</il
       >
       <il
-        ><b>Selettore per classe</b>: Seleziona tutti gli elementi con una
-        specifica classe CSS. Esempio: .testo-centrato { text-align: center; } -
-        Centra il testo negli elementi con classe "testo-centrato".</il
+        ><b>Selettore per classe</b>: Seleziona tutti gli elementi con una specifica classe CSS. Esempio:
+        .testo-centrato { text-align: center; } - Centra il testo negli elementi con classe "testo-centrato".</il
       >
       <il
-        ><b>Selettore per attributo</b>: Seleziona gli elementi in base al
-        valore di un attributo HTML. Esempio: a[ href ] { color: green; } -
-        Colora di verde tutti i link.</il
+        ><b>Selettore per attributo</b>: Seleziona gli elementi in base al valore di un attributo HTML. Esempio: a[ href
+        ] { color: green; } - Colora di verde tutti i link.</il
       >
     </ul>
     <h2 id="sezione6">Esempio codice in CSS</h2>
     <p>
       <b>h1 {</b> <i> SELETTORE (Seleziona tutti gli elementi h1)</i><br />
-      <b>color: #FF0000;</b><i> REGOLA (Imposta il colore del testo rosso)</i
-      ><i></i><br />
-      <b>font-family: Arial, sans-serif;</b
-      ><i> REGOLA (Imposta il font Arial o un font sans-serif)</i><br />
-      <b>font-size: 24px;</b
-      ><i> REGOLA (Imposta la dimensione del testo a 24 pixel)</i><br />
+      <b>color: #FF0000;</b><i> REGOLA (Imposta il colore del testo rosso)</i><i></i><br />
+      <b>font-family: Arial, sans-serif;</b><i> REGOLA (Imposta il font Arial o un font sans-serif)</i><br />
+      <b>font-size: 24px;</b><i> REGOLA (Imposta la dimensione del testo a 24 pixel)</i><br />
       <b>}</b>
       <br />
       <br />
       <b>.testo-centrato {</b>
-      <i
-        >SELETTORE (Seleziona tutti i paragrafi con la classe
-        "testo-centrato")</i
-      ><br />
+      <i>SELETTORE (Seleziona tutti i paragrafi con la classe "testo-centrato")</i><br />
       <b>text-align: center;</b>
       <i>REGOLA(Centra il testo all'interno del paragrafo)</i><br />
       <b>}</b> <br />
@@ -168,8 +135,7 @@
       <i>REGOLA (Imposta il colore di sfondo blu)</i><br />
       <b>padding: 10px 20px;</b>
       <i>REGOLA (Aggiunge spazio intorno al testo del pulsante)</i><br />
-      <b>border: 2px solid #FFFFFF;</b> <i>REGOLA (Aggiunge un bordo bianco)</i
-      ><br />
+      <b>border: 2px solid #FFFFFF;</b> <i>REGOLA (Aggiunge un bordo bianco)</i><br />
       <b>}</b>
       <br />
     </p>

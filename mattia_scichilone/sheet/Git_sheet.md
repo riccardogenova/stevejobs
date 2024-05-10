@@ -1,3 +1,5 @@
+<!-- @format -->
+
 git init: inizializza un nuovo repository Git nella directory corrente.
 
 git clone [URL]: clona una repository Git esistehte dalla URL specificata.

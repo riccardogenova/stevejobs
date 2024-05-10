@@ -1,3 +1,5 @@
+<!-- @format -->
+
 # CSS
 
 Da cosa sono composte le pagine web? Migliaia di righe di codice costruiscono i siti che conosciamo e usiamo tutti i giorni. Alla base di tutto c'è HTML, il linguaggio di markup che con i suoi "tag" permette di delineare la struttura della pagina, definendo come posizionare il contenuto come se fossero i mattoni di una casa. Ma ogni abitazione va poi resa unica: come si colorano i pulsanti? Come si sceglie il font giusto per i titoli? Come si possono spaziare correttamente gli elementi fra di loro?

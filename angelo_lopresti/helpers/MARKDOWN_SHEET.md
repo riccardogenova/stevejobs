@@ -1,3 +1,5 @@
+<!-- @format -->
+
 # markdown sheet
 
 Ecco una lista più completa dei comandi di Markdown, inclusi comandi base, estensioni e varianti:

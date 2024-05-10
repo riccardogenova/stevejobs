@@ -1,3 +1,5 @@
+<!-- @format -->
+
 # GIT
 
 ## Cos'è GIT

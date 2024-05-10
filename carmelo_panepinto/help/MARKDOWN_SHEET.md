@@ -1,3 +1,5 @@
+<!-- @format -->
+
 # titolo - intestazione 1
 
 **grassetto**

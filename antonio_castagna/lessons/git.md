@@ -1,3 +1,5 @@
+<!-- @format -->
+
 # Cos’è Git?
 
 Si tratta di un software gratuito e open source per il controllo di versione, utilizzabile da linea di comando o tramite client GUI Git.

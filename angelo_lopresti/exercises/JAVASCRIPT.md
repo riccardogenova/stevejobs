@@ -1,3 +1,5 @@
+<!-- @format -->
+
 # La nascita di un gigante del web: la storia di JavaScript
 
     _JavaScript, il linguaggio onnipresente che alimenta il web interattivo, vanta una storia affascinante, intrecciata con l'evoluzione del World Wide Web._

@@ -1,3 +1,5 @@
+<!-- @format -->
+
 **HTML: Il Linguaggio Fondamentale del Web**
 
 HTML, acronimo di HyperText Markup Language, rappresenta il pilastro portante del World Wide Web. È un linguaggio di marcatura progettato per strutturare e presentare contenuti all'interno delle pagine web, fornendo una base solida per la comunicazione e lo scambio di informazioni online. Nato negli anni '90, HTML ha subito un'evoluzione costante, adattandosi alle esigenze crescenti degli sviluppatori e degli utenti, diventando il linguaggio standard per la creazione di contenuti web.

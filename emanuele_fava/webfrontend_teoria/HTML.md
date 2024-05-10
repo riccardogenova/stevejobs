@@ -1,3 +1,5 @@
+<!-- @format -->
+
 # HTML: Storia
 
 **HTML**, acronimo di _HyperText Markup Language_, è il linguaggio **standard** utilizzato per la creazione e la strutturazione di **pagine web**. Consiste in una serie di elementi di **markup** che definiscono la **struttura logica** del contenuto di una **pagina web**.

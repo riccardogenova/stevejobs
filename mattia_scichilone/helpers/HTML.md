@@ -1,3 +1,5 @@
+<!-- @format -->
+
 HTML (Hype Text Markup Language), è un linguaggio standard utilizzato per creare e strutturare contenuti su pagine web.
 è il fondamento di base di ogni pagina web che visualizzi nel proprio browser.
 

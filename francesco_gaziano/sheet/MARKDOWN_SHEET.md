@@ -1,3 +1,5 @@
+<!-- @format -->
+
 # COME SI SCRIVONO I TITOLI SU MARKDOWN
 
 # Titolo Principale

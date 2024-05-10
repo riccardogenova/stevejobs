@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap");
+/** @format */
+
+@import url('https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap');
 
 * {
   background-color: aquamarine;
@@ -6,7 +8,7 @@
 
 h1 {
   font-size: 60px;
-  font-family: "Sedan SC", serif;
+  font-family: 'Sedan SC', serif;
   font-weight: 400;
   font-style: normal;
   text-align: center;

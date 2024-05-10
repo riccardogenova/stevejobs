@@ -1,3 +1,5 @@
+<!-- @format -->
+
 ## Comandi più importanti e cosa fanno:
 
 1. `git init`: Inizializza un nuovo repository Git nella directory corrente.

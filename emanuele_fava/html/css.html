@@ -1,3 +1,5 @@
+<!-- @format -->
+
 <!doctype html>
 <html>
   <head>
@@ -31,20 +33,17 @@
       <hr />
 
       <p>
-        Le Cascading Style Sheets (CSS) sono un linguaggio di stile utilizzato
-        per definire l'aspetto e la formattazione di documenti HTML, XHTML e
-        XML. Consentono ai progettisti web di separare la struttura e il
-        contenuto di una pagina web dalla sua presentazione, consentendo una
-        maggiore flessibilità e controllo sul design.
+        Le Cascading Style Sheets (CSS) sono un linguaggio di stile utilizzato per definire l'aspetto e la formattazione
+        di documenti HTML, XHTML e XML. Consentono ai progettisti web di separare la struttura e il contenuto di una
+        pagina web dalla sua presentazione, consentendo una maggiore flessibilità e controllo sul design.
       </p>
 
       <h2>Origini</h2>
       <hr />
 
       <p>
-        CSS è stato proposto per la prima volta da Håkon Wium Lie e Bert Bos nel
-        1994, come parte del progetto per il World Wide Web al CERN. La versione
-        iniziale è stata introdotta nel 1996 e ha subito diverse iterazioni nel
+        CSS è stato proposto per la prima volta da Håkon Wium Lie e Bert Bos nel 1994, come parte del progetto per il
+        World Wide Web al CERN. La versione iniziale è stata introdotta nel 1996 e ha subito diverse iterazioni nel
         corso degli anni.
       </p>
 
@@ -55,28 +54,24 @@
 
       <ul>
         <li>
-          <strong>Separazione dei contenuti e della presentazione</strong>:
-          consente ai progettisti di separare la struttura HTML dallo stile,
-          migliorando la manutenibilità del codice.
+          <strong>Separazione dei contenuti e della presentazione</strong>: consente ai progettisti di separare la
+          struttura HTML dallo stile, migliorando la manutenibilità del codice.
         </li>
         <li>
-          <strong>Cascading</strong>: permette di definire regole di stile che
-          si sovrappongono e si ereditano in modo gerarchico, consentendo una
-          gestione efficiente dello stile.
+          <strong>Cascading</strong>: permette di definire regole di stile che si sovrappongono e si ereditano in modo
+          gerarchico, consentendo una gestione efficiente dello stile.
         </li>
         <li>
-          <strong>Selettore basato su classi e ID</strong>: offre la possibilità
-          di applicare stili specifici a elementi HTML tramite classi e ID.
+          <strong>Selettore basato su classi e ID</strong>: offre la possibilità di applicare stili specifici a elementi
+          HTML tramite classi e ID.
         </li>
         <li>
-          <strong>Supporto per il layout responsive</strong>: consente la
-          creazione di layout che si adattano dinamicamente a diverse dimensioni
-          e dispositivi.
+          <strong>Supporto per il layout responsive</strong>: consente la creazione di layout che si adattano
+          dinamicamente a diverse dimensioni e dispositivi.
         </li>
         <li>
-          <strong>Estensibilità</strong>: permette l'utilizzo di fogli di stile
-          esterni e inline, nonché la definizione di stili direttamente
-          nell'elemento HTML.
+          <strong>Estensibilità</strong>: permette l'utilizzo di fogli di stile esterni e inline, nonché la definizione
+          di stili direttamente nell'elemento HTML.
         </li>
       </ul>
 
@@ -84,82 +79,67 @@
       <hr />
 
       <p>
-        CSS è diventato uno standard de facto per la formattazione e lo stile
-        delle pagine web. È ampiamente supportato da tutti i principali browser
-        e piattaforme web. La sua popolarità è cresciuta costantemente nel corso
-        degli anni, grazie alla sua flessibilità e potenza nel gestire l'aspetto
-        delle pagine web.
+        CSS è diventato uno standard de facto per la formattazione e lo stile delle pagine web. È ampiamente supportato
+        da tutti i principali browser e piattaforme web. La sua popolarità è cresciuta costantemente nel corso degli
+        anni, grazie alla sua flessibilità e potenza nel gestire l'aspetto delle pagine web.
       </p>
       <h2>Cos'è il DOM?</h2>
       <hr />
       <p>
-        Il Document Object Model (DOM) è una rappresentazione gerarchica di un
-        documento HTML o XML. Esso consente agli sviluppatori di interagire con
-        la struttura del documento in modo programmatico. Il DOM è composto da
-        nodi che rappresentano elementi, testo, attributi e altro ancora.
+        Il Document Object Model (DOM) è una rappresentazione gerarchica di un documento HTML o XML. Esso consente agli
+        sviluppatori di interagire con la struttura del documento in modo programmatico. Il DOM è composto da nodi che
+        rappresentano elementi, testo, attributi e altro ancora.
       </p>
       <p>
-        La radice del DOM è il nodo `document`, da cui derivano tutti gli altri
-        nodi. Attraverso il DOM, è possibile selezionare elementi specifici,
-        modificarne il contenuto e gli attributi, e creare nuovi nodi per
-        estendere la struttura del documento.
+        La radice del DOM è il nodo `document`, da cui derivano tutti gli altri nodi. Attraverso il DOM, è possibile
+        selezionare elementi specifici, modificarne il contenuto e gli attributi, e creare nuovi nodi per estendere la
+        struttura del documento.
       </p>
       <p>
-        Alcuni esempi di interazione con il DOM includono la selezione di
-        elementi specifici utilizzando JavaScript, l'aggiunta di gestori di
-        eventi e la manipolazione di proprietà CSS per creare effetti visivi
-        dinamici.
+        Alcuni esempi di interazione con il DOM includono la selezione di elementi specifici utilizzando JavaScript,
+        l'aggiunta di gestori di eventi e la manipolazione di proprietà CSS per creare effetti visivi dinamici.
       </p>
 
       <h2>Interazione tra CSS e DOM</h2>
       <hr />
       <p>
-        Il CSS utilizza il DOM per applicare stili agli elementi di una pagina
-        web. I selettori CSS permettono di individuare specifici elementi nel
-        DOM basandosi su:
+        Il CSS utilizza il DOM per applicare stili agli elementi di una pagina web. I selettori CSS permettono di
+        individuare specifici elementi nel DOM basandosi su:
       </p>
       <ul>
+        <li><strong>Tag</strong>: per esempio, `h1` seleziona gli elementi di intestazione di primo livello.</li>
         <li>
-          <strong>Tag</strong>: per esempio, `h1` seleziona gli elementi di
-          intestazione di primo livello.
+          <strong>Classi</strong>: utilizzando il punto (`.`), come `.navbar`, per selezionare gli elementi con una
+          determinata classe.
         </li>
         <li>
-          <strong>Classi</strong>: utilizzando il punto (`.`), come `.navbar`,
-          per selezionare gli elementi con una determinata classe.
-        </li>
-        <li>
-          <strong>ID</strong>: utilizzando il simbolo del cancelletto (`#`),
-          come `#homepage`, per selezionare un elemento con un ID specifico.
+          <strong>ID</strong>: utilizzando il simbolo del cancelletto (`#`), come `#homepage`, per selezionare un
+          elemento con un ID specifico.
         </li>
       </ul>
       <p>
-        Inoltre, il CSS consente di definire il layout e il posizionamento degli
-        elementi nel DOM. Moduli avanzati come Flexbox e CSS Grid permettono di
-        creare layout flessibili e adattabili a diverse dimensioni e
-        dispositivi.
+        Inoltre, il CSS consente di definire il layout e il posizionamento degli elementi nel DOM. Moduli avanzati come
+        Flexbox e CSS Grid permettono di creare layout flessibili e adattabili a diverse dimensioni e dispositivi.
       </p>
       <p>
-        Le pseudo-classi e gli pseudo-elementi del CSS rafforzano ulteriormente
-        l'interazione tra CSS e DOM. Le pseudo-classi, come `:hover`, consentono
-        di applicare stili basati su condizioni specifiche, mentre gli
-        pseudo-elementi, come `::before` e `::after`, permettono di aggiungere
-        contenuti virtuali prima o dopo un elemento.
+        Le pseudo-classi e gli pseudo-elementi del CSS rafforzano ulteriormente l'interazione tra CSS e DOM. Le
+        pseudo-classi, come `:hover`, consentono di applicare stili basati su condizioni specifiche, mentre gli
+        pseudo-elementi, come `::before` e `::after`, permettono di aggiungere contenuti virtuali prima o dopo un
+        elemento.
       </p>
       <p>
-        Infine, il CSS può essere modificato dinamicamente tramite JavaScript,
-        consentendo una maggiore interazione con il DOM e la creazione di
-        effetti animati, transizioni e comportamenti interattivi sulla base di
-        eventi o azioni dell'utente.
+        Infine, il CSS può essere modificato dinamicamente tramite JavaScript, consentendo una maggiore interazione con
+        il DOM e la creazione di effetti animati, transizioni e comportamenti interattivi sulla base di eventi o azioni
+        dell'utente.
       </p>
 
       <h2>Conclusioni</h2>
       <hr />
 
       <p>
-        CSS rappresenta uno strumento fondamentale per i progettisti web,
-        consentendo loro di creare layout e design accattivanti e funzionali.
-        Grazie alla sua ampia adozione e alla continua evoluzione, rimane una
-        parte essenziale dello sviluppo web moderno.
+        CSS rappresenta uno strumento fondamentale per i progettisti web, consentendo loro di creare layout e design
+        accattivanti e funzionali. Grazie alla sua ampia adozione e alla continua evoluzione, rimane una parte
+        essenziale dello sviluppo web moderno.
       </p>
     </div>
 

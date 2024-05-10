@@ -1,3 +1,5 @@
+<!-- @format -->
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -6,7 +8,7 @@
     <title>Git_sheet</title>
     <style>
       code {
-        font-family: Consolas, "courier new";
+        font-family: Consolas, 'courier new';
         color: rgb(12, 12, 12);
         background-color: #f1f1f1;
         padding: 2px;
@@ -16,22 +18,15 @@
   </head>
   <body>
     <p>
-      <a href="C:\Users\camon\Documents\Steve jobs\Web_front_end\index.html"
-        >Home</a
-      >
-      <a
-        href="C:\Users\camon\Documents\Steve jobs\Web_front_end\Html\Lessons\GIT.html"
-        >Lesson</a
-      >
+      <a href="C:\Users\camon\Documents\Steve jobs\Web_front_end\index.html">Home</a>
+      <a href="C:\Users\camon\Documents\Steve jobs\Web_front_end\Html\Lessons\GIT.html">Lesson</a>
     </p>
     <h1 id="configurazioni-di-base-di-git">Configurazioni di base di git</h1>
     <p>Configuriamo il nostro git con le nostre credenziali di GitHub:</p>
     <pre><code>git config --global user<span class="hljs-selector-class">.name</span> <span class="hljs-string">'Tuo Nome GitHub'</span>
 git config --global user<span class="hljs-selector-class">.email</span> email@github.com
 </code></pre>
-    <h4 id="ci-sono-due-modi-per-instanzire-un-progetto">
-      Ci sono due modi per instanzire un progetto
-    </h4>
+    <h4 id="ci-sono-due-modi-per-instanzire-un-progetto">Ci sono due modi per instanzire un progetto</h4>
     <ol>
       <li>Inizializziamo un progetto non esistente:</li>
     </ol>
@@ -41,19 +36,11 @@ git config --global user<span class="hljs-selector-class">.email</span> email@gi
     </ol>
     <p>
       git clone serverURL.git Esempio: git clone
-      <a href="https://github.com/tesseslol/irixos-websites.git"
-        >https://github.com/tesseslol/irixos-websites.git</a
-      >
-      Git clone permette di copiare il .git file del server e anche il
-      repository.
+      <a href="https://github.com/tesseslol/irixos-websites.git">https://github.com/tesseslol/irixos-websites.git</a>
+      Git clone permette di copiare il .git file del server e anche il repository.
     </p>
-    <h1 id="configurazione-del-server-remoto">
-      Configurazione del server remoto
-    </h1>
-    <p>
-      Con questo comando visualizziamo la lista di server remoti salvati con
-      relativo url:
-    </p>
+    <h1 id="configurazione-del-server-remoto">Configurazione del server remoto</h1>
+    <p>Con questo comando visualizziamo la lista di server remoti salvati con relativo url:</p>
     <pre><code><span class="hljs-attribute">git remote -v</span>
 </code></pre>
     <p>P.S. di solito il server principale si chiama origin</p>
@@ -66,10 +53,9 @@ git config --global user<span class="hljs-selector-class">.email</span> email@gi
     <pre><code>git <span class="hljs-keyword">add</span><span class="bash"> nome_file</span>
 </code></pre>
     <p>
-      Si può utilizzare l&#39;asterisco per aggiungere tutti i file. Se si vuole
-      escludere un file dalla selezione totale (con l&#39;asterisco) basta
-      creare un file denominato .gitignore e metterci all&#39;interno i file che
-      non si vogliono aggiungere al INDEX.
+      Si può utilizzare l&#39;asterisco per aggiungere tutti i file. Se si vuole escludere un file dalla selezione
+      totale (con l&#39;asterisco) basta creare un file denominato .gitignore e metterci all&#39;interno i file che non
+      si vogliono aggiungere al INDEX.
     </p>
     <p>Ora aggiungiamo i file dell&#39;index all&#39;head:</p>
     <pre><code><span class="hljs-attribute">git</span> commit -m <span class="hljs-string">"Messaggio del commit"</span>
@@ -155,10 +141,7 @@ Esempio: git <span class="hljs-keyword">tag</span> <span class="hljs-title">-a</
     <pre><code>git checkout -<span class="hljs-selector-tag">b</span> nomeBranch
 Esempio: git checkout -<span class="hljs-selector-tag">b</span> feature
 </code></pre>
-    <p>
-      Per unire il branch al repository originale usiamo (ricordatevi di fare un
-      commit nel branch):
-    </p>
+    <p>Per unire il branch al repository originale usiamo (ricordatevi di fare un commit nel branch):</p>
     <pre><code>git checkout <span class="hljs-keyword">master</span>
 <span class="hljs-title">git</span> merge feature
 </code></pre>
@@ -204,9 +187,7 @@ tag        Crea, visualizza la lista, elimina o verifica il tag della versione d
 pull       Fetch <span class="hljs-built_in">from</span> <span class="hljs-keyword">and</span> integrate <span class="hljs-keyword">with</span> another repository <span class="hljs-keyword">or</span> <span class="hljs-keyword">a</span> <span class="hljs-built_in">local</span> branch
 push       Update remote refs along <span class="hljs-keyword">with</span> associated objects
 </code></pre>
-    <h1 id="crea-un-nuovo-repository-sulla-riga-di-comando">
-      Crea un nuovo repository sulla riga di comando
-    </h1>
+    <h1 id="crea-un-nuovo-repository-sulla-riga-di-comando">Crea un nuovo repository sulla riga di comando</h1>
     <pre><code>echo <span class="hljs-string">"# Web-front-end"</span> &gt;&gt; README.md
 git init
 git <span class="hljs-keyword">add</span><span class="bash"> README.md

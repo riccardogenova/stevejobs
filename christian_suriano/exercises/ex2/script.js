@@ -1,3 +1,5 @@
+/** @format */
+
 //----------------------esercizi----------------------//
 //1.Dato un array di numeri, triplica ciascun numero presente nell'array.
 const numbers = [1, 2, 3, 4, 5];

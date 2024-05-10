@@ -1,3 +1,5 @@
+<!-- @format -->
+
 #Titolo principale
 
 Questo è un paragrafo di testo normale.

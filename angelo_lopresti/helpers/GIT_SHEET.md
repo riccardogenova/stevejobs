@@ -1,3 +1,5 @@
+<!-- @format -->
+
 # git sheet
 
 ## comandi con esempi

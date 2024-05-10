@@ -1,3 +1,5 @@
+<!-- @format -->
+
 # Markdown SHEET
 
 Comandi divisi per categoria:

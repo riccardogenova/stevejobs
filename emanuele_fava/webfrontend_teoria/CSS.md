@@ -1,3 +1,5 @@
+<!-- @format -->
+
 # CSS: Breve Introduzione
 
 Le Cascading Style Sheets (CSS) sono un linguaggio di stile utilizzato per definire l'aspetto e la formattazione di documenti HTML, XHTML e XML. Consentono ai progettisti web di separare la struttura e il contenuto di una pagina web dalla sua presentazione, consentendo una maggiore flessibilità e controllo sul design.

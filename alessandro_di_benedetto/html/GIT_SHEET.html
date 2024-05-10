@@ -1,3 +1,5 @@
+<!-- @format -->
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -58,16 +60,10 @@ git config --global user.email email@github.com
     <pre><code>git clone serverURL.git
     Esempio: git clone https://github.com/tesseslol/irixos-websites.git
     </code></pre>
-    <p>
-      Git clone permette di copiare il file .git del server e anche il
-      repository.
-    </p>
+    <p>Git clone permette di copiare il file .git del server e anche il repository.</p>
 
     <h2>Configurazione del server remoto</h2>
-    <p>
-      Con questo comando visualizziamo la lista di server remoti salvati con
-      relativo URL:
-    </p>
+    <p>Con questo comando visualizziamo la lista di server remoti salvati con relativo URL:</p>
     <pre><code>git remote -v
     </code></pre>
     <p>P.S. di solito il server principale si chiama origin</p>
@@ -80,10 +76,9 @@ git config --global user.email email@github.com
     <pre><code>git add nome_file
 </code></pre>
     <p>
-      Si può utilizzare l'asterisco per aggiungere tutti i file. Se si vuole
-      escludere un file dalla selezione totale (con l'asterisco) basta creare un
-      file denominato .gitignore e metterci all'interno i file che non si
-      vogliono aggiungere all'INDEX.
+      Si può utilizzare l'asterisco per aggiungere tutti i file. Se si vuole escludere un file dalla selezione totale
+      (con l'asterisco) basta creare un file denominato .gitignore e metterci all'interno i file che non si vogliono
+      aggiungere all'INDEX.
     </p>
     <p>Ora aggiungiamo i file dell'INDEX all'HEAD:</p>
     <pre><code>git commit -m "Messaggio del commit"
@@ -151,10 +146,7 @@ Esempio: git branch -d feature</code></pre>
     <p>Crea il ramo e passa a quel branch:</p>
     <pre><code>git checkout -b nomeBranch
 Esempio: git checkout -b feature</code></pre>
-    <p>
-      Per unire il branch al repository originale usiamo (ricordatevi di fare un
-      commit nel branch):
-    </p>
+    <p>Per unire il branch al repository originale usiamo (ricordatevi di fare un commit nel branch):</p>
     <pre><code>git checkout master
 git merge feature</code></pre>
 
@@ -169,8 +161,7 @@ init       Crea un git repository o ne inizializza uno</code></pre>
     <code>rm</code>: Rimuove i file dalla directory corrente e dall'INDEX<br />
 
     <h2>Mostra la cronologia e lo stato</h2>
-    <code>bisect</code>: Utilizza la ricerca binaria per trovare il commit che
-    ha introdotto un bug<br />
+    <code>bisect</code>: Utilizza la ricerca binaria per trovare il commit che ha introdotto un bug<br />
     <code>grep</code>: Stampa le righe che corrispondono a un pattern<br />
     <code>log</code>: Mostra il log dei commit<br />
     <code>status</code>: Stato del contenuto di un progetto<br />
@@ -178,20 +169,16 @@ init       Crea un git repository o ne inizializza uno</code></pre>
 
     <h2>Grow, mark and tweak your common history</h2>
     <code>branch</code>: Visualizza, crea ed elimina i rami (branches)<br />
-    <code>checkout</code>: Cambia ramo (branches) o ripristina la struttura
-    dell'area di lavoro<br />
+    <code>checkout</code>: Cambia ramo (branches) o ripristina la struttura dell'area di lavoro<br />
     <code>commit</code>: Registra le modifiche del repository<br />
     <code>diff</code>: Confronta i commit (es. commit e area di lavoro)<br />
     <code>merge</code>: Unisce una o più cronologie di sviluppo<br />
     <code>rebase</code>: Reapplica i commit su un'altra base<br />
-    <code>tag</code>: Crea, visualizza la lista, elimina o verifica il tag della
-    versione del progetto<br />
+    <code>tag</code>: Crea, visualizza la lista, elimina o verifica il tag della versione del progetto<br />
 
     <h2>Collabora</h2>
     <code>fetch</code>: Scarica oggetti e riferimenti da un altro repository<br />
-    <code>pull</code>: Scarica e integra con un altro repository o un ramo
-    locale<br />
-    <code>push</code>: Aggiorna i riferimenti remoti insieme agli oggetti
-    associati<br />
+    <code>pull</code>: Scarica e integra con un altro repository o un ramo locale<br />
+    <code>push</code>: Aggiorna i riferimenti remoti insieme agli oggetti associati<br />
   </body>
 </html>

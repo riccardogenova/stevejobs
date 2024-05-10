@@ -1,3 +1,5 @@
+<!-- @format -->
+
 # COSA è CSS
 
 _CSS, acronimo di Cascading Style Sheets, è un linguaggio di stile utilizzato per definire l'aspetto e la formattazione di documenti HTML, XHTML e XML. Con CSS, è possibile controllare il layout, i colori, i tipi di carattere, le dimensioni e altri aspetti visivi di un sito web. I fogli di stile CSS separano il contenuto strutturale di una pagina web dalla sua presentazione, consentendo agli sviluppatori di apportare modifiche di stile senza dover modificare il codice HTML sottostante. Questo approccio favorisce una maggiore flessibilità, manutenibilità e facilità di aggiornamento dei siti web._

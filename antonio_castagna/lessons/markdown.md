@@ -1,3 +1,5 @@
+<!-- @format -->
+
 # Linguaggio Markdown
 
 Markdown è un linguaggio di markup leggero e versatile, che si differenzia rispetto ad altri per la sua elevata leggibilità. Esso si basa su costrutti sintattici semplici, che non alterano significativamente la struttura del testo annotato. Grazie a questa caratteristica, i documenti markdown possono essere creati, letti e visualizzati con un semplice editor di testo, senza che questo richieda la comprensione di complessi tag come avviene nel caso di altri linguaggi di markup.

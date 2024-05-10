@@ -1,3 +1,5 @@
+<!-- @format -->
+
 # Cosa è l'HTML
 
 HTML è l'acronimo di HyperText Markup Language ("Linguaggio di contrassegno per gli Ipertesti") e non è un linguaggio di programmazione. Si tratta invece di un linguaggio di markup (di 'contrassegno' o 'di marcatura'), che permette di indicare come disporre gli elementi all'interno di una pagina.

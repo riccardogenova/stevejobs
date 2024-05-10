@@ -1,3 +1,5 @@
+<!-- @format -->
+
 # HTML SHEET
 
 Ecco una lista di alcuni dei tag HTML più comuni con esempi del loro utilizzo:

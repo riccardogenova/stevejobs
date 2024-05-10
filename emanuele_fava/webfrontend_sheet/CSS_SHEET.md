@@ -1,3 +1,5 @@
+<!-- @format -->
+
 # CSS Cheat Sheet
 
 ## Selettori
@@ -81,7 +83,7 @@ Esempio:
 
 ```css
 .header {
-  background-image: url("header-background.jpg");
+  background-image: url('header-background.jpg');
   background-repeat: no-repeat;
   background-position: center;
 }

@@ -1,3 +1,5 @@
+<!-- @format -->
+
 # GIT_SHEET
 
 - `git init`: Inizializza un nuovo repository Git nella directory corrente.

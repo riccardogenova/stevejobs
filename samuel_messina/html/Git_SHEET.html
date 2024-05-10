@@ -1,3 +1,5 @@
+<!-- @format -->
+
 <!doctype html>
 <html lang="it">
   <head>
@@ -18,17 +20,11 @@ git config --global user.email email@github.com</code></pre>
       <li>Inizializziamo un progetto esistente su un server Git:</li>
       <pre><code>git clone serverURL.git
 Esempio: git clone https://github.com/tesseslol/irixos-websites.git</code></pre>
-      <p>
-        Git clone permette di copiare il file .git del server e anche il
-        repository.
-      </p>
+      <p>Git clone permette di copiare il file .git del server e anche il repository.</p>
     </ol>
 
     <h2>Configurazione del server remoto</h2>
-    <p>
-      Con questo comando visualizziamo la lista di server remoti salvati con
-      relativo URL:
-    </p>
+    <p>Con questo comando visualizziamo la lista di server remoti salvati con relativo URL:</p>
     <pre><code>git remote -v</code></pre>
     <p>P.S. di solito il server principale si chiama origin</p>
     <p>Ora aggiungiamo un server remoto:</p>
@@ -39,10 +35,9 @@ Esempio: git remote add origin https://github.com/tesseslol/irixos-websites.git<
     <p>Aggiungiamo i file dalla directory del progetto all'index:</p>
     <pre><code>git add nome_file</code></pre>
     <p>
-      Si può utilizzare l'asterisco per aggiungere tutti i file. Se si vuole
-      escludere un file dalla selezione totale (con l'asterisco) basta creare un
-      file denominato .gitignore e metterci all'interno i file che non si
-      vogliono aggiungere al INDEX.
+      Si può utilizzare l'asterisco per aggiungere tutti i file. Se si vuole escludere un file dalla selezione totale
+      (con l'asterisco) basta creare un file denominato .gitignore e metterci all'interno i file che non si vogliono
+      aggiungere al INDEX.
     </p>
     <p>Ora aggiungiamo i file dell'index all'head:</p>
     <pre><code>git commit -m "Messaggio del commit"</code></pre>
@@ -108,10 +103,7 @@ Esempio: git branch -d feature</code></pre>
     <p>Crea il ramo e passa a quel branch:</p>
     <pre><code>git checkout -b nomeBranch
 Esempio: git checkout -b feature</code></pre>
-    <p>
-      Per unire il branch al repository originale usiamo (ricordatevi di fare un
-      commit nel branch):
-    </p>
+    <p>Per unire il branch al repository originale usiamo (ricordatevi di fare un commit nel branch):</p>
     <pre><code>git checkout master
 git merge feature</code></pre>
 

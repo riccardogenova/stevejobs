@@ -1,3 +1,5 @@
+<!-- @format -->
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -28,24 +30,19 @@
       <h1>Comandi Javascript</h1>
       <br />
       <p>
-        Gli elementi più utilizzati in JavaScript per manipolare il DOM
-        includono: <br /><br />
+        Gli elementi più utilizzati in JavaScript per manipolare il DOM includono: <br /><br />
 
         <b>getElementById:</b>Seleziona un elemento tramite il suo attributo id.
         <br />
-        <b>getElementsByClassName:</b> Seleziona elementi tramite i loro nomi di
-        classe.<br />
-        <b>getElementsByTagName:</b> Seleziona elementi tramite il loro nome di
-        tag (ad esempio, <code>&lt;p&gt; o &lt;div&gt;</code>). <br />
-        <b>querySelector:</b> Seleziona il primo elemento che corrisponde a un
-        selettore CSS specificato. <br />
-        <b>querySelectorAll:</b> Seleziona tutti gli elementi che corrispondono
-        a un selettore CSS specificato. <br />
+        <b>getElementsByClassName:</b> Seleziona elementi tramite i loro nomi di classe.<br />
+        <b>getElementsByTagName:</b> Seleziona elementi tramite il loro nome di tag (ad esempio,
+        <code>&lt;p&gt; o &lt;div&gt;</code>). <br />
+        <b>querySelector:</b> Seleziona il primo elemento che corrisponde a un selettore CSS specificato. <br />
+        <b>querySelectorAll:</b> Seleziona tutti gli elementi che corrispondono a un selettore CSS specificato. <br />
         <b>innerHTML:</b> Modifica il contenuto HTML di un elemento. <br />
         <b>innerText:</b> Modifica il testo di un elemento. <br />
-        <b>classList:</b> Gestisce le classi CSS di un elemento, permettendo di
-        aggiungere, rimuovere, sostituire o verificare la presenza di una
-        classe. <br />
+        <b>classList:</b> Gestisce le classi CSS di un elemento, permettendo di aggiungere, rimuovere, sostituire o
+        verificare la presenza di una classe. <br />
         <b>setAttribute:</b> Imposta o modifica un attributo di un elemento.
         <br />
         <b>removeAttribute:</b> Rimuove un attributo da un elemento. <br />
@@ -57,38 +54,31 @@
       <br />
       <h2>VARIABILI</h2>
       <p>
-        In JavaScript, le variabili sono contenitori per memorizzare dati che
-        possono essere di diversi tipi. <br /><br />
+        In JavaScript, le variabili sono contenitori per memorizzare dati che possono essere di diversi tipi.
+        <br /><br />
       </p>
 
       <h3>Tipi di Dati Primitivi:</h3>
       <p>
-        <b>Number:</b> Rappresenta sia numeri interi che decimali. Esempio: let
-        numero = 42; <br />
-        <b>String:</b> Rappresenta una sequenza di caratteri. Esempio: let
-        saluto = "Ciao"; <br />
-        <b>Boolean:</b> Rappresenta un valore logico vero o falso. Esempio: let
-        flag = true;<br />
-        <b>Undefined:</b> Indica che una variabile è stata dichiarata ma non è
-        stata assegnata a nessun valore.<br />
+        <b>Number:</b> Rappresenta sia numeri interi che decimali. Esempio: let numero = 42; <br />
+        <b>String:</b> Rappresenta una sequenza di caratteri. Esempio: let saluto = "Ciao"; <br />
+        <b>Boolean:</b> Rappresenta un valore logico vero o falso. Esempio: let flag = true;<br />
+        <b>Undefined:</b> Indica che una variabile è stata dichiarata ma non è stata assegnata a nessun valore.<br />
         <b>Null:</b> Rappresenta un valore nullo o “nessun valore”.<br />
-        <b>Symbol:</b> Utilizzato per creare identificatori univoci per le
-        proprietà degli oggetti.<br />
-        <b>BigInt:</b> Rappresenta numeri interi molto grandi che non possono
-        essere rappresentati dal tipo Number.<br />
+        <b>Symbol:</b> Utilizzato per creare identificatori univoci per le proprietà degli oggetti.<br />
+        <b>BigInt:</b> Rappresenta numeri interi molto grandi che non possono essere rappresentati dal tipo Number.<br />
       </p>
       <br />
 
       <h3>Tipi di Dati di Riferimento:</h3>
 
       <p>
-        <b>Object:</b> Rappresenta una collezione di proprietà, e una proprietà
-        è un’associazione tra un nome (o chiave) e un valore. <br />
-        <b>Array:</b> Un tipo speciale di oggetto usato per memorizzare
-        collezioni ordinate di dati. Esempio: let lista = [1, 'due', true];
+        <b>Object:</b> Rappresenta una collezione di proprietà, e una proprietà è un’associazione tra un nome (o chiave)
+        e un valore. <br />
+        <b>Array:</b> Un tipo speciale di oggetto usato per memorizzare collezioni ordinate di dati. Esempio: let lista
+        = [1, 'due', true];
         <br />
-        <b>Function:</b> Anche le funzioni in JavaScript sono oggetti, e hanno
-        la capacità di essere invocate.
+        <b>Function:</b> Anche le funzioni in JavaScript sono oggetti, e hanno la capacità di essere invocate.
       </p>
       <br />
 
@@ -97,44 +87,36 @@
       <p>
         <b>var:</b> Dichiarazione di variabili con scope globale o di funzione.
         <br />
-        <b>let:</b> Dichiarazione di variabili con scope di blocco, introdotto
-        in ES6.<br />
-        <b>let:</b> Simile a let, ma per dichiarare variabili il cui valore non
-        può essere riassegnato.<br />
+        <b>let:</b> Dichiarazione di variabili con scope di blocco, introdotto in ES6.<br />
+        <b>let:</b> Simile a let, ma per dichiarare variabili il cui valore non può essere riassegnato.<br />
       </p>
       <br />
 
       <h2>FUNZIONI</h2>
       <p>
-        <b>Dichiarazione di una Funzione:</b> Una funzione viene dichiarata con
-        la parola chiave function, seguita dal nome della funzione e da una
-        coppia di parentesi tonde che possono contenere parametr. <br />
-        <b>Invocazione di una Funzione:</b> Per eseguire una funzione, la si
-        invoca utilizzando il suo nome seguito da parentesi tonde, eventualmente
-        contenenti argomenti. <br />
-        <b>Valore di Ritorno:</b> Una funzione può restituire un valore al
-        codice che l’ha chiamata utilizzando l’istruzione return. <br />
-        <b>Funzioni Anonime e Espressioni di Funzione:</b> Le funzioni possono
-        anche essere definite senza un nome, creando così una funzione anonima,
-        spesso utilizzata come valore di callback o assegnata a variabili.
+        <b>Dichiarazione di una Funzione:</b> Una funzione viene dichiarata con la parola chiave function, seguita dal
+        nome della funzione e da una coppia di parentesi tonde che possono contenere parametr. <br />
+        <b>Invocazione di una Funzione:</b> Per eseguire una funzione, la si invoca utilizzando il suo nome seguito da
+        parentesi tonde, eventualmente contenenti argomenti. <br />
+        <b>Valore di Ritorno:</b> Una funzione può restituire un valore al codice che l’ha chiamata utilizzando
+        l’istruzione return. <br />
+        <b>Funzioni Anonime e Espressioni di Funzione:</b> Le funzioni possono anche essere definite senza un nome,
+        creando così una funzione anonima, spesso utilizzata come valore di callback o assegnata a variabili.
         <br />
-        <b>Arrow Functions (Funzioni Freccia):</b> Introdotte in ES6, le arrow
-        functions offrono una sintassi più breve e gestiscono il valore di this
-        in modo diverso. <br />
-        <b>Funzioni Come Valori di Prima Classe:</b> In JavaScript, le funzioni
-        sono trattate come valori di prima classe, il che significa che possono
-        essere assegnate a variabili, passate come argomenti ad altre funzioni e
+        <b>Arrow Functions (Funzioni Freccia):</b> Introdotte in ES6, le arrow functions offrono una sintassi più breve
+        e gestiscono il valore di this in modo diverso. <br />
+        <b>Funzioni Come Valori di Prima Classe:</b> In JavaScript, le funzioni sono trattate come valori di prima
+        classe, il che significa che possono essere assegnate a variabili, passate come argomenti ad altre funzioni e
         restituite da altre funzioni. <br />
 
-        <b>Funzioni Immediatamente Invocate (IIFE):</b> Un IIFE è una funzione
-        che viene eseguita non appena viene definita
+        <b>Funzioni Immediatamente Invocate (IIFE):</b> Un IIFE è una funzione che viene eseguita non appena viene
+        definita
       </p>
 
       <h2>ARRAY</h2>
       <p>
-        Gli array in JavaScript sono strutture dati molto versatili che ti
-        permettono di memorizzare più valori in un’unica variabile. Ecco alcune
-        caratteristiche e metodi fondamentali degli array in JavaScript:
+        Gli array in JavaScript sono strutture dati molto versatili che ti permettono di memorizzare più valori in
+        un’unica variabile. Ecco alcune caratteristiche e metodi fondamentali degli array in JavaScript:
         <br /><br />
 
         Creazione di un Array: <br />
@@ -144,76 +126,62 @@
         <br />
         <b>Accesso agli Elementi:</b> <br />
 
-        Accedi a un elemento tramite il suo indice: const elemento =
-        array[indice];<br />
+        Accedi a un elemento tramite il suo indice: const elemento = array[indice];<br />
         Modifica di un Array:<br />
 
-        <b>Mutabili:</b> push(), pop(), splice(), shift(), unshift(), reverse(),
-        sort()<br />
+        <b>Mutabili:</b> push(), pop(), splice(), shift(), unshift(), reverse(), sort()<br />
         <b>Immutabili:</b> concat(), slice(), map(), filter(), reduce()<br />
         Proprietà e Metodi Utili:<br />
 
         <b>length:</b> restituisce la lunghezza dell’array.<br />
         <b>join():</b> unisce tutti gli elementi di un array in una stringa.<br />
-        <b>indexOf():</b> restituisce il primo indice al quale un dato elemento
-        può essere trovato nell’array.<br /><br />
-        Gli array in JavaScript sono oggetti speciali con proprietà e metodi
-        integrati che facilitano la manipolazione dei dati. Sono flessibili e
-        possono contenere una miscela di diversi tipi di dati<br />
+        <b>indexOf():</b> restituisce il primo indice al quale un dato elemento può essere trovato nell’array.<br /><br />
+        Gli array in JavaScript sono oggetti speciali con proprietà e metodi integrati che facilitano la manipolazione
+        dei dati. Sono flessibili e possono contenere una miscela di diversi tipi di dati<br />
       </p>
       <br />
 
       <h3>ARRAY MUTABILI ED IMMUTABILI</h3>
       <p>
-        In JavaScript, la differenza tra array mutabili e immutabili riguarda la
-        capacità di modificare i dati dopo che sono stati creati. Gli array
-        mutabili possono essere modificati, mentre quelli immutabili non
-        possono. <br />
+        In JavaScript, la differenza tra array mutabili e immutabili riguarda la capacità di modificare i dati dopo che
+        sono stati creati. Gli array mutabili possono essere modificati, mentre quelli immutabili non possono. <br />
 
         <b>Array Mutabili:</b> <br />
-        Gli array in JavaScript sono di natura mutabile, il che significa che il
-        loro contenuto può essere modificato dopo la creazione. Ecco alcuni
-        metodi mutabili: <br />
+        Gli array in JavaScript sono di natura mutabile, il che significa che il loro contenuto può essere modificato
+        dopo la creazione. Ecco alcuni metodi mutabili: <br />
 
         <b>push():</b> aggiunge elementi alla fine dell’array. <br />
         <b>pop():</b> rimuove l’ultimo elemento dall’array.<br />
-        <b>splice():</b> può essere utilizzato per aggiungere o rimuovere
-        elementi da un array.<br />
+        <b>splice():</b> può essere utilizzato per aggiungere o rimuovere elementi da un array.<br />
         <b>shift():</b> rimuove il primo elemento dall’array.<br />
         <b>unshift():</b> aggiunge elementi all’inizio dell’array.<br />
         <b>reverse():</b> inverte l’ordine degli elementi nell’array.<br />
-        <b>sort():</b> ordina gli elementi dell’array secondo una funzione di
-        confronto.<br />
+        <b>sort():</b> ordina gli elementi dell’array secondo una funzione di confronto.<br />
         <br />
 
         <b>Array Immutabili:</b><br />
-        Per lavorare con array in modo immutabile, si utilizzano metodi che non
-        modificano l’array originale ma restituiscono un nuovo array con le
-        modifiche desiderate <br /><br />
+        Per lavorare con array in modo immutabile, si utilizzano metodi che non modificano l’array originale ma
+        restituiscono un nuovo array con le modifiche desiderate <br /><br />
 
         <b>concat():</b> unisce due o più array. <br />
-        <b>slice(): </b>estrae una sezione di un array e la restituisce come un
-        nuovo array. <br />
-        <b>map():</b> crea un nuovo array con i risultati della chiamata di una
-        funzione fornita su ogni elemento dell’array. <br />
-        <b>filter():</b> crea un nuovo array con tutti gli elementi che superano
-        un test implementato da una funzione fornita. <br />
-        <b>reduce():</b> applica una funzione contro un accumulatore e ogni
-        valore dell’array (da sinistra a destra) per ridurlo a un singolo
-        valore. <br />
+        <b>slice(): </b>estrae una sezione di un array e la restituisce come un nuovo array. <br />
+        <b>map():</b> crea un nuovo array con i risultati della chiamata di una funzione fornita su ogni elemento
+        dell’array. <br />
+        <b>filter():</b> crea un nuovo array con tutti gli elementi che superano un test implementato da una funzione
+        fornita. <br />
+        <b>reduce():</b> applica una funzione contro un accumulatore e ogni valore dell’array (da sinistra a destra) per
+        ridurlo a un singolo valore. <br />
         <br />
-        Utilizzare metodi immutabili è una pratica comune nella programmazione
-        funzionale perché aiuta a prevenire effetti collaterali e rende il
-        codice più prevedibile e facile da testare. <br />
+        Utilizzare metodi immutabili è una pratica comune nella programmazione funzionale perché aiuta a prevenire
+        effetti collaterali e rende il codice più prevedibile e facile da testare. <br />
       </p>
       <br />
 
       <h2>OPERATORI</h2>
       <p>
-        In JavaScript, gli operatori vengono utilizzati per eseguire azioni su
-        variabili e valori. Gli operatori logici, aritmetici e comparativi sono
-        fondamentali per la costruzione di espressioni e la logica di controllo
-        del flusso. <br />
+        In JavaScript, gli operatori vengono utilizzati per eseguire azioni su variabili e valori. Gli operatori logici,
+        aritmetici e comparativi sono fondamentali per la costruzione di espressioni e la logica di controllo del
+        flusso. <br />
       </p>
 
       <h3>Operatori Logici:</h3>
@@ -225,8 +193,8 @@
         <br />
         <b>! (NOT):</b> Restituisce true se l’espressione è false, e viceversa.
         <br />
-        <b>?? (Nullish Coalescing):</b> Restituisce il primo operando se non è
-        né null né undefined, altrimenti restituisce il secondo. <br /><br />
+        <b>?? (Nullish Coalescing):</b> Restituisce il primo operando se non è né null né undefined, altrimenti
+        restituisce il secondo. <br /><br />
       </p>
 
       <h3>Operatori Aritmetici:</h3>
@@ -245,21 +213,15 @@
 
       <h3>Operatori Comparativi:</h3>
       <p>
-        <b>== (Uguale a):</b> Verifica se due valori sono uguali (conversione di
-        tipo se necessario). <br />
-        <b>=== (Strettamente uguale a):</b> Verifica se due valori sono uguali e
-        dello stesso tipo. <br />
+        <b>== (Uguale a):</b> Verifica se due valori sono uguali (conversione di tipo se necessario). <br />
+        <b>=== (Strettamente uguale a):</b> Verifica se due valori sono uguali e dello stesso tipo. <br />
         <b>!= (Non uguale a):</b> Verifica se due valori non sono uguali. <br />
-        <b>!== (Strettamente non uguale a):</b> Verifica se due valori non sono
-        uguali o non sono dello stesso tipo. <br />
-        <b>&gt; (Maggiore di):</b> Verifica se il primo valore è maggiore del
-        secondo. <br />
-        <b>&lt; (Minore di):</b> Verifica se il primo valore è minore del
-        secondo. <br />
-        <b>&gt;= (Maggiore o uguale a):</b> Verifica se il primo valore è
-        maggiore o uguale al secondo. <br />
-        <b>&lt;= (Minore o uguale a):</b> Verifica se il primo valore è minore o
-        uguale al secondo. <br />
+        <b>!== (Strettamente non uguale a):</b> Verifica se due valori non sono uguali o non sono dello stesso tipo.
+        <br />
+        <b>&gt; (Maggiore di):</b> Verifica se il primo valore è maggiore del secondo. <br />
+        <b>&lt; (Minore di):</b> Verifica se il primo valore è minore del secondo. <br />
+        <b>&gt;= (Maggiore o uguale a):</b> Verifica se il primo valore è maggiore o uguale al secondo. <br />
+        <b>&lt;= (Minore o uguale a):</b> Verifica se il primo valore è minore o uguale al secondo. <br />
       </p>
     </div>
   </body>

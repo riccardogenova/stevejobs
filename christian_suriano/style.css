@@ -1,3 +1,5 @@
+/** @format */
+
 a {
   color: #1e1e1e; /* Cambia il colore base dei link */
   text-decoration: none; /* togliere la sottolineatura  */
@@ -44,10 +46,7 @@ a {
   height: 100vh;
   margin: 5vh;
   display: grid; /* display grid l'ho messo qua per spostare in DUE colonne le scritte*/
-  grid-template-columns: repeat(
-    2,
-    1fr
-  ); /* Creare due colonne con larghezza uguale */
+  grid-template-columns: repeat(2, 1fr); /* Creare due colonne con larghezza uguale */
   grid-gap: 3px; /*spaziatura fra box e index*/
 }
 
@@ -73,8 +72,7 @@ a {
   color: #1e1e1e;
   display: grid; /* display grid l'ho messo qua per spostare in TRE colonne le scritte*/
   grid-template-columns: repeat(
-    /* display grid e grid template columns serve per dire che visualizziamo un grid con un dato numero di colonne*/
-      3,
+    /* display grid e grid template columns serve per dire che visualizziamo un grid con un dato numero di colonne*/ 3,
     1fr
   ); /* Creare due colonne con larghezza uguale */
   grid-gap: 5px; /*gap orizzontale tra elementi del grid*/

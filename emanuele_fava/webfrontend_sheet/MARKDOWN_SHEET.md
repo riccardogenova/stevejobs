@@ -1,3 +1,5 @@
+<!-- @format -->
+
 # MARKDOWN_SHEET
 
 - Grassetto: Utilizza due asterischi ** testo ** o due trattini bassi ** testo **

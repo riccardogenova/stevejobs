@@ -1,3 +1,5 @@
+<!-- @format -->
+
 git init: Inizializza un nuovo repository Git.
 
 git add <file>: Aggiunge un file alla staging area.

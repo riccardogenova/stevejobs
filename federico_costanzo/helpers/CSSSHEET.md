@@ -1,3 +1,5 @@
+<!-- @format -->
+
 ### Selettori
 
 Selettore per elemento HTML:

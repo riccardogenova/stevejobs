@@ -1,3 +1,5 @@
+<!-- @format -->
+
 Markdown è un linguaggio di markup creato nel 2004 da John Gruber e Aaron Swartz.
 E' progettato per essere non solo facile da leggere e scrivere, ma anche facilmente convertibile in HTML o altri formati, il che lo rende utilizzato ampiamente in blog e sistemi di messaggistica, ma anche README file e siti internet, eccetera.
 

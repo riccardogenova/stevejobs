@@ -1,3 +1,5 @@
+<!-- @format -->
+
 Il Markdown è un linguaggio di formattazione leggero utilizzato per formattare testo su piattaforme web.
 Viene spesso utilizzato per scrivere documenti, articoli e messaggi su piattaforme digitali.
 Questo linguaggio è stato ideato nel 2004 da John Gruber e Aaron Swartz, ed è diventato uno strumento fondamentale

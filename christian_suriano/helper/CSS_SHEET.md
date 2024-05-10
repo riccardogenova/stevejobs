@@ -1,3 +1,5 @@
+<!-- @format -->
+
 Ecco alcuni comandi importanti del CSS che vengono comunemente utilizzati per definire lo stile e la presentazione degli elementi HTML:
 
 1. **Selettori**: I selettori vengono utilizzati per selezionare gli elementi HTML ai quali applicare uno stile. Alcuni esempi comuni includono selettori di tipo (ad esempio, `p` per i paragrafi), selettori di classe (ad esempio, `.classe`), e selettori di ID (ad esempio, `#id`).

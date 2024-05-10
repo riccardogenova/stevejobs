@@ -1,3 +1,5 @@
+<!-- @format -->
+
 # COSA è HTML
 
 HTML, acronimo di HyperText Markup Language (Linguaggio di Markup per IperTesto), è il linguaggio standard utilizzato per creare e strutturare pagine web. È uno dei fondamenti del World Wide Web e consente agli sviluppatori di definire la struttura e il contenuto delle pagine web, inclusi testi, immagini, collegamenti ipertestuali e altri elementi multimediali.

@@ -1,3 +1,5 @@
+<!-- @format -->
+
 ## Tipi di dati in JavaScript
 
 In JavaScript, i tipi di dati definiscono la natura dei valori che possono essere archiviati e manipolati. Conoscere i diversi tipi di dati è fondamentale per scrivere codice JavaScript efficace e organizzato.
@@ -47,7 +49,7 @@ Le variabili sono elementi fondamentali in qualsiasi linguaggio di programmazion
 Per creare una variabile in JavaScript, si utilizza la parola chiave var, seguita dal nome della variabile e da un segno di uguale (=) e dal valore da archiviare:
 
 ```js
-var nome = "Mario";
+var nome = 'Mario';
 var eta = 30;
 var somma = 10 + 5;
 ```
@@ -149,7 +151,7 @@ Un operatore condizionale che restituisce un valore in base a una condizione:
 
 ```js
 var eta = 18;
-var maggiorenne = eta >= 18 ? "Maggiorenne" : "Minorenne";
+var maggiorenne = eta >= 18 ? 'Maggiorenne' : 'Minorenne';
 console.log(maggiorenne); // Output: Maggiore
 ```
 
@@ -204,22 +206,22 @@ Permettono di eseguire codice in base al verificarsi o meno di una condizione:
 var eta = 18;
 
 if (eta >= 18) {
-  console.log("Maggiorenne");
+  console.log('Maggiorenne');
 } else {
-  console.log("Minorenne");
+  console.log('Minorenne');
 }
 
-var giorno = "lunedì";
+var giorno = 'lunedì';
 
 switch (giorno) {
-  case "lunedì":
-    console.log("Inizio della settimana!");
+  case 'lunedì':
+    console.log('Inizio della settimana!');
     break;
-  case "venerdì":
-    console.log("Fine della settimana!");
+  case 'venerdì':
+    console.log('Fine della settimana!');
     break;
   default:
-    console.log("Giorno generico");
+    console.log('Giorno generico');
 }
 ```
 
@@ -245,7 +247,7 @@ while (x <= 10) {
 }
 
 do {
-  console.log("Esegui almeno una volta");
+  console.log('Esegui almeno una volta');
 } while (false);
 
 var numeri = [1, 5, 10, 15];
@@ -253,9 +255,9 @@ for (var numero of numeri) {
   console.log(numero);
 }
 
-var persona = { nome: "Mario", età: 30 };
+var persona = { nome: 'Mario', età: 30 };
 for (var proprietà in persona) {
-  console.log(proprietà + ": " + persona[proprietà]);
+  console.log(proprietà + ': ' + persona[proprietà]);
 }
 ```
 
@@ -269,7 +271,7 @@ Le funzioni vengono dichiarate utilizzando la parola chiave function, seguita da
 
 ```js
 function saluto() {
-  console.log("Ciao a tutti!");
+  console.log('Ciao a tutti!');
 }
 
 saluto(); // chiamata alla funzione saluto
@@ -281,10 +283,10 @@ Le funzioni possono ricevere valori in input, chiamati parametri, che vengono ut
 
 ```js
 function salutaPersona(nome) {
-  console.log("Ciao, " + nome + "!");
+  console.log('Ciao, ' + nome + '!');
 }
 
-salutaPersona("Mario"); // chiamata alla funzione salutaPersona con parametro
+salutaPersona('Mario'); // chiamata alla funzione salutaPersona con parametro
 ```
 
 ## Funzioni come argomenti:
@@ -297,7 +299,7 @@ function eseguiFunzione(funzione) {
 }
 
 function saluto() {
-  console.log("Ciao!");
+  console.log('Ciao!');
 }
 
 eseguiFunzione(saluto); // Output: Ciao!
@@ -309,7 +311,7 @@ Le funzioni anonime sono funzioni senza nome che vengono espresse utilizzando l'
 
 ```js
 var funzioneAnonima = function () {
-  console.log("Funzione anonima!");
+  console.log('Funzione anonima!');
 };
 
 funzioneAnonima(); // Output: Funzione anonima!

@@ -1,6 +1,8 @@
-const contatore = document.querySelector("#contatore");
-const bottone_1 = document.querySelector("#bottone_1");
-const bottone_2 = document.querySelector("#bottone_2");
+/** @format */
+
+const contatore = document.querySelector('#contatore');
+const bottone_1 = document.querySelector('#bottone_1');
+const bottone_2 = document.querySelector('#bottone_2');
 
 /*function updateCounter() {
   contatore.textContent = contatore;
@@ -16,6 +18,6 @@ function onClick_meno() {
   //updateCounter();
 }
 
-bottone_2.addEventListener("click", onClick_piu);
+bottone_2.addEventListener('click', onClick_piu);
 
-bottone_1.addEventListener("click", onClick_meno);
+bottone_1.addEventListener('click', onClick_meno);

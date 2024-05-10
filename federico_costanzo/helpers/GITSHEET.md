@@ -1,3 +1,5 @@
+<!-- @format -->
+
 `git --version` (controlla la versione di git)
 
 `git config --global user.name "name"` (modifica il tuo nome globale (come appari nei progetti))

@@ -1,3 +1,5 @@
+<!-- @format -->
+
 # Git: Una Breve Introduzione
 
 **Git** è un _sistema di controllo versione_ distribuito ampiamente utilizzato per gestire il **codice sorgente** di _progetti software_. È stato creato da **Linus Torvalds** nel **2005** per gestire lo sviluppo del _kernel_ **Linux** ed è diventato uno degli strumenti più diffusi tra gli sviluppatori di software.

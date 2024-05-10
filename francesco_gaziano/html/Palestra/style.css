@@ -1,3 +1,5 @@
+/** @format */
+
 @keyframes SlidefromBottom {
   0% {
     transform: translateY(100%);
@@ -11,10 +13,9 @@
   position: relative;
   display: flex;
   font-size: 1.2em;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-section[name="sec-nav"],
+section[name='sec-nav'],
 a {
   color: black;
   width: 100%;
@@ -26,13 +27,13 @@ a {
   justify-content: space-around;
 }
 
-section[name="sec-nav"],
+section[name='sec-nav'],
 ul > li {
   text-decoration: none;
   list-style-type: none;
 }
 
-section[name="sec-nav"],
+section[name='sec-nav'],
 ul > li:hover {
   color: aliceblue;
 }
@@ -45,7 +46,7 @@ ul > li:hover {
   height: 420px;
   border: 2px solid #000;
   border-radius: 20px 20px 20px 20px;
-  background-image: url("https://i.pinimg.com/736x/cb/37/ab/cb37ab9cd3f3fc0819de1b80bad0fd12.jpg");
+  background-image: url('https://i.pinimg.com/736x/cb/37/ab/cb37ab9cd3f3fc0819de1b80bad0fd12.jpg');
   background: cover;
   animation-delay: 2s;
   animation-direction: normal;

@@ -1,3 +1,5 @@
+<!-- @format -->
+
 # Cos'è GIT?
 
 Git è un progetto open source sviluppato nel 2005 da Linus Torvalds, il famoso creatore del sistema operativo Linux.

@@ -1,3 +1,5 @@
+<!-- @format -->
+
 # La Storia del Linguaggio Markdown
 
 Markdown è un linguaggio di markup leggero creato da John Gruber e Aaron Swartz. È stato progettato per essere facile da leggere e scrivere in formato testo semplice e per essere convertito in HTML in modo efficiente. La sua storia inizia nel 2004 quando John Gruber ha pubblicato la specifica Markdown sul suo blog.

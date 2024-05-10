@@ -1,3 +1,5 @@
+<!-- @format -->
+
 ## Il Markdown è un linguaggio di _markup leggero_ progettato per semplificare la formattazione del testo per la pubblicazione online.
 
 Con una sintassi intuitiva e semplice da imparare, permette di creare documenti strutturati utilizzando solo il testo puro.

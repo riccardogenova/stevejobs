@@ -1,3 +1,5 @@
+<!-- @format -->
+
 ## Cosa è Git?
 
 Git è un sistema di controllo delle versioni **(VCS)** distribuito utilizzato principalmente nello sviluppo software per tenere traccia delle modifiche apportate al codice sorgente nel tempo. In altre parole, Git ti consente di:

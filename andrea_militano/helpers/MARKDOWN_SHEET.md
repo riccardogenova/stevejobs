@@ -1,3 +1,5 @@
+<!-- @format -->
+
 Ctrl + Shift + V ---> Preview
 
 1. **Intestazioni**:

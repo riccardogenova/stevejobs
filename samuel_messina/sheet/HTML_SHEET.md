@@ -1,3 +1,5 @@
+<!-- @format -->
+
 <html>: Definisce l'inizio e la fine di un documento HTML.
 
 <head>: Contiene le informazioni di intestazione come il titolo della pagina, i collegamenti ai fogli di stile e gli script JavaScript.

@@ -1,3 +1,5 @@
+<!-- @format -->
+
 ## Markdown: Una Guida alla Formattazione del Testo
 
 ### Il Markdown è un linguaggio di formattazione del testo leggero e intuitivo creato per semplificare la creazione e la formattazione di contenuti su piattaforme digitali.

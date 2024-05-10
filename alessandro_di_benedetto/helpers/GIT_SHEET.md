@@ -1,3 +1,5 @@
+<!-- @format -->
+
 ## Configurazioni di base di git
 
 Configuriamo il nostro git con le nostre credenziali di GitHub:

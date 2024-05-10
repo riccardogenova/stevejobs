@@ -1,3 +1,5 @@
+<!-- @format -->
+
 1.  **clone** : Clona un repository in una nuova directory.
     quando salvo un lavoro da github di un'altro utnte posso clonare il suo repository
     sul mio pc, in una cartella di lavoro usando questo comando

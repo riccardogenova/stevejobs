@@ -1,3 +1,5 @@
+/** @format */
+
 // Esercizi Semplici
 
 // 1.Dato un array di numeri, triplica ciascun numero presente nell'array.
@@ -28,9 +30,9 @@ console.log(oddNumbers);
 // 3.Dato un array di persone, trova la prima persona con l'età inferiore a 18 anni.
 
 const people = [
-  { name: "Alice", age: 25 },
-  { name: "Bob", age: 17 },
-  { name: "Charlie", age: 20 },
+  { name: 'Alice', age: 25 },
+  { name: 'Bob', age: 17 },
+  { name: 'Charlie', age: 20 },
 ];
 
 function underage(element, index, array) {
@@ -58,9 +60,9 @@ console.log(sumArray);
 // 5.Dato un array di persone, trova l'indice della prima persona con l'età compresa tra 18 e 24 anni.
 
 const people2 = [
-  { name: "Alice", age: 25 },
-  { name: "Bob", age: 17 },
-  { name: "Charlie", age: 20 },
+  { name: 'Alice', age: 25 },
+  { name: 'Bob', age: 17 },
+  { name: 'Charlie', age: 20 },
 ];
 
 function index(element, index, array) {
@@ -75,10 +77,10 @@ const peopleIndex = people2.findIndex(index);
 // 1.Data un'array di persone, crea un nuovo array contenente solo i nomi delle persone di età maggiore di 20 anni.
 
 const people3 = [
-  { name: "Alice", age: 25 },
-  { name: "Bob", age: 17 },
-  { name: "Charlie", age: 20 },
-  { name: "David", age: 30 },
+  { name: 'Alice', age: 25 },
+  { name: 'Bob', age: 17 },
+  { name: 'Charlie', age: 20 },
+  { name: 'David', age: 30 },
 ];
 
 function over20(element, index, array) {
@@ -92,28 +94,25 @@ nameOver20.map(over20);
 // 2.Data un'array di acquisti, trova il prezzo totale degli acquisti fatti da Alice
 
 const purchases = [
-  { customer: "Alice", price: 20 },
-  { customer: "Bob", price: 30 },
-  { customer: "Alice", price: 15 },
-  { customer: "Charlie", price: 25 },
+  { customer: 'Alice', price: 20 },
+  { customer: 'Bob', price: 30 },
+  { customer: 'Alice', price: 15 },
+  { customer: 'Charlie', price: 25 },
 ];
 
 function totalPrice(acc, element, index, array) {
-  if (element.customer === "Alice") return (acc += element.price);
+  if (element.customer === 'Alice') return (acc += element.price);
   return acc;
 }
 
-const alicePurchases = purchases
-  .filter(totalPrice)
-  .map(totalPrice)
-  .reduce(totalPrice, 0);
+const alicePurchases = purchases.filter(totalPrice).map(totalPrice).reduce(totalPrice, 0);
 
 //  3.Data un'array di persone, trova l'indice della prima persona il cui nome inizia con la B
 
-const people4 = ["Alice", "Bob", "Charlie", "Alice"];
+const people4 = ['Alice', 'Bob', 'Charlie', 'Alice'];
 
 function indexB(element, index, array) {
-  if (element.startsWith("B")) return true;
+  if (element.startsWith('B')) return true;
   return false;
 }
 
@@ -121,10 +120,10 @@ const nameB = people4.findIndex(indexB);
 
 // 4.Data un'array di parole, calcola la somma delle lunghezze delle parole che iniziano con la e
 
-const words = ["mela", "banana", "gatto", "cane", "elefante"];
+const words = ['mela', 'banana', 'gatto', 'cane', 'elefante'];
 
 function findE(element, index, array) {
-  if (element.startsWith("e")) return element;
+  if (element.startsWith('e')) return element;
 }
 
 function sumLength(acc, element, index, array) {

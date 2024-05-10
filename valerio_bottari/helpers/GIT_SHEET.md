@@ -1,8 +1,9 @@
 ---
-Configuriamo il nostro git con le nostre credenziali di GitHub:
-  git config --global user.name 'Tuo Nome GitHub'
+Configuriamo il nostro git con le nostre credenziali di GitHub: git config --global user.name 'Tuo Nome GitHub'
   git config --global user.email email@github.com
 ---
+
+<!-- @format -->
 
 Come aggiungere un file o fare un update
 

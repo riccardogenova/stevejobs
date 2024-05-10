@@ -1,3 +1,5 @@
+<!-- @format -->
+
 # La Storia di Git
 
 Git è un sistema di controllo versione distribuito sviluppato da Linus Torvalds nel 2005 per gestire lo sviluppo del kernel Linux. La sua storia è affascinante e rappresenta un importante punto di svolta nello sviluppo del software collaborativo.

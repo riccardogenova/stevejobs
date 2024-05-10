@@ -1,3 +1,5 @@
+<!-- @format -->
+
 Inizializzazione:
 
     git init: Crea un nuovo repository Git nella cartella corrente.

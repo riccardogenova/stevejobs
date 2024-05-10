@@ -1,3 +1,5 @@
+<!-- @format -->
+
 **HTML**
 
 **Cos'è?** (HyperText Markup Language) è un linguaggio di markup. Esso definisce la struttura e l'organizzazione del contenuto di una pagina web utilizzando elementi e tag.

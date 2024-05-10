@@ -1,13 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+/** @format */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
-  font-family: "Noto Sans", sans-serif;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 table {
   width: 100%;
   border: 1px solid black;
-  font-style: "Lucida Console";
+  font-style: 'Lucida Console';
 }
 th,
 td {

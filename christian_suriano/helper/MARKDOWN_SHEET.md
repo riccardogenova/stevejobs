@@ -1,3 +1,5 @@
+<!-- @format -->
+
 # TITOLO
 
 ## Sottotitolo
@@ -28,6 +30,6 @@ elenco con numeri:
 
 [reindirizzamento con URL](https://docs.zettlr.com/it/reference/markdown-basics/)
 
-![alt text]("C:\Users\Utente\Downloads\2610426.jpg" "immagine")
+![alt text]("C:\Users\Utente\Downloads\2610426.jpg" 'immagine')
 
 comando per cambiare <span style="color:red">colore</span>.

@@ -1,3 +1,5 @@
+<!-- @format -->
+
 # CSS SHEET
 
 _ecco alcuni dei comandi usati su CSS:_
@@ -130,7 +132,7 @@ _ecco alcuni dei comandi usati su CSS:_
 
 ```css
 .bg-image-example {
-  background-image: url("path/to/image.jpg");
+  background-image: url('path/to/image.jpg');
 }
 ```
 
@@ -435,7 +437,7 @@ _ecco alcuni dei comandi usati su CSS:_
 
     ```css
     .custom-font {
-      font-family: "Arial", sans-serif;
+      font-family: 'Arial', sans-serif;
     }
     ```
 

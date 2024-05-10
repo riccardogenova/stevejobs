@@ -1,3 +1,5 @@
+<!-- @format -->
+
 # Il Linguaggio di Markdown: Una Breve Storia
 
 Il linguaggio di **Markdown** è una forma di formattazione di testo _leggera_, progettata per essere facile da **leggere** e **scrivere** in formato testo semplice. È ampiamente utilizzato per la formattazione di documenti su **piattaforme web**, come: forum, blog e siti di documentazione.

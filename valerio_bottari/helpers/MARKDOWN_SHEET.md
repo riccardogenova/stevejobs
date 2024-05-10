@@ -21,6 +21,8 @@ ___Testo in corsivo e grassetto___
 
 ---
 
+<!-- @format -->
+
 # Citazioni
 
 > Questa è un’**area rientrata**. L’area prosegue anche qui.
@@ -44,7 +46,7 @@ ___Testo in corsivo e grassetto___
 
 # Link e Immagini
 
-Qui segue un [Link](https://example.com/ "Titolo del link opzionale").
+Qui segue un [Link](https://example.com/ 'Titolo del link opzionale').
 
 ![Ecco un’immagine di esempio](https://example.com/immagine.jpg)
 

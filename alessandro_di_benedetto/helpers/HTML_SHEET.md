@@ -1,3 +1,5 @@
+<!-- @format -->
+
 ## comandi di base per una pagina HTML
 
 Definisce il tipo di documento come HTML5.

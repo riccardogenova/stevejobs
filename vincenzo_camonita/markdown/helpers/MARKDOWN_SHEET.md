@@ -1,3 +1,5 @@
+<!-- @format -->
+
 _Testo corsivo_
 _Testo corsivo_
 
@@ -29,7 +31,7 @@ _Testo corsivo_
 2. Punto 2 della lista
 3. Punto 3 della lista
 
-[Link](https://example.com/ "Titolo del link opzionale").
+[Link](https://example.com/ 'Titolo del link opzionale').
 
 ![Ecco un’immagine di esempio](https://example.com/immagine.jpg)
 

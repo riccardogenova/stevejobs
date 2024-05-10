@@ -1,3 +1,5 @@
+/** @format */
+
 //**Esercizio 1**
 // Scrivi un programma che prenda un array di numeri e calcoli la somma di tutti gli elementi.
 
@@ -11,7 +13,7 @@ for (let index = 0; index < array1.length; index++) {
   somma = somma + array1[index];
 }
 
-console.log("La somma degli elementi è:", somma); //stampo il valore della somma totale
+console.log('La somma degli elementi è:', somma); //stampo il valore della somma totale
 
 //---------------------------------------------------------------------------------
 
@@ -93,8 +95,8 @@ Esercizio 5
 Scrivi un programma che prenda due array e restituisca un nuovo array che contenga tutti gli elementi dei due array concatenati.
 */
 
-const array5uno = [2, 4, "Pippo"];
-const array5due = ["Paperino", "Topolino", 3, 4, 5];
+const array5uno = [2, 4, 'Pippo'];
+const array5due = ['Paperino', 'Topolino', 3, 4, 5];
 
 const arrayconcatenato5 = array5uno.concat(array5due); //Qui indico la concatenazione
 
@@ -106,7 +108,7 @@ Esercizio 6
 Scrivi un programma che prenda un array con elementi duplicati e restituisca un nuovo array con i duplicati rimossi.
 */
 
-const array6 = [2, 4, "Pippo", 55, 67, 2, "Topolino", 55];
+const array6 = [2, 4, 'Pippo', 55, 67, 2, 'Topolino', 55];
 const array6senzadup = [];
 
 for (let elemento of array6) {
@@ -123,18 +125,18 @@ Esercizio 7
 Scrivi un programma che prenda un array di stringhe e un elemento di ricerca e restituisca l'indice della prima occorrenza dell'elemento nell'array.
 */
 
-const array = ["mela", "banana", "arancia", "pera"];
-const elementoDiRicerca = "banana";
+const array = ['mela', 'banana', 'arancia', 'pera'];
+const elementoDiRicerca = 'banana';
 const indice = array.indexOf(elementoDiRicerca);
 
-console.log("Indice di", elementoDiRicerca, "nell'array:", indice);
+console.log('Indice di', elementoDiRicerca, "nell'array:", indice);
 //------------------------------------------------------------------------------------------
 /*
 Esercizio 8
 Scrivi un programma che prenda un array di stringhe e calcoli la lunghezza media delle stringhe presenti.
 */
 
-const array8 = ["ciao", "salve", "buongiorno", "arrivederci"];
+const array8 = ['ciao', 'salve', 'buongiorno', 'arrivederci'];
 let lunghezzaTotale = 0;
 
 for (let stringa of array8) {
@@ -143,4 +145,4 @@ for (let stringa of array8) {
 
 const lunghezzaMedia = lunghezzaTotale / array8.length;
 
-console.log("Lunghezza media delle stringhe:", lunghezzaMedia);
+console.log('Lunghezza media delle stringhe:', lunghezzaMedia);

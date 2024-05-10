@@ -1,3 +1,5 @@
+<!-- @format -->
+
 **Markdown**
 **Cos’è?** Markdown è un linguaggio di markup. Rispetto ad altri linguaggi di markup, come HTML, Markdow risulta più semplice da leggere.
 **A cosa serve?** Markdown è utile per gli utenti che non dispongono di un competenze informatiche o conoscenze di web design, ma che comunque scrivono regolarmente testi destinati a Internet.

@@ -1,3 +1,5 @@
+<!-- @format -->
+
 <!doctype html>
 <html>
   <head>
@@ -33,14 +35,8 @@
 
       <h3>Configurazione</h3>
       <ul>
-        <li>
-          <b>`git config --global user.name "Il Tuo Nome"`:</b> Imposta il nome
-          utente globale per i commit.
-        </li>
-        <li>
-          <b>`git config --global user.email "tua@email.com"`:</b> Imposta
-          l'email globale per i commit.
-        </li>
+        <li><b>`git config --global user.name "Il Tuo Nome"`:</b> Imposta il nome utente globale per i commit.</li>
+        <li><b>`git config --global user.email "tua@email.com"`:</b> Imposta l'email globale per i commit.</li>
         <li>
           <b>`git config --global core.editor "nome_del_tuo_editor"`:</b>
           Imposta l'editor di testo preferito.
@@ -50,17 +46,13 @@
 
       <h3>Inizializzazione di un repository</h3>
       <ul>
-        <li>
-          <b>`git init`:</b> Inizializza un nuovo repository Git nella directory
-          corrente.
-        </li>
+        <li><b>`git init`:</b> Inizializza un nuovo repository Git nella directory corrente.</li>
       </ul>
       <br />
       <h3>Clonare un repository esistente</h3>
       <ul>
         <li>
-          <b>`git clone <code>&lt;url&gt;</code>`:</b>Clona un repository
-          esistente dalla URL specificata.
+          <b>`git clone <code>&lt;url&gt;</code>`:</b>Clona un repository esistente dalla URL specificata.
         </li>
       </ul>
       <br />
@@ -68,39 +60,22 @@
       <h3>Operazioni sui file</h3>
       <ul>
         <li>
-          <b>`git add <code>&lt;file&gt;</code>`:</b>Aggiunge un file al
-          "staging area" per il commit.
+          <b>`git add <code>&lt;file&gt;</code>`:</b>Aggiunge un file al "staging area" per il commit.
         </li>
-        <li>
-          <b>`git add .`:</b>Aggiunge tutti i file modificati, eliminati o non
-          tracciati al "staging area".
-        </li>
-        <li>
-          <b>`git rm nome_file`:</b>Rimuove un file dalla repository e dall'area
-          di staging.
-        </li>
-        <li>
-          <b>`git mv vecchio_nome nuovo_nome`:</b>Rinomina un file e aggiunge la
-          modifica all'area di staging.
-        </li>
+        <li><b>`git add .`:</b>Aggiunge tutti i file modificati, eliminati o non tracciati al "staging area".</li>
+        <li><b>`git rm nome_file`:</b>Rimuove un file dalla repository e dall'area di staging.</li>
+        <li><b>`git mv vecchio_nome nuovo_nome`:</b>Rinomina un file e aggiunge la modifica all'area di staging.</li>
       </ul>
 
       <br />
       <h3>Commit</h3>
       <ul>
         <li>
-          <b>git commit -m</b> "Messaggio di commit": Committa le modifiche
-          presenti nello "staging area" al repository.
+          <b>git commit -m</b> "Messaggio di commit": Committa le modifiche presenti nello "staging area" al repository.
         </li>
-        <li>
-          <b>git commit -am</b> "Messaggio di commit": Aggiunge e committa i
-          file modificati con un solo comando.
-        </li>
+        <li><b>git commit -am</b> "Messaggio di commit": Aggiunge e committa i file modificati con un solo comando.</li>
         <li><b>git commit --amend</b>: Modifica l'ultimo commit.</li>
-        <li>
-          <b>git cherry-pick &lt;commit&gt;:</b> Applica un singolo commit da un
-          altro ramo.
-        </li>
+        <li><b>git cherry-pick &lt;commit&gt;:</b> Applica un singolo commit da un altro ramo.</li>
       </ul>
 
       <br />
@@ -110,30 +85,18 @@
       <ul>
         <li><b>git status</b>: Mostra lo stato del repository.</li>
         <li><b>git log</b>: Mostra la cronologia dei commit.</li>
+        <li><b>git log --oneline</b>: Mostra la cronologia dei commit in formato breve.</li>
+        <li><b>git log --graph --oneline --all</b>: Mostra una visualizzazione grafica dei rami e dei commit.</li>
         <li>
-          <b>git log --oneline</b>: Mostra la cronologia dei commit in formato
-          breve.
+          <b>git log --graph</b>: Visualizza la cronologia dei commit con una rappresentazione grafica del branching.
+        </li>
+        <li><b>git log --author=&lt;author&gt;</b>: Visualizza la cronologia dei commit di un autore specificato.</li>
+        <li>
+          <b>git log --grep=&lt;pattern&gt;</b>: Visualizza la cronologia dei commit con messaggi di commit che
+          corrispondono al pattern specificato.
         </li>
         <li>
-          <b>git log --graph --oneline --all</b>: Mostra una visualizzazione
-          grafica dei rami e dei commit.
-        </li>
-        <li>
-          <b>git log --graph</b>: Visualizza la cronologia dei commit con una
-          rappresentazione grafica del branching.
-        </li>
-        <li>
-          <b>git log --author=&lt;author&gt;</b>: Visualizza la cronologia dei
-          commit di un autore specificato.
-        </li>
-        <li>
-          <b>git log --grep=&lt;pattern&gt;</b>: Visualizza la cronologia dei
-          commit con messaggi di commit che corrispondono al pattern
-          specificato.
-        </li>
-        <li>
-          <b>git reflog</b>: Visualizza la cronologia delle operazioni di
-          riferimento, inclusi commit, merge e reset.
+          <b>git reflog</b>: Visualizza la cronologia delle operazioni di riferimento, inclusi commit, merge e reset.
         </li>
       </ul>
       <br />
@@ -142,79 +105,43 @@
       <ul>
         <li><b>git push</b>: Carica i commit locali sul repository remoto.</li>
         <li>
-          <b>git push -u origin &lt;branch&gt;</b>: Carica il ramo specificato
-          sul repository remoto e imposta il tracking.
+          <b>git push -u origin &lt;branch&gt;</b>: Carica il ramo specificato sul repository remoto e imposta il
+          tracking.
         </li>
+        <li><b>git pull</b>: Scarica e unisce i cambiamenti dal repository remoto al repository locale.</li>
         <li>
-          <b>git pull</b>: Scarica e unisce i cambiamenti dal repository remoto
-          al repository locale.
+          <b>git pull --rebase</b>: Scarica i cambiamenti dal repository remoto e riapplica i commit locali sopra di
+          essi.
         </li>
-        <li>
-          <b>git pull --rebase</b>: Scarica i cambiamenti dal repository remoto
-          e riapplica i commit locali sopra di essi.
-        </li>
-        <li>
-          <b>git remote rename origin nuovo-nome</b>: Rinomina il repo da origin
-          a nuovo-nome.
-        </li>
+        <li><b>git remote rename origin nuovo-nome</b>: Rinomina il repo da origin a nuovo-nome.</li>
         <li><b>git remote</b>: Visualizza o gestisce i repository remoti.</li>
-        <li>
-          <b>git remote -v</b>: Visualizza i repository remoti e le relative
-          URL.
-        </li>
-        <li>
-          <b>git remote add &lt;name&gt; &lt;url&gt;</b>: Aggiunge un nuovo
-          repository remoto.
-        </li>
-        <li>
-          <b>git remote remove &lt;name&gt;</b>: Rimuove un repository remoto.
-        </li>
+        <li><b>git remote -v</b>: Visualizza i repository remoti e le relative URL.</li>
+        <li><b>git remote add &lt;name&gt; &lt;url&gt;</b>: Aggiunge un nuovo repository remoto.</li>
+        <li><b>git remote remove &lt;name&gt;</b>: Rimuove un repository remoto.</li>
       </ul>
       <br />
 
       <h3>Gestire i Branch (Ramificazioni)</h3>
       <ul>
         <li><b>git branch</b>: Visualizza i rami locali.</li>
-        <li>
-          <b>git branch -a</b>: Visualizza tutti i rami, inclusi quelli remoti.
-        </li>
+        <li><b>git branch -a</b>: Visualizza tutti i rami, inclusi quelli remoti.</li>
         <li><b>git branch &lt;branch&gt;</b>: Crea un nuovo ramo.</li>
-        <li>
-          <b>git branch -d &lt;branch&gt;</b>: Cancella il ramo specificato.
-        </li>
+        <li><b>git branch -d &lt;branch&gt;</b>: Cancella il ramo specificato.</li>
         <li><b>git checkout &lt;branch&gt;</b>: Cambia al ramo specificato.</li>
-        <li>
-          <b>git checkout -b &lt;branch&gt;</b>: Crea un nuovo ramo e passa ad
-          esso.
-        </li>
+        <li><b>git checkout -b &lt;branch&gt;</b>: Crea un nuovo ramo e passa ad esso.</li>
       </ul>
       <br />
 
       <h3>Merge e rebase</h3>
       <ul>
+        <li><b>git merge &lt;branch&gt;</b>: Unisce il ramo specificato al ramo corrente.</li>
+        <li><b>git merge --abort</b>: Annulla un merge in corso e ripristina lo stato precedente.</li>
+        <li><b>git rebase &lt;branch&gt;</b>: Riapplica i commit del ramo specificato sul ramo corrente.</li>
+        <li><b>git rebase --abort</b>: Annulla un rebase in corso e ripristina lo stato precedente.</li>
+        <li><b>git rebase --continue</b>: Continua un rebase in pausa dopo la risoluzione dei conflitti.</li>
         <li>
-          <b>git merge &lt;branch&gt;</b>: Unisce il ramo specificato al ramo
-          corrente.
-        </li>
-        <li>
-          <b>git merge --abort</b>: Annulla un merge in corso e ripristina lo
-          stato precedente.
-        </li>
-        <li>
-          <b>git rebase &lt;branch&gt;</b>: Riapplica i commit del ramo
-          specificato sul ramo corrente.
-        </li>
-        <li>
-          <b>git rebase --abort</b>: Annulla un rebase in corso e ripristina lo
-          stato precedente.
-        </li>
-        <li>
-          <b>git rebase --continue</b>: Continua un rebase in pausa dopo la
-          risoluzione dei conflitti.
-        </li>
-        <li>
-          <b>git rebase -i &lt;commit&gt;</b>: Esegue un rebase interattivo,
-          consentendo di modificare la storia del commit.
+          <b>git rebase -i &lt;commit&gt;</b>: Esegue un rebase interattivo, consentendo di modificare la storia del
+          commit.
         </li>
       </ul>
       <br />
@@ -222,77 +149,50 @@
       <h3>Cambiamenti dal repository</h3>
       <ul>
         <li>
-          <b>git fetch</b>: Scarica i cambiamenti dal repository remoto senza
-          unire i cambiamenti al repository locale.
+          <b>git fetch</b>: Scarica i cambiamenti dal repository remoto senza unire i cambiamenti al repository locale.
         </li>
         <li>
-          <b>git fetch --prune</b>: Scarica i cambiamenti dal repository remoto
-          e rimuove i riferimenti ai rami eliminati.
+          <b>git fetch --prune</b>: Scarica i cambiamenti dal repository remoto e rimuove i riferimenti ai rami
+          eliminati.
         </li>
       </ul>
       <br />
 
       <h3>Tag</h3>
       <ul>
-        <li>
-          <b>git tag</b>: Gestisce i tag annotati o leggeri per segnare commit
-          specifici.
-        </li>
-        <li>
-          <b>git tag -a &lt;tag&gt; -m "Messaggio del tag"</b>: Crea un nuovo
-          tag annotato.
-        </li>
+        <li><b>git tag</b>: Gestisce i tag annotati o leggeri per segnare commit specifici.</li>
+        <li><b>git tag -a &lt;tag&gt; -m "Messaggio del tag"</b>: Crea un nuovo tag annotato.</li>
         <li><b>git tag &lt;tag&gt;</b>: Crea un nuovo tag leggero.</li>
         <li><b>git tag -d &lt;tag&gt;</b>: Cancella il tag specificato.</li>
-        <li>
-          <b>git push --tags</b>: Carica tutti i tag locali sul repository
-          remoto.
-        </li>
+        <li><b>git push --tags</b>: Carica tutti i tag locali sul repository remoto.</li>
       </ul>
       <br />
 
       <h3>Modifiche</h3>
       <ul>
+        <li><b>git diff</b>: Mostra le modifiche tra i commit o tra il repository e lo "staging area".</li>
+        <li><b>git diff --staged</b>: Mostra le modifiche nello "staging area" rispetto all'ultimo commit.</li>
+        <li><b>git diff &lt;commit1&gt; &lt;commit2&gt;</b>: Mostra le modifiche tra due commit specificati.</li>
+        <li><b>git reset</b>: Annulla le modifiche ai file o ripristina il repository a uno stato precedente.</li>
         <li>
-          <b>git diff</b>: Mostra le modifiche tra i commit o tra il repository
-          e lo "staging area".
+          <b>git reset --hard</b>: Ripristina il repository allo stato del commit specificato, eliminando tutte le
+          modifiche non commesse.
         </li>
         <li>
-          <b>git diff --staged</b>: Mostra le modifiche nello "staging area"
-          rispetto all'ultimo commit.
+          <b>git reset --soft &lt;commit&gt;</b>: Annulla il commit specificato, mantenendo le modifiche nello "staging
+          area".
         </li>
         <li>
-          <b>git diff &lt;commit1&gt; &lt;commit2&gt;</b>: Mostra le modifiche
-          tra due commit specificati.
-        </li>
-        <li>
-          <b>git reset</b>: Annulla le modifiche ai file o ripristina il
-          repository a uno stato precedente.
-        </li>
-        <li>
-          <b>git reset --hard</b>: Ripristina il repository allo stato del
-          commit specificato, eliminando tutte le modifiche non commesse.
-        </li>
-        <li>
-          <b>git reset --soft &lt;commit&gt;</b>: Annulla il commit specificato,
-          mantenendo le modifiche nello "staging area".
-        </li>
-        <li>
-          <b>git reset HEAD &lt;file&gt;</b>: Rimuove il file specificato dallo
-          "staging area", mantenendo le modifiche nel working directory.
+          <b>git reset HEAD &lt;file&gt;</b>: Rimuove il file specificato dallo "staging area", mantenendo le modifiche
+          nel working directory.
         </li>
       </ul>
       <br />
 
       <h3>Clean</h3>
       <ul>
-        <li>
-          <b>git clean</b>: Rimuove i file non tracciati dal working directory.
-        </li>
-        <li>
-          <b>git clean -n</b>: Mostra i file non tracciati che verranno rimossi
-          con <code>git clean -f</code>.
-        </li>
+        <li><b>git clean</b>: Rimuove i file non tracciati dal working directory.</li>
+        <li><b>git clean -n</b>: Mostra i file non tracciati che verranno rimossi con <code>git clean -f</code>.</li>
       </ul>
       <br />
 
@@ -301,13 +201,9 @@
         <li><b>git stash</b>: Salva le modifiche non commesse in uno stash.</li>
         <li><b>git stash list</b>: Visualizza l'elenco degli stash.</li>
         <li><b>git stash apply</b>: Applica l'ultimo stash.</li>
-        <li>
-          <b>git stash apply &lt;stash&gt;</b>: Applica uno stash specificato.
-        </li>
+        <li><b>git stash apply &lt;stash&gt;</b>: Applica uno stash specificato.</li>
         <li><b>git stash pop</b>: Applica e cancella l'ultimo stash.</li>
-        <li>
-          <b>git stash drop &lt;stash&gt;</b>: Cancella uno stash specificato.
-        </li>
+        <li><b>git stash drop &lt;stash&gt;</b>: Cancella uno stash specificato.</li>
       </ul>
       <br />
 

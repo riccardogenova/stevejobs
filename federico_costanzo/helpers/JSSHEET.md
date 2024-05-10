@@ -1,3 +1,5 @@
+<!-- @format -->
+
 `document.alert("message")` - Crea popup con il messsaggio scritto.
 
 ---

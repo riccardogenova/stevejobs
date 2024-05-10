@@ -1,3 +1,5 @@
+<!-- @format -->
+
 <!doctype html>
 <html lang="it">
   <head>
@@ -9,110 +11,75 @@
     <h1>Comandi sull'oggetto Window in JavaScript</h1>
 
     <p>
-      Window rappresenta l'oggetto globale della finestra corrente. Si può usare
-      per accedere a variabili globali, gestire eventi della finestra (come
-      eventi di caricamento o ridimensionamento), manipolare la cronologia del
+      Window rappresenta l'oggetto globale della finestra corrente. Si può usare per accedere a variabili globali,
+      gestire eventi della finestra (come eventi di caricamento o ridimensionamento), manipolare la cronologia del
       browser, utilizzare i timer e molto altro ancora
     </p>
 
     <h2>1. Proprietà e metodi globali:</h2>
     <ul>
+      <li><b>window.alert()</b>: Mostra un dialogo di avviso con un messaggio.</li>
+      <li><b>window.confirm()</b>: Mostra un dialogo di conferma con un messaggio e i pulsanti OK/Annulla.</li>
+      <li><b>window.prompt()</b>: Mostra un dialogo con un messaggio e un campo di input.</li>
       <li>
-        <b>window.alert()</b>: Mostra un dialogo di avviso con un messaggio.
+        <b>window.location</b>: Restituisce l'URL dell'attuale pagina web o permette di navigare verso una nuova URL.
+      </li>
+      <li><b>window.history</b>: Fornisce l'accesso alla cronologia del browser.</li>
+      <li>
+        <b>window.localStorage</b> e <b>window.sessionStorage</b>: Forniscono l'accesso al meccanismo di archiviazione
+        locale e di sessione del browser.
       </li>
       <li>
-        <b>window.confirm()</b>: Mostra un dialogo di conferma con un messaggio
-        e i pulsanti OK/Annulla.
+        <b>window.setTimeout()</b>: Esegue una funzione o un codice dopo un determinato ritardo (in millisecondi).
       </li>
       <li>
-        <b>window.prompt()</b>: Mostra un dialogo con un messaggio e un campo di
-        input.
+        <b>window.setInterval()</b>: Esegue una funzione o un codice ad intervalli di tempo regolari (in millisecondi).
       </li>
       <li>
-        <b>window.location</b>: Restituisce l'URL dell'attuale pagina web o
-        permette di navigare verso una nuova URL.
-      </li>
-      <li>
-        <b>window.history</b>: Fornisce l'accesso alla cronologia del browser.
-      </li>
-      <li>
-        <b>window.localStorage</b> e <b>window.sessionStorage</b>: Forniscono
-        l'accesso al meccanismo di archiviazione locale e di sessione del
-        browser.
-      </li>
-      <li>
-        <b>window.setTimeout()</b>: Esegue una funzione o un codice dopo un
-        determinato ritardo (in millisecondi).
-      </li>
-      <li>
-        <b>window.setInterval()</b>: Esegue una funzione o un codice ad
-        intervalli di tempo regolari (in millisecondi).
-      </li>
-      <li>
-        <b>window.clearTimeout()</b> e <b>window.clearInterval()</b>: Annulla
-        l'esecuzione di un'azione programmata con <b>setTimeout()</b> o
-        <b>setInterval()</b>.
+        <b>window.clearTimeout()</b> e <b>window.clearInterval()</b>: Annulla l'esecuzione di un'azione programmata con
+        <b>setTimeout()</b> o <b>setInterval()</b>.
       </li>
     </ul>
 
     <h2>2. Gestione degli eventi:</h2>
     <ul>
-      <li>
-        <b>window.addEventListener()</b>: Aggiunge un gestore per un evento
-        specifico al documento.
-      </li>
-      <li>
-        <b>window.removeEventListener()</b>: Rimuove un gestore di eventi
-        precedentemente aggiunto.
-      </li>
+      <li><b>window.addEventListener()</b>: Aggiunge un gestore per un evento specifico al documento.</li>
+      <li><b>window.removeEventListener()</b>: Rimuove un gestore di eventi precedentemente aggiunto.</li>
     </ul>
 
     <h2>3. Proprietà di visualizzazione:</h2>
     <ul>
       <li>
-        <b>window.innerHeight</b> e <b>window.innerWidth</b>: Restituiscono
-        l'altezza e la larghezza dell'area di visualizzazione del browser.
+        <b>window.innerHeight</b> e <b>window.innerWidth</b>: Restituiscono l'altezza e la larghezza dell'area di
+        visualizzazione del browser.
       </li>
       <li>
-        <b>window.scrollX</b> e <b>window.scrollY</b>: Restituiscono le
-        coordinate dello scorrimento orizzontale e verticale della finestra.
+        <b>window.scrollX</b> e <b>window.scrollY</b>: Restituiscono le coordinate dello scorrimento orizzontale e
+        verticale della finestra.
       </li>
     </ul>
 
     <h2>4. Proprietà di finestra:</h2>
     <ul>
-      <li>
-        <b>window.screen</b>: Fornisce informazioni sullo schermo del
-        dispositivo.
-      </li>
-      <li>
-        <b>window.navigator</b>: Fornisce informazioni sul browser e sul sistema
-        operativo dell'utente.
-      </li>
-      <li>
-        <b>window.open()</b>: Apre una nuova finestra del browser o un nuovo
-        tab.
-      </li>
+      <li><b>window.screen</b>: Fornisce informazioni sullo schermo del dispositivo.</li>
+      <li><b>window.navigator</b>: Fornisce informazioni sul browser e sul sistema operativo dell'utente.</li>
+      <li><b>window.open()</b>: Apre una nuova finestra del browser o un nuovo tab.</li>
       <li><b>window.close()</b>: Chiude la finestra del browser corrente.</li>
     </ul>
 
     <h2>5. Comunicazione tra finestre e frame:</h2>
     <ul>
-      <li>
-        <b>window.postMessage()</b>: Permette la comunicazione tra finestre o
-        frame con origini diverse.
-      </li>
+      <li><b>window.postMessage()</b>: Permette la comunicazione tra finestre o frame con origini diverse.</li>
     </ul>
 
     <h2>6. Gestione del tempo e del frame:</h2>
     <ul>
       <li>
-        <b>window.requestAnimationFrame()</b>: Permette di eseguire una funzione
-        all'inizio del prossimo frame di rendering animato.
+        <b>window.requestAnimationFrame()</b>: Permette di eseguire una funzione all'inizio del prossimo frame di
+        rendering animato.
       </li>
       <li>
-        <b>window.cancelAnimationFrame()</b>: Annulla un'animazione programmata
-        con <b>requestAnimationFrame()</b>.
+        <b>window.cancelAnimationFrame()</b>: Annulla un'animazione programmata con <b>requestAnimationFrame()</b>.
       </li>
     </ul>
   </body>

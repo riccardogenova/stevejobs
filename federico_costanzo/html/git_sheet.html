@@ -1,3 +1,5 @@
+<!-- @format -->
+
 <!doctype html>
 
 <html>
@@ -10,8 +12,7 @@
       `git --version` (controlla la versione di git) <br />
       <br />
 
-      `git config --global user.name "name"` (modifica il tuo nome globale (come
-      appari nei progetti)) <br />
+      `git config --global user.name "name"` (modifica il tuo nome globale (come appari nei progetti)) <br />
       `git config --global user.email "email"` (modifica l'email che usi) <br />
 
       { <br />
@@ -25,8 +26,7 @@
     <hr />
     <br />
 
-    `git init` (inizializza git nella directory in cui sei entrato, creando una
-    ==repository==) <br />
+    `git init` (inizializza git nella directory in cui sei entrato, creando una ==repository==) <br />
     <br />
 
     `git status` (mostra lo status della cartella e della repo) <br />
@@ -36,20 +36,18 @@
     - Tracked files: files che sono nella repo <br />
     <br />
 
-    Staging environment: processo dove i file vengono messi nella repo tramite
-    ==commit== <br />
+    Staging environment: processo dove i file vengono messi nella repo tramite ==commit== <br />
     <br />
 
     `git add "file.exe"` (aggiungi file allo staging environment) <br />
-    `git add --all` (oppure `git add -A`) (aggiungi tutti i file nella directory
-    allo staging environment) <br />
+    `git add --all` (oppure `git add -A`) (aggiungi tutti i file nella directory allo staging environment) <br />
     <br />
 
     <hr />
     <br />
 
-    `git commit -m "Message 1: first release"` (commit: finalizza la modifica
-    alla repo, ==-m== serve per aggiungere messaggi) <br />
+    `git commit -m "Message 1: first release"` (commit: finalizza la modifica alla repo, ==-m== serve per aggiungere
+    messaggi) <br />
     <br />
 
     Per skippare lo stage (in caso di piccole modifiche): <br />
@@ -70,9 +68,7 @@
     <hr />
     <br />
 
-    <mark
-      >La ==branch== è una versione nuova/separata della main repository.</mark
-    >
+    <mark>La ==branch== è una versione nuova/separata della main repository.</mark>
     <br />
     <br />
 
@@ -96,12 +92,11 @@
 
     Per fare il ==merge== di due branches: <br />
     `git checkout master` (ritorna alla branch principale) <br />
-    `git merge emergency-fix` (merge - fast forward, visto che emergency_fix
-    deriva da master e master non è stata modificata) <br />
+    `git merge emergency-fix` (merge - fast forward, visto che emergency_fix deriva da master e master non è stata
+    modificata) <br />
     <br />
 
-    Per eliminare emergency_fix (ora che master ha tutte le modifiche di
-    emergency_fix): <br />
+    Per eliminare emergency_fix (ora che master ha tutte le modifiche di emergency_fix): <br />
     `git branch -d emergency-fix`<br />
     <br />
 
@@ -114,21 +109,17 @@
     <hr />
     <br />
 
-    `git reset &lt;hash_del_commit&gt;` (resetta la repo alla versione del
-    commit inserito nel comando) <br />
+    `git reset &lt;hash_del_commit&gt;` (resetta la repo alla versione del commit inserito nel comando) <br />
     <br />
 
     <hr />
     <br />
 
-    `git remote add &lt;nome (default=origin)&gt; &lt;url&gt;` (aggiungi link
-    tra GitHub e Git locale) <br />
+    `git remote add &lt;nome (default=origin)&gt; &lt;url&gt;` (aggiungi link tra GitHub e Git locale) <br />
     <br />
 
-    `git push &lt;nome_remote&gt; &lt;nome_locale&gt;` (aggiorna i GitHub commit
-    con i commit locali) <br />
-    `git pull &lt;--opzioni&gt; &lt;repository&gt;` (aggiorna i commit remoti
-    (github) con i commit in locale (git))
+    `git push &lt;nome_remote&gt; &lt;nome_locale&gt;` (aggiorna i GitHub commit con i commit locali) <br />
+    `git pull &lt;--opzioni&gt; &lt;repository&gt;` (aggiorna i commit remoti (github) con i commit in locale (git))
     <br />
     <br />
 
@@ -139,7 +130,6 @@
     <br />
 
     `git reset .` (annulla lo staging delle modifiche) <br />
-    `git stash` (mette da parte le modifiche non messe in stage - NON ACCETTA
-    FILE NUOVI, SOLO MODIFICATI)
+    `git stash` (mette da parte le modifiche non messe in stage - NON ACCETTA FILE NUOVI, SOLO MODIFICATI)
   </body>
 </html>

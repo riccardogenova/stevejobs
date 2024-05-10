@@ -1,3 +1,5 @@
+<!-- @format -->
+
 CSS, è l'acronimo di "Cascading Style Sheet", è un linguaggio di stile utilizzato per definire l'aspetto e la formattazione di documenti HTML.
 
 Con CSS è possibile controllare gli attributi visivi come il colore del testo, la dimensione dei caratteri, il layout delle pagine, la distanza degli elementi.

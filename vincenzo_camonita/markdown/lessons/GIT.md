@@ -1,3 +1,5 @@
+<!-- @format -->
+
 # Git
 
 **_Git_** è un sistema di controllo open sourcegi anche detto di **"versionamento"** ampiamente utilizzato per gestire proggetti software.

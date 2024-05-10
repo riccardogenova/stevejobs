@@ -1,3 +1,5 @@
+<!-- @format -->
+
 **Comando** | **Descrizione**
 
 `selector` { proprietà: valore; } | Seleziona gli elementi HTML a cui applicare gli stili. Le proprietà e i valori definiscono lo stile degli elementi selezionati.

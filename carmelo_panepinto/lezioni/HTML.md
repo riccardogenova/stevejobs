@@ -1,3 +1,5 @@
+<!-- @format -->
+
 # HTML
 
 **HTML**, acronimo di _HyperText Markup Leanguage_, è un linguaggio di markup utilizzato per creare e strutturare pagine web.

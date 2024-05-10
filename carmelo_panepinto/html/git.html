@@ -1,3 +1,5 @@
+<!-- @format -->
+
 <!doctype html>
 <html>
   <head>
@@ -18,69 +20,55 @@
     </header>
     <h2 id="sezione1">Cos'è</h2>
     <p>
-      <b>Git</b> un sistema di <i>controllo di versione distribuito</i>,
-      progettato per gestire progetti di qualsiasi dimensione con rapidità ed
-      efficienza. La sua caratteristica principale è che permette di tenere
-      traccia delle modifiche apportate ai file nel corso del tempo, consentendo
-      in primo luogo al singolo programmatore di gestire al meglio lo sviluppo
-      del proprio software, in secondo agli altri sviluppatori di collaborare
-      facilmente su progetti software. Git è ampiamente utilizzato nell'ambito
-      dello sviluppo software per coordinare il lavoro di più persone su un
-      singolo progetto, facilitando la gestione delle modifiche, il tracciamento
-      dei problemi e il rilascio delle versioni.
+      <b>Git</b> un sistema di <i>controllo di versione distribuito</i>, progettato per gestire progetti di qualsiasi
+      dimensione con rapidità ed efficienza. La sua caratteristica principale è che permette di tenere traccia delle
+      modifiche apportate ai file nel corso del tempo, consentendo in primo luogo al singolo programmatore di gestire al
+      meglio lo sviluppo del proprio software, in secondo agli altri sviluppatori di collaborare facilmente su progetti
+      software. Git è ampiamente utilizzato nell'ambito dello sviluppo software per coordinare il lavoro di più persone
+      su un singolo progetto, facilitando la gestione delle modifiche, il tracciamento dei problemi e il rilascio delle
+      versioni.
     </p>
 
     <h2 id="sezione2">Come funziona</h2>
     <p>
-      Git è un software utilizzabile mediante il suo terminale, nel quale
-      inserire gli appositi comandi. <br />
+      Git è un software utilizzabile mediante il suo terminale, nel quale inserire gli appositi comandi. <br />
 
       Il suo funzionamento gira attorno alla tre funzioni
       <b>Repository, Commit e Branch</b>:
     </p>
     <ul>
       <li>
-        <b>Repository</b>, un archivio digitale in cui vengono conservati e
-        gestiti i file di del progetto. Il comando per creare una repository è
-        <i>git init</i>, per aggiungere i file alla repository
-        <i>git add nome_del_file</i> o <i>git add .</i> (per aggiungere tutti i
-        file nella cartella);
+        <b>Repository</b>, un archivio digitale in cui vengono conservati e gestiti i file di del progetto. Il comando
+        per creare una repository è <i>git init</i>, per aggiungere i file alla repository
+        <i>git add nome_del_file</i> o <i>git add .</i> (per aggiungere tutti i file nella cartella);
       </li>
       <li>
-        <b>Commit</b>, un'istantanea delle modifiche apportate ai file nel
-        repository in un determinato momento, accompagnato da un messaggio che
-        descrive le modifiche. Una volta aggiunti i file al repository, è
-        necessario creare un commit per confermare le modifiche con il comando
+        <b>Commit</b>, un'istantanea delle modifiche apportate ai file nel repository in un determinato momento,
+        accompagnato da un messaggio che descrive le modifiche. Una volta aggiunti i file al repository, è necessario
+        creare un commit per confermare le modifiche con il comando
         <i>git commit</i>
       </li>
       <li>
-        <b>Branch</b>, git permette di creare branch (rami) per sviluppare nuove
-        funzionalità o lavorare su modifiche senza influire sul ramo principale
-        del progetto (solitamente chiamato "master" o "main"). Questo viene
-        fatto con il comando git branch per creare un nuovo branch e git
-        checkout per passare da un branch all'altro.
+        <b>Branch</b>, git permette di creare branch (rami) per sviluppare nuove funzionalità o lavorare su modifiche
+        senza influire sul ramo principale del progetto (solitamente chiamato "master" o "main"). Questo viene fatto con
+        il comando git branch per creare un nuovo branch e git checkout per passare da un branch all'altro.
       </li>
     </ul>
 
     <p>
-      In base a queste tre principali funzionalità gli sviluppatori posso
-      lavorare simultaneamente ad un progetto, concentrandosi sulle proprie
-      modifiche nei propri branch. Dopo aver lavorato su un branch separato,
-      possibile unire le modifiche al ramo principale del progetto (operazione
-      chimata <b>Marging</b>) utilizzando il comando <i>git merge</i>.
+      In base a queste tre principali funzionalità gli sviluppatori posso lavorare simultaneamente ad un progetto,
+      concentrandosi sulle proprie modifiche nei propri branch. Dopo aver lavorato su un branch separato, possibile
+      unire le modifiche al ramo principale del progetto (operazione chimata <b>Marging</b>) utilizzando il comando
+      <i>git merge</i>.
     </p>
 
     <h2 id="sezione3">Alcune funzioni in Git<br /></h2>
     <ul>
       <li>Clonare un repository: git clone < URL del repository > <br /></li>
       <li>
-        Aggiungere file modificati: git add < nome del file > o git add . per
-        aggiungere tutti i file modificati. <br />
+        Aggiungere file modificati: git add < nome del file > o git add . per aggiungere tutti i file modificati. <br />
       </li>
-      <li>
-        Effettuare un commit delle modifiche: git commit -m "Messaggio del
-        commit" <br />
-      </li>
+      <li>Effettuare un commit delle modifiche: git commit -m "Messaggio del commit" <br /></li>
       <li>
         Caricare le modifiche su GitHub: git push origin < nome del branch >
         <br />
@@ -93,12 +81,8 @@
     <h2>Altri comandi utili<br /></h2>
     <ul>
       <li>git status: Mostra lo stato corrente del repository Git. <br /></li>
-      <li>
-        git branch: Mostra i branch attualmente presenti nel repository.<br />
-      </li>
-      <li>
-        git checkout < nome del branch >: Cambia branch nel repository. <br />
-      </li>
+      <li>git branch: Mostra i branch attualmente presenti nel repository.<br /></li>
+      <li>git checkout < nome del branch >: Cambia branch nel repository. <br /></li>
       <li>
         git merge < nome del branch >: Unisce un branch con il branch corrente.
         <br />

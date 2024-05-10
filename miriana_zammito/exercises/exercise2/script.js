@@ -1,3 +1,5 @@
+/** @format */
+
 // Esercizio 1: Aggiungi un elemento all'inizio e alla fine di un array.
 let array1 = [2, 3, 4];
 array1.unshift(1); // Aggiunge all'inizio
@@ -13,7 +15,7 @@ array2.pop(); // Rimuove l'ultimo elemento
 console.log(array2);
 
 // Esercizio 3:  Crea una funzione che prenda un array di parole e le unisca tutte in una singola stringa, separandole con una virgola.
-const array3 = ["yellow", "white", "pink", "black"];
+const array3 = ['yellow', 'white', 'pink', 'black'];
 let testo = array3.toString();
 
 console.log(testo);
@@ -63,15 +65,15 @@ console.log(evenNumber);
 
 // Esercizio 8: Realizza una funzione che prenda due array e li unisca in un unico array.
 
-const femaleNames = ["Laura", "Giulia", "Chiara"];
-const maleNames = ["Gioele", "Luca", "Marco"];
+const femaleNames = ['Laura', 'Giulia', 'Chiara'];
+const maleNames = ['Gioele', 'Luca', 'Marco'];
 
 const allNames = femaleNames.concat(maleNames);
 
 console.log(allNames);
 
 // Esercizio 9: Riordina un array in ordine alfabetico
-let names = ["Miriana", "Andrea", "Silvia"];
+let names = ['Miriana', 'Andrea', 'Silvia'];
 names.sort();
 
 console.log(names);

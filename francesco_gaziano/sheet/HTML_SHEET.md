@@ -1,3 +1,5 @@
+<!-- @format -->
+
 Ecco il documento migliorato con le informazioni aggiuntive:
 
 ````markdown

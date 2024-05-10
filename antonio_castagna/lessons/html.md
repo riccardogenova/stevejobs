@@ -1,3 +1,5 @@
+<!-- @format -->
+
 # Cos’È l’HTML?
 
 HTML è l’acronimo di “hypertext markup language” ed è un linguaggio relativamente semplice utilizzato per creare pagine web. Poiché non ammette variabili o funzioni, non è considerato un “linguaggio di programmazione”, ma piuttosto un “linguaggio di markup”, un linguaggio che si serve dei tag per definire gli elementi di un documento.

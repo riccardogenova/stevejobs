@@ -1,3 +1,5 @@
+<!-- @format -->
+
 Ecco una panoramica dei principali comandi e concetti utilizzati in CSS:
 
 1. **Selettori**: Consentono di selezionare gli elementi HTML ai quali applicare gli stili. Esempi comuni includono:

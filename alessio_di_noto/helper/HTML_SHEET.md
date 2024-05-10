@@ -1,3 +1,5 @@
+<!-- @format -->
+
 1. **`<!DOCTYPE html>`**: si tratta del primo tag che dev’essere inserito in un file di codice, utile a specificare che il file in questione contiene una pagina HTML. Se necessario, la versione di HTML utilizzata viene indicata tra i suoi parametri.
 
 - `<!DOCTYPE>`: Definisce la versione HTML in uso nel documento.

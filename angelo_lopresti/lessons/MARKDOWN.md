@@ -1,3 +1,5 @@
+<!-- @format -->
+
 ## STORIA DEL MARKDOWN
 
 La storia di Markdown è legata alla necessità di creare un linguaggio di markup leggero, facile da leggere e scrivere, che consentisse agli utenti di formattare il testo senza dover ricorrere a linguaggi più complessi come HTML. Ecco una panoramica più dettagliata della storia di Markdown:

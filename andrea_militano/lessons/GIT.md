@@ -1,3 +1,5 @@
+<!-- @format -->
+
 **GIT**
 
 **Cos'è?** Git è un sistema di controllo delle versioni distribuito ampiamente utilizzato per gestire il codice sorgente di progetti software

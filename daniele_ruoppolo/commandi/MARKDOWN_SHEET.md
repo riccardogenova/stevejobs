@@ -1,3 +1,5 @@
+<!-- @format -->
+
 Intestazioni:
 
 # Titolo principale

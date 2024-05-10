@@ -1,3 +1,5 @@
+<!-- @format -->
+
 Git è un sistema per controllare la versione di un programma tra diversi computer, utile per coordinare il lavoro tra diversi programmatori.
 L'obiettivo principale di Git è la velocità, la stabilità della connessione, e il supporto per diversi tipi di workflow.
 

@@ -1,3 +1,5 @@
+<!-- @format -->
+
 # Css
 
 **_CSS_**, acronimo di _Cascading Style Sheets_, è un linguaggio di stile utilizzato per definire l'aspetto e la formattazione di documenti HTML, XML e XHTML. In sostanza, mentre l'HTML fornisce la struttura e il contenuto di una pagina web, il CSS viene utilizzato per controllarne l'aspetto visivo, come il colore del testo, il tipo di carattere, il layout della pagina, le dimensioni degli elementi e molto altro ancora.

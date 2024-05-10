@@ -1,3 +1,5 @@
+<!-- @format -->
+
 # storia di git
 
 La storia di Git è affascinante e rappresenta un punto di svolta significativo nella gestione del codice sorgente e nello sviluppo collaborativo del software. Ecco una panoramica più dettagliata:

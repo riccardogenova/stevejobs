@@ -1,3 +1,5 @@
+<!-- @format -->
+
 # TEORIA CSS
 
 CSS (Cascading Style Sheets) è un linguaggio di programmazione utilizzato per stilizzare gli elementi scritti in un linguaggio di markup come HTML. Vediamo alcuni aspetti chiave:

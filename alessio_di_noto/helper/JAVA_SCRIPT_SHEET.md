@@ -1,3 +1,5 @@
+<!-- @format -->
+
 ### Sintassi Base
 
 ```javascript
@@ -20,8 +22,8 @@ numeri.pop(); // Rimuove l'ultimo elemento dall'array
 
 // Oggetti
 let persona = {
-  nome: "Mario",
-  cognome: "Rossi",
+  nome: 'Mario',
+  cognome: 'Rossi',
   eta: 30,
 };
 console.log(persona.nome); // Output: Mario
@@ -168,11 +170,11 @@ try {
   ```javascript
   // Condizioni
   if (x > y) {
-    console.log("x è maggiore di y");
+    console.log('x è maggiore di y');
   } else if (x < y) {
-    console.log("y è maggiore di x");
+    console.log('y è maggiore di x');
   } else {
-    console.log("x e y sono uguali");
+    console.log('x e y sono uguali');
   }
   ```
 
@@ -208,10 +210,10 @@ try {
 
   ```javascript
   function saluta(nome) {
-    console.log("Ciao, " + nome + "!");
+    console.log('Ciao, ' + nome + '!');
   }
 
-  saluta("Mario"); // Output: Ciao, Mario!
+  saluta('Mario'); // Output: Ciao, Mario!
   ```
 
   #### Valore di Ritorno
@@ -236,7 +238,7 @@ try {
   Esempio:
 
   ```javascript
-  let numero = parseInt("10"); // numero sarà 10
+  let numero = parseInt('10'); // numero sarà 10
   ```
 
   #### `parseFloat()`
@@ -246,7 +248,7 @@ try {
   Esempio:
 
   ```javascript
-  let numero = parseFloat("10.5"); // numero sarà 10.5
+  let numero = parseFloat('10.5'); // numero sarà 10.5
   ```
 
   #### `isNaN()`
@@ -257,7 +259,7 @@ try {
 
   ```javascript
   isNaN(10); // false
-  isNaN("ciao"); // true
+  isNaN('ciao'); // true
   ```
 
   ## **High-order function**
@@ -287,18 +289,18 @@ try {
 
   ```javascript
   // Creazione di un array
-  let frutta = ["Mela", "Banana", "Arancia"];
+  let frutta = ['Mela', 'Banana', 'Arancia'];
 
   // Accesso agli elementi di un array
   console.log(frutta[0]); // Output: Mela
   console.log(frutta[1]); // Output: Banana
 
   // Modifica degli elementi di un array
-  frutta[2] = "Uva";
+  frutta[2] = 'Uva';
   console.log(frutta); // Output: ["Mela", "Banana", "Uva"]
 
   // Aggiunta di elementi alla fine di un array
-  frutta.push("Ananas");
+  frutta.push('Ananas');
   console.log(frutta); // Output: ["Mela", "Banana", "Uva", "Ananas"]
 
   // Rimozione dell'ultimo elemento da un array
@@ -408,9 +410,9 @@ try {
     1.  **Array.includes()** : Questo comando ci permette di controllare se yb elemento è presente o meno nell'array (Inclusi gli element NaN, unlike indexOf).
 
     ```javascript
-    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    const fruits = ['Banana', 'Orange', 'Apple', 'Mango'];
 
-    fruits.includes("Mango"); // is true
+    fruits.includes('Mango'); // is true
     ```
 
     Sintassi
@@ -447,8 +449,8 @@ try {
 
   ```javascript
   var persona = {
-    nome: "Mario",
-    cognome: "Rossi",
+    nome: 'Mario',
+    cognome: 'Rossi',
     eta: 30,
   };
   ```
@@ -457,8 +459,8 @@ try {
 
   ```javascript
   var persona = new Object();
-  persona.nome = "Mario";
-  persona.cognome = "Rossi";
+  persona.nome = 'Mario';
+  persona.cognome = 'Rossi';
   persona.eta = 30;
   ```
 
@@ -468,7 +470,7 @@ try {
 
   ```javascript
   console.log(persona.nome); // Output: Mario
-  console.log(persona["cognome"]); // Output: Rossi
+  console.log(persona['cognome']); // Output: Rossi
   ```
 
   #### Aggiunta/Modifica/Eliminazione di Proprietà
@@ -477,7 +479,7 @@ try {
 
   ```javascript
   // Aggiunta di una nuova proprietà
-  persona.sesso = "Maschio";
+  persona.sesso = 'Maschio';
 
   // Modifica di una proprietà esistente
   persona.eta = 31;

@@ -1,3 +1,5 @@
+<!-- @format -->
+
 git init -> inizializzare una repository
 git status -> per vedere i file nella staging area (file non tracciati, modificati o pronti per il commit)
 git remote add origin https://github.com/Carmoz00/stevejobs.git -> collegare la repository alla repository github

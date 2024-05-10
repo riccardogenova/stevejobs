@@ -1,3 +1,5 @@
+<!-- @format -->
+
 # HTML
 
 L'HTML, acronimo per HyperText Markup Language, è la lingua principale usata nel World Wide Web.
