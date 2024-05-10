@@ -7,7 +7,7 @@ const people = [
   { name: 'Charlie', age: '20' },
 ];
 
-function onFind(elements, index, array) {
+function onFind(elements) {
   if (elements.age >= 18 && elements.age <= 24) {
     return true;
   } else return false;
@@ -18,7 +18,7 @@ people.findIndex(onFind);
 //4
 const numbers2 = [1, 2, 3, 4, 5];
 
-function onReduce(acc, elements, index, array) {
+function onReduce(acc, elements, index) {
   acc = index + elements;
   return acc;
 }
@@ -42,7 +42,7 @@ people2.find(onFind2);
 //2
 const numbers3 = ['1', '2', '3', '4', '5'];
 
-function onFilter(elements, index, array) {
+function onFilter(elements) {
   if (elements % 2 == 1 && elements > 3) {
     return elements;
   }
@@ -52,22 +52,22 @@ numbers3.filter(onFilter);
 //1
 const numbers4 = ['1', '2', '3', '4'];
 
-function onMap(elements, index, array) {
+function onMap(elements) {
   return elements * 3;
 }
 
 numbers4.map(onMap);
 
 //6
-const people4 = [
-  { name: 'Alice', age: 25 },
-  { name: 'Bob', age: 17 },
-  { name: 'Charlie', age: 20 },
-  { name: 'David', age: 30 },
-];
+// const people4 = [
+//   { name: 'Alice', age: 25 },
+//   { name: 'Bob', age: 17 },
+//   { name: 'Charlie', age: 20 },
+//   { name: 'David', age: 30 },
+// ];
 const people5 = [];
 
-function onFilter3(elements, index, array) {
+function onFilter3(elements) {
   if (elements.age >= 20) {
     people5.push(elements.name);
   }
@@ -84,7 +84,7 @@ const purchases = [
   { customer: 'Charlie', price: 25 },
 ];
 
-function onReduce3(acc, elements, index, array) {
+function onReduce3(acc, elements) {
   if (elements.customer == 'Alice') {
     acc = elements.price + acc;
   }
