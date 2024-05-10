@@ -1,0 +1,259 @@
+<!-- @format -->
+
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML</title>
+    <style>
+      /* Stili CSS qui */
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+      }
+      h1,
+      h2 {
+        color: #333;
+        text-align: center;
+      }
+      h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+      h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+      }
+      strong {
+        font-weight: bold;
+      }
+      em {
+        font-style: italic;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+      li {
+        margin-bottom: 10px;
+      }
+      /* Aggiungi altri stili CSS qui */
+      nav {
+        color: rgb(0, 47, 255); /* Colore del testo nella navbar */
+        padding: 10px; /* Spaziatura interna */
+        position: fixed; /* Posizionamento fisso */
+        bottom: 0; /* In basso */
+        width: 100%; /* Larghezza completa */
+      }
+
+      nav ul {
+        list-style-type: none; /* Rimuove i punti elenco */
+        padding: 0;
+        margin: 0;
+        bottom: 0;
+        text-align: center; /* Allinea al centro */
+        justify-content: space-between;
+      }
+
+      nav ul li {
+        display: inline; /* Disponi gli elementi in linea */
+        margin-right: 20px; /* Spaziatura tra gli elementi */
+      }
+
+      nav ul li a {
+        color: rgb(255, 255, 255); /* Colore del testo del link */
+        text-decoration: none; /* Rimuove la sottolineatura del link */
+      }
+
+      footer {
+        background-color: #000000; /* Colore di sfondo della navbar */
+        color: rgb(0, 0, 0);
+        padding: 50px;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        margin: -20px;
+      }
+
+      #img1 {
+        width: 70px;
+        height: 70px;
+        bottom: 0;
+        position: fixed;
+        left: 2%;
+        top: auto;
+        margin-bottom: 20px;
+      }
+
+      .testo-ingrandibile {
+        font-size: 24px;
+        transition: font-size 0.3s ease; /* Transizione per l'animazione di ingrandimento */
+      }
+
+      .testo-ingrandibile:hover {
+        font-size: 30px; /* Ingrandisci il testo al passaggio del mouse */
+      }
+
+      /* Aggiungi le tue animazioni personalizzate */
+      @keyframes bounce {
+        0% {
+          transform: translateY(0); /* Nessuna traslazione */
+        }
+        50% {
+          transform: translateY(-20px); /* Traslazione verso l'alto */
+        }
+        100% {
+          transform: translateY(0); /* Ritorno alla posizione originale */
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>HTML</h1>
+
+    <p>
+      <strong>HTML</strong>, acronimo di <em>HyperText Markup Language</em>, è un linguaggio di markup utilizzato per
+      creare e strutturare pagine web.
+    </p>
+
+    <h2>Caratteristiche</h2>
+
+    <ul>
+      <li>
+        <strong>HyperText / Collegamenti Ipertestuali</strong>: HTML è progettato per supportare l'<em>ipertesto</em>,
+        che è un tipo di testo che contiene collegamenti ipertestuali, comunemente noti come <em>link</em> a altri
+        documenti, risorse o posizioni all'interno dello stesso documento;
+      </li>
+      <li>
+        <strong>Markup Language</strong>: HTML utilizza tag e attributi per definire la struttura e il significato del
+        contenuto della pagina web.
+        <ul>
+          <li>
+            I <em>tag</em> sono elementi delimitati da parentesi angolari &lt; &gt; che indicano al browser come
+            visualizzare il contenuto.
+          </li>
+          <li>
+            Gli <em>attributi</em> forniscono informazioni aggiuntive sui tag e possono essere utilizzati per modificare
+            il comportamento o l'aspetto del contenuto;
+          </li>
+        </ul>
+      </li>
+      <li>
+        <strong>Struttura Gerarchica</strong>: Una pagina HTML è strutturata in modo gerarchico utilizzando diversi
+        elementi. Il documento HTML inizia con un elemento &lt;html&gt; che contiene l'intero contenuto della pagina.
+        All'interno di &lt;html&gt;, ci sono due sezioni principali: &lt;head&gt; e &lt;body&gt;.
+        <ul>
+          <li>
+            Head: contiene metadati, come il titolo della pagina, collegamenti a fogli di stile CSS e script JavaScript.
+          </li>
+          <li>
+            Body: contiene il contenuto effettivo della pagina, come testo, immagini, video, forme e altro ancora.
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <h3>Tag e Attributi</h3>
+
+    <p>
+      All'interno dell'HTML, quindi sia nell'head che nel body, gli elementi sono costituiti da <strong>tag</strong> che
+      definiscono il tipo e/o la formattazione dell'elemento, come <code>&lt;p&gt;...&lt;/p&gt;</code> per paragrafo o
+      <code>&lt;h1&gt;...&lt;/h1&gt;</code> per intestazione. Gli <strong>attributi</strong> invece aggiungono
+      informazioni ai tag, come <code>src</code> per il percorso di un'immagine (con tag <code>&lt;img&gt;</code>).
+    </p>
+
+    <p>
+      Esistono anche elementi semantici come <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>,
+      <code>&lt;nav&gt;</code>, <code>&lt;article&gt;</code> che descrivono il significato del contenuto, oltre alla sua
+      presentazione.
+    </p>
+
+    <h4>Alcuni esempi di Tag</h4>
+
+    <ul>
+      <li>
+        Tag di struttura: definiscono la gerarchia e le sezioni principali di una pagina web, come
+        <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;footer&gt;</code>,
+        <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code> ecc.
+      </li>
+      <li>
+        Tag di testo: formattano il testo all'interno di una pagina, ad esempio
+        <code>&lt;p&gt;</code> per i paragrafi, <code>&lt;h1&gt;</code> per i titoli, <code>&lt;b&gt;</code> per il
+        grassetto e <code>&lt;i&gt;</code> per il corsivo.
+      </li>
+      <li>
+        Tag di contenuti multimediali: inseriscono immagini, video e altri contenuti multimediali all'interno della
+        pagina, utilizzando tag come
+        <code>&lt;img&gt;</code>, <code>&lt;video&gt;</code>, <code>&lt;audio&gt;</code>.
+      </li>
+      <li>
+        Tag di collegamenti: creano collegamenti ipertestuali ad altre pagine web o risorse online, utilizzando il tag
+        <code>&lt;a&gt;</code>.
+      </li>
+      <li>
+        Tag di form: permettono di creare moduli per la raccolta di dati dagli utenti, utilizzando tag come
+        <code>&lt;form&gt;</code>, <code>&lt;input&gt;</code>, <code>&lt;select&gt;</code>,
+        <code>&lt;textarea&gt;</code> ecc.
+      </li>
+    </ul>
+
+    <h2>Esempio di pagina HTML</h2>
+
+    <p>Ecco un esempio di codice HTML semplice per creare un titolo e un paragrafo:</p>
+
+    <pre>
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Titolo della pagina&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Titolo principale&lt;/h1&gt;
+    &lt;p&gt;Questo è un paragrafo di testo.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+  </body>
+  <body>
+    <footer>
+      <a href="https://stevejobs.academy">
+        <img id="img1" src="sjlogo.jpg" alt="Steve Jobs Academy Logo" />
+      </a>
+      <nav>
+        <ul>
+          <div>
+            <li>
+              <a class="testo-ingrandibile" href="GIT.html">GIT</a>
+            </li>
+            <li>
+              <a class="testo-ingrandibile" href="CSS.html">CSS</a>
+            </li>
+            <li>
+              <a class="testo-ingrandibile" href="HTML.html">HTML</a>
+            </li>
+            <li>
+              <a class="testo-ingrandibile" href="MARKDOWN.html">MARKDOWN</a>
+            </li>
+          </div>
+          <div>
+            <li>
+              <a class="testo-ingrandibile" href="GIT_SHEET.html">GIT_SHEET</a>
+            </li>
+            <li>
+              <a class="testo-ingrandibile" href="CSS_SHEET.html">CSS_SHEET</a>
+            </li>
+            <li>
+              <a class="testo-ingrandibile" href="HTML_SHEET.html">HTML_SHEET</a>
+            </li>
+            <li>
+              <a class="testo-ingrandibile" href="MARKDOWN_SHEET.html">MARKDOWN_SHEET</a>
+            </li>
+          </div>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

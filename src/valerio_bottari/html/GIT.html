@@ -1,0 +1,233 @@
+<!-- @format -->
+
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduzione a Git</title>
+    <style>
+      /* Stili CSS qui */
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+      }
+      h1,
+      h2 {
+        color: #333;
+        text-align: center;
+      }
+      h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+      h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+      }
+      strong {
+        font-weight: bold;
+      }
+      em {
+        font-style: italic;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+      li {
+        margin-bottom: 10px;
+      }
+
+      nav {
+        color: rgb(0, 47, 255); /* Colore del testo nella navbar */
+        padding: 10px; /* Spaziatura interna */
+        position: fixed; /* Posizionamento fisso */
+        bottom: 0; /* In basso */
+        width: 100%; /* Larghezza completa */
+      }
+
+      nav ul {
+        list-style-type: none; /* Rimuove i punti elenco */
+        padding: 0;
+        margin: 0;
+        bottom: 0;
+        text-align: center; /* Allinea al centro */
+        justify-content: space-between;
+      }
+
+      nav ul li {
+        display: inline; /* Disponi gli elementi in linea */
+        margin-right: 20px; /* Spaziatura tra gli elementi */
+      }
+
+      nav ul li a {
+        color: rgb(255, 255, 255); /* Colore del testo del link */
+        text-decoration: none; /* Rimuove la sottolineatura del link */
+      }
+
+      footer {
+        background-color: #000000; /* Colore di sfondo della navbar */
+        color: rgb(0, 0, 0);
+        padding: 50px;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        margin: -20px;
+      }
+
+      #img1 {
+        width: 70px;
+        height: 70px;
+        bottom: 0;
+        position: fixed;
+        left: 2%;
+        top: auto;
+        margin-bottom: 20px;
+      }
+
+      .testo-ingrandibile {
+        font-size: 24px;
+        transition: font-size 0.3s ease; /* Transizione per l'animazione di ingrandimento */
+      }
+
+      .testo-ingrandibile:hover {
+        font-size: 30px; /* Ingrandisci il testo al passaggio del mouse */
+      }
+
+      /* Aggiungi le tue animazioni personalizzate */
+      @keyframes bounce {
+        0% {
+          transform: translateY(0); /* Nessuna traslazione */
+        }
+        50% {
+          transform: translateY(-20px); /* Traslazione verso l'alto */
+        }
+        100% {
+          transform: translateY(0); /* Ritorno alla posizione originale */
+        }
+      }
+      /* Aggiungi altri stili CSS qui */
+    </style>
+  </head>
+
+  <body>
+    <h1>Introduzione a Git</h1>
+
+    <p>
+      Git rappresenta il sistema di controllo delle versioni più diffuso e affidabile attualmente disponibile su scala
+      globale. Nato nel 2005 grazie all'ingegno di Linus Torvalds, il celebre creatore del kernel Linux, Git si è
+      affermato come un progetto open source maturo e attivamente sviluppato. È diventato lo strumento preferito da una
+      vasta gamma di progetti software, sia commerciali che open source, e ha contribuito a definire lo standard nel
+      mondo dello sviluppo software.
+    </p>
+
+    <h2>Caratteristiche principali di Git</h2>
+
+    <h3>Architettura distribuita</h3>
+    <p>
+      Git si distingue per la sua architettura distribuita, una caratteristica chiave che lo contraddistingue come
+      sistema di controllo delle versioni distribuito (DVCS). A differenza dei suoi predecessori, come CVS o Subversion,
+      che si affidavano a un repository centrale, Git offre a ogni sviluppatore una copia locale del repository
+      completo, consentendo una gestione flessibile e resiliente della cronologia delle versioni.
+    </p>
+
+    <h3>Prestazioni ottimizzate</h3>
+    <p>
+      Le prestazioni di Git sono eccezionali, grazie a algoritmi sofisticati che ottimizzano operazioni come commit,
+      creazione di branch, merge e confronto tra versioni. Git è progettato per gestire in modo efficiente grandi
+      quantità di dati, concentrandosi sul contenuto dei file anziché sui loro nomi, garantendo un'esperienza fluida e
+      reattiva per gli sviluppatori.
+    </p>
+
+    <h3>Sicurezza robusta</h3>
+    <p>
+      L'integrità del codice sorgente è una priorità assoluta per Git. Utilizzando l'algoritmo di hashing crittografico
+      SHA1, Git protegge il repository da modifiche dannose o accidentali, garantendo la tracciabilità e l'autenticità
+      della cronologia delle modifiche. Questo livello di sicurezza è fondamentale per la protezione dei dati sensibili
+      e la salvaguardia del patrimonio software.
+    </p>
+
+    <h3>Flessibilità e compatibilità</h3>
+    <p>
+      Git è progettato per adattarsi a una vasta gamma di flussi di lavoro, supportando branch e tag come funzioni
+      principali e consentendo operazioni avanzate come merge e rollback. La sua flessibilità si estende anche alla
+      compatibilità con una varietà di sistemi operativi e IDE, garantendo un'integrazione fluida con gli strumenti
+      esistenti.
+    </p>
+
+    <h2>Vantaggi di Git</h2>
+
+    <h3>Eccellenza funzionale</h3>
+    <p>
+      Git offre un insieme completo di funzionalità, combinando prestazioni elevate, sicurezza robusta e flessibilità
+      senza pari. Queste caratteristiche lo rendono la scelta ideale per la maggior parte dei team software, offrendo un
+      ambiente di sviluppo efficiente e affidabile.
+    </p>
+
+    <h3>Standard de facto</h3>
+    <p>
+      Git si è affermato come lo standard de facto nel suo settore, godendo di un'ampia adozione da parte di
+      sviluppatori e organizzazioni di tutto il mondo. La sua popolarità si traduce in una vasta disponibilità di
+      risorse e strumenti di supporto, semplificando l'integrazione e l'adozione da parte dei nuovi utenti.
+    </p>
+
+    <h3>Progetto open source di qualità</h3>
+    <p>
+      Git è sostenuto da una community attiva e competente, che contribuisce al suo sviluppo e al suo miglioramento
+      continuo. La sua natura open source garantisce trasparenza, affidabilità e costi ridotti, rendendolo una scelta
+      attraente per sviluppatori e organizzazioni di ogni dimensione.
+    </p>
+
+    <h2>Conclusioni</h2>
+
+    <p>
+      In sintesi, Git rappresenta la soluzione ideale per il controllo delle versioni nel contesto odierno dello
+      sviluppo software. Con le sue prestazioni superiori, la sicurezza robusta e la flessibilità senza pari, Git si
+      distingue come lo strumento preferito da professionisti e aziende di tutto il mondo. Che tu sia un principiante o
+      un esperto, l'apprendimento e l'adozione di Git possono portare significativi vantaggi sia a livello individuale
+      che organizzativo, garantendo un ambiente di sviluppo efficiente, sicuro e collaborativo.
+    </p>
+  </body>
+  <body>
+    <footer>
+      <a href="https://stevejobs.academy">
+        <img id="img1" src="sjlogo.jpg" alt="Steve Jobs Academy Logo" />
+      </a>
+      <nav>
+        <ul>
+          <div>
+            <li>
+              <a class="testo-ingrandibile" href="GIT.html">GIT</a>
+            </li>
+            <li>
+              <a class="testo-ingrandibile" href="CSS.html">CSS</a>
+            </li>
+            <li>
+              <a class="testo-ingrandibile" href="HTML.html">HTML</a>
+            </li>
+            <li>
+              <a class="testo-ingrandibile" href="MARKDOWN.html">MARKDOWN</a>
+            </li>
+          </div>
+          <div>
+            <li>
+              <a class="testo-ingrandibile" href="GIT_SHEET.html">GIT_SHEET</a>
+            </li>
+            <li>
+              <a class="testo-ingrandibile" href="CSS_SHEET.html">CSS_SHEET</a>
+            </li>
+            <li>
+              <a class="testo-ingrandibile" href="HTML_SHEET.html">HTML_SHEET</a>
+            </li>
+            <li>
+              <a class="testo-ingrandibile" href="MARKDOWN_SHEET.html">MARKDOWN_SHEET</a>
+            </li>
+          </div>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
