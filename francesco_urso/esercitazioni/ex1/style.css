@@ -1,0 +1,15 @@
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+div {
+  margin: 10px;
+}
+#p {
+  font-size: 50px;
+}
+button {
+  font-size: 50px;
+}

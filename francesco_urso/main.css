@@ -1,0 +1,180 @@
+body {
+  font-family: "Gill Sans";
+  color: #6da5c0;
+  margin: 0;
+  padding: 0;
+  background-image: url("./img/sfondo.png");
+  background-size: cover; /* Per coprire l'intera area del body */
+  background-position: center center; /* Per centrare l'immagine di sfondo */
+  background-attachment: fixed; /* Per rendere lo sfondo fisso mentre la pagina scorre */
+}
+
+.corpoTesto {
+  margin-bottom: 100px; /* Aggiunge 100 pixel di spazio inferiore al contenuto */
+  margin-top: 160px;
+}
+
+/* Da qui parte per il menu */
+/* #menù {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  text-decoration: none;
+} */
+
+/* Menu pagine */
+/* #menù a {
+  margin-top: 20px;
+  text-decoration: none;
+} */
+
+/* nav ul li:hover ul {
+  display: block;
+} */
+
+/* Da qui parte per header */
+header {
+  /* display: flex; */
+  /* justify-content: end; sposta i blocchi a destra */
+  align-items: center; /* Allinea i blocchi verticalmente al centro */
+  /* padding-right: 5px; */
+  /* Colore scuro e con trasparenza */
+  background-color: rgba(41, 77, 97, 0.8);
+  position: fixed; /* Posiziona l'header in alto in modo fisso */
+  top: 0; /* Sposta il footer 20 pixel sopra il bordo inferiore */
+  width: 100%;
+}
+/* per dividere le due sezioni menù */
+.container {
+  display: flex;
+}
+.column {
+  flex: 1; /* Rende le colonne flessibili per occupare lo stesso spazio */
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+/* Stili per il titolo della sezione */
+.center h2 {
+  text-align: center; /* Centra il testo all'interno dell'elemento <h2> */
+}
+nav ul li a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+nav ul li a:hover {
+  color: #a4bbd0;
+}
+/* Stili per la lista */
+.center ul {
+  display: flex; /* Imposta la visualizzazione della lista come flexbox */
+  justify-content: center; /* Allinea gli elementi della lista al centro orizzontalmente */
+  padding: 0; /* Rimuovi il padding predefinito della lista */
+  margin: 0; /* Rimuovi il margine predefinito della lista */
+}
+.center ul li {
+  margin: 0 10px; /* Aggiungi spazio tra gli elementi della lista */
+  list-style: none; /* Rimuovi i punti elenco */
+}
+/* Stili per i link nel menu */
+nav a {
+  display: inline-block; /* Rendi i link blocchi inline */
+  text-decoration: none; /* Rimuovi la sottolineatura dai link */
+  color: #6da5c0; /* Colore del testo */
+  margin-bottom: 10px;
+}
+/* Stili base per il menu */
+nav ul {
+  list-style-type: none;
+}
+.menu ul li a {
+  display: inline-block; /* Metti il contenuto in linea */
+  padding: 10px; /* Aggiungi spaziatura interna */
+  text-decoration: none;
+  transition: color 0.3s; /* Effetto di transizione del colore del testo */
+}
+.menu ul li a:hover {
+  color: #a4bbd0; /* Cambia colore del testo al passaggio del mouse */
+}
+
+/* Da qui parte per il footer */
+footer {
+  display: flex;
+  justify-content: space-between; /* Distribuisci i blocchi uniformemente lungo l'asse principale */
+  align-items: center; /* Allinea i blocchi verticalmente al centro */
+  padding: 15px;
+  /* Colore scuro e con trasparenza */
+  background-color: rgba(41, 77, 97, 0.8);
+  position: fixed;
+  bottom: 0; /* Sposta il footer 20 pixel sopra il bordo inferiore */
+  width: 100%;
+}
+
+.left,
+.center,
+.right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  width: 100%; /* Larghezza automatica per adattarsi al contenuto */
+}
+
+#logo {
+  max-width: 100%;
+}
+
+#github {
+  max-width: 30px;
+}
+/* Corpo */
+.title {
+  font-size: x-large;
+  padding-left: 20px;
+}
+
+h2 {
+  padding-left: 30px;
+}
+
+h3 {
+  padding-left: 40px;
+}
+
+p {
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: justify;
+}
+
+.pointer {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+code {
+  background-color: #072e33;
+}
+
+.evidenziato {
+  background-color: #072e33;
+}
+
+.evidenziato code {
+  background-color: #072e33;
+}
+
+.bloccoEvidenziato {
+  display: inline-block;
+  background-color: #072e33; /* Colore di sfondo */
+  padding: 5px 10px; /* Spazio intorno al testo */
+  border-radius: 5px; /* Bordi arrotondati */
+}
+
+/* Per il button e collegamento */
+.pointer a {
+  text-decoration: none;
+  border-radius: 5px; /* Bordo arrotondato di 5px */
+}
