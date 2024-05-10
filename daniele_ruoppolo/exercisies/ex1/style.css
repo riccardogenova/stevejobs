@@ -1,0 +1,14 @@
+.esercizio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#sottrazione,
+#testo,
+#somma {
+  display: flex;
+  top: 50%;
+  left: 50%;
+  display: flex;
+}
