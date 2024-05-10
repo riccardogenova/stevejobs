@@ -1,38 +1,65 @@
-/** @format */
-
-.documento {
-  display: flex;
-}
-.navigazione {
-  display: flex;
-  flex-direction: column;
-}
+/**
+ * Menu
+ *
+ * @format
+ */
 
 .navigazione {
-  width: 400px;
-  /*height: 530px;*/
-  background-color: #0e99dd;
-  color: #fff;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 20px;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
 }
-.navigazione ul {
-  list-style-type: none;
-  padding-left: 2px;
-}
-.navigazione ul li {
-  padding: 5px;
-}
-.navigazione ul li a {
-  color: #fff;
+
+/* links */
+.navigazione a {
+  display: block;
+  color: black;
+  padding: 16px;
   text-decoration: none;
 }
-.navigazione ul li a:hover {
-  background-color: #555;
+
+/* Active/current link */
+.navigazione a.Indice {
+  background-color: #0e99dd;
+  color: white;
 }
 
-.testo {
-  padding-left: 20px;
-  height: 100vh;
+/* mouse-over */
+.navigazione a:hover:not(.Indice) {
+  background-color: #555;
+  color: white;
+}
+
+/* Il valore del margin-left dovrebbe matchare il valore della larghezza del menù*/
+div.testo {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+/* Nei monitor che sono più piccoli di 700px di larghezza, fa si che la barra laterale diventi barra superiore*/
+@media screen and (max-width: 700px) {
+  .testo {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .navigazione a {
+    float: left;
+  }
+  div.testo {
+    margin-left: 0;
+  }
+}
+
+/* Per i monitor che sono più piccoli di 400px vericalmente invece che orizzontalmente */
+@media screen and (max-width: 400px) {
+  .navigazione a {
+    text-align: center;
+    float: none;
+  }
 }
