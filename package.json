@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "lint-staged": {
-    "./src/**/*.{js,html,css}": [
+    "./src/**/**/*.{js,html,css}": [
       "npm run format",
       "npm run test:lint"
     ]
