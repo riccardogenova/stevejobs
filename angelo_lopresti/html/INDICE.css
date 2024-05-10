@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap");
+
+* {
+  background-color: aquamarine;
+}
+
+h1 {
+  font-size: 60px;
+  font-family: "Sedan SC", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  text-shadow: 1px 1px 2px #888888;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  color: lawngreen;
+}
+
+#scelta {
+  margin-top: 20px;
+  font-size: 50px;
+  font-weight: 50;
+  text-decoration: solid;
+  text-align: center;
+  text-shadow: 1px 1px 2px #888888;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}

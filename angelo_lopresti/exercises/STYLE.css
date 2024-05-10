@@ -1,0 +1,20 @@
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px #888888;
+  color: black;
+  line-height: normal;
+  font-weight: bolder;
+}
+
+.button {
+  text-align: center;
+  transform: scale(1.7);
+  align-items: center;
+  margin-top: 100px;
+}
+
+.titolo {
+  text-shadow: 1px 1px 2px #888888;
+  color: black;
+}

@@ -1,0 +1,19 @@
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px #888888;
+  color: black;
+  line-height: normal;
+  font-weight: bolder;
+  background-color: cornsilk;
+  border-radius: 10px;
+}
+.MARKDOWN1 {
+  margin: 20px;
+  font-weight: bold;
+  color: #131516;
+  font-size: large;
+  font-family: Arial Narrow;
+  text-transform: uppercase;
+  border-radius: 10px;
+}
