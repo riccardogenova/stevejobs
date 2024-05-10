@@ -2,7 +2,7 @@
 
 Git è un progetto open source sviluppato nel 2005 da Linus Torvalds, il famoso creatore del sistema operativo Linux.
 Git è un esempio di DVCS, Distributed Version Control system, cioè un sistema che permette di controllare attivamente
-le versioni di sviluppo di un software, rendendoli accessibili e modificabili ai sviluppatori. 
+le versioni di sviluppo di un software, rendendoli accessibili e modificabili ai sviluppatori.
 Nasce inizialmente per facilitare lo sviluppo di Linux per ai giorni d'oggi divenire uno degli strumenti
 di controllo versioni più diffuso.
 
@@ -22,21 +22,21 @@ La possibilità di lavorare localmente, e quindi offline, rappresenta un vantagg
 
 # Gestione del flusso di lavoro in Git
 
-Sostanzialmente i file di un progetto in Git possono assumere tra stati differenti: 
+Sostanzialmente i file di un progetto in Git possono assumere tra stati differenti:
 
-|    Stato 	   |           Descrizione                                                                                  |
-|--------------|--------------------------------------------------------------------------------------------------------|
-| Committati   |    I file sono stati memorizzati localmente nel database.                                              |
-| Modificati   |	I file hanno subito dei cambiamenti ma non sono stati ancora committati.                            |    
-| In stage 	   |    I file sono stati coinvolti da modifiche e verranno inclusi in un'istantanea con la prossima commit.|
+| Stato      | Descrizione                                                                                          |
+| ---------- | ---------------------------------------------------------------------------------------------------- |
+| Committati | I file sono stati memorizzati localmente nel database.                                               |
+| Modificati | I file hanno subito dei cambiamenti ma non sono stati ancora committati.                             |
+| In stage   | I file sono stati coinvolti da modifiche e verranno inclusi in un'istantanea con la prossima commit. |
 
 Agli stati elencati corrispondono altrettante sezioni di un progetto gestito tramite Git:
 
-* Directory di Git 
-	L'area per il salvataggio del database e dei metadati di un progetto, cioè le informazioni copiate in fase di clonazione di un repository.
+- Directory di Git
+  L'area per il salvataggio del database e dei metadati di un progetto, cioè le informazioni copiate in fase di clonazione di un repository.
 
-* Directory di lavoro 
-     La copia di backup (checkout) di una determinata versione di un progetto, per ottenerla si estraggono i file dall'archivio della directory di Git in modo da poterli manipolare dal proprio disco.
+- Directory di lavoro
+  La copia di backup (checkout) di una determinata versione di un progetto, per ottenerla si estraggono i file dall'archivio della directory di Git in modo da poterli manipolare dal proprio disco.
 
-* Area di stage 
-	Definita anche come "Indice", è un'area rappresentata da un file contenente le informazioni relative alla commit successiva.
+- Area di stage
+  Definita anche come "Indice", è un'area rappresentata da un file contenente le informazioni relative alla commit successiva.

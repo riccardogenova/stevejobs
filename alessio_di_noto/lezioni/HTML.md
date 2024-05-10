@@ -18,9 +18,9 @@ La versione di HTML che esamineremo è quella più attuale: HTML 5, che è anche
 
 La specifica HTML5 infatti si compone della definizione di:
 
-   * una sintassi per il markup più efficace e adatta alle esigenze più moderne, con l'introduzione di specifici controlli per i form o degli attributi "data-" da arricchire i tag di informazioni specifiche;
+- una sintassi per il markup più efficace e adatta alle esigenze più moderne, con l'introduzione di specifici controlli per i form o degli attributi "data-" da arricchire i tag di informazioni specifiche;
 
-   * una serie di API che consentono di gestire, a livello approfondito aspetti come network, multimedia, e hardware dei dispositivi. In altre parole dalla gestione del video e dell'audio al monitoraggio delle batterie di un device.
+- una serie di API che consentono di gestire, a livello approfondito aspetti come network, multimedia, e hardware dei dispositivi. In altre parole dalla gestione del video e dell'audio al monitoraggio delle batterie di un device.
 
 Questo sviluppo dello standard ha dato il via alla generazione delle cosiddette App mobile ibride, che sfruttano sia HTML5, per creare app che si possono distribuire, come quelle native, sui marketplace dei dispositivi più comuni (come Google Play per Android ad esempio).
 
@@ -32,9 +32,9 @@ La potenza di Internet consiste nell'essere un insieme esteso di contenuti conne
 
 In una pagina HTML tutti gli elementi sono connotati da tag (letteralmente "etichette"). Si tratta di marcatori che evidenziano non tanto l'aspetto, quanto il senso, il ruolo, o l'organizzazione che vogliamo assegnare ai contenuti. Ad esempio se indichiamo un titolo con <h1> per noi le parole in quel titolo rappresentano il tema principale della pagina, al di là del modo in cui saranno visualizzate.
 
-   * Questa visione "semantica" degli elementi è fondamentale, ci aiuta a non perdere di vista il fatto che una pagina deve essere un luogo ordinato di informazioni, soprattutto sul Web. Se pensiamo ad esempio al classico contesto delle ricerche online, risulta naturale comprendere che tanto più una pagina sarà associabile a una keyword o a un tema, tanto più facile sarà trovarla. Per questo sarà importante curare cose come l'organizzazione del testo, la definizione dei titoli, dei link dei grassetti.
+- Questa visione "semantica" degli elementi è fondamentale, ci aiuta a non perdere di vista il fatto che una pagina deve essere un luogo ordinato di informazioni, soprattutto sul Web. Se pensiamo ad esempio al classico contesto delle ricerche online, risulta naturale comprendere che tanto più una pagina sarà associabile a una keyword o a un tema, tanto più facile sarà trovarla. Per questo sarà importante curare cose come l'organizzazione del testo, la definizione dei titoli, dei link dei grassetti.
 
-   * Tuttavia in HTML possiamo anche definire lo scheletro dell'interfaccia utente di una app, e in questo frangente i tag diventano utili come supporto all'organizzazione del layout o alla definizione di aree specifiche per l'esperienza utente.
+- Tuttavia in HTML possiamo anche definire lo scheletro dell'interfaccia utente di una app, e in questo frangente i tag diventano utili come supporto all'organizzazione del layout o alla definizione di aree specifiche per l'esperienza utente.
 
 In tutti e due i casi continuiamo a non parlare di "grafica", ma di struttura
 
@@ -49,8 +49,8 @@ Molti elementi in HTML servono per descrivere porzioni di pagina, aree, o conten
 
 Pertanto un elemento HTML è quasi sempre un contenitore e il suo contenuto è delimitato da:
 
-   * tag di apertura (es. <p>);
-   * tag di chiusura (es. </p>).
+- tag di apertura (es. <p>);
+- tag di chiusura (es. </p>).
 
 <p>Lorem ipsum, quia dolor sit, amet, consectetur, adipisci velit,
 sed quia non numquam eius modi tempora incidunt, ut labore et dolore

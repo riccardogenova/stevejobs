@@ -1,58 +1,67 @@
-# COME SI SCRIVONO I TITOLI SU MARKDOWN 
+# COME SI SCRIVONO I TITOLI SU MARKDOWN
 
 # Titolo Principale
+
 ## Sottotitolo
+
 ### Sottotitolo Secondario
 
-----------------------------------------------------------------------------------------------------------------
+---
+
 # Paragrafi: I paragrafi vengono separati da una riga vuota.
 
-*Ex*: **Ciao io sono lollo**
+_Ex_: **Ciao io sono lollo**
 
------------------------------------------------------------------------------------------------------------------
-# Elenchi Puntati: Per creare elenchi puntati, si utilizzano trattini (-), asterischi (*) o simboli più (+), seguiti dal testo dell'elemento. 
+---
 
-*EX Tipo 1* :
+# Elenchi Puntati: Per creare elenchi puntati, si utilizzano trattini (-), asterischi (\*) o simboli più (+), seguiti dal testo dell'elemento.
+
+_EX Tipo 1_ :
 
 - Elemento 1
 - Elemento 2
 - Elemento 3
 
+## Elenchi Numerati: Per creare elenchi numerati, si utilizzano numeri seguiti da un punto (.).
 
-## Elenchi Numerati: Per creare elenchi numerati, si utilizzano numeri seguiti da un punto (.). 
+_EX_ :
 
-*EX* : 
+_EX Tipo 2_ :
 
-*EX Tipo 2* :
-1. 
-2. 
-3. 
-------------------------------------------------------------------------------------------------------------------
-# Link Per creare un link, si utilizza la sintassi [testo del link](URL). 
+1.
+2.
+3.
 
-*EX:*
+---
+
+# Link Per creare un link, si utilizza la sintassi [testo del link](URL).
+
+_EX:_
 [Visita il sito](https://www.example.com).
 
--------------------------------------------------------------------------------------------------------------------
+---
 
 # Immagine: Per inserire un'immagine, si utilizza la sintassi ![testo alternativo](URL dell'immagine).
- 
- *EX:*
-    **![Logo](https://www.example.com/logo.png)**
 
---------------------------------------------------------------------------------------------------------------------
+_EX:_
+**![Logo](https://www.example.com/logo.png)**
 
-# Grassetto e Corsivo: Per rendere il testo in grassetto, si utilizzano due asterischi o due trattini bassi (grassetto). Per rendere il testo in corsivo, si utilizzano un asterisco o un trattino basso (corsivo). 
+---
 
-*EX:*
-    **Testo in Grassetto**
-        *Testo in Corsivo*
+# Grassetto e Corsivo: Per rendere il testo in grassetto, si utilizzano due asterischi o due trattini bassi (grassetto). Per rendere il testo in corsivo, si utilizzano un asterisco o un trattino basso (corsivo).
 
-----------------------------------------------------------------------------------------------------------------------
+_EX:_
+**Testo in Grassetto**
+_Testo in Corsivo_
+
+---
+
 # Codice Sorgente: Per inserire blocchi di codice, si utilizzano tre backtick (`) prima e dopo il codice.
 
- *EX:*
-    ```python
-        print("Hello, world!");
+_EX:_
 
------------------------------------------------------------------------------------------------------------------------
+```python
+print("Hello, world!");
+
+---
+```

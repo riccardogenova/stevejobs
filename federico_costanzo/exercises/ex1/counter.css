@@ -1,21 +1,21 @@
 .page {
-    /*make the div as big as the entire page*/
-    width: 100vw; 
-    height: 100vh;
+  /*make the div as big as the entire page*/
+  width: 100vw;
+  height: 100vh;
 
-    /*center all the items in the div*/
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    button {
-        width: 70px;
-        height: 40px;
-    
-        margin: 50px;
-    }
+  /*center all the items in the div*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    #counter {
-        font-size: 90px;
-    }
+  button {
+    width: 70px;
+    height: 40px;
+
+    margin: 50px;
+  }
+
+  #counter {
+    font-size: 90px;
+  }
 }

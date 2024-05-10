@@ -1,4 +1,3 @@
-
 ---
 
 # Cos'è il linguaggio Markdown?

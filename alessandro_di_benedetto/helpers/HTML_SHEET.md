@@ -3,7 +3,7 @@
 Definisce il tipo di documento come HTML5.
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 ```
 
 Elemento radice che contiene tutto il documento HTML.
@@ -33,7 +33,7 @@ Contiene il contenuto visibile della pagina.
 scheletro della pagina
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <title>Titolo X</title>

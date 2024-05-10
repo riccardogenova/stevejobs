@@ -8,4 +8,4 @@ Puoi usarlo su molte piattaforme come ad esempio GitHub, Reddit, Stack Overflow 
 Nel Markdown è possibile utilizzare simboli di punteggiatura, per indicare la formattazione del testo come asterischi o trattini.
 Il simbolo "cancelletto" è utilizzato per i titoli di diverse dimensioni.
 Utilizzando più cancelletti indicano una dimensione più piccola del titolo.
-Il testo in grassetto e corsivo si può scrivere utilizzando gli asterischi * o i trattini -.
+Il testo in grassetto e corsivo si può scrivere utilizzando gli asterischi \* o i trattini -.

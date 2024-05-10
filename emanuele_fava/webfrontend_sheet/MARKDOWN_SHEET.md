@@ -1,29 +1,35 @@
 # MARKDOWN_SHEET
 
-- Grassetto: Utilizza due asterischi ** testo ** o due trattini bassi __ testo __
-Esempio: **testo** o __testo__
+- Grassetto: Utilizza due asterischi ** testo ** o due trattini bassi ** testo **
+  Esempio: **testo** o **testo**
 
-- Corsivo: Utilizza un asterisco * testo * o un trattino basso _ testo _
-Esempio: *testo* o _testo_
+- Corsivo: Utilizza un asterisco _ testo _ o un trattino basso _ testo _
+  Esempio: _testo_ o _testo_
 
 Testo barrato: Utilizza due tilde ~~ testo ~~
 Esempio: ~~testo~~
 
 Intestazioni: Utilizza da una a sei hashtag # per definire l'intestazione di livello da 1 a 6.
 Esempio:
+
 # Intestazione di livello 1
+
 ## Intestazione di livello 2
+
 ### Intestazione di livello 3
+
 #### Intestazione di livello 4
+
 ##### Intestazione di livello 5
+
 ###### Intestazione di livello 6
 
 Elenco non ordinato: Utilizza un trattino, un asterisco o un segno più seguito da spazio - Elemento.
 Esempio:
 
--   Elemento 1
--   Elemento 2
--   Elemento 3
+- Elemento 1
+- Elemento 2
+- Elemento 3
 
 Elenco ordinato: Utilizza numeri seguiti da un punto e spazio 1. Elemento.
 Esempio:
@@ -43,10 +49,10 @@ Esempio:
 
 > Questo è un esempio di citazione.
 
-Codice inline: Utilizza backtick (grave accent) 
+Codice inline: Utilizza backtick (grave accent)
 Esempio: `testo`
 
-Tabelle in Markdown: 
+Tabelle in Markdown:
 
 1. **Definizione delle colonne**: Si Inizia definendo le colonne della tua tabella, separandole con il carattere pipe `|`. Ogni colonna corrisponderà a un elemento nella riga dell'intestazione.
 
@@ -54,19 +60,18 @@ Tabelle in Markdown:
 
 3. **Inserimento dei dati**: Nelle righe successive, inserisci i dati della tua tabella, separando gli elementi delle colonne con il carattere pipe `|`.
 
-
 ```markdown
-| Nome       | Età |
-|------------|-----|
-| Alice      |  25 |
-| Bob        |  30 |
-| Charlie    |  35 |
+| Nome    | Età |
+| ------- | --- |
+| Alice   | 25  |
+| Bob     | 30  |
+| Charlie | 35  |
 ```
 
-esempio: 
+esempio:
 
-| Nome       | Età |
-|------------|-----|
-| Alice      |  25 |
-| Bob        |  30 |
-| Charlie    |  35 |
+| Nome    | Età |
+| ------- | --- |
+| Alice   | 25  |
+| Bob     | 30  |
+| Charlie | 35  |

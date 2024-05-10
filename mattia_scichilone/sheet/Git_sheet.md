@@ -37,4 +37,4 @@ git fetch: scarica le ultime modifiche dal repository remoto senza incorporale n
 
 git mergetool: apre uno stumento per risolvere i conflitti di merge tra i branchi.
 
-git show <hash_commit> :  mostra le informazioni dettagliate su un commit specifico, incluso il messaggio, l'autore e le modifiche apportate.
+git show <hash_commit> : mostra le informazioni dettagliate su un commit specifico, incluso il messaggio, l'autore e le modifiche apportate.

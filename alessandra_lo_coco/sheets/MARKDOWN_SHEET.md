@@ -8,7 +8,7 @@ Elenchi puntati:
 -Elemento 3
 
 **Testo in grassetto**
-*Testo corsivo*
+_Testo corsivo_
 
 Collegamenti ipertestuali:
 [testo del collegamento](URL)
@@ -18,11 +18,10 @@ Immagini:
 
 Per citare utilizza il carattere > prima del testo citato
 
-Righe orizzontali (---) o (***)
+Righe orizzontali (---) o (\*\*\*)
 
 Tabelle o barre verticali | per separare le celle e - per separare la riga dell'intestazione da quella dei dati.
 
 ~~Testo sbarrato~~
 
 _Testo sottolineato_
-

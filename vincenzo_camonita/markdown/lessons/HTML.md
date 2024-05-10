@@ -1,6 +1,6 @@
 #HTML
 
-**HTML**, acronimo di *HyperText Markup Language*, è il linguaggio standard utilizzato per la creazione e la strutturazione di pagine web. È il fondamento di base su cui si basa la maggior parte dei siti web e delle applicazioni web. HTML utilizza marcatori (o "tag") per definire la struttura del contenuto di una pagina web, come testo, immagini, collegamenti ipertestuali, forme e altri elementi multimediali.
+**HTML**, acronimo di _HyperText Markup Language_, è il linguaggio standard utilizzato per la creazione e la strutturazione di pagine web. È il fondamento di base su cui si basa la maggior parte dei siti web e delle applicazioni web. HTML utilizza marcatori (o "tag") per definire la struttura del contenuto di una pagina web, come testo, immagini, collegamenti ipertestuali, forme e altri elementi multimediali.
 
 I tag HTML forniscono istruzioni su come il contenuto di una pagina web dovrebbe essere visualizzato e organizzato nel browser web. Ad esempio, il tag **< p >** viene utilizzato per indicare un paragrafo di testo, mentre il tag **< img >** viene utilizzato per inserire un'immagine.
 

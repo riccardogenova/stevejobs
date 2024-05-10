@@ -1,4 +1,3 @@
-
 ---
 
 # ESEMPI
@@ -27,7 +26,7 @@ ___Testo in corsivo e grassetto___
 > Questa è un’**area rientrata**. L’area prosegue anche qui.
 
 > Questa è un‘altra **area rientrata**. Anche quest’area continua nella riga successiva.  
-  Questa riga invece non è più rientrata.
+>  Questa riga invece non è più rientrata.
 
 ---
 
@@ -54,7 +53,7 @@ Qui segue un [Link](https://example.com/ "Titolo del link opzionale").
 # Tabelle
 
 | Cella 1 | Cella 2 |
-|---------|---------|
+| ------- | ------- |
 | A       | B       |
 | C       | D       |
 
@@ -77,7 +76,7 @@ Qui ricomincia il testo normale.
 
 Nel corpo del testo [^1] potete facilmente inserire [^2] note a piè di pagina.  
 [^1]: Qui c’è il testo delle note a piè di pagina.  
-[^2]: Anche le **note a piè di pagina** possono essere *formattate*. E queste includono anche diverse linee.
+[^2]: Anche le **note a piè di pagina** possono essere _formattate_. E queste includono anche diverse linee.
 
 ---
 

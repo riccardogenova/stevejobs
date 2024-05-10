@@ -1,4 +1,3 @@
-
 Ecco alcuni comandi importanti del CSS che vengono comunemente utilizzati per definire lo stile e la presentazione degli elementi HTML:
 
 1. **Selettori**: I selettori vengono utilizzati per selezionare gli elementi HTML ai quali applicare uno stile. Alcuni esempi comuni includono selettori di tipo (ad esempio, `p` per i paragrafi), selettori di classe (ad esempio, `.classe`), e selettori di ID (ad esempio, `#id`).
@@ -19,14 +18,15 @@ Ecco alcuni comandi importanti del CSS che vengono comunemente utilizzati per de
 
 Questi sono solo alcuni dei comandi fondamentali del CSS, ma ce ne sono molti altri che consentono di creare stili sofisticati e adattabili per le pagine web.
 
-
 ---
+
 **CSS esterni e interni**
 
 E' esterno un foglio di stile definito in un file separato dal documento. Si tratta di semplici
 documenti di testo editabili anche con il Blocco Note o TextEdit ai quali si assegna l'estensione .css.
 
 **esempio inserimento file css tramite link**
+
 <html>
 <head>
 <title>Inserire i fogli di stile in un documento</title>
@@ -35,11 +35,13 @@ documenti di testo editabili anche con il Blocco Note o TextEdit ai quali si ass
 <body>
 
 **esempio inserimento file css tramite @import**
+
 <style>
  @import url(stile.css);
 </style>
 
 **esempio fogli incorporati**
+
 <html>
 <head>
 <title>Inserire i fogli di stile in un documento</title>

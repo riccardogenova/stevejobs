@@ -1,22 +1,25 @@
 Intestazioni:
 
 # Titolo principale
+
 ## Titolo di secondo livello
+
 ### Titolo di terzo livello
+
 #### Titolo di quarto livello
 
 Testo formattato:
 
 **Grassetto**
-*Corsivo*
+_Corsivo_
 ~~Barrato~~
 Codice in linea
 
 Elenchi:
 
-* Elemento 1
-* Elemento 2
-* Elemento 3
+- Elemento 1
+- Elemento 2
+- Elemento 3
 
 Citazioni:
 
@@ -31,7 +34,7 @@ Non corsivo ma con asterisco:
 
     Non corsivo -> \*italicized\*
 
-Tabelle: 
+Tabelle:
 
     (|) (-)
 

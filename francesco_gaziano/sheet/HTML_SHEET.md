@@ -1,21 +1,22 @@
 Ecco il documento migliorato con le informazioni aggiuntive:
 
-```markdown
+````markdown
 # Comandi HTML più utilizzati
 
 1. `<!DOCTYPE>`: Definisce il tipo di documento HTML e la sua versione.
 
    ```html
-   <!DOCTYPE html>
+   <!doctype html>
    ```
+````
 
-   **Descrizione:** Il tag `<!DOCTYPE>` definisce il tipo di documento HTML e la sua versione. È il primo elemento che appare in un documento HTML e aiuta il browser a interpretare correttamente il codice.
+**Descrizione:** Il tag `<!DOCTYPE>` definisce il tipo di documento HTML e la sua versione. È il primo elemento che appare in un documento HTML e aiuta il browser a interpretare correttamente il codice.
 
 2. `<html>`: Rappresenta il contenuto di una pagina web.
 
    ```html
    <html>
-       ...
+     ...
    </html>
    ```
 
@@ -25,8 +26,8 @@ Ecco il documento migliorato con le informazioni aggiuntive:
 
    ```html
    <head>
-       <title>Titolo della Pagina</title>
-       <!-- Altri metadati, collegamenti a fogli di stile e script -->
+     <title>Titolo della Pagina</title>
+     <!-- Altri metadati, collegamenti a fogli di stile e script -->
    </head>
    ```
 
@@ -44,7 +45,7 @@ Ecco il documento migliorato con le informazioni aggiuntive:
 
    ```html
    <body>
-       <!-- Contenuto principale della pagina -->
+     <!-- Contenuto principale della pagina -->
    </body>
    ```
 
@@ -80,7 +81,7 @@ Ecco il documento migliorato con le informazioni aggiuntive:
 9. `<img>`: Inserisce un'immagine nella pagina.
 
    ```html
-   <img src="immagine.jpg" alt="Testo Alternativo">
+   <img src="immagine.jpg" alt="Testo Alternativo" />
    ```
 
    **Descrizione:** Il tag `<img>` inserisce un'immagine nella pagina HTML. L'attributo `src` specifica il percorso dell'immagine e l'attributo `alt` fornisce un testo alternativo per l'immagine, importante per l'accessibilità e per i motori di ricerca.
@@ -89,21 +90,23 @@ Ecco il documento migliorato con le informazioni aggiuntive:
 
     ```html
     <ul>
-        <li>Elemento 1</li>
-        <li>Elemento 2</li>
-        <li>Elemento 3</li>
+      <li>Elemento 1</li>
+      <li>Elemento 2</li>
+      <li>Elemento 3</li>
     </ul>
     ```
 
     ```html
     <ol>
-        <li>Elemento 1</li>
-        <li>Elemento 2</li>
-        <li>Elemento 3</li>
+      <li>Elemento 1</li>
+      <li>Elemento 2</li>
+      <li>Elemento 3</li>
     </ol>
     ```
 
     **Descrizione:** I tag `<ul>` e `<ol>` definiscono elenchi non ordinati e ordinati, rispettivamente. I tag `<li>` definiscono gli elementi dell'elenco. Gli elenchi sono utilizzati per organizzare e presentare le informazioni in modo strutturato.
+
 ```
 
 Queste informazioni aggiuntive forniranno una migliore comprensione dei comandi HTML più utilizzati e dei loro utilizzi nel contesto di una pagina web.
+```

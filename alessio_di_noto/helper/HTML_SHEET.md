@@ -115,7 +115,7 @@
 61. `<nav>`: Rappresenta un insieme di link di navigazione.
 62. `<div>`: Rappresenta una divisione logica o un contenitore generico.
 63. `<span>`: Rappresenta un testo o un contenuto in linea.
-64. `<br>`: Crea un'interruzione di linea.
+64. `<br/>`: Crea un'interruzione di linea.
 
 ### Testo e Caratteri:
 

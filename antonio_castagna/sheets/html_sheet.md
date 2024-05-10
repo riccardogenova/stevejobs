@@ -65,4 +65,3 @@ I link in linea formattano il testo senza interrompere il flusso dei contenuti.
 <link>: Per collegare fogli di stile esterni, come CSS.
 
 <meta>: Fornisce metadati sul documento HTML, come la codifica dei caratteri o le parole chiave per i motori di ricerca.
-

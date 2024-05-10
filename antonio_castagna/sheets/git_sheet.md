@@ -1,4 +1,4 @@
-# Comandi git #
+# Comandi git
 
 **git init**: Inizializza un nuovo repository Git.
 

@@ -12,12 +12,12 @@ Vantaggi nell'uso del Markdown
 
 ## Ci sono diversi vantaggi nell'uso del Markdown
 
-+ Semplicità: La sintassi del Markdown è molto più semplice rispetto all'HTML. Non richiede tag complicati, basta utilizzare caratteri semplici come #, *, e - per formattare il testo.
+- Semplicità: La sintassi del Markdown è molto più semplice rispetto all'HTML. Non richiede tag complicati, basta utilizzare caratteri semplici come #, \*, e - per formattare il testo.
 
-+ Leggibilità: Poiché il Markdown utilizza una sintassi intuitiva, il testo formattato in Markdown è facile da leggere anche nel suo formato grezzo. È molto più leggibile rispetto al codice HTML.
+- Leggibilità: Poiché il Markdown utilizza una sintassi intuitiva, il testo formattato in Markdown è facile da leggere anche nel suo formato grezzo. È molto più leggibile rispetto al codice HTML.
 
-+ Portabilità: I documenti Markdown possono essere facilmente convertiti in HTML, PDF, Word e altri formati, rendendoli estremamente portatili e adatti a molteplici scopi.
+- Portabilità: I documenti Markdown possono essere facilmente convertiti in HTML, PDF, Word e altri formati, rendendoli estremamente portatili e adatti a molteplici scopi.
 
-+ Interoperabilità: Poiché il Markdown è diventato uno standard, è supportato da una vasta gamma di piattaforme, inclusi GitHub, Reddit, Stack Overflow e molti altri. Ciò significa che puoi scrivere una volta e pubblicare ovunque senza dover ripetere il processo di formattazione.
+- Interoperabilità: Poiché il Markdown è diventato uno standard, è supportato da una vasta gamma di piattaforme, inclusi GitHub, Reddit, Stack Overflow e molti altri. Ciò significa che puoi scrivere una volta e pubblicare ovunque senza dover ripetere il processo di formattazione.
 
 In sintesi, il Markdown è un modo semplice ed efficace per formattare il testo su piattaforme web, offrendo vantaggi come semplicità, leggibilità, portabilità e interoperabilità. È diventato uno strumento indispensabile per scrivere e formattare contenuti su Internet in modo rapido e intuitivo.

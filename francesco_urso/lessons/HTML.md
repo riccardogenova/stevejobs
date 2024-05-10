@@ -2,13 +2,13 @@
 
 ## Cos'è HTML
 
-HTML, acronimo di *HyperText Markup Language*, è il linguaggio di markup standard utilizzato per creare e strutturare contenuti web. È uno dei pilastri fondamentali del World Wide Web insieme a CSS (Cascading Style Sheets) e JavaScript.
+HTML, acronimo di _HyperText Markup Language_, è il linguaggio di markup standard utilizzato per creare e strutturare contenuti web. È uno dei pilastri fondamentali del World Wide Web insieme a CSS (Cascading Style Sheets) e JavaScript.
 HTML è un **linguaggio di markup** che utilizza una sintassi composta da tag per descrivere la struttura e il contenuto di una pagina web. I tag sono elementi che indicano al browser come visualizzare e interpretare il contenuto della pagina. Ogni tag ha un significato specifico e può contenere testo, immagini, collegamenti ipertestuali e altri elementi multimediali.
 
 ## Breve storia su HTML
 
 La storia di HTML è stata caratterizzata da continui sviluppi e miglioramenti per soddisfare le esigenze crescenti del web moderno, rendendo Internet un ambiente sempre più ricco e interattivo.
-HTML inizia con l'avvento del *World Wide Web* negli anni '90. Ecco una panoramica sintetica della sua evoluzione:
+HTML inizia con l'avvento del _World Wide Web_ negli anni '90. Ecco una panoramica sintetica della sua evoluzione:
 
 - 1989-1991: HTML (HyperText Markup Language) è stato inventato da Tim Berners-Lee, un ricercatore al CERN (Organizzazione europea per la ricerca nucleare), come parte del progetto per creare una rete di informazioni collegata tra scienziati.
 

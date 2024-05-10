@@ -1,4 +1,5 @@
 # Proprietà e selettori più importanti e cosa fanno:
+
 1. **Selettori:**
    - Selettore di tipo: Seleziona tutti gli elementi di un determinato tipo (es. `p` per i paragrafi).
    - Selettore di classe: Seleziona gli elementi con uno specifico valore di classe (es. `.classe`).

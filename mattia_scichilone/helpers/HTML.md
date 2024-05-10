@@ -3,7 +3,7 @@ HTML (Hype Text Markup Language), è un linguaggio standard utilizzato per crear
 
 HTML fornisce una struttura di base per i contenuti web, consentendo agli sviluppatori di definire elementi come titoli, paragrafi, immagini, collegamenti iperstuali e molti altri.
 
-Gli elementi vengono organizzati in un documento HTML utilizzando tag, che sono composti da una parola chiave racchiusa tra parentesi angolari. 
+Gli elementi vengono organizzati in un documento HTML utilizzando tag, che sono composti da una parola chiave racchiusa tra parentesi angolari.
 
 tag paragrafo: <p>
 tag intestazione <h1>

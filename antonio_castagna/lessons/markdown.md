@@ -1,43 +1,50 @@
-# Linguaggio Markdown #
+# Linguaggio Markdown
+
 Markdown è un linguaggio di markup leggero e versatile, che si differenzia rispetto ad altri per la sua elevata leggibilità. Esso si basa su costrutti sintattici semplici, che non alterano significativamente la struttura del testo annotato. Grazie a questa caratteristica, i documenti markdown possono essere creati, letti e visualizzati con un semplice editor di testo, senza che questo richieda la comprensione di complessi tag come avviene nel caso di altri linguaggi di markup.
 
-# Storia #
+# Storia
+
 Markdown nasce nel 2004 dalla collaborazione tra John Gruber e Aaron Swartz. Lo scopo che si prefiggono gli autori è quello di consentire a chi scrive contenuti di creare pagine web focalizzandosi sul testo piuttosto che sulla struttura di un documento HTML, dei tag e della relativa sintassi.
 
-# Diffusione #
+# Diffusione
+
 Oggi, Markdown è largamente utilizzato sul web. Piattaforme quali GitHub, Gitlab, Reddit, StackExchange e molte altre consentono agli utenti di utilizzare markdown per formattare i propri commenti, messaggi, ecc.
 
 Pratica comune prevede che i documenti di README nei repository di progetti open source siano scritti in markdown. Ciò permette di arricchire il documento con una formattazione più chiara qualora esso possa essere visualizzato con uno strumento che interpreta la sintassi markdown, pur mantenendo un'ottima leggibilità nel caso in cui si apra con un semplice editor di testo.
 
 Diversi generatori di siti statici, come ad esempio Jekyll, accettano in input documenti markdown, che vengono poi convertiti dal generatore in pagine web statiche.
 
-# Sintassi di Markdown #
+# Sintassi di Markdown
+
 La sintassi di base è molto semplice, e consente di effettuare alcune semplici operazioni di formattazione, sia sul testo che sulla struttura del documento.
 
-# Testo #
-In markdown, i paragrafi sono separati da una riga vuota. 
-Si possono specificare attributi di formattazione quali grassetto, corsivo o specificare che si vuole usare un carattere a spaziatura fissa (molto utile, ad esempio, per inserire snippet di codice), semplicemente aggiungendo i caratteri ** (doppio asterisco), _ (underscore) e ` (apice inverso).
+# Testo
 
-# Intestazioni #
+In markdown, i paragrafi sono separati da una riga vuota.
+Si possono specificare attributi di formattazione quali grassetto, corsivo o specificare che si vuole usare un carattere a spaziatura fissa (molto utile, ad esempio, per inserire snippet di codice), semplicemente aggiungendo i caratteri \*\* (doppio asterisco), \_ (underscore) e ` (apice inverso).
+
+# Intestazioni
+
 Markdown supporta due livelli di intestazioni. Il primo si effettua "sottolineando" il testo con una serie di caratteri =. Il secondo livello si effettua invece con il suffisso ##.
 
-# Liste #
-Markdown supporta sia le liste puntate che le liste numerate. Per le prime, basta usare il carattere *. Le liste numerate invece possono essere specificate con il numero seguito ad un punto.
+# Liste
 
-# Immagini #
+Markdown supporta sia le liste puntate che le liste numerate. Per le prime, basta usare il carattere \*. Le liste numerate invece possono essere specificate con il numero seguito ad un punto.
+
+# Immagini
+
 Markdown permette di inserire immagini all'interno del documento. Ovviamente, queste non saranno visualizzate se si apre il documento con un semplice editor di testo.
 
-# Collegamenti #
+# Collegamenti
+
 Analogamente, è possibile inserire dei collegamenti ad altri documenti semplicemente indicandone l'URL.
 
-# Estensioni #
+# Estensioni
+
 La sintassi standard di Markdown è stata arricchita nel corso del tempo per permettere di descrivere documenti dalla struttura più complessa con la semplicità offerta da questo linguaggio di markup. La specifica più nota è forse la Github Flavored Markdown (in breve GFM), sviluppata in casa GitHub. Essa aggiunge alcuni elementi interessanti, quali ad esempio tabelle, link automatici, task list, ed altre.
 
 Rimanendo nell'ambito delle estensioni, è bene citare KaTeX, una potente libreria che permette di inserire, in un documento HTML, formule matematiche utilizzando la sintassi LaTeX. Utilizzando il sistema delle estensioni, è possibile includere codice KaTex in un documento Markdown, qualora lo strumento di conversione da Markdown a HTML lo supporti.
 
-# Conclusioni #
+# Conclusioni
+
 Markdown è sicuramente uno strumento molto potente, pensato soprattutto per chi scrive. Con Markdown, l'autore è libero di concentrarsi sul testo senza distrazioni sintattiche, pur mantenendo la possibilità di specificare la formattazione del proprio documento in modo semplice e veloce.
-
-
-
-

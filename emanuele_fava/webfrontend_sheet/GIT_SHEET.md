@@ -17,7 +17,7 @@
 - `git remote`: Visualizza o gestisce i repository remoti.
 - `git fetch`: Scarica i cambiamenti dal repository remoto senza unire i cambiamenti al repository locale.
 - `git tag`: Gestisce i tag annotati o leggeri per segnare commit specifici.
-Ecco altri comandi Git:
+  Ecco altri comandi Git:
 
 - `git checkout -b <branch>`: Crea un nuovo ramo e passa ad esso.
 - `git branch -d <branch>`: Cancella il ramo specificato.

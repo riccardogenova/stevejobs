@@ -1,10 +1,7 @@
 ---
-
 Configuriamo il nostro git con le nostre credenziali di GitHub:
-
-      git config --global user.name 'Tuo Nome GitHub'
-      git config --global user.email email@github.com
-
+  git config --global user.name 'Tuo Nome GitHub'
+  git config --global user.email email@github.com
 ---
 
 Come aggiungere un file o fare un update
@@ -22,8 +19,8 @@ Come aggiungere un file o fare un update
     git init
 
 2.  Inizializziamo un progetto esistente su un server git:
-          git clone serverURL.git
-          Esempio: git clone https://github.com/tesseslol/irixos-websites.git
+    git clone serverURL.git
+    Esempio: git clone https://github.com/tesseslol/irixos-websites.git
     Git clone permette di copiare il .git file del server e anche il repository.
 
 ## Configurazione del server remoto
@@ -32,7 +29,7 @@ Con questo comando visualizziamo la lista di server remoti salvati con relativo 
 
       git remote -v
 
-P.S. di solito il server principale si chiama origin <br>
+P.S. di solito il server principale si chiama origin <br/>
 
 Ora aggiungiamo un server remoto:
 
@@ -45,7 +42,7 @@ Aggiungiamo i file dalla directory del progetto all'index:
 
       git add nome_file
 
-Si può utilizzare l'asterisco per aggiungere tutti i file. Se si vuole escludere un file dalla selezione totale (con l'asterisco) basta creare un file denominato .gitignore e metterci all'interno i file che non si vogliono aggiungere al INDEX.<br>
+Si può utilizzare l'asterisco per aggiungere tutti i file. Se si vuole escludere un file dalla selezione totale (con l'asterisco) basta creare un file denominato .gitignore e metterci all'interno i file che non si vogliono aggiungere al INDEX.<br/>
 
 Ora aggiungiamo i file dell'index all'head:
 
@@ -55,7 +52,6 @@ Per non tracciare il file usiamo l'argomento -a:
 
       git commit -a -m "Messaggio del commit"
 
-
 Annullamento dei commit:
 
       git commit --amend
@@ -63,7 +59,6 @@ Annullamento dei commit:
 Cancellare un file da git:
 
       git rm nomeFile
-
 
 Il file ritorna allo stato precedente dell’ultimo commit:
 
@@ -130,7 +125,6 @@ Condividere tutti i tag:
 
       git push identificatoreServerRemoto --tag
       Esempio: git push origin --tag
-
 
 ## Gestire i Branch
 

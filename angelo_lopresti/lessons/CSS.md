@@ -1,6 +1,6 @@
 # COSA è CSS
 
-*CSS, acronimo di Cascading Style Sheets, è un linguaggio di stile utilizzato per definire l'aspetto e la formattazione di documenti HTML, XHTML e XML. Con CSS, è possibile controllare il layout, i colori, i tipi di carattere, le dimensioni e altri aspetti visivi di un sito web. I fogli di stile CSS separano il contenuto strutturale di una pagina web dalla sua presentazione, consentendo agli sviluppatori di apportare modifiche di stile senza dover modificare il codice HTML sottostante. Questo approccio favorisce una maggiore flessibilità, manutenibilità e facilità di aggiornamento dei siti web.*
+_CSS, acronimo di Cascading Style Sheets, è un linguaggio di stile utilizzato per definire l'aspetto e la formattazione di documenti HTML, XHTML e XML. Con CSS, è possibile controllare il layout, i colori, i tipi di carattere, le dimensioni e altri aspetti visivi di un sito web. I fogli di stile CSS separano il contenuto strutturale di una pagina web dalla sua presentazione, consentendo agli sviluppatori di apportare modifiche di stile senza dover modificare il codice HTML sottostante. Questo approccio favorisce una maggiore flessibilità, manutenibilità e facilità di aggiornamento dei siti web._
 
 ## COSA PERMETTE DI FARE CSS
 
@@ -17,7 +17,6 @@
 6. **Media query**: Le media query consentono di applicare stili diversi in base alle caratteristiche del dispositivo su cui viene visualizzata la pagina, come la larghezza dello schermo, l'orientamento, la risoluzione, ecc. Ciò consente di realizzare layout responsive, adattabili a dispositivi di diverse dimensioni.
 
 7. **Flexbox e Grid**: Questi sono due sistemi di layout CSS avanzati che consentono di organizzare gli elementi in modo più flessibile e responsivo. Flexbox è particolarmente utile per il posizionamento degli elementi lungo un singolo asse (orizzontale o verticale), mentre Grid permette di creare layout bidimensionali più complessi.
-
 
 8. **Selezionatori avanzati**: Oltre alle selezioni di base basate sul tipo di elemento, classe e ID, CSS offre una vasta gamma di selezionatori avanzati che consentono di individuare gli elementi in base alla loro posizione nel documento, alla loro relazione con altri elementi, allo stato (come hover o focus), ecc.
 
@@ -108,4 +107,3 @@
 51. **Funzioni CSS**:Il CSS include diverse funzioni che ti permettono di manipulare valori numerici, colori e persino stringhe.Puoi utilizzare le funzioni per calcolare dimensioni, creare sfumature di colore personalizzate o generare contenuti dinamici.
 
 52. **Preprocessori CSS**:I preprocessor CSS come Sass e LESS ti permettono di estendere le funzionalità del CSS con caratteristiche come variabili, mixin, funzioni e nesting.I preprocessor rendono il codice CSS più organizzato, facile da gestire e manutenibile, soprattutto per progetti di grandi dimensioni.
-

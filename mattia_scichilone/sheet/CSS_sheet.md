@@ -11,7 +11,7 @@ font-size: dimensione del testo.
 background-color: colore dello sfonfo.
 border: bordo dell'elelemento.
 
-Dimensioni e layout: 
+Dimensioni e layout:
 width: larghezza dell'elemento.
 height: altezza dell'elemento.
 margin: margine esterno.
@@ -21,7 +21,7 @@ Posizionamento:
 position: tipo di posizionamento (static, relative absolute, fixed).
 float: sposta l'elemento a sinistra o a destra.
 
-Visualizazzione: 
+Visualizazzione:
 display: tipo di visualizzazione dell'elemento (block, iline, iline-block, none).
 
 Stili del testo:

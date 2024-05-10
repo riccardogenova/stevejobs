@@ -22,7 +22,7 @@
 `<h3> </h3>` - Heading 3
 `<h4> </h4>` - Heading 4 etc. fino a 6
 
-`<br>` - Line break (a capo)(\n)
+`<br/>` - Line break (a capo)(\n)
 
 `<hr>` - Linea orizzontale
 

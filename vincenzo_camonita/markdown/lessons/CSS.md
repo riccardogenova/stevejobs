@@ -1,5 +1,6 @@
 # Css
-***CSS***, acronimo di *Cascading Style Sheets*, è un linguaggio di stile utilizzato per definire l'aspetto e la formattazione di documenti HTML, XML e XHTML. In sostanza, mentre l'HTML fornisce la struttura e il contenuto di una pagina web, il CSS viene utilizzato per controllarne l'aspetto visivo, come il colore del testo, il tipo di carattere, il layout della pagina, le dimensioni degli elementi e molto altro ancora.
+
+**_CSS_**, acronimo di _Cascading Style Sheets_, è un linguaggio di stile utilizzato per definire l'aspetto e la formattazione di documenti HTML, XML e XHTML. In sostanza, mentre l'HTML fornisce la struttura e il contenuto di una pagina web, il CSS viene utilizzato per controllarne l'aspetto visivo, come il colore del testo, il tipo di carattere, il layout della pagina, le dimensioni degli elementi e molto altro ancora.
 
 Con CSS, è possibile applicare stili e layout coerenti a un'intera serie di pagine web, consentendo ai progettisti e agli sviluppatori di separare il contenuto di una pagina dalla sua presentazione visiva. Questo approccio migliora la manutenibilità del codice e la flessibilità nel cambiare l'aspetto di un sito web senza dover modificare ogni singola pagina.
 
@@ -16,7 +17,7 @@ Ecco alcuni concetti chiave di CSS:
     p {
     color: blue;
     font-size: 16px;
-    }                       
+    }
 
 In questo esempio, tutte le istanze del tag < p > avranno il testo di colore blu e dimensione del carattere di 16 pixel.
 

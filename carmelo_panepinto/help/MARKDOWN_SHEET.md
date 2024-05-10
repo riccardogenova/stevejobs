@@ -1,10 +1,12 @@
-# titolo - intestazione 1 #
+# titolo - intestazione 1
+
 **grassetto**
-*corsivo*
+_corsivo_
 [testo del link](URL)
 ![testo alternativo](URL dell'immagine)
 
-Elenchi: 
+Elenchi:
+
 - Elemento 1
 - Elemento 2
   - Elemento annidato

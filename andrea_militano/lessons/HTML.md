@@ -14,7 +14,7 @@ Includeva tag fondamentali come <h1> per gli intestazioni, <p> per i paragrafi e
 
 **HTML 2**:
 Introdotta nel 1995, HTML 2 includeva alcune nuove funzionalità rispetto alla versione precedente.
-Aggiungeva nuovi tag per la struttura della pagina e per formattare il testo, come <table>, <hr> e <br>.
+Aggiungeva nuovi tag per la struttura della pagina e per formattare il testo, come <table>, <hr> e <br/>.
 Supportava il concetto di immagini inline.
 
 **HTML 3**:

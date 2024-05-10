@@ -5,26 +5,27 @@ Ecco il documento migliorato con le informazioni aggiuntive:
 HTML, acronimo di HyperText Markup Language, è il linguaggio di markup standard utilizzato per creare pagine web. Ecco alcune informazioni di base sul linguaggio HTML:
 
 - **Struttura di Base del Documento HTML**:
-  
+
   ```html
-  <!DOCTYPE html>
+  <!doctype html>
   <html lang="it">
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Titolo della Pagina</title>
-  </head>
-  <body>
+    </head>
+    <body>
       <h1>Titolo di Livello 1</h1>
       <p>Questo è un paragrafo.</p>
       <a href="https://www.example.com">Link di Esempio</a>
-      <img src="immagine.jpg" alt="Testo Alternativo">
+      <img src="immagine.jpg" alt="Testo Alternativo" />
       <ul>
-          <li>Elemento 1</li>
-          <li>Elemento 2</li>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
       </ul>
-  </body>
+    </body>
   </html>
+  ```
 
 - **Tag di Base**: Alcuni dei tag HTML di base includono `<html>`, `<head>`, `<body>`, `<title>`, `<p>`, `<a>`, `<img>`, `<ul>`, `<li>`, ecc. Questi tag sono utilizzati per definire la struttura e il contenuto della pagina web.
 

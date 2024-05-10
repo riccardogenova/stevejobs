@@ -14,7 +14,7 @@ Da <h1> a <h6> I titoli vengono creati con i diversi tag h. Più piccolo è il n
 
 <p> contrassegna i paragrafi.
 
-Con il tag HTML <br> viene forzata un’interruzione di riga.
+Con il tag HTML <br/> viene forzata un’interruzione di riga.
 
 <hr> crea una linea di demarcazione visiva che appare tra due contenuti.
 

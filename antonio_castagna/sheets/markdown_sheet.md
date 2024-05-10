@@ -1,19 +1,18 @@
-# Titolo 
+# Titolo
 
-Titolo
-====== 
+# Titolo
 
 **grassetto**
 
-*corsivo*
+_corsivo_
 
 _corsivo_
 
 liste puntate:
 
-* 1
-* 2
-* 3
+- 1
+- 2
+- 3
 
 liste numerate:
 
@@ -21,23 +20,27 @@ liste numerate:
 2. B
 3. C
 
-
-# Intestazioni 
+# Intestazioni
 
 Le intestazioni si creano anteponendo un hashtag (#) alla parole/frase:
 
 # H1
+
 ## H2
+
 ### H3
+
 #### H4
+
 ##### H5
+
 ###### H6
 
 # Grassetto e Corsivo
 
-Grassetto: **testo** 
+Grassetto: **testo**
 
-Corsivo: *testo*
+Corsivo: _testo_
 
 # Link
 
@@ -52,6 +55,7 @@ Stessa logica del link con l’aggiunta del punto esclamativo (!):
 ![descrizione immagine](www.link-immagine.it)
 
 # Tabelle
+
 Il carattere da utilizzare è “|”.
 
 |Intestazione| Intestazione |
@@ -66,20 +70,21 @@ Il carattere da utilizzare è “|”.
 
 Le citazioni si creano utilizzando il carattere “>”
 
->Citazione
+> Citazione
 
 # Linea Orizzontale
 
 Se intendi creare una linea orizzontale che separi i testi contenuti nel documento utilizzare i seguenti caratteri ripetuti per 3 volte:
 
-Linea 1:
----
+## Linea 1:
 
 Linea 2:
-***
+
+---
 
 Linea 3:
-_ _ _
+
+---
 
 # Emoji
 
@@ -106,11 +111,11 @@ Per barrare il testo, usa due tilde (~~) prima e dopo il testo.
 ~~Questo testo è barrato.~~
 
 # Liste di controllo
-  
+
 Per creare una lista di controllo, usa parentesi quadre con uno spazio per un elemento non selezionato e parentesi quadre con una x per un elemento selezionato.
 
-* [ ] Elemento non selezionato
-* [x] Elemento selezionato
+- [ ] Elemento non selezionato
+- [x] Elemento selezionato
 
 # Codice inline
 
@@ -136,13 +141,12 @@ Questo è un testo con una nota a piè di pagina.
 
 Puoi allineare il testo nelle colonne delle tabelle usando i due punti (:) nei separatori.
 
-| Allineato a sinistra | Centrato | Allineato a destra |
-|:---------------------|:--------:|-------------------:|
-| contenuto            | contenuto| contenuto          |
+| Allineato a sinistra | Centrato  | Allineato a destra |
+| :------------------- | :-------: | -----------------: |
+| contenuto            | contenuto |          contenuto |
 
 # Intestazioni ID
 
 Puoi aggiungere un ID personalizzato a un'intestazione per creare un link diretto ad essa.
 
 ### Intestazione H3 {#id-personalizzato}
-

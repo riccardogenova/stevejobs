@@ -22,7 +22,7 @@
 - <b>Grassetto:</b> `<b>` testo `</b>`
 - <em>Corsivo:</em> `<em>` testo `</em>`
 - <span>Span:</span> `<span>` per formattare il testo `</span>`
-- per andare accapo: `<br>`
+- per andare accapo: `<br/>`
 
 <!-- **************************************************** -->
 

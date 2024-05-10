@@ -1,4 +1,5 @@
 ## Comandi più importanti e cosa fanno:
+
 1. `git init`: Inizializza un nuovo repository Git nella directory corrente.
 2. `git add <file>`: Aggiunge un file alla "staging area" per essere incluso nel prossimo commit.
 3. `git commit -m "<messaggio>"`: Registra le modifiche nella "staging area" con un messaggio di commit descrittivo.

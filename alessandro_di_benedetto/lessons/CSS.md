@@ -1,5 +1,4 @@
-CSS CARATTERISTICHE
----
+## CSS CARATTERISTICHE
 
 CSS (Cascading Style Sheets) è un linguaggio utilizzato per definire lo stile e la presentazione di documenti HTML (e XML). Ecco un elenco delle principali caratteristiche di CSS:
 

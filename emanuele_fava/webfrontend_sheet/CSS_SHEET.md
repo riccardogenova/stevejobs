@@ -10,6 +10,7 @@ I selettori CSS consentono di identificare gli elementi HTML a cui applicare gli
 - **Selettore universale**: `*` per selezionare tutti gli elementi.
 
 Esempio:
+
 ```css
 p {
   color: blue;
@@ -39,6 +40,7 @@ Le proprietà CSS definiscono l'aspetto degli elementi selezionati. Alcune delle
 - **text-align**: allinea il testo (left, right, center, justify).
 
 Esempio:
+
 ```css
 p {
   color: blue;
@@ -58,6 +60,7 @@ p {
 - **border-radius**: arrotonda gli angoli del bordo.
 
 Esempio:
+
 ```css
 .box {
   background-color: #f0f0f0;
@@ -67,6 +70,7 @@ Esempio:
   border-radius: 5px;
 }
 ```
+
 ### Sfondo
 
 - **background-image**: imposta un'immagine di sfondo per l'elemento.
@@ -74,9 +78,10 @@ Esempio:
 - **background-position**: definisce la posizione iniziale dell'immagine di sfondo.
 
 Esempio:
+
 ```css
 .header {
-  background-image: url('header-background.jpg');
+  background-image: url("header-background.jpg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -92,6 +97,7 @@ Esempio:
 - **top, right, bottom, left**: definiscono la posizione dell'elemento rispetto al suo contenitore o al documento.
 
 Esempio:
+
 ```css
 .sidebar {
   width: 250px;
@@ -111,6 +117,7 @@ Esempio:
 - **animation-iteration-count**: specifica quante volte l'animazione deve ripetersi.
 
 Esempio:
+
 ```css
 @keyframes slide {
   from {
@@ -140,6 +147,7 @@ Il modello box CSS è un concetto fondamentale che definisce lo spazio occupato 
 - **Margin**: lo spazio esterno dell'elemento.
 
 Esempio:
+
 ```css
 .box {
   width: 200px;
@@ -159,6 +167,7 @@ Il layout in CSS può essere gestito utilizzando varie tecniche, tra cui:
 - **Grid**: crea layout basati su righe e colonne.
 
 Esempio di layout Flexbox:
+
 ```css
 .container {
   display: flex;
@@ -182,6 +191,7 @@ Le media queries consentono di applicare stili basati sulle caratteristiche del 
 ```
 
 Esempio di media query:
+
 ```css
 @media screen and (max-width: 600px) {
   body {
@@ -198,6 +208,7 @@ Le pseudo-classi e i pseudo-elementi consentono di selezionare elementi in base 
 - **:nth-child()**: seleziona un elemento in base alla sua posizione all'interno del genitore.
 
 Esempio:
+
 ```css
 a:hover {
   color: red;
@@ -206,3 +217,4 @@ a:hover {
 li:nth-child(even) {
   background-color: #f2f2f2;
 }
+```

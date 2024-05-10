@@ -34,7 +34,7 @@
 
 <button>: Crea un pulsante interattivo.
 
-<br>: Crea un'interruzione di riga, utile per inserire una nuova riga di testo senza creare un nuovo paragrafo.
+<br/>: Crea un'interruzione di riga, utile per inserire una nuova riga di testo senza creare un nuovo paragrafo.
 
 <hr>: Crea una riga orizzontale, spesso utilizzata per separare sezioni di contenuto.
 

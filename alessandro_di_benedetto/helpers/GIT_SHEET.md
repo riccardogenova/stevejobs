@@ -22,7 +22,7 @@ Con questo comando visualizziamo la lista di server remoti salvati con relativo 
 
       git remote -v
 
-P.S. di solito il server principale si chiama origin <br>
+P.S. di solito il server principale si chiama origin <br/>
 
 Ora aggiungiamo un server remoto:
 

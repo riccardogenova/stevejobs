@@ -112,12 +112,12 @@ Per creare una linea separatrice, puoi utilizzare tre o più dei seguenti caratt
 
 Per creare un blocco di citazione con indentazione:
 
-> ` > ```css `\
+> `> ```css`\
 > `> p {`\
 > `>    color: blue;`\
 > `>    font-size: 14px;`\
 > `> }`\
-> ` > ```  `
+> `> ``` `
 
 ### Escape citazione
 

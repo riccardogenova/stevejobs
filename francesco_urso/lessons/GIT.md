@@ -2,10 +2,10 @@
 
 ## Cos'è GIT
 
-**Git** è un sistema di controllo delle versioni distribuito ampiamente utilizzato per gestire il codice sorgente e la collaborazione nello sviluppo del software. Creato da **Linus Torvalds** nel 2005 per agevolare lo sviluppo del kernel *Linux*, si è rapidamente diffuso diventando uno degli strumenti più popolari per il controllo delle versioni. \
+**Git** è un sistema di controllo delle versioni distribuito ampiamente utilizzato per gestire il codice sorgente e la collaborazione nello sviluppo del software. Creato da **Linus Torvalds** nel 2005 per agevolare lo sviluppo del kernel _Linux_, si è rapidamente diffuso diventando uno degli strumenti più popolari per il controllo delle versioni. \
 Git è un progetto open source nato per soddisfare le esigenze di gestione delle versioni del kernel Linux, ma il suo utilizzo si è esteso a una vasta gamma di applicazioni, dalla scrittura di documenti alla gestione di progetti software di ogni dimensione. \
 Essenzialmente, consente ai team di sviluppo di tenere traccia delle modifiche apportate ai file nel tempo, consentendo una gestione **efficiente** del flusso di lavoro e facilitando la collaborazione tra i membri del team. Con la sua architettura distribuita, Git consente ai singoli sviluppatori di lavorare in modo indipendente e di sincronizzare le proprie modifiche con il repository centrale. \
-Questo approccio decentralizzato rende Git **flessibile** e **robusto**, adatto a progetti di qualsiasi dimensione e complessità. Inoltre, la sua velocità e le potenti funzionalità di *branching* e *merging* lo rendono uno strumento indispensabile per qualsiasi sviluppatore moderno.
+Questo approccio decentralizzato rende Git **flessibile** e **robusto**, adatto a progetti di qualsiasi dimensione e complessità. Inoltre, la sua velocità e le potenti funzionalità di _branching_ e _merging_ lo rendono uno strumento indispensabile per qualsiasi sviluppatore moderno.
 
 ## Breve storia di Git
 

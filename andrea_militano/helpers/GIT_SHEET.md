@@ -1,4 +1,3 @@
-
 1. **git init**: Inizializza un nuovo repository Git nella directory corrente.
 2. **git clone [URL]**: Clona un repository Git esistente dalla URL specificata.
 3. **git add [file]**: Aggiunge un file specifico o una serie di file alla staging area.

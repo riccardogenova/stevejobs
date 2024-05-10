@@ -31,7 +31,7 @@ Comandi divisi per tipologia:
 - `<em>`: Rende il testo in corsivo.
 - `<u>`: Sottolinea il testo.
 - `<span>`: Definisce un'area di testo in linea o un gruppo di elementi in linea. Viene spesso utilizzato per applicare stili o manipolare parti specifiche del testo.
-- `<br>`: Inserisce un'interruzione di riga, forzando il testo successivo a scendere alla riga successiva. È utile quando si desidera inserire una nuova linea senza creare un nuovo paragrafo.
+- `<br/>`: Inserisce un'interruzione di riga, forzando il testo successivo a scendere alla riga successiva. È utile quando si desidera inserire una nuova linea senza creare un nuovo paragrafo.
 - `<pre>`: Definisce il testo preformattato, mantenendo la formattazione originale, come spazi e ritorni a capo. Utile per la visualizzazione di codice o testo formattato.
 - `<blockquote>`: Definisce un blocco di citazione, solitamente visualizzato con un margine sinistro più ampio. Spesso utilizzato per citazioni di testo da altre fonti.
 - `<cite>`: Definisce il titolo di una fonte citata, come un libro, un articolo o un'altra risorsa. Di solito è visualizzato in corsivo.

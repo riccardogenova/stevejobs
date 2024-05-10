@@ -14,7 +14,7 @@ margin-left: 5px;
 <div style="background-color: yellow">...</div>
 
 p {
-  color: yellow;
+color: yellow;
 }
 
 @import url(myfile.css) all;
@@ -22,25 +22,24 @@ p {
 @import url(myfile-print.css) print;
 
 p {
-  color: rgb(255, 255, 255); /* white */
-    background-color: rgb(0, 0, 0); /* black */
+color: rgb(255, 255, 255); /_ white _/
+background-color: rgb(0, 0, 0); /_ black _/
 }
 
 div {
-  background-image: url(../test.png);
+background-image: url(../test.png);
 }
 
+#name { display: block; } /_ Che bella regola! _/
 
-#name { display: block; } /* Che bella regola! */
-
-/* #name { display: block; } */
+/_ #name { display: block; } _/
 
 #name {
-    display: block; /*
-    color: red;
-    */
+display: block; /_
+color: red;
+_/
 }
 
 .container {
-  margin: var(--default-margin, 30px);
+margin: var(--default-margin, 30px);
 }
