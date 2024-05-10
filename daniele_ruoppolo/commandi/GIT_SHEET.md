@@ -109,22 +109,5 @@ Richiesta di aiuto:
 Link per altra documentazione:
 
     https://www.w3schools.com/git/default.asp
-
-
-
-Riassumendo:
-
-    Mettere il link: git remote add origin (Link della repository su github)
-
-    In caso si vuole cambiare link per lavorare su un altra repository: git remote remove origin
-
-    Per vedere cosa c'è dentro la repository: git status
-
-    Per aggiungere cose dentro la repository: git add . (per aggiungere tutto)
-                                              git add nomefile.estensione del file (per aggiungere un singolo file)
-
-    Per aggiungere l'etichette alla modifica: git commit -m "Etichetta modifica"
-
-    Per mettere nella repository: git push origin master
-
-Questa è la procedurea passo passo su cosa si deve fare e come si deve fare per aggiungere, creare e aggiornare la repository         
+    
+ciao
