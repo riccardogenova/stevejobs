@@ -356,84 +356,234 @@ try {
 
   - Filtra gli elementi dell'array in base a una determinata condizione e restituisce un nuovo array con gli elementi che soddisfano la condizione, senza modificare l'array originale.
 
+    Questo esempio crea un nuovo array con gli elementi che hanno un valore maggiore di 18:
+
+    ```javascript
+    const numbers = [45, 4, 9, 16, 25];
+    const over18 = numbers.filter(myFunction);
+
+    function myFunction(value, index, array) {
+      return value > 18;
+    }
+    ```
+
+    Nota che la funzione richiede 3 argomenti:
+
+    - Il valore dell'elemento
+    - L'indice dell'elemento
+    - L'array stesso
+
+    Nell'esempio sopra, la funzione di callback non utilizza gli argomenti indice e array, quindi possono essere omessi:
+
+    ```javascript
+    const numbers = [45, 4, 9, 16, 25];
+    const over18 = numbers.filter(myFunction);
+
+    function myFunction(value) {
+      value > 18;
+      return true; //booleano
+    }
+    ```
+
+    La funzione mi ritorna un **Booleano**
+
   4. **map()**:
 
-  - Applica una funzione a ogni elemento dell'array e restituisce un nuovo array con i risultati, senza modificare l'array originale.
+     Applica ed esegue una funziona su ogni elemento dell'array considerato e restituisce un nuovo array con i risultati, senza modificare l'array originale.
+
+     - Il metodo map() non esegue la funzione su arrai con elementi senza valore.
+     - Il metodo map() non modifica l'array di partenza/originale.
+
+     In questo esempio ogni elemento dell'array è moltiplicato per 2:
+
+     Esempio
+
+     ```javascript
+     const numbers1 = [45, 4, 9, 16, 25];
+     const numbers2 = numbers1.map(myFunction);
+
+     function myFunction(value, index, array) {
+       return value * 2;
+     }
+     ```
+
+     Da notare che la funzione ha tre argomento:
+
+     - Il valore dell'elemento
+     - L'indice dell'elemento
+     - L'array stesso
+
+     Quando una "callback function" (la funzione argomento del map) usa per esempio solo il "value" parametro, i paramentri index e array possono essere omessi:
+
+     Esempio:
+
+     ```javascript
+     const numbers1 = [45, 4, 9, 16, 25];
+     const numbers2 = numbers1.map(myFunction);
+
+     function myFunction(value) {
+       return value * 2;
+     }
+     ```
 
   5. **forEach()**:
 
-  - Viene utilizzato per eseguire una determinata funzione su ciascun elemento di un array. Questo metodo itera su ogni elemento dell'array e applica la funzione fornita a ciascun elemento.
+     Viene utilizzato per eseguire una determinata funzione su ciascun elemento di un array. Questo metodo itera su ogni elemento dell'array e applica la funzione fornita a ciascun elemento.
 
-    Ecco un esempio di come utilizzare il metodo forEach():
+     Ecco un esempio di come utilizzare il metodo forEach():
 
-    ```javascript
-    const array = [1, 2, 3, 4, 5];
+     ```javascript
+     const array = [1, 2, 3, 4, 5];
 
-    // Definiamo una funzione di callback che verrà eseguita su ciascun elemento dell'array
-    function stampaElemento(elemento) {
-      console.log(elemento);
-    }
+     // Definiamo una funzione di callback che verrà eseguita su ciascun elemento dell'array
+     function stampaElemento(elemento) {
+       console.log(elemento);
+     }
 
-    // Utilizziamo il metodo forEach per iterare su ogni elemento dell'array e chiamare la funzione di callback su ciascuno di essi
-    array.forEach(stampaElemento);
+     // Utilizziamo il metodo forEach per iterare su ogni elemento dell'array e chiamare la funzione di callback su ciascuno di essi
+     array.forEach(stampaElemento);
 
-    // Output:
-    // 1
-    // 2
-    // 3
-    // 4
-    // 5
-    ```
+     // Output:
+     // 1
+     // 2
+     // 3
+     // 4
+     // 5
+     ```
 
-    In questo esempio, abbiamo definito una funzione di callback stampaElemento che semplicemente stampa ogni elemento. Poi, abbiamo utilizzato il metodo forEach() sull'array array e passato stampaElemento come argomento. La funzione stampaElemento viene eseguita su ciascun elemento dell'array, stampando ogni elemento nell'output.
+     In questo esempio, abbiamo definito una funzione di callback stampaElemento che semplicemente stampa ogni elemento. Poi, abbiamo utilizzato il metodo forEach() sull'array array e passato stampaElemento come argomento. La funzione stampaElemento viene eseguita su ciascun elemento dell'array, stampando ogni elemento nell'output.
 
-    È importante notare che la funzione di callback passata a forEach() accetta tre parametri: l'elemento corrente, l'indice corrente e l'array su cui forEach() è stato chiamato. Tuttavia, spesso la funzione di callback viene definita con un solo parametro (l'elemento corrente), poiché di solito è l'unico valore di interesse.
+     È importante notare che la funzione di callback passata a forEach() accetta tre parametri: l'elemento corrente, l'indice corrente e l'array su cui forEach() è stato chiamato. Tuttavia, spesso la funzione di callback viene definita con un solo parametro (l'elemento corrente), poiché di solito è l'unico valore di interesse.
 
-    Questo metodo non è mutabile, tuttavia, la funzione di callback passata a forEach() potrebbe essere mutabile, nel senso che potrebbe modificare gli elementi dell'array o le variabili esterne all'interno della funzione. Questo può influenzare lo stato degli elementi dell'array o delle variabili esterne, ma il metodo forEach() in sé non è responsabile di queste modifiche.
+     Questo metodo non è mutabile, tuttavia, la funzione di callback passata a forEach() potrebbe essere mutabile, nel senso che potrebbe modificare gli elementi dell'array o le variabili esterne all'interno della funzione. Questo può influenzare lo stato degli elementi dell'array o delle variabili esterne, ma il metodo forEach() in sé non è responsabile di queste modifiche.
 
-    Ad esempio, considera questo caso:
+     Ad esempio, considera questo caso:
 
-    ```javascript
-    const array = [1, 2, 3, 4, 5];
+     ```javascript
+     const array = [1, 2, 3, 4, 5];
 
-    function raddoppiaElemento(elemento, indice, array) {
-      array[indice] = elemento * 2;
-    }
+     function raddoppiaElemento(elemento, indice, array) {
+       array[indice] = elemento * 2;
+     }
 
-    array.forEach(raddoppiaElemento);
+     array.forEach(raddoppiaElemento);
 
-    console.log(array); // Output: [2, 4, 6, 8, 10]
-    ```
+     console.log(array); // Output: [2, 4, 6, 8, 10]
+     ```
 
-    ## Comandi ricerca negli array
+  6. **Array reduce()**
 
-    1.  **Array.includes()** : Questo comando ci permette di controllare se yb elemento è presente o meno nell'array (Inclusi gli element NaN, unlike indexOf).
+     - Il metodo reduce() di JavaScript esegue una funzione su ogni elemento dell'array per produrre (ridurlo a) un singolo valore.
+     - Il metodo reduce() funziona da sinistra a destra nell'array. Vedi anche reduceRight().
+     - Il metodo reduce() non riduce l'array originale.
 
-    ```javascript
-    const fruits = ['Banana', 'Orange', 'Apple', 'Mango'];
+     Questo esempio trova la somma di tutti i numeri in un array:
 
-    fruits.includes('Mango'); // is true
-    ```
+     ```javascript
+     const numbers = [45, 4, 9, 16, 25];
+     let sum = numbers.reduce(myFunction);
 
-    Sintassi
+     function myFunction(total, value, index, array) {
+       return total + value;
+     }
+     ```
 
-                    array.includes(search-item)
+     Nota che la funzione richiede 4 argomenti:
 
-    2.  **Array.indexOf()** : Questo metodo ricerca un array per il valore di un elemento e ne restituisce la posizione
+     - Il totale (il valore iniziale / valore restituito precedentemente)
+     - Il valore dell'elemento
+     - L'indice dell'elemento
+     - L'array stesso
 
-    _Nota: Il primo elemento ha posizione 0, il secondo posizione 1 e così via._
+     Il metodo reduce() può accettare un valore iniziale come un numero, un vettore o una stringa
 
-    ```javascript
-     Ricerca un elemento per la parola "Apple":
-     const frutta = ["Apple", "Orange", "Apple", "Mango"];
-     let posizione = frutta.indexOf("Apple") + 1;
-    ```
+     - const esempio = arrayIniziale.reduce(myFunction, 0); //Numero iniziale 0, utile per inizializzare un accumulatore
+     - const esempio = arrayIniziale.reduce(myFunction, []); //Array vuoto, da usare per esempio con lo spread (...) per caricare un nuovo vettore
 
-    Sintassi
+  ## Comandi ricerca negli array
 
-                  array.indexOf(item, start)
+  1.  **Array.includes()** :
+      Questo comando ci permette di controllare se yb elemento è presente o meno nell'array (Inclusi gli element NaN, unlike indexOf).
 
-    con start indico da quale elemento inziare la ricerca
+      ```javascript
+      const fruits = ['Banana', 'Orange', 'Apple', 'Mango'];
+
+      fruits.includes('Mango'); // is true
+      ```
+
+      Sintassi
+
+                      array.includes(search-item)
+
+  2.  **Array.indexOf()** :
+      Questo metodo ricerca un array per il valore di un elemento e ne restituisce la posizione
+
+      _Nota: Il primo elemento ha posizione 0, il secondo posizione 1 e così via._
+
+      ```javascript
+      Ricerca un elemento per la parola "Apple":
+      const frutta = ["Apple", "Orange", "Apple", "Mango"];
+      let posizione = frutta.indexOf("Apple") + 1;
+      ```
+
+      Sintassi
+
+                    array.indexOf(item, start)
+
+      con start indico da quale elemento inziare la ricerca
+
+  3.  **Array find()**
+
+      Il metodo find() ritorna il valore del primo elemento che soddisfa la condizione indicata nella funzione.
+
+      In questo esempio il find ritorna il primo elemento maggiore di 18:
+
+      Esempio
+
+      ```javascript
+      const numbers = [4, 9, 16, 25, 29];
+      let first = numbers.find(myFunction);
+
+      function myFunction(value, index, array) {
+        value > 18;
+        return true; //booleano
+      }
+      ```
+
+      Nota che la funzione prende tre parametri
+
+      - Il valore dell'elemento
+      - L'indice dell'elemento
+      - L'array stesso
+
+      La funzione mi ritorna un **Booleano**
+
+  4.**JavaScript Array findIndex()**
+
+      Il metodo findIndex() ritorna l'indice del primo elemento dell'array che soddisfa la condizione indicata nella funzione.
+
+      In questo esempio trova l'indice del primo elemento che è maggiore di 18:
+
+      Esempio
+
+      ```javascript
+
+        const numbers = [4, 9, 16, 25, 29];
+        let first = numbers.findIndex(myFunction);
+
+        function myFunction(value, index, array) {
+          value > 18;
+          return true; //booleano
+      }
+      ```
+
+      Nota che la funzione prende tre parametri
+
+            - Il valore dell'elemento
+            - L'indice dell'elemento
+            - L'array stesso
+
+      La funzione mi ritorna un **Booleano**
 
 # Stringhe
 
