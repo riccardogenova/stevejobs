@@ -129,14 +129,58 @@ const purchases = [
 
 //---
 
-function onReduce(acc, el) {
+function onReduceDue(acc, el) {
   if (el.customer === 'Alice') {
     acc = acc + el.price;
   }
   return acc;
 }
 
-const newArray_sette = purchases.reduce(onReduce, 0);
+const newArray_sette = purchases.reduce(onReduceDue, 0);
 console.log(newArray_sette);
 
 //_______________________________________________________________________________________________________
+//3.Data un'array di persone, trova l'indice della prima persona il cui nome inizia con la B
+
+const peopleQuattro = ['Alice', 'Bob', 'Charlie', 'Alice'];
+
+function onIndex(el) {
+  if (el.startsWith('B')) return true;
+}
+const indexTest = peopleQuattro.findIndex(onIndex);
+
+console.log(indexTest);
+
+//_______________________________________________________________________________________________________
+//4.Data un'array di parole, calcola la somma delle lunghezze delle parole che iniziano con la e
+
+const words = ['mela', 'banana', 'gatto', 'cane', 'elefante'];
+
+function onReduceNono(acc, el) {
+  if (el.startsWith('e')) {
+    acc = acc + el.length;
+  }
+  return acc;
+}
+
+const testArraySomma2 = words.reduce(onReduceNono, 0);
+
+console.log(testArraySomma2);
+
+//_______________________________________________________________________________________________________
+//5.Dato un'array di numeri, crea un nuovo array contenente la radice quadrata di ciascun numero e poi calcola la somma di tutte le radici quadrate.
+
+const numbers = [1, 4, 9, 16, 25];
+
+function onMapCinque(el) {
+  const a = Math.sqrt(el);
+  return a;
+}
+const sqrt = numbers.map(onMapCinque);
+function onReduce(acc, el) {
+  return (acc = acc + el);
+}
+
+const sqrtSomma = sqrt.reduce(onReduce, 0);
+
+console.log(sqrtSomma);
