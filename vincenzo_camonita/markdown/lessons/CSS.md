@@ -23,3 +23,5 @@ In questo esempio, tutte le istanze del tag < p > avranno il testo di colore blu
 **Cascata**: Il termine "cascata" in Cascading Style Sheets si riferisce all'ordine di priorità con cui vengono applicati gli stili. Ciò significa che, se più regole CSS si applicano allo stesso elemento, il browser seguirà un certo ordine per decidere quale regola deve essere applicata. I fattori che influenzano la cascata includono l'ordine delle regole nel foglio di stile, la specificità dei selettori e l'ereditarietà delle proprietà.
 
 **Box model**: Il modello di box in CSS rappresenta la struttura di ogni elemento HTML come un insieme di scatole rettangolari. Ogni scatola ha margini, bordi, padding e il contenuto dell'elemento stesso. La gestione corretta del box model è essenziale per controllare il layout e la formattazione della pagina web.
+
+**Media Queries**: Le media queries consentono di applicare regole di stile in base alle caratteristiche del dispositivo utilizzato per visualizzare la pagina, come la larghezza dello schermo o l'orientamento del dispositivo. Ciò rende possibile creare layout responsivi che si adattano a diverse dimensioni di schermo.
