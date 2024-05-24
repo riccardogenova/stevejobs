@@ -1,0 +1,30 @@
+/** @format */
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+div {
+  margin: 20px;
+}
+
+#counter {
+  font-size: 100px;
+}
+
+button {
+  padding: 10px 100px;
+  font-size: 50px;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  color: #000000;
+  background-color: #007bff;
+  transition: background-color 0.3s ease;
+}

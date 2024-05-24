@@ -1,0 +1,282 @@
+<!-- @format -->
+
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comandi HTML più utilizzati</title>
+    <style>
+      /* Stili CSS qui */
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+      }
+      h1,
+      h2 {
+        color: #333;
+        text-align: center;
+      }
+      h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+      h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+      }
+      strong {
+        font-weight: bold;
+      }
+      em {
+        font-style: italic;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+      li {
+        margin-bottom: 10px;
+      }
+      /* Aggiungi altri stili CSS qui */
+      nav {
+        color: rgb(0, 47, 255); /* Colore del testo nella navbar */
+        padding: 10px; /* Spaziatura interna */
+        position: fixed; /* Posizionamento fisso */
+        bottom: 0; /* In basso */
+        width: 100%; /* Larghezza completa */
+      }
+
+      nav ul {
+        list-style-type: none; /* Rimuove i punti elenco */
+        padding: 0;
+        margin: 0;
+        bottom: 0;
+        text-align: center; /* Allinea al centro */
+        justify-content: space-between;
+      }
+
+      nav ul li {
+        display: inline; /* Disponi gli elementi in linea */
+        margin-right: 20px; /* Spaziatura tra gli elementi */
+      }
+
+      nav ul li a {
+        color: rgb(255, 255, 255); /* Colore del testo del link */
+        text-decoration: none; /* Rimuove la sottolineatura del link */
+      }
+
+      footer {
+        background-color: #000000; /* Colore di sfondo della navbar */
+        color: rgb(0, 0, 0);
+        padding: 50px;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        margin: -20px;
+      }
+
+      #img1 {
+        width: 70px;
+        height: 70px;
+        bottom: 0;
+        position: fixed;
+        left: 2%;
+        top: auto;
+        margin-bottom: 20px;
+      }
+
+      .testo-ingrandibile {
+        font-size: 24px;
+        transition: font-size 0.3s ease; /* Transizione per l'animazione di ingrandimento */
+      }
+
+      .testo-ingrandibile:hover {
+        font-size: 30px; /* Ingrandisci il testo al passaggio del mouse */
+      }
+
+      /* Aggiungi le tue animazioni personalizzate */
+      @keyframes bounce {
+        0% {
+          transform: translateY(0); /* Nessuna traslazione */
+        }
+        50% {
+          transform: translateY(-20px); /* Traslazione verso l'alto */
+        }
+        100% {
+          transform: translateY(0); /* Ritorno alla posizione originale */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Comandi HTML più utilizzati</h1>
+
+    <ol>
+      <li>
+        <code>&lt;!DOCTYPE&gt;</code>: Definisce il tipo di documento HTML e la sua versione.
+        <pre><code>&lt;!DOCTYPE html&gt;</code></pre>
+        <p>
+          <strong>Descrizione:</strong> Il tag <code>&lt;!DOCTYPE&gt;</code> definisce il tipo di documento HTML e la
+          sua versione. È il primo elemento che appare in un documento HTML e aiuta il browser a interpretare
+          correttamente il codice.
+        </p>
+      </li>
+
+      <li>
+        <code>&lt;html&gt;</code>: Rappresenta il contenuto di una pagina web.
+        <pre><code>&lt;html&gt;
+    ...
+&lt;/html&gt;</code></pre>
+        <p>
+          <strong>Descrizione:</strong> Il tag <code>&lt;html&gt;</code> racchiude tutto il contenuto di una pagina web.
+          È l'elemento radice del documento HTML e contiene tutti gli altri elementi come <code>&lt;head&gt;</code> e
+          <code>&lt;body&gt;</code>.
+        </p>
+      </li>
+
+      <li>
+        <code>&lt;head&gt;</code>: Contiene le informazioni sulla pagina HTML, come il titolo, i metadati e i
+        collegamenti ai fogli di stile e agli script.
+        <pre><code>&lt;head&gt;
+    &lt;title&gt;Titolo della Pagina&lt;/title&gt;
+    &lt;!-- Altri metadati, collegamenti a fogli di stile e script --&gt;
+&lt;/head&gt;</code></pre>
+        <p>
+          <strong>Descrizione:</strong> Il tag <code>&lt;head&gt;</code> contiene le informazioni sulla pagina HTML che
+          non sono visibili direttamente all'utente. Questo include il titolo della pagina, i metadati (come la codifica
+          del carattere e la descrizione della pagina) e i collegamenti ai fogli di stile e agli script.
+        </p>
+      </li>
+
+      <li>
+        <code>&lt;title&gt;</code>: Definisce il titolo della pagina che appare nella barra del titolo del browser.
+        <pre><code>&lt;title&gt;Titolo della Pagina&lt;/title&gt;</code></pre>
+        <p>
+          <strong>Descrizione:</strong> Il tag <code>&lt;title&gt;</code> definisce il titolo della pagina HTML che
+          appare nella barra del titolo del browser. È importante per l'accessibilità e l'indicizzazione nei motori di
+          ricerca.
+        </p>
+      </li>
+
+      <li>
+        <code>&lt;body&gt;</code>: Contiene il contenuto principale della pagina HTML.
+        <pre><code>&lt;body&gt;
+    &lt;!-- Contenuto principale della pagina --&gt;
+&lt;/body&gt;</code></pre>
+        <p>
+          <strong>Descrizione:</strong> Il tag <code>&lt;body&gt;</code> contiene il contenuto principale della pagina
+          HTML che viene visualizzato agli utenti. Include testo, immagini, link e altri elementi.
+        </p>
+      </li>
+
+      <li>
+        <code>&lt;h1&gt;, &lt;h2&gt;, ..., &lt;h6&gt;</code>: Definiscono i titoli di diversi livelli.
+        <pre><code>&lt;h1&gt;Titolo di Livello 1&lt;/h1&gt;
+&lt;h2&gt;Titolo di Livello 2&lt;/h2&gt;
+...
+&lt;h6&gt;Titolo di Livello 6&lt;/h6&gt;</code></pre>
+        <p>
+          <strong>Descrizione:</strong> I tag <code>&lt;h1&gt;</code> - <code>&lt;h6&gt;</code> definiscono i titoli di
+          diversi livelli di importanza. <code>&lt;h1&gt;</code> è il titolo più importante e <code>&lt;h6&gt;</code> è
+          il meno importante. I motori di ricerca utilizzano questi tag per comprendere la struttura e l'importanza del
+          contenuto della pagina.
+        </p>
+      </li>
+
+      <li>
+        <code>&lt;p&gt;</code>: Definisce un paragrafo di testo.
+        <pre><code>&lt;p&gt;Questo è un paragrafo.&lt;/p&gt;</code></pre>
+        <p>
+          <strong>Descrizione:</strong> Il tag <code>&lt;p&gt;</code> definisce un paragrafo di testo. Viene utilizzato
+          per organizzare il testo in blocchi di contenuto separati.
+        </p>
+      </li>
+
+      <li>
+        <code>&lt;a&gt;</code>: Definisce un collegamento ipertestuale.
+        <pre><code>&lt;a href="https://www.example.com"&gt;Link di Esempio&lt;/a&gt;</code></pre>
+        <p>
+          <strong>Descrizione:</strong> Il tag <code>&lt;a&gt;</code> definisce un collegamento ipertestuale a un'altra
+          pagina web o risorsa. L'attributo <code>href</code> specifica l'URL di destinazione del collegamento.
+        </p>
+      </li>
+
+      <li>
+        <code>&lt;img&gt;</code>: Inserisce un'immagine nella pagina.
+        <pre><code>&lt;img src="immagine.jpg" alt="Testo Alternativo"&gt;</code></pre>
+        <p>
+          <strong>Descrizione:</strong> Il tag <code>&lt;img&gt;</code> inserisce un'immagine nella pagina HTML.
+          L'attributo <code>src</code> specifica il percorso dell'immagine e l'attributo <code>alt</code> fornisce un
+          testo alternativo per l'immagine, importante per l'accessibilità e per i motori di ricerca.
+        </p>
+      </li>
+
+      <li>
+        <code>&lt;ul&gt;</code> e <code>&lt;ol&gt;</code>: Definiscono elenchi non ordinati e ordinati, rispettivamente.
+        <pre><code>&lt;ul&gt;
+    &lt;li&gt;Elemento 1&lt;/li&gt;
+    &lt;li&gt;Elemento 2&lt;/li&gt;
+    &lt;li&gt;Elemento 3&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+        <pre><code>&lt;ol&gt;
+    &lt;li&gt;Elemento 1&lt;/li&gt;
+    &lt;li&gt;Elemento 2&lt;/li&gt;
+    &lt;li&gt;Elemento 3&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+        <p>
+          <strong>Descrizione:</strong> I tag <code>&lt;ul&gt;</code> e <code>&lt;ol&gt;</code> definiscono elenchi non
+          ordinati e ordinati, rispettivamente. I tag <code>&lt;li&gt;</code> definiscono gli elementi dell'elenco. Gli
+          elenchi sono utilizzati per organizzare e presentare le informazioni in modo strutturato.
+        </p>
+      </li>
+    </ol>
+  </body>
+  <body>
+    <footer>
+      <a href="https://stevejobs.academy">
+        <img id="img1" src="sjlogo.jpg" alt="Steve Jobs Academy Logo" />
+      </a>
+      <nav>
+        <ul>
+          <div>
+            <li>
+              <a class="testo-ingrandibile" href="GIT.html">GIT</a>
+            </li>
+            <li>
+              <a class="testo-ingrandibile" href="CSS.html">CSS</a>
+            </li>
+            <li>
+              <a class="testo-ingrandibile" href="HTML.html">HTML</a>
+            </li>
+            <li>
+              <a class="testo-ingrandibile" href="MARKDOWN.html">MARKDOWN</a>
+            </li>
+            <li>
+              <a class="testo-ingrandibile" href="JAVASCRIPT.html">JAVASCRIPT</a>
+            </li>
+          </div>
+          <div>
+            <li>
+              <a class="testo-ingrandibile" href="GIT_SHEET.html">GIT_SHEET</a>
+            </li>
+            <li>
+              <a class="testo-ingrandibile" href="CSS_SHEET.html">CSS_SHEET</a>
+            </li>
+            <li>
+              <a class="testo-ingrandibile" href="HTML_SHEET.html">HTML_SHEET</a>
+            </li>
+            <li>
+              <a class="testo-ingrandibile" href="MARKDOWN_SHEET.html">MARKDOWN_SHEET</a>
+            </li>
+            <li>
+              <a class="testo-ingrandibile" href="JAVASCRIPT_SHEET.html">JAVASCRIPT_SHEET</a>
+            </li>
+          </div>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

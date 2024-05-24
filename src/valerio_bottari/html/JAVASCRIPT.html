@@ -1,0 +1,244 @@
+<!-- @format -->
+
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JavaScript</title>
+    <style>
+      /* Stili CSS qui */
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+      }
+      h1,
+      h2 {
+        color: #333;
+        text-align: center;
+      }
+      h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+      h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+      }
+      strong {
+        font-weight: bold;
+      }
+      em {
+        font-style: italic;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+      li {
+        margin-bottom: 10px;
+      }
+      /* Aggiungi altri stili CSS qui */
+      nav {
+        color: rgb(0, 47, 255); /* Colore del testo nella navbar */
+        padding: 10px; /* Spaziatura interna */
+        position: fixed; /* Posizionamento fisso */
+        bottom: 0; /* In basso */
+        width: 100%; /* Larghezza completa */
+      }
+
+      nav ul {
+        list-style-type: none; /* Rimuove i punti elenco */
+        padding: 0;
+        margin: 0;
+        bottom: 0;
+        text-align: center; /* Allinea al centro */
+        justify-content: space-between;
+      }
+
+      nav ul li {
+        display: inline; /* Disponi gli elementi in linea */
+        margin-right: 20px; /* Spaziatura tra gli elementi */
+      }
+
+      nav ul li a {
+        color: rgb(255, 255, 255); /* Colore del testo del link */
+        text-decoration: none; /* Rimuove la sottolineatura del link */
+      }
+
+      footer {
+        background-color: #000000; /* Colore di sfondo della navbar */
+        color: rgb(0, 0, 0);
+        padding: 50px;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        margin: -20px;
+      }
+
+      #img1 {
+        width: 70px;
+        height: 70px;
+        bottom: 0;
+        position: fixed;
+        left: 2%;
+        top: auto;
+        margin-bottom: 20px;
+      }
+
+      .testo-ingrandibile {
+        font-size: 24px;
+        transition: font-size 0.3s ease; /* Transizione per l'animazione di ingrandimento */
+      }
+
+      .testo-ingrandibile:hover {
+        font-size: 30px; /* Ingrandisci il testo al passaggio del mouse */
+      }
+
+      /* Aggiungi le tue animazioni personalizzate */
+      @keyframes bounce {
+        0% {
+          transform: translateY(0); /* Nessuna traslazione */
+        }
+        50% {
+          transform: translateY(-20px); /* Traslazione verso l'alto */
+        }
+        100% {
+          transform: translateY(0); /* Ritorno alla posizione originale */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>JavaScript</h1>
+
+    <section id="introduction">
+      <h2>Introduzione</h2>
+      <p>
+        JavaScript è un linguaggio di programmazione versatile che aggiunge **interattività, animazioni e contenuti
+        dinamici** alle pagine web. Nasce come linguaggio di scripting lato client, ma oggigiorno trova applicazione
+        anche lato server e in svariati contesti.
+      </p>
+
+      <p>**Esempi di come JavaScript migliora l'esperienza utente:**</p>
+      <ul>
+        <li>Aggiornare i feed dei social media</li>
+        <li>Visualizzare animazioni</li>
+        <li>Mostrare mappe interattive</li>
+        <li>Creare caroselli di immagini</li>
+        <li>Implementare menu a tendina</li>
+        <li>Gestire moduli di contatto</li>
+        <li>Validare i dati degli utenti</li>
+        <li>Effettuare calcoli sul client</li>
+        <li>Creare giochi online</li>
+      </ul>
+    </section>
+
+    <section id="javascript-use-cases">
+      <h2>Per cosa viene utilizzato JavaScript?</h2>
+    </section>
+
+    <section id="how-javascript-works">
+      <h2>Come funziona JavaScript?</h2>
+      <p>JavaScript funziona in modo diverso a seconda che venga utilizzato lato client o lato server.</p>
+
+      <h3>JavaScript lato client:</h3>
+      <ol>
+        <li>Il browser scarica una pagina web.</li>
+        <li>Il motore JavaScript del browser converte il codice JavaScript in bytecode.</li>
+        <li>Eventi come clic del mouse o tocchi attivano l'esecuzione del codice JavaScript associato.</li>
+        <li>Il motore JavaScript interpreta il bytecode e apporta modifiche al contenuto della pagina.</li>
+        <li>Il browser aggiorna la visualizzazione della pagina.</li>
+      </ol>
+
+      <h3>JavaScript lato server:</h3>
+      <ol>
+        <li>Il codice JavaScript viene eseguito sul server.</li>
+        <li>Il codice può accedere al database, eseguire calcoli e generare contenuti dinamici.</li>
+        <li>
+          Il server invia una risposta all'utente, che include contenuti HTML e JavaScript generati dinamicamente.
+        </li>
+        <li>Il browser dell'utente riceve la risposta e aggiorna la visualizzazione della pagina.</li>
+      </ol>
+    </section>
+
+    <section id="javascript-advantages">
+      <h2>Vantaggi di JavaScript</h2>
+      <ul>
+        <li>Facilità di apprendimento e utilizzo</li>
+        <li>Indipendenza dalla piattaforma</li>
+        <li>Riduzione del carico del server</li>
+        <li>Miglioramento dell'interfaccia utente</li>
+        <li>Supporto della simultaneità</li>
+      </ul>
+    </section>
+
+    <section id="javascript-limitations">
+      <h2>Limiti di JavaScript</h2>
+      <ul>
+        <li>Linguaggio scarsamente tipizzato</li>
+        <li>Problemi di sicurezza</li>
+        <li>Complessità per progetti di grandi dimensioni</li>
+      </ul>
+    </section>
+
+    <section id="html-css-javascript">
+      <h2>HTML, CSS e JavaScript: un trio inseparabile</h2>
+      <p>HTML, CSS e JavaScript sono tre linguaggi fondamentali per lo sviluppo web:</p>
+
+      <ul>
+        <li>**HTML (HyperText Markup Language):** Definisce la struttura e il contenuto di una pagina web.</li>
+        <li>**CSS (Cascading Style Sheets):** Controlla l'aspetto visivo di una pagina web (colori, font, layout).</li>
+        <li>**JavaScript:** Aggiunge interattività, animazioni e contenuti dinamici alle pagine web.</li>
+      </ul>
+
+      <p>Insieme, questi tre linguaggi permettono di creare siti web moderni, funzionali e accattivanti.</p>
+    </section>
+  </body>
+  <body>
+    <footer>
+      <a href="https://stevejobs.academy">
+        <img id="img1" src="sjlogo.jpg" alt="Steve Jobs Academy Logo" />
+      </a>
+      <nav>
+        <ul>
+          <div>
+            <li>
+              <a class="testo-ingrandibile" href="GIT.html">GIT</a>
+            </li>
+            <li>
+              <a class="testo-ingrandibile" href="CSS.html">CSS</a>
+            </li>
+            <li>
+              <a class="testo-ingrandibile" href="HTML.html">HTML</a>
+            </li>
+            <li>
+              <a class="testo-ingrandibile" href="MARKDOWN.html">MARKDOWN</a>
+            </li>
+            <li>
+              <a class="testo-ingrandibile" href="JAVASCRIPT.html">JAVASCRIPT</a>
+            </li>
+          </div>
+          <div>
+            <li>
+              <a class="testo-ingrandibile" href="GIT_SHEET.html">GIT_SHEET</a>
+            </li>
+            <li>
+              <a class="testo-ingrandibile" href="CSS_SHEET.html">CSS_SHEET</a>
+            </li>
+            <li>
+              <a class="testo-ingrandibile" href="HTML_SHEET.html">HTML_SHEET</a>
+            </li>
+            <li>
+              <a class="testo-ingrandibile" href="MARKDOWN_SHEET.html">MARKDOWN_SHEET</a>
+            </li>
+            <li>
+              <a class="testo-ingrandibile" href="JAVASCRIPT_SHEET.html">JAVASCRIPT_SHEET</a>
+            </li>
+          </div>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
