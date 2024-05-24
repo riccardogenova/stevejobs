@@ -1,5 +1,3 @@
-<!-- @format -->
-
 ````markdown
 # Comandi CSS Popolari
 
@@ -139,7 +137,7 @@
   ```css
   /* Esempio: Imposta un'immagine di sfondo */
   .hero-section {
-    background-image: url('path/to/image.jpg');
+    background-image: url("path/to/image.jpg");
   }
   ```
 

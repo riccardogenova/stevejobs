@@ -1,17 +1,44 @@
+# Procedura generica:
+
+1. git checkout main (si passa al main)
+2. git pull (dopo accettato il pull per scaricare gli aggiornamenti)
+3. git branch -D nomebranch (si cancella il branch su cui si sono apportate le modifiche)
+4. git checkout -b nomebranch (si passa al branch dove applicare le modifiche)
+5. si fanno le modifiche (PIANO PIANO) nella cartella desiderata
+6. git add .
+7. git commit -m 'nome_cognome:descrizionecommit'
+8. git push origin nomebranch
+9. si va nel sito per la pull request
+
 ---
-Configuriamo il nostro git con le nostre credenziali di GitHub: git config --global user.name 'Tuo Nome GitHub'
-  git config --global user.email email@github.com
+
+## Creare un Nuovo Branch e Eseguire il Comando npm
+
+Per creare un nuovo branch chiamato `bugfix/prettier-files` e eseguire il comando `npm run test::lint`, segui questi passaggi:
+
+1. **Crea un nuovo branch e passa ad esso**:
+   Utilizza il comando `git checkout -b` per creare e passare a un nuovo branch contemporaneamente:
+
+   ```bash
+   git checkout -b bugfix/prettier-files
+
+   npm run test::lint
+
+   git add .  # Aggiunge tutte le modifiche
+   git commit -m "Fix prettier formatting"  # Committa le modifiche con un messaggio descrittivo
+   git push origin bugfix/prettier-files  # Pusha le modifiche sul repository remoto
+   ```
+
 ---
 
-<!-- @format -->
-
-Come aggiungere un file o fare un update
-
-      git add percorsofile
-      git commit -m "commento"
-      git push origin master
+---
 
 ---
+
+Configuriamo il nostro git con le nostre credenziali di GitHub:
+
+      git config --global user.name 'Tuo Nome GitHub'
+      git config --global user.email email@github.com
 
 ### Ci sono due modi per instanzire un progetto
 
@@ -30,7 +57,7 @@ Con questo comando visualizziamo la lista di server remoti salvati con relativo 
 
       git remote -v
 
-P.S. di solito il server principale si chiama origin <br/>
+P.S. di solito il server principale si chiama origin <br>
 
 Ora aggiungiamo un server remoto:
 
@@ -43,7 +70,7 @@ Aggiungiamo i file dalla directory del progetto all'index:
 
       git add nome_file
 
-Si può utilizzare l'asterisco per aggiungere tutti i file. Se si vuole escludere un file dalla selezione totale (con l'asterisco) basta creare un file denominato .gitignore e metterci all'interno i file che non si vogliono aggiungere al INDEX.<br/>
+Si può utilizzare l'asterisco per aggiungere tutti i file. Se si vuole escludere un file dalla selezione totale (con l'asterisco) basta creare un file denominato .gitignore e metterci all'interno i file che non si vogliono aggiungere al INDEX.<br>
 
 Ora aggiungiamo i file dell'index all'head:
 

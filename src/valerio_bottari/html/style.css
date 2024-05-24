@@ -1,0 +1,128 @@
+/** @format */
+
+h1 {
+  font-family: Arial, sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 80px;
+  margin-bottom: -30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+  font-family: Arial, sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h3 {
+  font-family: Arial, sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('./bg.png');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  font-size: 20px;
+}
+
+a {
+  font-family: Arial, sans-serif;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  margin-right: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.testo-ingrandibile {
+  font-size: 24px;
+  transition: font-size 0.3s ease; /* Transizione per l'animazione di ingrandimento */
+}
+
+.testo-ingrandibile:hover {
+  font-size: 30px; /* Ingrandisci il testo al passaggio del mouse */
+}
+
+/* Aggiungi le tue animazioni personalizzate */
+@keyframes bounce {
+  0% {
+    transform: translateY(0); /* Nessuna traslazione */
+  }
+  50% {
+    transform: translateY(-20px); /* Traslazione verso l'alto */
+  }
+  100% {
+    transform: translateY(0); /* Ritorno alla posizione originale */
+  }
+}
+
+.bouncing-text {
+  animation: bounce 1s infinite; /* Applica l'animazione di rimbalzo */
+  background: linear-gradient(to right, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+nav {
+  color: rgb(0, 47, 255); /* Colore del testo nella navbar */
+  padding: 10px; /* Spaziatura interna */
+  position: fixed; /* Posizionamento fisso */
+  bottom: 0; /* In basso */
+  width: 100%; /* Larghezza completa */
+}
+
+nav ul {
+  list-style-type: none; /* Rimuove i punti elenco */
+  padding: 0;
+  margin: 0;
+  bottom: 0;
+  text-align: center; /* Allinea al centro */
+  justify-content: space-between;
+}
+
+nav ul li {
+  display: inline; /* Disponi gli elementi in linea */
+  margin-right: 20px; /* Spaziatura tra gli elementi */
+}
+
+nav ul li a {
+  color: rgb(255, 255, 255); /* Colore del testo del link */
+  text-decoration: none; /* Rimuove la sottolineatura del link */
+}
+
+footer {
+  background-color: #ffffff0e; /* Colore di sfondo della navbar */
+  color: white;
+  padding: 50px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  margin: -20px;
+}
+
+#img1 {
+  width: 70px;
+  height: 70px;
+  bottom: 0;
+  position: fixed;
+  left: 2%;
+  top: auto;
+  margin-bottom: 20px;
+}
+
+.rainbow-text {
+  background: linear-gradient(to right, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}

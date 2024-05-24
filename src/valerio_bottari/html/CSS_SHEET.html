@@ -1,0 +1,235 @@
+<!-- @format -->
+
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comandi CSS Popolari</title>
+    <style>
+      /* Stili CSS qui */
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+      }
+      h1,
+      h2 {
+        color: #333;
+        text-align: center;
+      }
+      h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+      h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+      }
+      strong {
+        font-weight: bold;
+      }
+      em {
+        font-style: italic;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+      li {
+        margin-bottom: 10px;
+      }
+      /* Aggiungi altri stili CSS qui */
+      nav {
+        color: rgb(0, 47, 255); /* Colore del testo nella navbar */
+        padding: 10px; /* Spaziatura interna */
+        position: fixed; /* Posizionamento fisso */
+        bottom: 0; /* In basso */
+        width: 100%; /* Larghezza completa */
+      }
+
+      nav ul {
+        list-style-type: none; /* Rimuove i punti elenco */
+        padding: 0;
+        margin: 0;
+        bottom: 0;
+        text-align: center; /* Allinea al centro */
+        justify-content: space-between;
+      }
+
+      nav ul li {
+        display: inline; /* Disponi gli elementi in linea */
+        margin-right: 20px; /* Spaziatura tra gli elementi */
+      }
+
+      nav ul li a {
+        color: rgb(255, 255, 255); /* Colore del testo del link */
+        text-decoration: none; /* Rimuove la sottolineatura del link */
+      }
+
+      footer {
+        background-color: #000000; /* Colore di sfondo della navbar */
+        color: rgb(0, 0, 0);
+        padding: 50px;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        margin: -20px;
+      }
+
+      #img1 {
+        width: 70px;
+        height: 70px;
+        bottom: 0;
+        position: fixed;
+        left: 2%;
+        top: auto;
+        margin-bottom: 20px;
+      }
+
+      .testo-ingrandibile {
+        font-size: 24px;
+        transition: font-size 0.3s ease; /* Transizione per l'animazione di ingrandimento */
+      }
+
+      .testo-ingrandibile:hover {
+        font-size: 30px; /* Ingrandisci il testo al passaggio del mouse */
+      }
+
+      /* Aggiungi le tue animazioni personalizzate */
+      @keyframes bounce {
+        0% {
+          transform: translateY(0); /* Nessuna traslazione */
+        }
+        50% {
+          transform: translateY(-20px); /* Traslazione verso l'alto */
+        }
+        100% {
+          transform: translateY(0); /* Ritorno alla posizione originale */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Comandi CSS Popolari</h1>
+
+    <h2>Selettori</h2>
+    <ul>
+      <li><code>elemento</code>: Seleziona tutti gli elementi di un determinato tipo.</li>
+      <li><code>.classe</code>: Seleziona tutti gli elementi con una determinata classe.</li>
+      <li><code>#id</code>: Seleziona l'elemento con un determinato ID.</li>
+    </ul>
+
+    <h2>Proprietà di Testo</h2>
+    <ul>
+      <li><code>color</code>: Imposta il colore del testo.</li>
+      <li><code>font-family</code>: Specifica il tipo di carattere.</li>
+      <li><code>font-size</code>: Imposta la dimensione del carattere.</li>
+      <li><code>font-weight</code>: Imposta lo spessore del carattere.</li>
+      <li><code>text-align</code>: Allinea il testo.</li>
+    </ul>
+
+    <h2>Proprietà di Layout</h2>
+    <ul>
+      <li><code>margin</code>: Imposta i margini esterni di un elemento.</li>
+      <li><code>padding</code>: Imposta i riempimenti interni di un elemento.</li>
+      <li><code>width</code>: Imposta la larghezza di un elemento.</li>
+      <li><code>height</code>: Imposta l'altezza di un elemento.</li>
+      <li><code>display</code>: Specifica il tipo di visualizzazione dell'elemento.</li>
+    </ul>
+
+    <h2>Sfondo e Bordi</h2>
+    <ul>
+      <li><code>background-color</code>: Imposta il colore di sfondo di un elemento.</li>
+      <li><code>background-image</code>: Imposta un'immagine di sfondo.</li>
+      <li><code>border</code>: Imposta uno o più bordi di un elemento.</li>
+      <li><code>border-radius</code>: Imposta la curvatura dei bordi.</li>
+    </ul>
+
+    <h2>Posizionamento</h2>
+    <ul>
+      <li><code>position</code>: Specifica il metodo di posizionamento.</li>
+      <li>
+        <code>top</code>, <code>right</code>, <code>bottom</code>, <code>left</code>: Impostano la posizione di un
+        elemento.
+      </li>
+      <li><code>z-index</code>: Imposta lo stack order degli elementi sovrapposti.</li>
+    </ul>
+
+    <h2>Animazioni e Transizioni</h2>
+    <ul>
+      <li><code>animation</code>: Definisce una nuova animazione.</li>
+      <li><code>transition</code>: Specifica le transizioni per le proprietà CSS.</li>
+    </ul>
+
+    <h2>Responsive Design</h2>
+    <ul>
+      <li><code>@media</code>: Applica stili diversi in base alle dimensioni dello schermo.</li>
+      <li><code>max-width</code>, <code>min-width</code>: Limita la larghezza massima o minima di un elemento.</li>
+    </ul>
+
+    <h2>Flexbox</h2>
+    <ul>
+      <li><code>display: flex</code>: Abilita il layout flessibile.</li>
+      <li><code>flex-direction</code>: Specifica la direzione dei flex items.</li>
+      <li><code>justify-content</code>: Allinea i flex items lungo l'asse principale.</li>
+      <li><code>align-items</code>: Allinea i flex items lungo l'asse trasversale.</li>
+    </ul>
+
+    <h2>Grid Layout</h2>
+    <ul>
+      <li><code>display: grid</code>: Abilita il layout a griglia.</li>
+      <li>
+        <code>grid-template-columns</code>, <code>grid-template-rows</code>: Specifica le colonne e le righe della
+        griglia.
+      </li>
+      <li><code>grid-column</code>, <code>grid-row</code>: Specifica la posizione di un elemento nella griglia.</li>
+    </ul>
+  </body>
+  <body>
+    <footer>
+      <a href="https://stevejobs.academy">
+        <img id="img1" src="sjlogo.jpg" alt="Steve Jobs Academy Logo" />
+      </a>
+      <nav>
+        <ul>
+          <div>
+            <li>
+              <a class="testo-ingrandibile" href="GIT.html">GIT</a>
+            </li>
+            <li>
+              <a class="testo-ingrandibile" href="CSS.html">CSS</a>
+            </li>
+            <li>
+              <a class="testo-ingrandibile" href="HTML.html">HTML</a>
+            </li>
+            <li>
+              <a class="testo-ingrandibile" href="MARKDOWN.html">MARKDOWN</a>
+            </li>
+            <li>
+              <a class="testo-ingrandibile" href="JAVASCRIPT.html">JAVASCRIPT</a>
+            </li>
+          </div>
+          <div>
+            <li>
+              <a class="testo-ingrandibile" href="GIT_SHEET.html">GIT_SHEET</a>
+            </li>
+            <li>
+              <a class="testo-ingrandibile" href="CSS_SHEET.html">CSS_SHEET</a>
+            </li>
+            <li>
+              <a class="testo-ingrandibile" href="HTML_SHEET.html">HTML_SHEET</a>
+            </li>
+            <li>
+              <a class="testo-ingrandibile" href="MARKDOWN_SHEET.html">MARKDOWN_SHEET</a>
+            </li>
+            <li>
+              <a class="testo-ingrandibile" href="JAVASCRIPT_SHEET.html">JAVASCRIPT_SHEET</a>
+            </li>
+          </div>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

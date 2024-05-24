@@ -17,5 +17,3 @@ Per questo motivo, Markdown è particolarmente interessante per gli utenti che n
 # Markdown non mira a sostituire HTML, in quanto limitato nelle capacità di progettazione. Gli sviluppatori considerano piuttosto Markdown come un’integrazione.
 
 ---
-
-<!-- @format -->

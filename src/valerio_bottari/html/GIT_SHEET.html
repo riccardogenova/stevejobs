@@ -1,0 +1,295 @@
+<!-- @format -->
+
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guida a Git</title>
+    <style>
+      /* Stili CSS qui */
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+      }
+      h1,
+      h2 {
+        color: #333;
+        text-align: center;
+      }
+      h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+      h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+      }
+      strong {
+        font-weight: bold;
+      }
+      em {
+        font-style: italic;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+      li {
+        margin-bottom: 10px;
+      }
+      /* Aggiungi altri stili CSS qui */
+      nav {
+        color: rgb(0, 47, 255); /* Colore del testo nella navbar */
+        padding: 10px; /* Spaziatura interna */
+        position: fixed; /* Posizionamento fisso */
+        bottom: 0; /* In basso */
+        width: 100%; /* Larghezza completa */
+      }
+
+      nav ul {
+        list-style-type: none; /* Rimuove i punti elenco */
+        padding: 0;
+        margin: 0;
+        bottom: 0;
+        text-align: center; /* Allinea al centro */
+        justify-content: space-between;
+      }
+
+      nav ul li {
+        display: inline; /* Disponi gli elementi in linea */
+        margin-right: 20px; /* Spaziatura tra gli elementi */
+      }
+
+      nav ul li a {
+        color: rgb(255, 255, 255); /* Colore del testo del link */
+        text-decoration: none; /* Rimuove la sottolineatura del link */
+      }
+
+      footer {
+        background-color: #000000; /* Colore di sfondo della navbar */
+        color: rgb(0, 0, 0);
+        padding: 50px;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        margin: -20px;
+      }
+
+      #img1 {
+        width: 70px;
+        height: 70px;
+        bottom: 0;
+        position: fixed;
+        left: 2%;
+        top: auto;
+        margin-bottom: 20px;
+      }
+
+      .testo-ingrandibile {
+        font-size: 24px;
+        transition: font-size 0.3s ease; /* Transizione per l'animazione di ingrandimento */
+      }
+
+      .testo-ingrandibile:hover {
+        font-size: 30px; /* Ingrandisci il testo al passaggio del mouse */
+      }
+
+      /* Aggiungi le tue animazioni personalizzate */
+      @keyframes bounce {
+        0% {
+          transform: translateY(0); /* Nessuna traslazione */
+        }
+        50% {
+          transform: translateY(-20px); /* Traslazione verso l'alto */
+        }
+        100% {
+          transform: translateY(0); /* Ritorno alla posizione originale */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Configurazione iniziale</h1>
+
+    <pre><code>git config --global user.name 'Tuo Nome GitHub'
+git config --global user.email email@github.com
+</code></pre>
+
+    <h1>Aggiungere un file o fare un aggiornamento</h1>
+
+    <pre><code>git add percorsofile
+git commit -m "commento"
+git push origin master
+</code></pre>
+
+    <h2>Inizializzare un progetto</h2>
+
+    <ol>
+      <li>Inizializzazione di un progetto non esistente:</li>
+      <pre><code>git init
+</code></pre>
+      <li>Clonare un progetto esistente da un server Git:</li>
+      <pre><code>git clone serverURL.git
+Esempio: git clone https://github.com/tesseslol/irixos-websites.git
+</code></pre>
+    </ol>
+
+    <h2>Configurazione del server remoto</h2>
+
+    <pre><code>git remote -v
+</code></pre>
+
+    <pre><code>git remote add identificatoreServerRemoto UrlServerRemoto
+Esempio: git remote add origin https://github.com/tesseslol/irixos-websites.git
+</code></pre>
+
+    <h2>Lavorare nel progetto</h2>
+
+    <pre><code>git add nome_file
+</code></pre>
+
+    <pre><code>git commit -m "Messaggio del commit"
+</code></pre>
+
+    <pre><code>git commit -a -m "Messaggio del commit"
+</code></pre>
+
+    <h2>Annullamento dei commit</h2>
+
+    <pre><code>git commit --amend
+</code></pre>
+
+    <pre><code>git rm nomeFile
+</code></pre>
+
+    <pre><code>git checkout -- nomeFile
+</code></pre>
+
+    <h2>Lavorare con il server remoto</h2>
+
+    <pre><code>git pull
+</code></pre>
+
+    <pre><code>git push identificatoreServerRemoto nomeBranch
+Esempio: git push origin master
+</code></pre>
+
+    <pre><code>git remote rename identificatoreServerRemoto nomeFileVecchio nomeFileNuovo
+</code></pre>
+
+    <pre><code>git remote rm nomeFile
+</code></pre>
+
+    <h2>Stato del progetto</h2>
+
+    <pre><code>git status
+</code></pre>
+
+    <pre><code>git diff
+</code></pre>
+
+    <pre><code>git log
+</code></pre>
+
+    <h2>Gestione dei tag</h2>
+
+    <pre><code>git tag
+</code></pre>
+
+    <pre><code>git tag -a versioneSoftware -m "nota sul tag"
+Esempio: git tag -a 1.2.3rc1 -m "aggiornato la navbar"
+</code></pre>
+
+    <pre><code>git show 1.2.3rc1
+</code></pre>
+
+    <pre><code>git push identificatoreServerRemoto tagDaPubblicare
+Esempio: git push origin 1.2.3rc1
+</code></pre>
+
+    <pre><code>git push identificatoreServerRemoto --tag
+Esempio: git push origin --tag
+</code></pre>
+
+    <h2>Gestione dei Branch</h2>
+
+    <pre><code>git branch
+</code></pre>
+
+    <pre><code>git branch nomeBranch
+Esempio: git branch feature
+</code></pre>
+
+    <pre><code>git checkout nomeBranch
+Esempio: git checkout feature
+</code></pre>
+
+    <pre><code>git checkout master
+</code></pre>
+
+    <pre><code>git branch -d nomeBranch
+Esempio: git branch -d feature
+</code></pre>
+
+    <pre><code>git checkout -b nomeBranch
+Esempio: git checkout -b feature
+</code></pre>
+
+    <pre><code>git checkout master
+git merge feature
+</code></pre>
+
+    <h2>Altri comandi Git</h2>
+
+    <pre><code>git --help
+</code></pre>
+  </body>
+  <body>
+    <footer>
+      <a href="https://stevejobs.academy">
+        <img id="img1" src="sjlogo.jpg" alt="Steve Jobs Academy Logo" />
+      </a>
+      <nav>
+        <ul>
+          <div>
+            <li>
+              <a class="testo-ingrandibile" href="GIT.html">GIT</a>
+            </li>
+            <li>
+              <a class="testo-ingrandibile" href="CSS.html">CSS</a>
+            </li>
+            <li>
+              <a class="testo-ingrandibile" href="HTML.html">HTML</a>
+            </li>
+            <li>
+              <a class="testo-ingrandibile" href="MARKDOWN.html">MARKDOWN</a>
+            </li>
+            <li>
+              <a class="testo-ingrandibile" href="JAVASCRIPT.html">JAVASCRIPT</a>
+            </li>
+          </div>
+          <div>
+            <li>
+              <a class="testo-ingrandibile" href="GIT_SHEET.html">GIT_SHEET</a>
+            </li>
+            <li>
+              <a class="testo-ingrandibile" href="CSS_SHEET.html">CSS_SHEET</a>
+            </li>
+            <li>
+              <a class="testo-ingrandibile" href="HTML_SHEET.html">HTML_SHEET</a>
+            </li>
+            <li>
+              <a class="testo-ingrandibile" href="MARKDOWN_SHEET.html">MARKDOWN_SHEET</a>
+            </li>
+            <li>
+              <a class="testo-ingrandibile" href="JAVASCRIPT_SHEET.html">JAVASCRIPT_SHEET</a>
+            </li>
+          </div>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
