@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css_sheet</title>
+</head>
+<body>
+    <a href="C:\Users\camon\Documents\mystevejobs\web_front_end\vincenzo_camonita\index.html">Home</a>
+    <a href="C:\Users\camon\Documents\mystevejobs\Web_front_end\\vincenzo_camonita\Html\Lessons\CSS.html">Css_lesson</a>
+
+    <h3 id="selettori-">Selettori:</h3>
+<p><strong>Selettore di tipo</strong>:</p>
+<pre><code><span class="hljs-selector-tag">elemento</span> {}
+</code></pre><p><strong>Selettore di classe</strong>:</p>
+<pre><code><span class="hljs-selector-class">.classe</span> {}
+</code></pre><p><strong>Selettore di ID</strong>:</p>
+<pre><code><span class="hljs-selector-id">#id</span> {}
+</code></pre><p><strong>Selettore discendente</strong>:</p>
+<pre><code>eleme<span class="hljs-symbol">nto1</span> eleme<span class="hljs-symbol">nto2</span> {}
+</code></pre><p><strong>Selettore figlio</strong>:</p>
+<pre><code>eleme<span class="hljs-symbol">nto1</span> &gt; eleme<span class="hljs-symbol">nto2</span> {}
+</code></pre><p><strong>Selettore attributo</strong>: </p>
+<pre><code><span class="hljs-attr">elemento[attributo</span>=<span class="hljs-string">"valore"</span>] {}
+</code></pre><p><strong>Pseudo-classi</strong>: </p>
+<pre><code><span class="hljs-meta">:hover, :active,</span> :focus, ecc.
+</code></pre><p><strong>Pseudo-elementi</strong>: </p>
+<pre><code><span class="hljs-meta">::before, ::after,</span> ecc.
+</code></pre><h3 id="propriet-di-stile-">Proprietà di stile:</h3>
+<p><strong>Folore del testo</strong>:</p>
+<pre><code><span class="hljs-built_in">color</span> 
+</code></pre><p><strong>Famiglia di caratteri</strong>:</p>
+<pre><code><span class="hljs-attribute">font-family</span> 
+</code></pre><p><strong>Dimensione del carattere:</strong>:</p>
+<pre><code><span class="hljs-built_in">font</span>-<span class="hljs-built_in">size</span>
+</code></pre><p><strong>Spessore del carattere (grassetto)</strong>:</p>
+<pre><code><span class="hljs-attribute">font-weight</span>
+</code></pre><p><strong>Stile del carattere (corsivo)</strong>:</p>
+<pre><code><span class="hljs-built_in">font</span>-<span class="hljs-built_in">style</span>
+</code></pre><p><strong>Allineamento del testo</strong>:  </p>
+<pre><code><span class="hljs-keyword">text</span>-<span class="hljs-keyword">align</span>
+</code></pre><p><strong>Colore dello sfondo</strong>:</p>
+<pre><code><span class="hljs-built_in">background</span>-<span class="hljs-built_in">color</span>
+</code></pre><p><strong>Immagine di sfondo</strong>:  </p>
+<p>background-image: </p>
+<p><strong>Bordo</strong>:</p>
+<pre><code><span class="hljs-keyword">border: </span>
+</code></pre><p><strong>Margine esterno</strong>:</p>
+<pre><code><span class="hljs-keyword">margin </span>
+</code></pre><p><strong>Spaziatura interna:</strong></p>
+<pre><code><span class="hljs-attribute">padding</span>
+</code></pre><p><strong>Determina come vengono calcolate le dimensioni di un elemento, inclusi margini e padding (content-box, border-box)</strong></p>
+<pre><code><span class="hljs-built_in">box</span>-sizing:
+</code></pre><p><strong>Larghezza, altezza</strong>:</p>
+<pre><code><span class="hljs-built_in">width</span>, <span class="hljs-built_in">height</span>
+</code></pre><p><strong>Tipo di visualizzazione (blocco, linea, flessibile, ecc.)</strong>:</p>
+<pre><code><span class="hljs-built_in">display</span>
+</code></pre><p><strong>Posizionamento (statico, relativo, assoluto, fisso)</strong>:</p>
+<pre><code><span class="hljs-built_in">position</span>
+</code></pre><p><strong>Floating (sinistra, destra)</strong>:</p>
+<pre><code><span class="hljs-keyword">float</span>
+</code></pre><p><strong>Comportamento di pulizia del floating</strong>:</p>
+<pre><code><span class="hljs-built_in">clear</span>
+</code></pre><p><strong>Indice Z per lo stacking degli elementi</strong>:</p>
+<pre><code>z-<span class="hljs-keyword">index</span>
+</code></pre><p><strong>Opacità</strong>:</p>
+<pre><code><span class="hljs-attribute">opacity</span>
+</code></pre><p><strong>Transizioni</strong>:</p>
+<pre><code><span class="hljs-attribute">transition</span>
+</code></pre><p><strong>Animazioni</strong>:</p>
+<pre><code><span class="hljs-attribute">animation</span>
+</code></pre><h3 id="unit-di-misura-">Unità di misura:</h3>
+<p><strong>Pixel</strong>:</p>
+<pre><code><span class="hljs-attribute">px</span>
+</code></pre><p><strong>Percentuale</strong>:</p>
+<pre><code><span class="hljs-comment">% </span>
+</code></pre><p><strong>Relative alle dimensioni del carattere</strong>:</p>
+<pre><code><span class="hljs-selector-tag">em</span>, rem: 
+</code></pre><p><strong>Percentuale della larghezza o altezza della finestra visualizzata</strong>:</p>
+<pre><code>vw, <span class="hljs-string">vh:</span> 
+</code></pre><p><strong>Unità di misura fisiche</strong>:</p>
+<pre><code><span class="hljs-keyword">pt</span>, <span class="hljs-keyword">cm</span>, mm, in
+</code></pre><h3 id="media-queries-">Media Queries:</h3>
+<p><strong>Specifica le regole di stile basate su determinate condizioni, come la larghezza dello schermo</strong>:</p>
+<pre><code><span class="hljs-meta">@media</span>
+</code></pre><h3 id="vendor-prefixes-">Vendor Prefixes:</h3>
+<p><strong>Prefissi del fornitore per proprietà CSS che non sono ancora pienamente supportate da tutti i browser, ad esempio</strong></p>
+<pre><code><span class="hljs-deletion">-webkit-, -moz-, -ms-, -o-</span>
+</code></pre><h3 id="css-grid-">CSS Grid:</h3>
+<p><strong>Nuovo modulo CSS per la creazione di layout a griglia flessibili</strong></p>
+<h3 id="css-flexbox-">CSS Flexbox:</h3>
+<p><strong>Modulo CSS per il posizionamento flessibile degli elementi all&#39;interno di un contenitore</strong></p>
+
+</body>
+</html>
