@@ -1,0 +1,170 @@
+<!-- @format -->
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Lezione su JavaScript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <h1 style="color: yellow">JavaScript</h1>
+
+    <div>
+      <h2>cos'è?</h2>
+      <p>
+        JavaScript è un linguaggio di scripting: nel suo utilizzo più frequente, quello della programmazione per il web,
+        consiste in un linguaggio formale che fornisce al browser determinate istruzioni da compiere. Una pagina creata
+        in HTML è infatti statica, in quanto una volta che la pagina è stata interpretata dal browser la disposizione
+        degli elementi rimane immutata, così come il loro contenuto. Tramite il JavaScript, invece, è possibile
+        conferire dinamicità alle pagine web permettendo, ad esempio, di creare rollover sulle immagini, modificare i
+        contenuti in base a input dell'utente o creare semplici applicazioni per il Web.
+      </p>
+
+      <h2>Breve storia di JavaScript</h2>
+      <p>
+        Il linguaggio JavaScript fu sviluppato inizialmente nel 1995 dalla Netscape Communications con il nome di
+        LiveScript e incluso nel browser Netscape Navigator; il nome fu poi cambiato in JavaScript anche per l'assonanza
+        con il linguaggio Java, che rappresentava una delle tecnologie più avanzate per l'epoca, con cui JavaScript non
+        ha niente in comune, se non la sintassi simile. Dopo il suo decollo e dato il successo di JavaScript, Microsoft
+        decise di aggiungere al proprio browser Internet Explorer un proprio linguaggio di scripting, JScript, che aveva
+        però notevoli differenze con la versione sviluppata dalla Netscape. Nacque così la necessità di standardizzare
+        il JavaScript e venne sviluppato lo standard ECMAScript.
+      </p>
+
+      <h2>JavaScript è un linguaggio orientato agli oggetti</h2>
+      <ul>
+        <li>
+          Prototipi: In JavaScript, gli oggetti sono creati tramite prototipi anziché classi. Ogni oggetto ha un
+          prototipo da cui eredita proprietà e metodi. Questo modello è conosciuto come "prototipale".
+        </li>
+        <li>
+          Funzioni come oggetti di prima classe: In JavaScript, le funzioni sono trattate come oggetti di prima classe,
+          il che significa che possono essere assegnate a variabili, passate come argomenti a funzioni e restituite da
+          altre funzioni. Questo offre una grande flessibilità nell'utilizzo delle funzioni per creare oggetti e
+          definire comportamenti.
+        </li>
+        <li>
+          Costruttori di oggetti: JavaScript consente la creazione di nuovi oggetti utilizzando funzioni costruttrici,
+          che possono essere pensate come classi. Quando una funzione costruttrice viene invocata con l'operatore new,
+          viene creato un nuovo oggetto e il contesto di this all'interno della funzione viene legato a questo nuovo
+          oggetto.
+        </li>
+        <li>
+          Proprietà e metodi: Gli oggetti JavaScript possono contenere proprietà e metodi. Le proprietà sono semplici
+          variabili associate all'oggetto, mentre i metodi sono funzioni associate all'oggetto che possono essere
+          invocate per eseguire azioni sull'oggetto stesso.
+        </li>
+      </ul>
+      In sintesi, sebbene JavaScript non abbia un'implementazione tradizionale di classi come altri linguaggi orientati
+      agli oggetti come Java o C++, è orientato agli oggetti grazie alla sua capacità di creare e manipolare oggetti
+      attraverso prototipi, funzioni e costruttori di oggetti.
+
+      <h2>le variabili</h2>
+
+      <ul>
+        <li>var: Le variabili dichiarate con var possono essere ri-assegnate e ri-declare.</li>
+        <li>
+          let: Le variabili dichiarate con let possono essere ri-assegnate ma non ri-declare all'interno dello stesso
+          blocco.
+        </li>
+        <li>
+          const: const dichiara una costante il cui valore non può essere riassegnato. Tuttavia, gli oggetti e gli array
+          dichiarati con const possono essere modificati.
+        </li>
+      </ul>
+
+      <h2>cos'è lo scope di una variabile?</h2>
+      <ul>
+        <li>
+          Global Scope: Le variabili dichiarate al di fuori di qualsiasi blocco di codice, come le funzioni, sono
+          considerate globali e sono accessibili da qualsiasi parte del codice
+        </li>
+        <li>
+          Local Scope: Le variabili dichiarate all'interno di una funzione sono considerate variabili locali e sono
+          accessibili solo all'interno della funzione stessa, non al di fuori di essa.
+        </li>
+      </ul>
+
+      <h2>gli oggetti</h2>
+      <ul>
+        <li>
+          <b>cosa sono?</b>: In JavaScript, gli oggetti sono strutture dati fondamentali che consentono di rappresentare
+          e organizzare dati complessi. Gli oggetti possono contenere dati e funzionalità tramite proprietà e metodi.
+        </li>
+        <li>
+          proprieta': Le proprietà degli oggetti sono coppie chiave-valore che rappresentano le caratteristiche o gli
+          attributi dell'oggetto. Le proprietà possono essere di qualsiasi tipo di dato JavaScript, inclusi altri
+          oggetti, array, stringhe, numeri, booleani e funzioni.
+        </li>
+        <li>
+          metodi: I metodi degli oggetti sono funzioni associate a un oggetto. Queste funzioni possono essere richiamate
+          per eseguire operazioni specifiche sull'oggetto stesso o sui suoi dati.
+        </li>
+      </ul>
+
+      In JavaScript, gli oggetti sono estremamente flessibili e possono essere modificati dinamicamente aggiungendo o
+      rimuovendo proprietà e metodi in qualsiasi momento.
+      <h2>le funzioni In JavaScript</h2>
+
+      <ul>
+        <li>
+          le funzioni sono blocchi di codice riutilizzabili che eseguono un'azione specifica quando vengono chiamati.
+          Quando eseguiamo una funzione passiamo un parametro all'argomento(sempre tra parentesi tonde):
+        </li>
+        <li>
+          parametro: Un parametro è un'etichetta che viene definita nella dichiarazione di una funzione per ricevere
+          dati di input quando la funzione viene chiamata.
+        </li>
+        <li>
+          argomento: Un argomento è un valore effettivo passato a una funzione quando viene chiamata. Gli argomenti
+          corrispondono ai parametri della funzione in base alla posizione.
+        </li>
+        Quando chiami una funzione, fornisci i valori degli argomenti che corrispondono ai parametri definiti nella
+        dichiarazione della funzione.
+      </ul>
+
+      <h2>gli Array In JavaScript</h2>
+      <ul>
+        <li>
+          gli array sono strutture dati che consentono di memorizzare una sequenza ordinata di elementi. Gli elementi in
+          un array possono essere di qualsiasi tipo di dati JavaScript, inclusi numeri, stringhe, booleani, oggetti e
+          altri array. Gli array in JavaScript sono oggetti speciali che forniscono metodi e proprietà per manipolare i
+          loro elementi.
+        </li>
+        <li>
+          const: Quando dichiari un array con const, il riferimento all'array rimane costante, il che significa che non
+          puoi riassegnare l'intero array a un nuovo array. Tuttavia, puoi ancora modificare gli elementi dell'array
+          esistente.
+        </li>
+        <li>
+          let: Dichiarare un array con let consente sia la riassegnazione dell'intero array a un nuovo array sia la
+          modifica degli elementi dell'array esistente.
+        </li>
+      </ul>
+
+      <h2>spread operator</h2>
+      <p>
+        lo spread operator consente di espandere un'espressione, come un array o un oggetto: - Espansione degli array -
+        Copia degli oggetti
+      </p>
+
+      <div>
+        <nav>
+          alcuni link utili:<br />
+          <a href="https://pages.di.unipi.it/milazzo/teaching/AA1011-ALG/JavaScript.pdf">PDF JavaScript</a><br />
+          <a href="https://kinsta.com/knowledgebase/spread-operator-javascript/">Spread Operator</a><br />
+          <a href="https://www.html.it/pag/47091/funzioni-in-javascript-i-fondamentali/">funzioni JavaScript</a>
+          <br />
+          <br />
+          <a href="JS_SHEET.html">Visita lo sheet relativo </a><br />
+
+          <a href="../INDEX.html"> Ritorna all'indice </a>
+        </nav>
+      </div>
+    </div>
+  </body>
+</html>
