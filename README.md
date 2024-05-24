@@ -1,3 +1,5 @@
+<!-- @format -->
+
 # Flusso Git
 
 Un **Task** corrisponde a un branch.
@@ -43,13 +45,17 @@ git commit --fixup 03cfcd8e1bad1f3ea50076d200fe0d13308a1ab8
 ```
 
 **Esempio di creazione di un branch:**
+
 ```
 git checkout -b feat/update-navbar-main main
 ```
+
 Questo crea un branch per aggiornare la navbar partendo dal branch principale `main`.
 
 **Esempio di creazione di un commit:**
+
 ```
 git commit -m "feat(emanuele_fava): aggiornata navbar per miglior accessibilità"
 ```
+
 Questo commit descrive brevemente l'aggiornamento fatto alla navbar, seguendo il formato convenzionale.
