@@ -1,0 +1,89 @@
+<!-- @format -->
+
+<!doctype html>
+<html>
+  <head>
+    <title>GIT_SHEET</title>
+  </head>
+
+  <ol>
+    <li><strong>git init</strong>: Inizializza un nuovo repository Git nella directory corrente.</li>
+    <li><strong>git clone [URL]</strong>: Clona un repository Git esistente dalla URL specificata.</li>
+    <li><strong>git add [file]</strong>: Aggiunge un file specifico o una serie di file alla staging area.</li>
+    <li><strong>git add .</strong>: Aggiunge tutti i file modificati alla staging area.</li>
+    <li>
+      <strong>git commit -m &quot;[messaggio]&quot;</strong>: Esegue il commit delle modifiche nella staging area con un
+      messaggio di commit associato.
+    </li>
+    <li>
+      <strong>git status</strong>: Visualizza lo stato attuale del repository, inclusi file modificati, file non
+      tracciati, ecc.
+    </li>
+    <li><strong>git log</strong>: Visualizza la cronologia dei commit.</li>
+    <li><strong>git branch</strong>: Visualizza l'elenco dei rami presenti nel repository.</li>
+    <li><strong>git branch [nome-branch]</strong>: Crea un nuovo ramo con il nome specificato</li>
+    <li><strong>git branch -D [nome_branch]</strong>: Elimina il branch locale [nome_branch].</li>
+    <li><strong>git checkout [nome-branch]</strong>: Passa al ramo specificato.</li>
+    <li><strong>git merge [nome-branch]</strong>: Unisce il ramo specificato con il ramo corrente.</li>
+    <li><strong>git pull</strong>: Estrae e fonde le modifiche dal repository remoto al repository locale.</li>
+    <li><strong>git push</strong>: Invia i commit locali al repository remoto.</li>
+    <li>
+      <strong>git push origin [nome_branch]</strong>: Invia le modifiche del branch corrente al repository remoto
+      [origin] con il nome [nome_branch].
+    </li>
+    <li>
+      <strong>git remote add [nome] [URL]</strong>: Aggiunge un nuovo repository remoto con il nome specificato e la URL
+      specificata.
+    </li>
+    <li><strong>git remote -v</strong>: Visualizza l'elenco dei repository remoti configurati.</li>
+    <li>
+      <strong>git fetch</strong>: Scarica le ultime modifiche dal repository remoto senza incorporarle nel tuo
+      repository locale.
+    </li>
+    <li><strong>git mergetool</strong>: Apre uno strumento per risolvere i conflitti di merge tra i branch.</li>
+    <li>
+      <strong>git show [hash_commit]</strong>: Mostra le informazioni dettagliate su un commit specifico, incluso il
+      messaggio, l'autore e le modifiche apportate.
+    </li>
+    <li>
+      <strong>git diff</strong>: Mostra le differenze tra le modifiche non ancora inserite nella staging area e il
+      repository locale.
+    </li>
+    <li>
+      <strong>git stash</strong>: Salva le modifiche non commesse in una &quot;stash&quot; temporanea, permettendo di
+      lavorare su un'altra parte del codice senza fare commit delle modifiche correnti.
+    </li>
+    <li>
+      <strong>git cherry-pick [hash_commit]</strong>: Applica le modifiche di un commit specifico su un altro branch.
+    </li>
+    <li>
+      <strong>git rebase</strong>: Rinomina i commit su un branch base, spesso utilizzato per integrare le modifiche di
+      un branch su un altro mantenendo una cronologia lineare.
+    </li>
+    <li>
+      <strong>git tag</strong>: Crea, visualizza e gestisce i tag annotati e leggeri per segnare versioni specifiche del
+      codice.
+    </li>
+    <li>
+      <strong>git bisect</strong>: Utilizzato per individuare il commit che ha introdotto un bug, automatizzando la
+      ricerca binaria tra i commit.
+    </li>
+    <li>
+      <strong>git submodule</strong>: Gestisce i repository all'interno di altri repository, consentendo di includere
+      dipendenze esterne all''interno del proprio progetto.
+    </li>
+    <li>
+      <strong>git log --graph</strong>: Visualizza la cronologia dei commit come un grafico ASCII, utile per comprendere
+      la struttura del repository e le relazioni tra i branch.
+    </li>
+    <li>
+      <strong>git reflog</strong>: Visualizza un registro di riferimento di tutte le azioni eseguite nel repository,
+      utile per ripristinare modifiche perse o cancellate accidentalmente.
+    </li>
+    <li>
+      <strong>git cherry-pick</strong>: è utilizzato per applicare le modifiche introdotte da uno o più commit su un
+      altro branch. Questo comando può essere utile quando si desidera incorporare specifiche modifiche da un branch a
+      un altro senza fondere l'intero branch.
+    </li>
+  </ol>
+</html>
